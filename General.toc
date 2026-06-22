@@ -1,0 +1,90 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{RESUMEN}{\es@scroman {i}}{chapter*.1}%
+\contentsline {chapter}{Tabla de contenidos}{\es@scroman {ii}}{chapter*.1}%
+\contentsline {chapter}{Índice de figuras}{\es@scroman {iv}}{chapter*.1}%
+\contentsline {chapter}{Índice de tablas}{\es@scroman {vi}}{chapter*.1}%
+\contentsline {chapter}{\numberline {I}PLANTEAMIENTO}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Definición de la problemática}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Propuesta de solución}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Objetivos generales}{5}{subsection.1.3.1}%
+\contentsline {subsubsection}{Objetivo correspondiente a Trabajo de Fin de Carrera 1 (1MTR01)}{5}{section*.4}%
+\contentsline {subsubsection}{Objetivo para el proyecto general}{5}{section*.5}%
+\contentsline {subsection}{\numberline {1.3.2}Objetivos específicos}{5}{subsection.1.3.2}%
+\contentsline {subsubsection}{Objetivos correspondientes a Trabajo de Fin de Carrera 1 (1MTR01)}{5}{section*.6}%
+\contentsline {subsubsection}{Objetivos para el proyecto general}{6}{section*.7}%
+\contentsline {section}{\numberline {1.4}Alcance y limitaciones}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Metodología del diseño}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Definición de la tarea}{8}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Diseño conceptual}{8}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Diseño de detalle}{8}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Implementación digital y validación}{9}{subsection.1.5.4}%
+\contentsline {chapter}{\numberline {II}COMPRENSIÓN DEL PROBLEMA}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Marco teórico}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Fundamentos de la conversión fotovoltaica}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Impacto de las variables meteorológicas y pérdidas técnicas}{11}{subsection.2.1.2}%
+\contentsline {subsubsection}{\textbf {Radiación solar:}}{12}{section*.8}%
+\contentsline {subsubsection}{\textbf {Temperatura ambiente:}}{12}{section*.9}%
+\contentsline {subsubsection}{\textbf {Albedo:}}{13}{section*.11}%
+\contentsline {subsubsection}{\textbf {Humedad y precipitaciones:}}{13}{section*.12}%
+\contentsline {subsubsection}{\textbf {Velocidad del viento:}}{14}{section*.14}%
+\contentsline {subsubsection}{\textbf {Pérdidas Técnicas:}}{14}{section*.16}%
+\contentsline {section}{\numberline {2.2}Marco referencial}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Contexto normativo y estándares de medición}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Condiciones topográficas y geográficas}{16}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Entorno operativo y tecnológico}{17}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Estado del arte}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Soluciones integrales}{18}{subsection.2.3.1}%
+\contentsline {subsubsection}{\textbf {Estación meteorológica fotovoltaica móvil (CN 216956405 U):}}{18}{section*.18}%
+\contentsline {subsubsection}{\textbf {Vehículo de inspección para plantas de energía fotovoltaicas (CN 218409341 U):}}{19}{section*.20}%
+\contentsline {subsubsection}{\textbf {Vehículo de inspección para plantas fotovoltaicas en desiertos (CN 221163061 U):}}{19}{section*.22}%
+\contentsline {subsection}{\numberline {2.3.2}Soluciones parciales}{21}{subsection.2.3.2}%
+\contentsline {subsubsection}{Robots para plantas fotovoltaicas}{21}{section*.24}%
+\contentsline {subsubsection}{Robots para inspección de plantas de energía}{24}{section*.28}%
+\contentsline {subsubsection}{Estaciones meteorológicas para plantas fotovoltaicas}{25}{section*.31}%
+\contentsline {subsubsection}{Ajuste de orientación para sensores de irradiancia}{29}{section*.36}%
+\contentsline {subsubsection}{Sistemas de comunicación para datos meteorológicos}{31}{section*.39}%
+\contentsline {section}{\numberline {2.4}Identificación de usuarios}{32}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Usuario principal}{33}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Usuarios directos}{34}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Agentes indirectos}{35}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Lista de requerimientos}{36}{section.2.5}%
+\contentsline {chapter}{\numberline {III}DISEÑO CONCEPTUAL}{40}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Caja Negra}{40}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Estructura de Funciones}{42}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Dominio de Energía}{42}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dominio de Sensores}{44}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Dominio de Control}{45}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Dominio de Comunicación}{48}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Dominio de Interfaz}{49}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Dominio de Actuadores}{50}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Dominio Mecánico}{51}{subsection.3.2.7}%
+\contentsline {section}{\numberline {3.3}Matriz Morfológica}{52}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Dominio de Sensores}{56}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Dominio de Control}{59}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Dominio de Comunicación}{65}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Dominio de Interfaz}{66}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Dominio de Actuadores}{68}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Dominio Mecánico}{69}{subsection.3.3.6}%
+\contentsline {chapter}{\numberline {IV}CONCEPTOS DE SOLUCIÓN}{72}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Concepto de solución 1}{72}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Concepto de solución 2}{74}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Concepto de solución 3}{76}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Evaluación técnica}{79}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Evaluación económica}{82}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Concepto de solución óptimo}{84}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Arquitectura de control del concepto óptimo}{84}{subsection.4.6.1}%
+\contentsline {subsubsection}{Diagrama de flujo general}{84}{section*.59}%
+\contentsline {subsubsection}{Lazo de control del movimiento del robot}{85}{section*.61}%
+\contentsline {subsubsection}{Topología de red}{86}{section*.63}%
+\contentsline {subsection}{\numberline {4.6.2}Arquitectura electrónica del concepto óptimo}{88}{subsection.4.6.2}%
+\contentsline {subsubsection}{Diagrama de bloques}{88}{section*.65}%
+\contentsline {subsection}{\numberline {4.6.3}Vista general del concepto óptimo}{90}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Subsistemas mecánicos del concepto óptimo}{91}{subsection.4.6.4}%
+\contentsline {subsubsection}{Subsistema de traslación}{91}{section*.68}%
+\contentsline {subsubsection}{Subsistema de posicionamiento de plataforma de medición}{92}{section*.70}%
+\contentsline {subsubsection}{Subsistema de orientación de plataforma de medición}{93}{section*.72}%
+\contentsline {subsubsection}{Estructura de soporte}{93}{section*.74}%
+\contentsline {chapter}{CONCLUSIONES}{94}{chapter*.76}%
+\contentsline {chapter}{ANEXO}{99}{appendix*.78}%

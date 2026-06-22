@@ -1,0 +1,47 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Tendencias de la demanda energética proyectadas al 2050 bajo el escenario de Zero Net Emissions.}}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Imagen aérea de planta de energía solar en inmediaciones de la fábrica de cemento Yura, Arequipa.}}{3}{figure.caption.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Comportamiento eléctrico de un panel solar ante variaciones de irradiancia y temperatura.}}{12}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Comportamiento eléctrico de un panel solar ante variaciones de albedo y humedad relativa.}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparación entre la potencia generada a lo largo del día de paneles con y sin velocidad de viento.}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Imagen aérea de varias colinas cubiertas con paneles fotovoltaicos en Jinhua, provincia de Zhejiang, China.}}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ilustraciones de estación meteorológica fotovoltaica móvil.}}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ilustración de vehículo de inspección con paneles solares y sistema de amortiguación.}}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Ilustración de robot de inspección para estaciones fotovoltaicas en el desierto.}}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Ilustraciones de vehículo de inspección terrestre inteligente y robot de inspección de alta transitabilidad.}}{22}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Ilustración de vehículo de inspección con sistema de limpieza de sensores}}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Ilustraciones de robot de inspección con sensor de líquidos y robot de inspección con mecanismo de corte de maleza.}}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustraciones de estación meteorológica con trípode adaptativo y estructura de soporte móvil con alineación.}}{26}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Ilustraciones de estación meteorológica compacta y micro estación meteorológica automática con ajuste de altura.}}{27}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Imagen de controlador MeteoPV.}}{28}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Kit de montaje para piranómetro con inclinación ajustable de KIPP \& ZONEN.}}{30}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Stakeholder Map con usuario principal, usuarios directos e indirectos}}{33}{figure.caption.41}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Abstracción funcional del sistema de inspección a nivel de caja negra.}}{41}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Dominio de energía de la estructura de funciones.}}{43}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Dominio de sensores de la estructura de funciones.}}{45}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Dominio de control de la estructura de funciones.}}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dominio de comunicaciones de la estructura de funciones.}}{48}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Dominio de interfaz de la estructura de funciones.}}{49}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Dominio de actuadores de la estructura de funciones.}}{50}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Dominio mecánico de la estructura de funciones.}}{52}{figure.caption.49}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diseño general de la solución 1.}}{73}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diseño interno de la solución 1.}}{74}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diseño general de la solución 2.}}{75}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diseño interno de la solución 2.}}{76}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diseño general de la solución 3.}}{77}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diseño interno de la solución 3.}}{78}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Elaboración técnica económica de las tres soluciones propuestas.}}{84}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagrama de flujo de proceso general.}}{85}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Lazo de control del movimiento de traslación del robot.}}{86}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Topología de red con los robots como nodos.}}{87}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama de bloques representativo de la arquitectura eléctrica.}}{89}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Vista general del concepto óptimo.}}{90}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Vista isometrica y frontal del subsistema de traslación.}}{91}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Vista isometrica y derecha del subsistema de posicionamiento.}}{92}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Vista isometrica y derecha del subsistema de orientación.}}{93}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Vista isométrica de la estructura.}}{93}{figure.caption.75}%
