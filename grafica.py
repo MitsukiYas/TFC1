@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
 # Variables de los puntos (Valor Técnico, Valor Económico) que puedes modificar
-solucion1 = (0.42, 0.88)
-solucion2 = (0.83, 0.64)
-solucion3 = (0.84, 0.38)
+solucion1 = (0.49, 0.88)
+solucion2 = (0.82, 0.64)
+solucion3 = (0.83, 0.38)
 
 # Configuración de la figura principal
 plt.figure(figsize=(8, 5))

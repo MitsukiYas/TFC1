@@ -25,7 +25,7 @@ donde:
 \begin{itemize}
     \item $P_{0}$: Potencia máxima de instalación en condiciones estándar (W).
     \item $G_{i}$: Irradiancia global en el plano de la instalación ($W/m^{2}$).
-    \item $C_{K}$: Factor de ajuste de potencia nominal por temperatura. Sin unidades. Calculado a través de la ecuación (9).
+    \item $C_{K}$: Factor de ajuste de potencia nominal por temperatura. Sin unidades. Calculado a través de la ecuación.
 \end{itemize}
 
 Dado que las condiciones estándar de prueba asumen una temperatura operativa ideal de 25 °C en la celda, el factor $C_{K}$ modela el cambio en la eficiencia cuando el panel tiene una temperatura diferente. Se calcula mediante la siguiente relación:
@@ -75,7 +75,7 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
     
 \subsubsection{\textbf{Albedo:}} El albedo es la fracción de luz reflejada por el suelo, incide directamente en la cara posterior de los paneles bifaciales; un aumento en el índice de albedo eleva significativamente la corriente trasera, lo que genera una mayor ganancia bifacial y maximiza la producción total de energía del sistema \citep{Barreno2024}. En la Figura \ref{fig:CurvasElectricasAlbHum} (izquierda), se puede apreciar que, para todo el rango del coeficiente de albedo, la ganancia bifacial aumenta desde 5 a 25 \%.
     
-\subsubsection{\textbf{Humedad y precipitaciones:}} Los altos niveles de humedad relativa aprovocan la refracción, reflexión y difracción de la luz solar. Esto atenúa la cantidad de radiación directa que logra alcanzar las celdas fotovoltaicas, reduciendo la corriente generada.   En contraste, aunque las precipitaciones reducen la irradiancia momentáneamente, actúan como el mecanismo de mitigación natural más efectivo, ya que lavan la superficie del panel, removiendo las partículas acumuladas causantes del \textit{soiling} \citep{Kazem2015Humidity}. En la Figura \ref{fig:CurvasElectricasAlbHum} (derecha), se observa que, para una diferencia de humedad del 30\% (entre 95 y 65 \%), el valor de la potencia aumenta de 50 a 105~W (+110\%),
+\subsubsection{\textbf{Humedad y precipitaciones:}} Los altos niveles de humedad relativa provocan la refracción, reflexión y difracción de la luz solar. Esto atenúa la cantidad de radiación directa que logra alcanzar las celdas fotovoltaicas, reduciendo la corriente generada.   En contraste, aunque las precipitaciones reducen la irradiancia momentáneamente, actúan como el mecanismo de mitigación natural más efectivo, ya que lavan la superficie del panel, removiendo las partículas acumuladas causantes del \textit{soiling} \citep{Kazem2015Humidity}. En la Figura \ref{fig:CurvasElectricasAlbHum} (derecha), se observa que, para una diferencia de humedad del 30\% (entre 95 y 65 \%), el valor de la potencia aumenta de 50 a 105~W (+110\%),
 
 \begin{figure}[H]
 	
@@ -101,31 +101,68 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
 \end{figure}
 
 
-\subsubsection{\textbf{Velocidad del viento:}} Presenta un efecto dual. Por un lado, cuando la velocidad del viento es moderada, este favorece el enfriamiento convectivo de los paneles, disipando el calor acumulado y reduciendo la temperatura de la celda, lo que incrementa la eficiencia y la potencia eléctrica de salida. 
-Por otro lado, las ráfagas actúan como el principal transporte de partículas. Esto eleva las tasas de deposición de suciedad sobre los cristales, disminuyendo la generación de energía \citep{Vick_WindEffect}. En la Figura \ref{fig:Leow_Wind_Pwr} (derecha), se observa un una comparación cualitativa de la potencia de salida de dos paneles solares, con una diferencia promedio a lo largo de día de 7~W (11\% de potencia máxima de panel con aire).
-    
+\subsubsection{\textbf{Impacto aerodinámico en topografías complejas:}} El viento presenta un efecto dual. Por un lado, cuando la velocidad del viento es moderada, este favorece el enfriamiento convectivo de los paneles, disipando el calor acumulado y reduciendo la temperatura de la celda, lo que incrementa la eficiencia y la potencia eléctrica de salida. 
+Por otro lado, las ráfagas actúan como el principal transporte de partículas. Esto eleva las tasas de deposición de suciedad sobre los cristales, disminuyendo la generación de energía \citep{Vick_WindEffect}. En la Figura \ref{fig:VientoMarcoTeorico} (izquierda), se observa un una comparación cualitativa de la potencia de salida de dos paneles solares, con una diferencia promedio a lo largo de día de 7~W (11\% de potencia máxima de panel con aire).
+
+A pesar de la importancia crítica de este enfriamiento convectivo, cuando las plantas a gran escala se instalan sobre terrenos montañosos, las laderas alteran drásticamente el flujo de aire homogéneo. Tal como se evidencia en los contornos de velocidad de la Figura \ref{fig:VientoMarcoTeorico} (derecha) del estudio de \cite{Xu2024}, el relieve actúa como una barrera que estanca el viento en la base de la pendiente (anulando casi por completo la refrigeración) y lo acelera al máximo en la cresta. Esta dinámica de fluidos provoca que la capacidad de disipación de calor varíe severamente dependiendo de la elevación exacta de cada panel en el terreno, dando origen a la formación de microclimas.
+
 \begin{figure}[H]
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	\caption[Comparación entre la potencia generada a lo largo del día de paneles con y sin velocidad de viento.]{} 
-	\textit{Comparación entre la potencia generada a lo largo del día de paneles con y sin velocidad de viento.} \par\medskip
 	
-	\centering
-	\includegraphics[width=0.8\textwidth]{Imagenes/Leow_Wind_Pwr.jpeg} \par\medskip
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	
+	\caption[Comparación entre potencia genera en un panel con o sin viento (izquierda) y efecto de la inclinación de una pendiente en el perfil de velocidad en la base de una ladera de 30° (derecha).]{} 
+	
+	\textit{Comparación entre potencia genera en un panel con o sin viento (izquierda) y efecto de la inclinación de una pendiente en el perfil de velocidad en la base de una ladera de 30° (derecha).} \par\medskip
+	
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/Leow_Wind_Pwr.jpeg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/XU_Wind_Topography.png}
+	\end{minipage}
+	\par\medskip
+	
 	\raggedright
-	\footnotesize \textit{Nota.} Gráfico adaptado del artículo ``Influence of wind speed on the performance of photovoltaic
-	panel'' \citep{Leow2019Wind}.
-	\label{fig:Leow_Wind_Pwr}
+	\footnotesize \textit{Nota.} Adaptado de \cite{Leow2019Wind} (izquierda). Adaptado de \cite{Xu2024} (derecha).
+	\label{fig:VientoMarcoTeorico}
 \end{figure}
 
-\subsubsection{\textbf{Pérdidas Técnicas:}} La eficiencia de esta conversión disminuye significativamente bajo condiciones operativas reales debido a dos fenómenos físicos principales. En primer lugar, el efecto térmico provoca que las celdas solares pierdan eficiencia a medida que su temperatura aumenta, ya que dicho incremento genera un coeficiente negativo en el voltaje de circuito abierto que reduce drásticamente la potencia máxima de salida \citep{Vieira2024}. 
-Por otro lado, el fenómeno del soiling consiste en la acumulación de polvo, arena y contaminantes sobre la superficie de los módulos; esta capa de suciedad interfiere con la transmisión de la luz mediante procesos de absorción, reflexión y dispersión, generandopérdidas eléctricas que, al distribuirse de forma no uniforme, pueden derivar en la formación de puntos caliente” perjudiciales para la vida útil del panel y reducir severamente la rentabilidad de la instalación \citep{TesisJGB}.
+
+
+
+\subsubsection{Formación de microclimas y heterogeneidad espacial}
+Las variaciones aerodinámicas generan un enfriamiento desigual en la planta. Al recibir distintos flujos de aire, los paneles experimentan gradientes térmicos considerables; tal como lo demuestra empíricamente el histograma de la Figura \ref{fig:Garcias2014Temp} del estudio de \cite{Garcia2014}, se registran variaciones de temperatura de hasta 7 °C entre módulos separados por 466 y 2716 metros. A este desbalance térmico se suma la variabilidad de la radiación reflejada (albedo) producida por las diferentes inclinaciones del suelo \citep{Salinas2025}. En consecuencia, el rendimiento eléctrico no es uniforme, lo que invalida la premisa de un entorno térmico estable y exige el uso de medición climática dinámica en todo el terreno.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	\caption[Frecuencia anual de las diferencias máximas de irradiancia diaria entre módulos fotovoltaicos por dispersión geográfica.]{} 
+	\textit{Frecuencia anual de las diferencias máximas de irradiancia diaria entre módulos fotovoltaicos por dispersión geográfica.} \par\medskip
+	
+	\centering
+	\includegraphics[width=0.6\textwidth]{Imagenes/GARCIA_Var_Irr.png} \par\medskip
+	\raggedright
+	\footnotesize \textit{Nota.} Gráfico adaptado del artículo ``Solar irradiation and PV module temperature dispersion
+	at a large-scale PV plant'' \citep{Garcia2014}.
+	\label{fig:Garcias2014Temp}
+\end{figure}
+
+\subsubsection{Pérdidas Técnicas:}
+
+La eficiencia de esta conversión disminuye significativamente bajo condiciones operativas reales debido a dos fenómenos físicos principales. En primer lugar, el efecto térmico provoca que las celdas solares pierdan eficiencia a medida que su temperatura aumenta, ya que dicho incremento genera un coeficiente negativo en el voltaje de circuito abierto que reduce drásticamente la potencia máxima de salida \citep{Vieira2024}. Por otro lado, el fenómeno del \textit{soiling} consiste en la acumulación de polvo, arena y contaminantes sobre la superficie de los módulos; esta capa de suciedad interfiere con la transmisión de la luz mediante procesos de absorción, reflexión y dispersión, generando pérdidas eléctricas que, al distribuirse de forma no uniforme, pueden derivar en la formación de puntos caliente” perjudiciales para la vida útil del panel y reducir severamente la rentabilidad de la instalación \citep{TesisJGB}.
+
 
 \section{Marco referencial}
 
 En esta sección se detallan las normativas, las condiciones topográficas y el entorno operativo bajo los cuales funcionará el robot autónomo de medición.
 
-\subsection{Contexto normativo y estándares de medición}
-Dado que el objetivo del vehículo es recolectar datos climáticos con validez industrial para el cálculo de índices de rendimiento, su instrumentación y métodos deben regirse estrictamente por la serie de estándares internacionales IEC 61724. Esta familia de normativas es la base para evaluar la capacidad y la energía de los sistemas fotovoltaicos. Dentro de esta serie, el principal referente para el diseño del hardware es la norma IEC 61724-1, la cual establece los requisitos para la monitorización del desempeño de sistemas fotovoltaicos y define las clases de exactitud exigidas para los sensores de irradiancia, temperatura y condiciones ambientales. Las exigencias de los parámetros más críticos definidos por esta norma, junto con su impacto en el proyecto, se detallan a continuación en la Tabla \ref{tab:requisitos_clase_ab}.
+
+\subsection{Contexto normativo y estándares de medición} 
+Dado que el objetivo del vehículo es recolectar datos climáticos con validez industrial para el cálculo de índices de rendimiento, su instrumentación y métodos deben regirse estrictamente por la serie de estándares internacionales IEC 61724. Esta familia de normativas es la base para evaluar la capacidad y la energía de los sistemas fotovoltaicos. Dentro de esta serie, el principal referente para el diseño del hardware es la norma IEC 61724-1, la cual establece los requisitos para la monitorización del desempeño de sistemas fotovoltaicos y define las clases de exactitud exigidas para los sensores de irradiancia, temperatura y condiciones ambientales. Para topografías complejas, la norma subraya la necesidad de que los datos ambientales sean verdaderamente representativos de las condiciones que experimentan los módulos; de lo contrario, se genera una alta incertidumbre en el cálculo del \textit{Performance Ratio} \citep{IEC61724-1_2021}. Las exigencias de los parámetros más críticos definidos por esta norma, junto con su impacto en el proyecto, se detallan a continuación en la Tabla \ref{tab:requisitos_clase_ab}.
+
+
+
 
 \begin{center}
 \footnotesize
@@ -162,6 +199,7 @@ Dado que el objetivo del vehículo es recolectar datos climáticos con validez i
 
 \textbf{Mitigación ambiental} & Protocolos de limpieza (\textit{soiling}) y sistemas contra rocío o escarcha. & Evita mediciones artificialmente bajas que afectarían el índice de rendimiento. & \multicolumn{2}{p{5.6cm}|}{Limpieza semanal o uso de tecnología automatizada de detección de \textit{soiling}} \\ \hline
 
+\textbf{Distribución de sensores} & Muestreo espacial representativo de la irradiancia y temperatura en la planta. & Garantiza que los datos reflejen los microclimas y la topografía real del terreno. & \multicolumn{2}{p{5.6cm}|}{Requiere múltiples sensores distribuidos según la capacidad instalada.} \\ \hline
 
 \textbf{Salida de planta} & Medidor principal de potencia y energía neta inyectada a la red. & Determina el cumplimiento de garantías y la facturación real. & Medidores de Clase 0.2 S. & Medidores de Clase 0.5 S. \\ \hline
 
@@ -169,7 +207,7 @@ Dado que el objetivo del vehículo es recolectar datos climáticos con validez i
 \end{center}
 
 \subsection{Condiciones topográficas y geográficas}
-Las plantas solares a gran escala se pueden instalar en terrenos irregulares y montañosos que presentan una topografía compleja, lo cual propicia la generación de microclimas y fluctuaciones espaciales en la radiación incidente. El diseño de la base móvil y el sistema de locomoción del robot están directamente condicionados por las severas exigencias de este entorno natural; como los desniveles pronunciados, que pueden alcanzar hasta un 25\,\% \citep{Salinas2025}, como se puede observar en la Figura \ref{fig:PlantaPendiente} ; o los obstáculos geológicos, que incluye maleza, arena suelta, rocas, zanjas profundas causas por erosión y charcos de lodo \citep{Figgis2025}. Estas complejas condiciones justifican la adopción de sistemas de tracción con alta adaptabilidad y agarre, como los sistemas de orugas, necesarios para superar áreas inestables.
+Las plantas solares a gran escala se pueden instalar en terrenos irregulares y montañosos que presentan una topografía compleja, lo cual propicia la generación de microclimas y fluctuaciones espaciales en la radiación incidente. El diseño de la base móvil y el sistema de locomoción del robot están directamente condicionados por las severas exigencias de este entorno natural; como los desniveles pronunciados, que pueden alcanzar hasta los 15.8° \citep{Salinas2025}, como se puede observar en la Figura \ref{fig:PlantaPendiente}; o los obstáculos geológicos, que incluye maleza, arena suelta, rocas, zanjas profundas causas por erosión y charcos de lodo \citep{Figgis2025}. Estas complejas condiciones justifican la adopción de sistemas de tracción con alta adaptabilidad y agarre, como los sistemas de orugas, necesarios para superar áreas inestables.
 
 \begin{figure}[H]
 	% Fuerza la alineación izquierda y quita los ":" después del número
@@ -188,12 +226,11 @@ Las plantas solares a gran escala se pueden instalar en terrenos irregulares y m
 \end{figure}
 
 \subsection{Entorno operativo y tecnológico}
-El contexto operativo y tecnológico define las estrechas interacciones del vehículo autónomo con la infraestructura civil y electromecánica propia de la planta. El trazado de las instalaciones modernas se apoya mayoritariamente en estructuras con seguidores solares de un solo eje, orientados de norte a sur y separados por pasillos que oscilan entre los 5 y 9 
-de distancia \citep{ProyectoEjecutivo2024}.
+El contexto operativo y tecnológico define las estrechas interacciones del vehículo autónomo con la infraestructura civil y electromecánica propia de la planta. El trazado de las instalaciones modernas se apoya mayoritariamente en estructuras con seguidores solares de un solo eje, orientados de norte a sur y separados por pasillos que oscilan entre los 5 y 9 metros de distancia \citep{ProyectoEjecutivo2024}.
 
 En este escenario, la navegación autónoma del robot se verá restringida por obstáculos artificiales críticos. Entre ellos, la reducción del espacio transitable por la instalación de bandejas de distribución de cables y mallas reflectantes en el suelo, y la presencia de barras mecánicas entre las filas de los seguidores solares que impiden el libre tránsito transversal entre pasillos \citep{Figgis2025}. Todo ello exige que el robot disponga de un sistema de evitación de obstáculos robusto y una extrema precisión en su desplazamiento.
 
-\section{Estado del arte} %PONER IMÁGENES EN LA TABLA
+\section{Estado del arte} 
 
 \subsection{Soluciones integrales}
 En esta sección se analizan los sistemas mecatrónicos completos que intentan resolver el problema general de la inspección y medición dentro de los parques solares fotovoltaicos, sirviendo como referentes de diseño global para el vehículo terrestre autónomo propuesto.
@@ -496,23 +533,39 @@ En esta sección se describen los componentes y subsistemas especializados que a
     \end{figure}
 \end{itemize}
 
-\begin{table}[H]
-	\centering
+\begin{center}
 	\footnotesize
-	\caption{Análisis comparativo de Soluciones Parciales: Estaciones meteorológicas para plantas fotovoltaicas.}
-	\label{tab:estado_arte_estaciones_pv}
-	\begin{tabularx}{\textwidth}{|p{3.5cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+	\begin{xltabular}{\textwidth}{|p{3.5cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+		\caption{Análisis comparativo de Soluciones Parciales: Estaciones meteorológicas para plantas fotovoltaicas.}
+		\label{tab:estado_arte_estaciones_pv} \\
 		\hline
 		\rowcolor[HTML]{D9E1F2} 
 		\textbf{Referente} & \textbf{Principio de Funcionamiento} & \textbf{Aporte al Proyecto} & \textbf{Limitaciones} \\ \hline
+		\endfirsthead
+		
+		\multicolumn{4}{c}%
+		{{\bfseries Continuación de la \tablename\ \thetable{}}} \\
+		\hline
+		\rowcolor[HTML]{D9E1F2} 
+		\textbf{Referente} & \textbf{Principio de Funcionamiento} & \textbf{Aporte al Proyecto} & \textbf{Limitaciones} \\ \hline
+		\endhead
+		
+		\hline 
+		\endfoot
+		
+		\hline
+		\endlastfoot
+		
 		Estación meteorológica solar multi-elemento (CN 216243088 U) & Trípode adaptativo con sistema de anclajes de bloqueo por resorte para afianzarse al suelo. & Alternativa de fijación temporal para dar rigidez al mástil de medición frente a ráfagas de viento fuertes. & Naturaleza estática; su despliegue mecánico requiere que el vehículo se detenga por completo para realizar lecturas. \\ \hline
 		Sistema de monitoreo de estación meteorológica para módulos fotovoltaicos (CN 206638837 U) & Marco estructural equipado con rieles y soportes móviles que ajustan la orientación de los piranómetros. & Principio geométrico aplicable para alinear los sensores con el ángulo de inclinación de los seguidores solares. & Sistema de ajuste manual; para el UGV requerirá integración con actuadores motorizados para operación autónoma. \\ \hline
 		Estación meteorológica simple para monitoreo ambiental (CN 206362955 U) & Estructura estática compacta que integra en un solo marco sensores de radiación, viento, lluvia y temperatura. & Referencia para la distribución física de la suite de sensores a bordo de plataformas móviles, minimizando sombreados. & Diseño estático fijo que no permite la adaptación dinámica al ángulo de incidencia solar. \\ \hline
 		Instrumentación electrónica para una estación meteorológica automática (MX 2018007917 A) & Arquitectura basada en microcontroladores para el registro de variables climáticas en módulos locales SD. & Establece la lógica de procesamiento y almacenamiento de datos para registradores de datos embebidos. & Sistema básico de registro sin capacidades de telemetría de largo alcance integradas. \\ \hline
 		Micro estación meteorológica automática y retractable (CN 222047271 U) & Mástil de medición basado en un tubo telescópico extendido verticalmente por un motor eléctrico. & Permite elevar instrumentos para evadir las turbulencias y el polvo generado por el chasis móvil. & Elevar el mástil modifica el centro de gravedad del robot, lo que podría desestabilizarlo al transitar sobre pendientes. \\ \hline
-		Plataforma MeteoPV & Datalogger comercial que concentra datos de sensores inteligentes y los transmite mediante Modbus RTU/TCP. & Prototipo comercial directo para la arquitectura de adquisición del UGV; asegura inmunidad ante el ruido de los motores. & Es un módulo pasivo diseñado para montaje estandarizado; requiere gestión de disipación térmica y no controla locomoción. \\ \hline
-	\end{tabularx}
-\end{table}
+		Plataforma MeteoPV & Datalogger comercial que concentra datos de sensores inteligentes y los transmite mediante Modbus RTU/TCP. & Prototipo comercial directo para la arquitectura de adquisición del UGV; asegura inmunidad ante el ruido de los motores. & Es un módulo pasivo diseñado para montaje estandarizado; requi
+		ere gestión de disipación térmica y no controla locomoción. \\ \hline
+		
+	\end{xltabular}
+\end{center}
 \subsubsection{Ajuste de orientación para sensores de irradiancia}
 
 \begin{itemize}
@@ -592,6 +645,10 @@ En esta sección se describen los componentes y subsistemas especializados que a
 \end{table}
 %
 %
+El análisis de las soluciones tecnológicas actuales evidencia una brecha significativa en el sector para resolver el problema de los microclimas en topografías complejas. Por un lado, los vehículos terrestres desarrollados para la industria solar poseen sistemas de locomoción robustos capaces de superar desniveles, pero su instrumentación está limitada a inspecciones visuales o térmicas, lo cual es insuficiente para el mapeo climático dinámico exigido por la norma IEC 61724-1. Por otro lado, las estaciones meteorológicas móviles cuentan con los instrumentos correctos y sistemas de nivelación, pero carecen de la tracción y autonomía necesarias para transitar sobre pendientes extremas. En consecuencia, se justifica la necesidad de desarrollar el sistema mecatrónico propuesto en este proyecto: un robot híbrido que integre la posibilidad de locomoción con la implementación de instrumentación climática, capaz de nivelarse y operar autónomamente sobre los relieves de la instalación.
+
+
+
 \section{Identificación de usuarios}
 
 El diseño y la implementación del robot autónomo para la medición de variables climáticas involucra a diversos actores dentro del ecosistema de una planta solar fotovoltaica a gran escala. Identificar a estos usuarios y comprender sus necesidades específicas es fundamental para establecer los requerimientos de diseño del sistema mecatrónico. Los agentes involucrados se clasifican en usuarios directos e indirectos.
@@ -632,7 +689,7 @@ Estos usuarios interactúan directamente con los datos generados por el sistema 
     
     \item \textbf{Propietarios o Promotores}: Entidades inversoras o corporaciones dueñas de la instalación fotovoltaica que financian y promueven el proyecto desde su concepción. Su necesidad principal es salvaguardar la viabilidad del proyecto a largo plazo, reducir costos y prolongar la vida útil de los equipos para maximizar la rentabilidad de la infraestructura. Para ellos, disponer de mediciones climáticas dinámicas y representativas se traduce en una reducción de la incertidumbre operativa y financiera, garantizando que el retorno de inversión esté respaldado por datos confiables sobre el recurso solar\citep{ProyectoEjecutivo2024}.
     
-    \item \textbf{Propietarios residenciales (Personas naturales)}: : Representan a los individuos que poseen plantas fotovoltaicas personales, ya sean sistemas de generación distribuida orientados al autoconsumo o sistemas \textit{off-grid}. Aunque estas instalaciones operan a una escala mucho menor enfocada en la microgeneración, estos usuarios comparten la necesidad de contar con sistemas de medición accesibles que les permitan contrastar las variables climáticas locales con la producción de sus módulos. 
+    \item \textbf{Propietarios residenciales (Personas naturales)} : Representan a los individuos que poseen plantas fotovoltaicas personales, ya sean sistemas de generación distribuida orientados al autoconsumo o sistemas \textit{off-grid}. Aunque estas instalaciones operan a una escala mucho menor enfocada en la microgeneración, estos usuarios comparten la necesidad de contar con sistemas de medición accesibles que les permitan contrastar las variables climáticas locales con la producción de sus módulos. 
 \end{itemize}
 
 \subsection{Agentes indirectos}
@@ -657,8 +714,6 @@ A continuación, se presenta la lista de requerimientos del sistema, la cual tra
 %
 %
 %
-%
-%
 \begin{center}
 \footnotesize
 \begin{xltabular}{\textwidth}{|p{0.6cm}|c|p{2.2cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
@@ -673,7 +728,7 @@ A continuación, se presenta la lista de requerimientos del sistema, la cual tra
 {{\bfseries Continuación de la \tablename\ \thetable{}}} \\
 \hline
 \rowcolor[HTML]{D9E1F2} 
-\textbf{ID} & \textbf{Tipo} & \textbf{Característica} & \textbf{Descripción técnica} & \textbf{Fuente / Justificación} & \textbf{Método de verificación} \\ \hline
+\textbf{ID} & \textbf{Tipo} & \textbf{Característica} & \textbf{Descripción técnica} & \textbf{Justificación} & \textbf{Método de verificación} \\ \hline
 \endhead
 
 \hline
@@ -682,20 +737,26 @@ A continuación, se presenta la lista de requerimientos del sistema, la cual tra
 \hline
 \endlastfoot
 
-1 & E & Geometría & El vehículo debe tener dimensiones máximas de 600x600x500 mm y una masa total inferior a 20kg. & Restricciones espaciales de los pasillos entre los seguidores solares y límites ergonómicos de carga para los operarios  \citep{ProyectoEjecutivo2024}. & Inspección con cinta métrica y pesaje con balanza industrial calibrada. \\ \hline
-2 & E & Cinemática & El robot debe desplazarse por los pasillos de la planta a una velocidad nominal de 1 m/s. & Necesidad de cubrir el área de inspección en un tiempo razonable sin comprometer la estabilidad de los sensores  \citep{ProyectoEjecutivo2024}. & Prueba de cinemática midiendo el tiempo de recorrido en un circuito de longitud conocida. \\ \hline
-3 & E & Fuerzas / Cinemática & El sistema de locomoción debe ser capaz de superar pendientes con una inclinación de hasta 14°. & Topografía irregular, zanjas erosivas y desniveles comunes en las plantas solares a gran escala \citep{Salinas2025}. & Ensayo de tracción y estabilidad en rampa de prueba con inclinación ajustable. \\ \hline
+1 & E & Geometría & El vehículo debe tener dimensiones máximas de 600x600x500 mm y una masa total inferior a 20kg, respetando los límites ergonómicos de carga para los operarios. & Restricciones espaciales de los pasillos entre los seguidores solar \citep{ProyectoEjecutivo2024}. & Inspección con cinta métrica y pesaje con balanza industrial calibrada. \\ \hline
 
-4 & E & \multirow{2.5}{*}{Energía} & El sistema de almacenamiento y suministro de energía debe proporcionar una autonomía de operación ininterrumpida de al menos 1 hora sin requerir recarga externa. & El robot debe completar ciclos de inspección completos antes de verse forzado a recargar en una estación base \citep{ProyectoEjecutivo2024}. & Ensayo de descarga de energía bajo consumo nominal de motores e instrumentación. \\ \hline
-5 & E & Materia / Fuerzas & La envolvente del vehículo y los gabinetes de la electrónica deben cumplir con un grado de protección IP44 e IK08. & Exposición severa a polvo del desierto, lluvias eventuales y posibles impactos mecánicos durante el recorrido \citep{ProyectoEjecutivo2024}. & Revisión de la certificación de los gabinetes y prueba de hermeticidad con chorro de agua. \\ \hline
-6 & E & Materia & El sistema mecatrónico debe operar sin degradación en un rango de temperatura ambiente de 10°C a 30°C. & Las plantas fotovoltaicas suelen emplazarse en zonas áridas con altas oscilaciones térmicas \citep{Salinas2025}. & Ensayo de estrés térmico de los componentes críticos en cámara climática. \\ \hline
-7 & E & \multirow{4}{*}{Señales} & El instrumento de medición de irradiancia a bordo debe contar con una exactitud de Clase A bajo el estándar internacional aplicable. & Requisito normativo estricto para garantizar que el cálculo del \textit{Performance Ratio} tenga una baja incertidumbre \citep{IEC61724-1_2021}. & Verificación del \textit{datasheet} comercial y del certificado de calibración del instrumento. \\ \cline{1-2} \cline{4-6}
-8 & E & & El sistema de adquisición debe muestrear las variables meteorológicas en un intervalo de 5 segundos y registrarlas con una frecuencia máxima de 5 minutos. & Recomendaciones para el monitoreo meteorológico de precisión para capturar ráfagas o eventos rápidos de sombreado \citep{IEC61724-1_2021}. & Análisis de las marcas de tiempo en los archivos de almacenamiento de datos. \\ \hline
-9 & E & Control & El sistema de navegación debe detectar obstáculos imprevistos dentro del área de un semicírculo de 1 metro de radio, ubicado en cada dirección de movimiento del robot, y recalcular su trayectoria para evadirlos. & Presencia de rocas, vegetación crecida o personal de mantenimiento bloqueando temporalmente el pasillo \citep{Figgis2025}. & Prueba de campo colocando obstáculos ciegos en la ruta predefinida del robot. \\ \hline
-10 & E & Comunicación & El módulo de telemetría debe transmitir los paquetes de datos a la estación base garantizando un alcance efectivo mínimo de 200 metros en línea de vista. & Las plantas solares a escala comercial abarcan grandes extensiones de terreno longitudinal \citep{Figgis2025}. & Ensayo de pérdida de paquetes (\textit{ping}) alejando el robot progresivamente de la estación base. \\ \hline
+2 & E & Posicionamiento & El vehículo debe posicionar la plataforma de medición de irradiancia en una altura de 1300mm desde el suelo & Los piranómetros deben encontrarse en una altura mayor a 1 metro \citep{IEC61724-1_2021} o a una altura que garantice un horizonte despejado \citep{GuiaMercosur2024} & Medición desde el nivel del suelo hasta la base de la plataforma en su estado de máximo despliegue. \\ \hline
 
-11 & D & Mantenimiento & El robot debe incorporar un mecanismo o actuador capaz de mitigar la acumulación de suciedad en los sensores con una efectividad de limpieza que mantenga una incertidumbre menor al 2\%. & La suciedad acumulada degrada críticamente la exactitud de los instrumentos de medición de irradiancia \citep{IEC61724-1_2021}. & Medición comparativa de irradiancia antes y después de activar el mecanismo bajo suciedad simulada. \\ \hline
-12 & E & Seguridad & El vehículo debe disponer de un sistema de parada de emergencia que interrumpa la tracción en un tiempo de respuesta menor a 0.1 segundos. & Prevención de accidentes industriales y protección frente a pérdida total de control en la navegación \citep{ProyectoEjecutivo2024}. & Prueba de interrupción forzada de marcha cronometrada en laboratorio. \\ \hline
+3 & E & Cinemática & El robot debe desplazarse por los pasillos de la planta a una velocidad nominal de 1 m/s. & Necesidad de cubrir el área de inspección en un tiempo razonable sin comprometer la estabilidad de los sensores  \citep{ProyectoEjecutivo2024}. & Prueba de cinemática midiendo el tiempo de recorrido en un circuito de longitud conocida. \\ \hline
+
+4 & E & Fuerzas & El sistema de locomoción debe ser capaz de superar pendientes con una inclinación de hasta 16°. & Topografía irregular, zanjas erosivas y desniveles comunes en las plantas solares a gran escala \citep{Salinas2025}. & Ensayo de tracción y estabilidad en rampa de prueba con inclinación ajustable. \\ \hline
+
+5 & E & \multirow{2.5}{*}{Energía} & El sistema de almacenamiento y suministro de energía debe proporcionar una autonomía de operación ininterrumpida de al menos 1 hora sin requerir recarga externa. & El robot debe completar ciclos de inspección completos antes de verse forzado a recargar en una estación base \citep{ProyectoEjecutivo2024}. & Ensayo de descarga de energía bajo consumo nominal de motores e instrumentación. \\ \hline
+
+6 & E & Materia & La estructura del vehículo y los protectores de la electrónica deben cumplir con un grado de protección IP44 e IK08; y deben operar sin degradación en un rango de temperatura ambiente de 10°C a 45°C & Exposición severa a polvo del desierto, temperaturas altas y fluctuantes, lluvias eventuales y posibles impactos mecánicos durante el recorrido \citep{ProyectoEjecutivo2024}. & Revisión de la certificación de la estructura, prueba de hermeticidad, ensayo de operación a distintas temperaturas de los componentes críticos.\\ \hline
+
+7 & E & Señales  & El sistema de adquisición debe muestrear las variables meteorológicas en un intervalo de 5 segundos y registrarlas con una frecuencia máxima de 5 minutos. Asismismo, se debe empaquetar las variables climáticas en una trama de datos estructurada con un tamaño máximo de carga útil de 50 bytes y una capacidad de recepción remota para interpretar comandos externos con una latencia de 2 segundos. & Recomendaciones para el monitoreo meteorológico de precisión, optimizaciones de tiempo en el aire para redes inalámbricas seguridad operativa para frenado de emergencia.  \citep{IEC61724-1_2021}. & Inspección del tamaño de los bytes enviados y análisis de las marcas de tiempo en los archivos de almacenamiento de datos. \\ \hline
+8 & E & Control & El sistema de navegación debe detectar obstáculos imprevistos dentro del área de un semicírculo de 1 metro de radio, ubicado en cada dirección de movimiento del robot, y recalcular su trayectoria para evadirlos. & Presencia de rocas, vegetación crecida o personal de mantenimiento bloqueando temporalmente el pasillo \citep{Figgis2025}. & Prueba de campo colocando obstáculos ciegos en la ruta predefinida del robot. \\ \hline
+
+9 & E & Comunicación & El módulo de telemetría debe transmitir los paquetes de datos a la estación base garantizando un alcance efectivo mínimo de 200 metros en línea de vista. & Las plantas solares a escala comercial abarcan grandes extensiones de terreno longitudinal \citep{Figgis2025}. & Ensayo de pérdida de paquetes (\textit{ping}) alejando el robot progresivamente de la estación base. \\ \hline
+
+10 & D & Mantenimiento & El robot debe incorporar un mecanismo o actuador capaz de mitigar la acumulación de suciedad en los sensores con una efectividad de limpieza que mantenga una incertidumbre menor al 2\%. & La suciedad acumulada degrada críticamente la exactitud de los instrumentos de medición de irradiancia \citep{IEC61724-1_2021}. & Medición comparativa de irradiancia antes y después de activar el mecanismo bajo suciedad simulada. \\ \hline
+
+11 & E & Seguridad & El vehículo debe disponer de un sistema de parada de emergencia que interrumpa la tracción en un tiempo de respuesta menor a 0.1 segundos. & Prevención de accidentes industriales y protección frente a pérdida total de control en la navegación \citep{ProyectoEjecutivo2024}. & Prueba de interrupción forzada de marcha cronometrada en laboratorio. \\ \hline
 
 \end{xltabular}
 \end{center}

@@ -1,0 +1,7 @@
+>Presentación
+
+Colocar García en los antecedentes, y un de estado del arte.
+
+Asume que tu audiencia no sabe, no utilices nombres técnicos que la audiencia no puede saber, utiliza lenguaje general.
+
+Colocar una vista interna del concepto óptimo.(PARA LA PRESENTACIÓN)

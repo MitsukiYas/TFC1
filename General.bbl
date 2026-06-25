@@ -1,6 +1,35 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Alonso-Suárez%
+\ \protect \BOthers {.}}{%
+Alonso-Suárez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+GuiaMercosur2024}
+\APACinsertmetastar {%
+GuiaMercosur2024}%
+\begin{APACrefauthors}%
+Alonso-Suárez, R.%
+, Abal, G.%
+, Righini, R.%
+, Nollas, F.%
+, Ramos-Martins, F.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Recomendaciones y Buenas Prácticas para la Medición y
+  Registro de la Radiación Solar en Territorio} {Recomendaciones y buenas
+  prácticas para la medición y registro de la radiación solar en
+  territorio}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Physikalisch-Technische Bundesanstalt}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 An%
 , Lu%
 , Lin%
@@ -49,6 +78,39 @@ Anatrac}%
 \newblock
 \APACrefbtitle {Estaciones meteorológicas para parques fotovoltaicos.}
   {Estaciones meteorológicas para parques fotovoltaicos.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Armstrong%
+, Loughran%
+, Ennen%
+, Wild%
+\BCBL {}\ \BBA {} Nordberg%
+}{%
+Armstrong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+Armstrong2026}
+\APACinsertmetastar {%
+Armstrong2026}%
+\begin{APACrefauthors}%
+Armstrong, T.%
+, Loughran, C\BPBI L.%
+, Ennen, J\BPBI R.%
+, Wild, K\BPBI H.%
+\BCBL {}\ \BBA {} Nordberg, E\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A mosaic of microclimates: biodiversity outcomes and
+  wildlife habitat potential in large-scale solar facilities} {A mosaic of
+  microclimates: biodiversity outcomes and wildlife habitat potential in
+  large-scale solar facilities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biological Reviews}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -392,6 +454,35 @@ Gonzalez-Diaz, V\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hudec%
+, Matuška%
+, Radilová%
+, Šinko%
+\BCBL {}\ \BBA {} Sýkora%
+}{%
+Hudec%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+SK302020A3}
+\APACinsertmetastar {%
+SK302020A3}%
+\begin{APACrefauthors}%
+Hudec, R.%
+, Matuška, S.%
+, Radilová, M.%
+, Šinko, M.%
+\BCBL {}\ \BBA {} Sýkora, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Estación meteorológica avanzada IoT.} {Estación
+  meteorológica avanzada iot.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {ICEX}%
 }{%
 {ICEX}%
@@ -498,7 +589,7 @@ IEC61724-1_2021}%
 }{%
 {INARSE}%
 }{%
-{\protect \APACyear {2023}}%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
 }]{%
 Burriana5MW}
 \APACinsertmetastar {%
@@ -508,14 +599,11 @@ Burriana5MW}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023}{}{}.
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
 \newblock
-\APACrefbtitle {Proyecto de Ejecución de una Planta Fotovoltaica de 5 MWn
-  Emplazamiento Burriana (Castellón)} {Proyecto de ejecución de una planta
-  fotovoltaica de 5 mwn emplazamiento burriana (castellón)}\
-  \APACbVolEdTR{}{\BTR{}}.
-\newblock
-\APACaddressInstitution{}{Corporate Solar Holding}.
+\APACrefbtitle {Proyecto de ejecución de una planta fotovoltaica {Burriana}de
+  5 {MWn}} {Proyecto de ejecución de una planta fotovoltaica {Burriana}de 5
+  {MWn}}\ \APACbVolEdTR{}{\BTR{}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -568,7 +656,7 @@ ProyectoEjecutivo2024}%
   descriptiva: Planta fotovoltaica para conexi{\'o}n a red torrentenergy 4}\
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
-\APACaddressInstitution{}{ib vogt / kenergy}.
+\APACaddressInstitution{}{ib vogt / Kenergy}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -696,6 +784,37 @@ Liu, T.%
 \newblock
 \APACrefbtitle {Robot de inspección inteligente para centrales eléctricas.}
   {Robot de inspección inteligente para centrales eléctricas.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mao%
+\ \protect \BOthers {.}}{%
+Mao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Mao2025}
+\APACinsertmetastar {%
+Mao2025}%
+\begin{APACrefauthors}%
+Mao, H.%
+, Liu, W.%
+, Chen, X.%
+, Tian, Z.%
+, Zarrella, A.%
+, Luo, Y.%
+\BDBL {}Wu, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A method on mapping the distribution of photovoltaic
+  power stations in complex terrain regions} {A method on mapping the
+  distribution of photovoltaic power stations in complex terrain
+  regions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Renewable Energy}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -957,6 +1076,32 @@ Wang, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+M.~Wang%
+, Zhu%
+\BCBL {}\ \BBA {} Hu%
+}{%
+M.~Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+CN116405876A}
+\APACinsertmetastar {%
+CN116405876A}%
+\begin{APACrefauthors}%
+Wang, M.%
+, Zhu, X.%
+\BCBL {}\ \BBA {} Hu, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Método y dispositivo de navegación y posicionamiento de
+  robots móviles.} {Método y dispositivo de navegación y posicionamiento de
+  robots móviles.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Wu%
 \ \protect \BOthers {.}}{%
 Wu%
@@ -1011,9 +1156,9 @@ Xiao, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{XPOWER Solar Energy Co., Ltd.}%
+{XPOWER Solar Energy Co.}%
 }{%
-{XPOWER Solar Energy Co., Ltd.}%
+{XPOWER Solar Energy Co.}%
 }{%
 {\protect \APACyear {2024}}%
 }]{%
@@ -1021,7 +1166,7 @@ XPower2024}
 \APACinsertmetastar {%
 XPower2024}%
 \begin{APACrefauthors}%
-{XPOWER Solar Energy Co., Ltd.}%
+{XPOWER Solar Energy Co.}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -1034,6 +1179,37 @@ XPower2024}%
 \begin{APACrefURL}
   \url{https://www.xpowersolar.com/es/the-impact-of-environmental-factors-on-photovoltaic-system-performance}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+\ \protect \BOthers {.}}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Xu2024}
+\APACinsertmetastar {%
+Xu2024}%
+\begin{APACrefauthors}%
+Xu, A.%
+, Ma, W.%
+, Yang, W.%
+, Li, M.%
+, Tan, Y.%
+, Zou, C.%
+\BCBL {}\ \BBA {} Qiang, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Study on the wind load and wind-induced interference
+  effect of photovoltaic (PV) arrays on two-dimensional hillsides} {Study on
+  the wind load and wind-induced interference effect of photovoltaic (pv)
+  arrays on two-dimensional hillsides}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Solar Energy}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

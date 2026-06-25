@@ -42,7 +42,7 @@ El primer concepto de solución agrupa tecnologías económicas ideales para val
 
 \section{Concepto de solución 2}
 
-Este concepto representa un equilibrio óptimo entre robustez técnica, costo y capacidad de procesamiento para entornos de parques solares. A nivel mecánico y estructural, el equipo está construido sólidamente con una carcasa de aluminio y su desplazamiento se da por tracción diferencial mediante cuatro ruedas. Además, cuenta con una plataforma superior de instrumentación móvil que asegura gran precisión e inamovilidad gracias al uso de mecanismos de tornillo sin-fin y corona accionados por un servomotor DC. En cuanto a energía e interfaz, el robot presenta una alta confiabilidad operando con una batería de iones de litio protegida por sistemas de gestión de batería y reguladores de voltaje internos. Su interfaz exterior emplea borneras industriales para sus conexiones y cuenta con una pantalla LCD junto a una pantalla HMI lateral para interactuar e informar sobre su estado. Para la percepción y exploración, el sistema adquiere datos del entorno mediante sensores meteorológicos y un sensor de irradiancia ubicados en su plataforma elevadiza, emplea un módulo CMOS frontal para la visión por cámara, y transmite o recibe telemetría a través de una antena externa. Finalmente, en cuanto a control y lógica, el cerebro central del robot es una placa SBC que registra la información recopilada en un módulo de memoria microSD. Para ejecutar los cálculos complejos y procesar el video de la cámara, la SBC se apoya directamente en un Acelerador Edge IA, lo que le permite procesar el entorno de manera eficiente mientras utiliza control PID para los motores y traza su trayectoria con el Algoritmo Pure Pursuit.
+Este concepto representa un equilibrio óptimo entre robustez técnica, costo y capacidad de procesamiento para entornos de parques solares. A nivel mecánico y estructural, el equipo está construido sólidamente con una carcasa de aluminio y su desplazamiento se da por tracción diferencial mediante cuatro ruedas. Además, cuenta con una plataforma superior de instrumentación móvil, elevada mediante un mecanismo de elevación de tijera, que asegura gran precisión e inamovilidad gracias al mecanismo de tornillo sin-fin y corona accionados por un servomotor DC. En cuanto a energía e interfaz, el robot presenta una alta confiabilidad operando con una batería de iones de litio protegida por sistemas de gestión de batería y reguladores de voltaje internos. Su interfaz exterior emplea borneras industriales para sus conexiones y cuenta con una pantalla LCD junto a una pantalla HMI lateral para interactuar e informar sobre su estado. Para la percepción y exploración, el sistema adquiere datos del entorno mediante sensores meteorológicos y un sensor de irradiancia ubicados en su plataforma elevadiza, emplea un módulo CMOS frontal para la visión por cámara, y transmite o recibe telemetría a través de una antena externa. Finalmente, en cuanto a control y lógica, el cerebro central del robot es una placa SBC que registra la información recopilada en un módulo de memoria microSD.
 
 \begin{figure}[H]
 	% Fuerza la alineación izquierda y quita los ":" después del número
@@ -80,7 +80,7 @@ Este concepto representa un equilibrio óptimo entre robustez técnica, costo y 
 
 \section{Concepto de solución 3}
 
-El tercer concepto de soluciíon corresponde al nivel tecnológico industrial, diseñado para resistir las condiciones topográficas y climáticas más agresivas. Su estructura mecánica emplea un blindaje mediante una carcasa principal de acero y garantiza la movilidad en terrenos accidentados gracias a un sistema de ruedas con tracción de oruga que es impulsado internamente por un motorreductor DC. Además, el equipo integra una plataforma de medición que descansa sobre un actuador lineal vertical y opera mediante un motor DC acoplado a un mecanismo de correa dentada. En el apartado de energía e interfaz, el robot dispone de un sistema de carga exterior mediante contactos magnéticos, reguladores de voltaje internos y se alimenta con una batería LiPo protegida por un Battery Management System. Todo el cableado y la electrónica interna utilizan conexiones herméticas Deutsch, mientras que el chasis exterior se complementa con una pantalla HMI para la interacción directa y una sirena LED de señalización. La percepción y lectura del entorno están a cargo de un sensor LiDAR frontal, apoyado por sensores meteorológicos y un sensor de irradiancia montados en la plataforma superior. Finalmente, el control y la lógica del sistema son gobernados por un PLC, el cual trabaja en paralelo con un acelerador Edge IA para procesar eficientemente los datos del entorno, como la segmentación de nubes de puntos del LiDAR, permitiendo así una navegación avanzada.
+El tercer concepto de soluciíon corresponde al nivel tecnológico industrial, diseñado para resistir las condiciones topográficas y climáticas más agresivas. Su estructura mecánica emplea un blindaje mediante una carcasa principal de acero y garantiza la movilidad en terrenos accidentados gracias a un sistema de ruedas con tracción de oruga que es impulsado internamente por un motorreductor DC. El equipo integra una plataforma de medición que descansa sobre de una viga elevada mediante un mecanismo de elevación telescópica por un actuador lineal. En el apartado de energía e interfaz, el robot dispone de un sistema de carga exterior mediante contactos magnéticos, reguladores de voltaje internos y se alimenta con una batería LiPo protegida por un Battery Management System. Todo el cableado y la electrónica interna utilizan conexiones herméticas Deutsch, mientras que el chasis exterior se complementa con una pantalla HMI para la interacción directa y una sirena LED de señalización. La percepción y lectura del entorno están a cargo de un sensor LiDAR frontal, apoyado por sensores meteorológicos y un sensor de irradiancia montados en la plataforma superior. Finalmente, el control y la lógica del sistema son gobernados por un PLC, el cual es controlado por un computador industrial (IPC) para procesar eficientemente los datos del entorno, como la segmentación de nubes de puntos del LiDAR, permitiendo así una navegación avanzada.
 
 \begin{figure}[H]
 	% Fuerza la alineación izquierda y quita los ":" después del número
@@ -117,65 +117,58 @@ El tercer concepto de soluciíon corresponde al nivel tecnológico industrial, d
 \end{figure}
 
 \section{Evaluación técnica}
+%%
+%
+% Asegúrate de tener estos paquetes en tu preámbulo:
+% \usepackage{float}
+% \usepackage{caption}
+% \usepackage{multirow}
+% \usepackage[table]{xcolor}
 
 \begin{table}[H]
 	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
 	
-	\caption[Matriz de Evaluación Técnica de Conceptos de Solución.]{} 
-	\textit{Matriz de Evaluación Técnica de Conceptos de Solución.} \par\medskip
+	\caption[Matriz de Evaluación Técnica de Conceptos de Solución actualizada.]{\textit{Matriz de Evaluación Técnica de Conceptos de Solución actualizada.}} \par\medskip
 	
 	\centering
 	\footnotesize
-	\renewcommand{\arraystretch}{1.3} 
-	\begin{tabular}{|p{5.5cm}|c|c|c|c|c|c|c|c|c|}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{4.2cm}|c|c|c|c|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{D9E1F2} 
-		\multirow{2}{*}{\textbf{Criterio de Evaluación}} & \multirow{2}{*}{\textbf{Peso (G)}} & \multicolumn{2}{c|}{\textbf{Solución 1}} & \multicolumn{2}{c|}{\textbf{Solución 2}} & \multicolumn{2}{c|}{\textbf{Solución 3}} & \multicolumn{2}{c|}{\textbf{Sol. Ideal}} \\ \cline{3-10}
+		& & \multicolumn{2}{c|}{\textbf{Solución 1}} & \multicolumn{2}{c|}{\textbf{Solución 2}} & \multicolumn{2}{c|}{\textbf{Solución 3}} & \multicolumn{2}{c|}{\textbf{Sol. Ideal}} \\ \cline{3-10}
 		\rowcolor[HTML]{D9E1F2} 
-		& & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} \\ \hline
-		\textbf{Geometría:}  (E) & 8 & 3 & 24 & 4 & 32 & 2 & 16 & 4 & 32 \\ \hline
-		\textbf{Cinemática:}  (D) & 4 & 1 & 4 & 4 & 16 & 3 & 12 & 4 & 16 \\ \hline
-		\textbf{Fuerzas:} (E) & 9 & 1 & 9 & 3 & 27 & 4 & 36 & 4 & 36 \\ \hline
+		\multirow{-2}*{\textbf{Criterio de Evaluación}} & \multirow{-2}*{\textbf{Peso (G)}} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} \\ \hline
+		\textbf{Geometría:} (E) & 8 & 3 & 24 & 4 & 32 & 2 & 16 & 4 & 32 \\ \hline
 		\textbf{Energía:} (E) & 9 & 2 & 18 & 4 & 36 & 2 & 18 & 4 & 36 \\ \hline
-		\textbf{Materia:} (E) & 8 & 1 & 8 & 3 & 24 & 4 & 32 & 4 & 32 \\ \hline
-		\textbf{Materia (Térmica):} (E) & 7 & 1 & 7 & 4 & 28 & 3 & 21 & 4 & 28 \\ \hline
+		\textbf{Materia y Térmica:} (E) & 10 & 1 & 10 & 3 & 30 & 4 & 40 & 4 & 40 \\ \hline
 		\textbf{Señales:} (E) & 10 & 2 & 20 & 3 & 30 & 4 & 40 & 4 & 40 \\ \hline
 		\textbf{Control:} (E) & 9 & 2 & 18 & 3 & 27 & 4 & 36 & 4 & 36 \\ \hline
 		\textbf{Comunicación:} (E) & 8 & 2 & 16 & 4 & 32 & 3 & 24 & 4 & 32 \\ \hline
-		\textbf{Mantenimiento:}  (D) & 6 & 2 & 12 & 2 & 12 & 4 & 24 & 4 & 24 \\ \hline
-		\textbf{Seguridad:}  (D) & 5 & 1 & 5 & 2 & 10 & 4 & 20 & 4 & 20 \\ \hline\hline
+		\textbf{Facilidad de mant.:} (E) & 8 & 2 & 16 & 2 & 16 & 4 & 32 & 4 & 32 \\ \hline\hline
 		
-		\multicolumn{2}{|r|}{\textbf{Puntaje Total ($Pt$)}} & \multicolumn{2}{c|}{\textbf{141}} & \multicolumn{2}{c|}{\textbf{274}} & \multicolumn{2}{c|}{\textbf{279}} & \multicolumn{2}{c|}{\textbf{332}} \\ \hline
-		\multicolumn{2}{|r|}{\textbf{Valor Técnico ($X_i$)}} & \multicolumn{2}{c|}{\textbf{0.42}} & \multicolumn{2}{c|}{\textbf{0.83}} & \multicolumn{2}{c|}{\textbf{0.84}} & \multicolumn{2}{c|}{\textbf{1.00}} \\ \hline
+		\multicolumn{2}{|r|}{\textbf{Puntaje Total ($Pt$)}} & \multicolumn{2}{c|}{\textbf{122}} & \multicolumn{2}{c|}{\textbf{203}} & \multicolumn{2}{c|}{\textbf{206}} & \multicolumn{2}{c|}{\textbf{248}} \\ \hline
+		\multicolumn{2}{|r|}{\textbf{Valor Técnico ($X_i$)}} & \multicolumn{2}{c|}{\textbf{0.49}} & \multicolumn{2}{c|}{\textbf{0.82}} & \multicolumn{2}{c|}{\textbf{0.83}} & \multicolumn{2}{c|}{\textbf{1.00}} \\ \hline
 	\end{tabular} \par\medskip
 	
 	\raggedright
-	\scriptsize \textit{Nota.} Elaboración propia. G = Peso del requerimiento; P = Puntaje (escala del 0 al 4); GP = Puntaje Ponderado ($P \times G$); E = Exigencia; D = Deseo. El Valor Técnico ($X_i$) se calcula dividiendo el Puntaje Total de la solución entre el Puntaje Total de la Solución Ideal ($Pt / 332$).
-	\label{tab:matriz_evaluacion_tecnica}
+	\scriptsize \textit{Nota.} Elaboración propia. G = Peso del requerimiento; P = Puntaje (escala del 0 al 4); GP = Puntaje Ponderado ($P \times G$); E = Exigencia; D = Deseo. El Valor Técnico ($X_i$) se calcula dividiendo el Puntaje Total de la solución entre el Puntaje Total de la Solución Ideal ($Pt / 248$).
+	\label{tab:evaluacion_tecnica}
 \end{table}
+%
+%%
 
 \begin{enumerate}
-	\item \textbf{Geometría:} Para evaluar la volumetría y masa del equipo, la solución 2 destaca con un puntaje igual a 4, ya que su chasis de aluminio V-Slot garantiza un diseño compacto y ligero debido a su baja densidad y resistencia decente \citep{}, también cumple con las normativas ergonómicas para el manejo de cargas de los operarios \citep{Figgis2025}. Por otro lado, la solución 1 cuenta con un puntaje igual a 3, pues a pesar de ser ligera por utilizar piezas impresas en 3D y MDF, requiere de mayores espesores para mantener su rigidez, acercándose peligrosamente al límite volumétrico permitido. Por último, a la solución 3 se le asigna un puntaje igual a 2, debido a que corre el riesgo de incumplir la restricción ergonómica al exceder los 20 kg de peso por culpa de su carcasa de acero y su sistema de tracción por orugas.
+	\item \textbf{Geometría:} Para evaluar la volumetría y masa del equipo, la solución 2 destaca con un puntaje igual a 4, ya que su chasis de aluminio \textit{V-Slot} garantiza un diseño compacto y ligero. La solución 1 obtiene 3, pues aunque usa MDF, requiere mayores espesores para rigidez. La solución 3 obtiene 2, al correr el riesgo de acercarse al límite ergonómico por su chasis de acero.
+	\item \textbf{Energía:} La solución 2 (P=4) y la solución ideal minimizan las pérdidas en regulación, mientras que la solución 1 y 3 (P=2) penalizan la autonomía debido al alto consumo de los motores continuos y tracción.
+	\item \textbf{Materia y Térmica:} La solución 3 (P=4) posee el chasis de acero mejor sellado frente a la intemperie y vibraciones. La solución 2 (P=3) es robusta pero vulnerable al polvo en sus juntas, y la solución 1 (P=1) de MDF es deficiente frente a condiciones térmicas y de humedad.
+	\item \textbf{Señales:} En cuanto a la precisión exigida por la norma IEC 61724-1, la solución 3 es netamente superior (P=4), logrando integrar instrumentos de precisión industrial como el \textit{GPS RTK}, \textit{LiDAR} 3D e \textit{IMU}, vitales para mapear microclimas en topografías complejas. La solución 2 obtiene un buen puntaje (P=3), ya que posee una resolución destacable, pero depende de un módulo \textit{CMOS} visual que es vulnerable a los reflejos térmicos de los paneles. La solución 1 resulta deficiente (P=2) al emplear \textit{encoders} y sensores básicos que son propensos a sufrir derivas en los datos al deslizarse sobre terrenos irregulares.
 	
-	\item \textbf{Cinemática:} Respecto al desplazamiento dinámico en el terreno, la solución 2 es la más destacada con un puntaje igual a 4, pues al emplear la tracción diferencial de 4 ruedas ofrece la máxima velocidad y eficiencia para alcanzar con holgura el objetivo de 1 m/s \citep{Figgis2025}. Le sigue la solución 3, con un puntaje igual a 3, que cumple con el requerimiento pero sacrifica parte de su agilidad y velocidad nominal debido a la alta fricción mecánica que generan sus orugas contra el suelo \citep{}. En contraste, la solución 1 obtiene un puntaje igual a 1, dado que sus ruedas omnidireccionales resultan ser difícilmente operables y lentas sobre la topografía de una planta solar \citep{}.
+	\item \textbf{Control:} Para evaluar la capacidad de evadir obstáculos y recalcular rutas de forma dinámica en laderas, la solución 3 domina con un puntaje de 4, apoyándose en un avanzado acelerador \textit{Edge IA} y un PLC que procesan nubes de puntos espaciales en tiempo real. La solución 2 (P=3) cuenta con una placa \textit{Single Board Computer} (SBC) de buen rendimiento, pero su algoritmo de flujo óptico pierde gran parte de su efectividad ante el polvo ambiental de la montaña. A la solución 1 se le otorga 2 puntos al ser la más limitada computacionalmente, dado que su microcontrolador generará falsos positivos al basarse en esquemas de umbrales simples.
 	
-	\item \textbf{Fuerzas:} En la evaluación de la tracción, orientada a superar pendientes irregulares de hasta $14^\circ$, la solución 3 se posiciona como la alternativa más apta con un puntaje igual a 4, utilizando un tren de orugas que distribuye el peso de manera uniforme para evitar deslizamientos o volcaduras en los terrenos \citep{}. A continuación, la solución 2 recibe un puntaje igual a 3, ya que su tracción a 4 ruedas es mecánicamente robusta, pero presenta cierto riesgo de patinar si transita sobre tramos con arena suelta y alta inclinación. Finalmente, la solución 1 se queda con un puntaje igual a 1, porque su diseño ligero carece del torque y el agarre necesarios para escalar pendientes pronunciadas \citep{}.
+	\item \textbf{Comunicación:} Al evaluar la estabilidad y transmisión de la telemetría climática a larga distancia, la solución 2 es la alternativa más atractiva (P=4) al incorporar un módulo \textit{LoRaWAN}, excelente para alcanzar grandes distancias en parques extensos consumiendo un mínimo de batería. La solución 3 recibe un puntaje de 3, pues a pesar de que emplea una conexión celular LTE-M con mayor ancho de banda, depende enteramente de la cobertura de operadoras locales en zonas remotas. Por su parte, a la solución 1 se le asigna 2 puntos, resultando inviable porque su red \textit{Wi-Fi} requiere de múltiples nodos repetidores para mantener cobertura a lo largo de toda la planta solar.
 	
-	\item \textbf{Energía:} Respecto a la exigencia de proveer al menos una hora de autonomía, la solución 2 logra el mejor desempeño con un puntaje igual a 4, gracias a la altísima densidad energética de sus baterías Li-Ion combinadas con un chasis que demanda poca potencia motriz \citep{}. La solución 3 se sitúa al límite del requerimiento con un puntaje igual a 2, puesto que, aunque utiliza baterías LiPO de alta descarga, el excesivo peso del acero estructural y la fricción constante de sus orugas penalizan drásticamente su consumo de energía \citep{}. La solución 1 recibe un puntaje igual a 2, siendo ineficiente al depender de baterías NiMH pesadas que tienen dificultades para sostener la operación ininterrumpida de los motores.
-	
-	\item \textbf{Materia:} Frente a la protección contra impactos mecánicos y la intemperie, la solución 3 lidera con un puntaje igual a 4, ofreciendo la máxima protección industrial al estar completamente encapsulada en acero inoxidable y chapas de acero estructural. En un nivel intermedio se encuentra la solución 2, con un puntaje igual a 3, cuya caja de chapa de aluminio brinda una excelente hermeticidad frente a la corrosión, aunque puede deformarse con mayor facilidad ante golpes directos. La solución 1 resulta inaceptable con un puntaje igual a 1, ya que ofrece la menor resistencia a impacto del exterior con un chasis de MDF y carcasa plástica.
-	
-	\item \textbf{Materia (Térmica):} Para garantizar la operación continua sin sobrecalentamientos de acuerdo con los requerimientos operativos de la instrumentación \citep{}, la solución 2 resulta óptima con un puntaje igual a 4, ya que su caja de chapa de aluminio actúa como un excelente disipador térmico que protege eficientemente la electrónica interna. La solución 3 recibe un puntaje aceptable igual a 3, se penaliza ligeramente porque su carcasa de acero tiende a retener mucho más calor bajo el sol \citep{}, lo que podría generar fallas térmicas en sus componentes internos. Por el contrario, a la solución 1 se le asigna un puntaje igual a 1, fallando en este aspecto debido a que carece de una correcta disipación térmica y sus polímeros 3D podrían deformarse ante la exposición continua.
-	
-	\item \textbf{Señales:} En cuanto a la precisión exigida por las normas internacionales, la solución 3 es netamente superior con un puntaje igual a 4, logrando integrar sensores industriales de gran exactitud y robustez\citep{}. La solución 2 obtiene un buen puntaje igual a 3, ya que posee una precisión general destacable, pero depende de un módulo CMOS visual que es vulnerable a los reflejos de los paneles solares. La solución 1 demuestra ser menos eficiente, recibiendo un puntaje igual a 2 al emplear sensores básicos y mecánicos que son propensos a sufrir derivas en los datos.
-	
-	\item \textbf{Control:} Para evaluar la capacidad de evadir obstáculos y recalcular rutas inmediatamente, la solución 3 domina con un puntaje igual a 4, apoyándose en un avanzado acelerador Edge IA y un LiDAR 3D que procesan nubes de puntos espaciales en tiempo real \citep{}. La solución 2, con un puntaje igual a 3, cuenta con una placa SBC de buen rendimiento, pero el algoritmo de flujo óptico de la cámara pierde gran parte de su efectividad si el entorno está muy polvoriento o la iluminación varía. A la solución 1 se le otorga un puntaje igual a 2 al ser la más limitada computacionalmente, dado que su microcontrolador podrá generar falsos positivos al basarse en comparación de umbrales.
-	
-	\item \textbf{Comunicación:} Al evaluar la estabilidad y transmisión de telemetría, la solución 2 es la alternativa más atractiva con un puntaje igual a 4, al incorporar un módulo LoRa que es excelente para alcanzar grandes distancias en parques extensos consumiendo un mínimo de electricidad \citep{}. La solución 3 recibe un puntaje igual a 3, pues a pesar de que emplea una conexión celular LTE-M con mayor ancho de banda, depende enteramente de la cobertura de red local, lo cual requiere de infraestructura adicional. Por su parte, a la solución 1 se le asigna un puntaje igual a 2, resultando inviable porque su red Wi-Fi requiere de múltiples nodos para mantener cobertura a lo largo de la planta \citep{}.
-	
-	\item \textbf{Mantenimiento:} Con el propósito de lidiar con la acumulación de suciedad en el entorno, la solución 3 resulta ser la más resiliente con un puntaje igual a 4, ya que los radares y contactos magnéticos logran operar incluso estando cubiertos de polvo \citep{}. La solución 2 obtiene un puntaje igual a 2, puesto que requerirá de mantenimientos manuales mucho más recurrentes, debido a que la acumulación de arena en el lente de la cámara afectará directamente la visión del robot. Finalmente, la solución 1 cuenta con un puntaje igual a 2, utilizando potenciómetros y fines de carrera con piezas móviles que se podrían dañar con la tierra.
-	
-	\item \textbf{Seguridad:} Frente a eventuales incidentes en planta, la solución 3 garantiza la mayor protección preventiva con un puntaje igual a 4, al estar dotada de disyuntores termomagnéticos y poseer un diseño pesado difícil de volcar \citep{}. La solución 2, con un puntaje igual a 3, logra reaccionar casi instantáneamente ante cortocircuitos gracias a sus protectores eFuse, pero su ligereza la hace levemente propensa a perder estabilidad en baches profundos. Para concluir, a la solución 1 se le asigna un puntaje igual a 1 al considerarse muy insegura en exteriores, dependiendo de fusibles cerámicos básicos y de una estructura liviana demasiado frágil ante vientos fuertes.
+	\item \textbf{Facilidad de Mantenimiento:} Al unificar seguridad y mantenibilidad, la solución 3 (P=4) es superior al centralizar sus módulos y protegerlos internamente contra daños. La solución 2 y 1 (P=2) presentan componentes expuestos que elevan el riesgo durante las operaciones de servicio.
 \end{enumerate}
 
 \section{Evaluación económica}
@@ -183,27 +176,24 @@ El tercer concepto de soluciíon corresponde al nivel tecnológico industrial, d
 \begin{table}[H]
 	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
 	
-	\caption[Matriz de Evaluación Económica de Conceptos de Solución.]{} 
-	\textit{Matriz de Evaluación Económica de Conceptos de Solución.} \par\medskip
+	\caption[Matriz de Evaluación Económica de Conceptos de Solución.]{\textit{Matriz de Evaluación Económica de Conceptos de Solución.}} \par\medskip
 	
 	\centering
 	\footnotesize
-	\renewcommand{\arraystretch}{1.8} 
-	\begin{tabular}{|c|p{4.5cm}|c|c|c|c|c|c|c|c|c|}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{4.5cm}|c|c|c|c|c|c|c|c|c|}
 		\hline
-		\rowcolor[HTML]{D9D9D9} 
-		\multicolumn{3}{|c|}{\textbf{Variantes de Concepto/Proyecto}} & \multicolumn{2}{c|}{\textbf{Solución 1}} & \multicolumn{2}{c|}{\textbf{Solución 2}} & \multicolumn{2}{c|}{\textbf{Solución 3}} & \multicolumn{2}{c|}{\textbf{Sol. Ideal}} \\ \hline
-		\rowcolor[HTML]{D9D9D9} 
-		\textbf{N$^{\circ}$} & \multicolumn{1}{c|}{\textbf{Criterio de Evaluación}} & \textbf{G} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} \\ \hline
+		\rowcolor[HTML]{D9E1F2} 
+		& & \multicolumn{2}{c|}{\textbf{Solución 1}} & \multicolumn{2}{c|}{\textbf{Solución 2}} & \multicolumn{2}{c|}{\textbf{Solución 3}} & \multicolumn{2}{c|}{\textbf{Sol. Ideal}} \\ \cline{3-10}
+		\rowcolor[HTML]{D9E1F2} 
+		\multirow{-2}*{\textbf{Criterio de Evaluación}} & \multirow{-2}*{\textbf{Peso (G)}} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} & \textbf{P} & \textbf{GP} \\ \hline
+		\textbf{Costo de Tecnología} & 4 & 3 & 12 & 3 & 12 & 2 & 8 & 4 & 16 \\ \hline
+		\textbf{Costo de Mantenimiento} & 3 & 4 & 12 & 2 & 6 & 2 & 6 & 4 & 12 \\ \hline
+		\textbf{Disponibilidad de Materiales} & 4 & 4 & 16 & 3 & 12 & 1 & 4 & 4 & 16 \\ \hline
+		\textbf{Costo de Fabricación} & 3 & 3 & 9 & 2 & 6 & 1 & 3 & 4 & 12 \\ \hline\hline
 		
-		1 & Costo de Tecnología & 4 & 3 & 12 & 3 & 12 & 2 & 8 & 4 & 16 \\ \hline
-		2 & Costo de Mantenimiento & 3 & 4 & 12 & 2 & 6 & 2 & 6 & 4 & 12 \\ \hline
-		3 & Disponibilidad de Materiales & 4 & 4 & 16 & 3 & 12 & 1 & 4 & 4 & 16 \\ \hline
-		4 & Costo de Fabricación & 3 & 3 & 9 & 2 & 6 & 1 & 3 & 4 & 12 \\ \hline
-		
-		\multicolumn{2}{|r|}{\textbf{Puntaje Total}} & \textbf{14} & \multicolumn{2}{c|}{\textbf{49}} & \multicolumn{2}{c|}{\textbf{36}} & \multicolumn{2}{c|}{\textbf{21}} & \multicolumn{2}{c|}{\textbf{56}} \\ \hline
-		\multicolumn{3}{|r|}{\textbf{Valor Económico ($Y_i$)}} & \multicolumn{2}{c|}{\textbf{0.88}} & \multicolumn{2}{c|}{\textbf{0.64}} & \multicolumn{2}{c|}{\textbf{0.38}} & \multicolumn{2}{c|}{\textbf{1.00}} \\ \hline
-
+		\multicolumn{1}{|r|}{\textbf{Puntaje Total ($Pt$)}} & \textbf{14} & \multicolumn{2}{c|}{\textbf{49}} & \multicolumn{2}{c|}{\textbf{36}} & \multicolumn{2}{c|}{\textbf{21}} & \multicolumn{2}{c|}{\textbf{56}} \\ \hline
+		\multicolumn{2}{|r|}{\textbf{Valor Económico ($Y_i$)}} & \multicolumn{2}{c|}{\textbf{0.88}} & \multicolumn{2}{c|}{\textbf{0.64}} & \multicolumn{2}{c|}{\textbf{0.38}} & \multicolumn{2}{c|}{\textbf{1.00}} \\ \hline
 	\end{tabular} \par\medskip
 	
 	\raggedright
@@ -234,13 +224,125 @@ Tras someter las alternativas de diseño a la evaluación técnica y económica,
 	\textit{Elaboración técnica económica de las tres soluciones propuestas.} \par\medskip
 	
 	\centering
-	\includegraphics[width=\textwidth]{Imagenes/evtecec.png} \par\medskip
+	\includegraphics[width=0.8\textwidth]{Imagenes/evtecec.png} \par\medskip
 	
 	\raggedright
 	\footnotesize \textit{Nota.} Elaboración propia.
 	\label{fig:EvalTecEc}
 \end{figure}
 
+\subsection{Dominio mecánico}
+
+
+\subsection{Diseño mecánico del concepto óptimo}
+
+
+\begin{figure}[H]
+	% Fuerza la alineación izquierda y quita los ":" después del número
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	
+	\caption[Vista general del concepto óptimo.]{} 
+	
+	% Vspace negativo opcional para acercar el texto cursivo al número de figura
+	\textit{Vista general del concepto óptimo.} \par\medskip
+	
+	\centering
+	\includegraphics[width=0.6\textwidth]{Imagenes/CAD-GENERAL_V1.png} \par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Elaboración propia.
+	\label{fig:CADGENERAL}
+\end{figure}
+\subsubsection{Subsistema de traslación}
+
+El subsistema de traslación está representado en la Figura \ref{fig:SubsistemaTraslacion}. El movimiento principal del mecanismo permite el avance longitudinal y el giro mediante tracción diferencial.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	\caption[Vista isométrica y frontal del subsistema de traslación.]{} 
+	\textit{Vista isométrica y frontal del subsistema de traslación.} \par\medskip
+	
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/SISTEMA_TRASLACION_ISO.png}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/SISTEMA_TRASLACION_FRONT.png}
+	\end{minipage}
+	\par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Las flechas rojas indican los grados de libertad y dirección del accionamiento mecánico para el desplazamiento. Elaboración propia.
+	\label{fig:SubsistemaTraslacion}
+\end{figure}
+
+
+\subsubsection{Subsistema de posicionamiento de plataforma de medición}
+
+En la Figura \ref{fig:SubsistemaPosicionamiento} se detalla el subsistema de posicionamiento, mecanismo de elevación por tijera accionado por un servomotor. Su función es ejecutar el movimiento rectilíneo de posicionamiento vertical para elevar la instrumentación. Gracias a su propiedad de autobloqueo, el servomotor retiene la altura frente a las vibraciones del terreno.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	\caption[Vista isométrica y derecha del subsistema de posicionamiento.]{} 
+	\textit{Vista isométrica y derecha del subsistema de posicionamiento.} \par\medskip
+	
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/MECANISMO_POSICION_ISO.png}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/MECANISMO_POSICION_DERECHA.png}
+	\end{minipage}
+	\par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Las flechas rojas indican la dirección del desplazamiento lineal vertical. Elaboración propia.
+	\label{fig:SubsistemaPosicionamiento}
+\end{figure}
+
+
+\subsubsection{Subsistema de orientación de plataforma de medición}
+
+El subsistema de orientación, como se observa en la Figura \ref{fig:SubsistemaOrientacion}, es el encargado de ejecutar el movimiento rotacional de ajuste (cabeceo o \textit{pitch}) de la plataforma superior. Este grado de libertad permite alinear estrictamente los piranómetros según las exigencias de horizontalidad de la norma IEC 61724-1, manteniendo la posición inalterable ante las ráfagas de viento gracias al mecanismo de retención interno.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	\caption[Vista isométrica y derecha del subsistema de orientación.]{} 
+	\textit{Vista isométrica y derecha del subsistema de orientación.} \par\medskip
+	
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/MECANISMO-ORIENTACION-ISO.png}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/MECANISMO-ORIENTACION-DERECHA.png}
+	\end{minipage}
+	\par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Las flechas rojas detallan el eje de rotación para la orientación de la instrumentación. Elaboración propia.
+	\label{fig:SubsistemaOrientacion}
+\end{figure}
+
+\subsubsection{Estructura de soporte}
+
+Finalmente, en la Figura \ref{fig:CarcasaISO} se presenta la estructura de soporte principal, conformada por un chasis de aluminio. Esta carcasa actúa como un escudo físico estático que aísla de forma hermética los componentes electrónicos de control y las baterías contra el ingreso de suciedad y las  perturbaciones propias del entorno.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	\caption[Vista isométrica de la estructura.]{} 
+	\textit{Vista isométrica de la estructura.} \par\medskip
+	
+	\centering
+	\includegraphics[width=\textwidth]{Imagenes/SOPORTE-CUBIERTA-ISO.png} \par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Elaboración propia.
+	\label{fig:CarcasaISO}
+\end{figure}
 
 \subsection{Arquitectura de control del concepto óptimo}
 
@@ -332,125 +434,7 @@ En el nivel de procesamiento, la Placa SBC actúa como el nodo maestro. A travé
 	\label{fig:DiagramaBloques}
 \end{figure}
 %%%%%
-\subsection{Vista general del concepto óptimo}
 
-
-\begin{figure}[H]
-	% Fuerza la alineación izquierda y quita los ":" después del número
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	
-	\caption[Vista general del concepto óptimo.]{} 
-	
-	% Vspace negativo opcional para acercar el texto cursivo al número de figura
-	\textit{Vista general del concepto óptimo.} \par\medskip
-	
-	\centering
-	\includegraphics[width=0.6\textwidth]{Imagenes/CAD-GENERAL_V1.png} \par\medskip
-	
-	\raggedright
-	\footnotesize \textit{Nota.} Elaboración propia.
-	\label{fig:CADGENERAL}
-\end{figure}
-
-\subsection{Subsistemas mecánicos del concepto óptimo}
-
-\subsubsection{Subsistema de traslación}
-
-	\begin{figure}[H]
-	
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	
-	\caption[Vista isometrica y frontal del subsistema de traslación.]{} 
-	
-	\textit{Vista isometrica y frontal del subsistema de traslación.} \par\medskip
-	
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/SISTEMA_TRASLACION_ISO.png}
-	\end{minipage}\hfill
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/SISTEMA_TRASLACION_FRONT.png}
-	\end{minipage}
-	\par\medskip
-	
-	\raggedright
-	\footnotesize \textit{Nota.} Elaboración propia.
-	\label{fig:SubsistemaTraslacion}
-\end{figure}
-
-
-\subsubsection{Subsistema de posicionamiento de plataforma de medición}
-
-
-\begin{figure}[H]
-	
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	
-	\caption[Vista isometrica y derecha del subsistema de posicionamiento.]{} 
-	
-	\textit{Vista isometrica y derecha del subsistema de posicionamiento.} \par\medskip
-	
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/MECANISMO_POSICION_ISO.png}
-	\end{minipage}\hfill
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/MECANISMO_POSICION_DERECHA.png}
-	\end{minipage}
-	\par\medskip
-	
-	\raggedright
-	\footnotesize \textit{Nota.} Elaboración propia.
-	\label{fig:SubsistemaPosicionamiento}
-\end{figure}
-
-
-\subsubsection{Subsistema de orientación de plataforma de medición}
-
-
-\begin{figure}[H]
-	
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	
-	\caption[Vista isometrica y derecha del subsistema de orientación.]{} 
-	
-	\textit{Vista isometrica y derecha del subsistema de orientación.} \par\medskip
-	
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/MECANISMO-ORIENTACION-ISO.png}
-	\end{minipage}\hfill
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{Imagenes/MECANISMO-ORIENTACION-DERECHA.png}
-	\end{minipage}
-	\par\medskip
-	
-	\raggedright
-	\footnotesize \textit{Nota.} Elaboración propia.
-	\label{fig:SubsistemaOrientacion}
-\end{figure}
-
-\subsubsection{Estructura de soporte}
-
-\begin{figure}[H]
-	% Fuerza la alineación izquierda y quita los ":" después del número
-	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
-	
-	\caption[Vista isométrica de la estructura.]{} 
-	
-	% Vspace negativo opcional para acercar el texto cursivo al número de figura
-	\textit{Vista isométrica de la estructura.} \par\medskip
-	
-	\centering
-	\includegraphics[width=\textwidth]{Imagenes/SOPORTE-CUBIERTA-ISO.png} \par\medskip
-	
-	\raggedright
-	\footnotesize \textit{Nota.} Elaboración propia.
-	\label{fig:CarcasaISO}
-\end{figure}
 
 
 

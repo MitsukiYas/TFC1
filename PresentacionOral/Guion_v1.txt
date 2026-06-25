@@ -1,0 +1,40 @@
+Diapositiva 1: Título y Presentación (Visual: Portada con el título del proyecto, tu nombre y logos de la universidad) Guion: "Buenos días a todos los miembros del jurado y público presente. Mi nombre es [Tu Nombre] y hoy les presentaré el diseño conceptual de mi Trabajo de Fin de Carrera, el cual consiste en un robot autónomo diseñado para medir variables climáticas en sistemas de energía solar
+."
+Diapositiva 2: Introducción y Problemática (10% de la rúbrica) (Visual: Imágenes de una planta solar en un terreno montañoso o irregular, resaltando los cambios de viento y temperatura) Guion: "Para entender este proyecto, primero debemos mirar cómo están evolucionando las energías renovables. Hoy en día, las plantas solares son tan grandes que se están construyendo sobre montañas y terrenos muy irregulares
+. Esto crea un gran problema: la forma del terreno altera cómo sopla el viento y cómo se distribuye el calor, creando 'microclimas' dentro de una misma planta
+. Actualmente, las empresas usan estaciones meteorológicas fijas, atornilladas al suelo. Sin embargo, un sensor fijo en la base de una montaña no puede decirnos qué está pasando con los paneles que están en la cima
+. Esta falta de información precisa hace que las empresas pierdan dinero al no poder predecir bien cuánta energía van a generar
+."
+Diapositiva 3: Antecedentes y Estado del Arte (5% de la rúbrica) (Visual: Gráficos simples del estudio de García y un par de fotos referenciales de robots actuales) Guion: "Este problema ha sido documentado recientemente. Por ejemplo, estudios como los de García Salinas y sus colaboradores han demostrado que la topografía irregular puede causar diferencias de hasta un 20% en la cantidad de luz solar que reciben distintas partes de la planta
+. Al revisar el estado del arte (es decir, qué tecnología existe hoy para solucionar esto), encontramos algunos vehículos de inspección
+. Sin embargo, la mayoría de estos robots comerciales solo tienen cámaras para revisar si un panel está roto, pero no cuentan con instrumentos climáticos que se adapten a la altura de los paneles solares para medir el clima real que estos experimentan
+. Es un vacío tecnológico que este proyecto busca llenar."
+Diapositiva 4: Objetivos del Proyecto (Visual: Texto breve con el objetivo general) Guion: "Por lo tanto, el objetivo principal de este trabajo es diseñar un robot autónomo que actúe como una estación meteorológica móvil
+. Un vehículo que viaje a través de la planta solar midiendo el clima de forma dinámica, para así lograr mapear estos microclimas con alta precisión
+."
+Diapositiva 5: Requerimientos Principales (10% de la rúbrica) (Visual: Iconos representativos: una montaña con grados, una batería, y un escudo de protección) Guion: "Para que este robot sobreviva en el mundo real, establecimos requisitos muy estrictos basados en normas internacionales
+:
+Fuerza y movilidad: Debe ser capaz de escalar pendientes y relieves irregulares típicos de las montañas
+.
+Posicionamiento: Necesita elevar sus sensores climáticos a 1.3 metros de altura para que estén al mismo nivel que los paneles solares
+.
+Resistencia: Su coraza debe proteger el interior contra el polvo del desierto y las altas temperaturas
+.
+Autonomía: Debe poder navegar y transmitir su información de forma completamente inalámbrica hacia una base de control
+."
+Diapositiva 6: Diseño Conceptual - El Concepto Óptimo (Vista Externa) (25% de la rúbrica) (Visual: Render 3D o boceto de la vista isométrica externa del Concepto 3, mostrando orugas y soporte vertical
+) Guion: "Después de evaluar varias alternativas, llegamos al concepto de solución óptimo. A nivel físico, hemos dotado al robot de un sistema de tracción por orugas de caucho
+. Decidimos no usar ruedas comunes porque las orugas garantizan que el vehículo no resbale en la arena suelta o el lodo de las laderas. Para medir el clima, el robot cuenta con un soporte vertical fijo y un elevador rectilíneo
+. Esto nos permite subir los sensores exactamente a la altura de los paneles. Además, a diferencia de los brazos robóticos comunes que vibran mucho, este sistema se bloquea mecánicamente, garantizando que los instrumentos estén perfectamente nivelados al tomar los datos."
+Diapositiva 7: Diseño Conceptual - Vista Interna y Control (Recomendación directa) (Visual: Render 3D de la vista interna de la solución óptima, mostrando la computadora central, baterías y cableado
+) Guion: "Ahora, si miramos la vista interna de nuestro robot, encontraremos el verdadero cerebro del sistema
+. En lugar de componentes frágiles, el interior está protegido herméticamente. Aquí alojamos un sistema de navegación inteligente que utiliza un escáner láser espacial para 'ver' el entorno en 3D y evitar chocar con obstáculos
+. Toda la energía proviene de baterías de litio industriales, que son extremadamente seguras contra incendios bajo el sol intenso. Finalmente, en el apartado de comunicación, utilizamos una tecnología de antenas de largo alcance (conocida como LoRaWAN)
+. Esto es vital, ya que el Wi-Fi normal se pierde a los pocos metros, pero esta tecnología permite que el robot envíe sus datos meteorológicos a kilómetros de distancia sin gastar mucha batería
+."
+Diapositiva 8: Conclusiones (5% de la rúbrica) (Visual: Resumen de tres puntos clave con checks de validación) Guion: "Para concluir, este diseño valida conceptualmente que es posible y necesario transformar la medición climática estática en una medición móvil
+.
+La arquitectura mecánica de orugas y elevación lineal que hemos diseñado resuelve el problema de medir en terrenos irregulares, cumpliendo con las normas de la industria.
+Hemos integrado exitosamente la electrónica necesaria para que el equipo tome decisiones de navegación por su cuenta y envíe la información de manera segura.
+Con este robot, las plantas fotovoltaicas podrán mapear sus microclimas, reducir su incertidumbre y, en última instancia, generar energía de manera mucho más eficiente y rentable.
+Muchas gracias por su atención. Quedo a su disposición para cualquier pregunta."

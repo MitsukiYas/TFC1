@@ -29,35 +29,42 @@ En la Figura \ref{fig:caja_negra} se presenta la abstracción funcional del sist
 \end{figure}
 
 La función principal del sistema se define como: Transformar señales de instrumentación meteorológica externa, información espacial y comandos del usuario en paquetes de datos procesados con validez industrial y reportes de estado telemétrico.
+
 Para cumplir con su objetivo, el sistema recibe flujos de energía de entrada compuestos por la energía eléctrica directa necesaria para su alimentación y las perturbaciones provenientes del terreno en forma de vibraciones mecánicas.
 
 Simultáneamente, el sistema capta flujos de señales e información provenientes del entorno, las cuales incluyen la data climática (señal digital de sensor de radiación solar, señal de sensor de temperatura, señal de sensor de humedad relativa y señal de sensor de velocidad del viento), la señal GPS y la presencia de obstáculos; mientras que, desde el exterior, se introducen las instrucciones mediante la señal de encendido/apagado y la señal de control de telecomunicación de estación base.
 
 Por otro lado, los flujos de materia que interactúan en las fronteras de entrada del sistema corresponden a la inserción física de la memoria externa y al ingreso inevitable de la suciedad del ambiente, propia de las instalaciones fotovoltaicas.
 
-Como resultado de la transformación interna, el sistema entrega, como salidas útiles, un flujo de información compuesto por los paquetes de datos meteorológicos a estación base, el estado de transmisión telemétrica a estación base, las advertencias críticas de alerta de obstáculo encontrado y alerta de estado de energía, así como la señal de estado de energía y la señal de estado operativo requeridas para la interfaz local.
+Como resultado de la transformación interna, el sistema entrega, como salidas útiles, un flujo de información compuesto por los paquetes de datos meteorológicos a estación base, el estado de transmisión telemétrica a estación base, las advertencias críticas de alerta de obstáculo encontrado y alerta de estado de energía, así como la señal de estado de energía y la señal de estado operativo requeridas para la interfaz local. Es importante destacar que estos flujos de comunicación, tanto de entrada como de salida, representan tramas de bytes estructuradas, garantizando la integridad y correcta interpretación de la telemetría.
 
 A nivel de flujos de materia, el sistema depara la extracción de la memoria externa con datos actualizados, la cual contiene el respaldo físico de la información, y la evacuación o paso de la suciedad del ambiente.
 
-Finalmente, como residuo del trabajo físico y computacional, el sistema libera al entorno flujos de energía en forma de calor disipado y vibraciones emitidas durante su desplazamiento continuo.
+Finalmente, como residuo del trabajo físico y computacional, el sistema libera al entorno flujos de energía en forma de calor disipado y vibraciones emitidas durante su desplazamiento continuo. Además, el sistema provee como salida un flujo de energía eléctrica para sensores meteorológicos, asegurando la alimentación y operatividad de la instrumentación externa.
+
 
 \section{Estructura de Funciones}
 
 A partir de la caja negra, se desarrolla la estructura de funciones (ver Anexo 2). En este esquema, la función principal del sistema se descompone en dominios, cada uno con bloques que describen las funciones elementales del robot, relacionando detalladamente los flujos internos de energía, materia y señales.
 
 \subsection{Dominio de Energía}
-El Dominio de Energía se encarga de la recepción, gestión y distribución del recurso eléctrico necesario para garantizar el funcionamiento de todos los subsistemas del robot, a través del siguiente flujo:
+El Dominio de Energía se encarga de la recepción, gestión y distribución del recurso eléctrico necesario para garantizar el funcionamiento de todos los subsistemas del robot, a través del siguiente flujo, ilustrado en la Figura \ref{Avance3_DomEnergia}:
 
-\begin{enumerate}
-	\item \textbf{Recibir energía eléctrica:} Capta la energía de entrada del sistema y la transfiere a la etapa de administración.
-	\item \textbf{Proteger sistema eléctrico:} Sirve como una barrera pasiva de entrada contra fallas en el flujo de la energía eléctrica proveniente de la fuente de alimentación.
-	\item \textbf{Gestionar energía eléctrica:} Administra la capacidad y distribución de la energía del sistema. Derivado de este proceso, genera un flujo residual que corresponde a la energía térmica del gestionador de energía (que se disipa al entorno) y emite el nivel de energía del gestionador de energía para su posterior procesamiento lógico.
-	\item \textbf{Activar energía eléctrica del sistema:} Opera como el nodo de habilitación maestro. Procesa de manera conjunta la señal de encendido/apagado y la señal de control del estado de energía del sistema para permitir o cortar el flujo eléctrico general, emitiendo además el estado de energía del sistema como retroalimentación.
-	\item \textbf{Regular energía (Dominio de Interfaz, Control y Comunicaciones, Sensores, Actuadores):} Consiste en cuatro funciones en serie que ramifican la potencia principal liberada para aislar ruidos y adaptar los niveles de tensión y corriente según las exigencias de cada dominio.
-	\item \textbf{Energizar (Dominio de Interfaz, Control y Comunicaciones, Sensores, Actuadores):} Estas cuatro funciones actúan como las etapas finales de entrega, transfiriendo la energía ya estabilizada a cada uno de sus respectivos dominio.
-	\item \textbf{Regular energía eléctrica de sensores meteorológicos:} Regula la energía proveniente del gestionador para el uso de los sensores meteorológicos externos.
-		\item \textbf{Energizar energía eléctrica de sensores meteorológicos:} Transmite la energía eléctrica a los sensores meteorológicos externos, usando las especificaciones correctas de cada uno de estos.
-\end{enumerate}
+\begin{itemize}
+	\item \textbf{Recibir energía eléctrica:} Para esta función se evaluó el conector \textit{Plug Jack} DC, que permite una conexión lineal simple para corrientes medias; el conector de alta corriente XT60, el cual asegura una conexión física firme capaz de soportar las vibraciones mecánicas de un terreno irregular; y los contactos magnéticos, que facilitan un acople automático sin requerir exactitud cinemática, aunque son vulnerables a perder continuidad \citep{Salinas2025}.
+	
+	\item \textbf{Proteger sistema eléctrico:} Se analizó el fusible electrónico \textit{eFuse} por su corte rápido y posibilidad de restablecimiento automático, ideal para proteger la navegación de vehículos terrestres autónomos \citep{CN221163061U}; el disyuntor termomagnético, que ofrece una protección robusta ante cortocircuitos pero exige rearme manual; y el fusible cerámico de cartucho, una opción de bajo costo que requiere reemplazo físico tras activarse.
+	
+	\item \textbf{Gestionar energía eléctrica:} Las opciones contemplan la batería LiPO con \textit{Battery Management System} (BMS), destacada por sus altas tasas de descarga para superar obstáculos, pero con menor vida útil; la batería Li-Ion con BMS, que proporciona una alta densidad energética para asegurar la autonomía de operación del robot; y la batería NiMH con BMS, una alternativa muy estable frente a los riesgos térmicos de la intemperie solar, pero con menor densidad de energía que el resto \citep{XPower2024}.
+	
+	\item \textbf{Activar energía eléctrica:} Se consideró el relé de estado sólido, que permite la conmutación de potencia mediante señales de control sin desgaste de partes móviles; el contactor mecánico, útil para manejar los picos de corriente durante el arranque de los motores de tracción; y el seccionador rotativo manual, que actúa como un elemento de corte físico directo, obligatorio como método de parada \citep{Burriana5MW}.
+	
+	\item \textbf{Regular energía (Interfaz, Control/Comm., Sensores y Meteorología):} Se evaluó el regulador \textit{Shunt}, de diseño extremadamente simple pero térmicamente ineficiente al disipar el exceso de voltaje como calor; el regulador de bomba de carga (\textit{Charge pump}), útil para elevar o reducir voltajes en espacios reducidos pero limitado a bajas corrientes; y el regulador lineal LDO, que, aunque disipa calor, ofrece un voltaje de salida muy estable y con bajo ruido eléctrico.
+	
+	\item \textbf{Regular energía de Actuadores:} Para esta etapa crítica de regulación de potencia motriz se analizó el regulador lineal LDO, que entrega un voltaje limpio pero genera demasiada pérdida térmica frente a la alta demanda de los motores al escalar pendientes; el regulador de bomba de carga, de circuito compacto pero con capacidad de corriente insuficiente; y el convertidor \textit{Buck} DC-DC, que posee una alta eficiencia de conmutación energética para soportar el consumo dinámico del mecanismo de locomoción.
+	
+	\item \textbf{Energizar componentes y distribución interna:} Se propusieron las barras colectoras (\textit{Busbars}) para facilitar una distribución rígida y de alta corriente; el cable trenzado estándar, que aporta flexibilidad y bajo costo para el ruteo interno en la caja de control; y los conectores circulares roscados, que garantizan uniones impermeables y resistentes a las desconexiones causadas por la irregularidad de la topografía \citep{CN120057153A}.
+\end{itemize}
 
 \begin{figure}[H]
 	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
@@ -140,11 +147,15 @@ El Dominio de Control opera como el núcleo lógico y computacional del sistema,
 \subsection{Dominio de Comunicación}
 
 El Dominio de Comunicación actúa como el puente de telemetría entre el robot y la red externa del parque fotovoltaico. Para su operatividad, todo este subsistema se encuentra alimentado por el flujo de energía del Dominio de Control y el Dominio de Comunicaciones. El dominio se compone de las siguientes funciones:
+
 \begin{enumerate}
-	\item \textbf{Procesar señal GPS recibida:} Toma la señal GPS captada previamente por el sensor y la convierte en datos de posición del sistema brutos.
-	\item \textbf{Procesar señal de mando recibida:} Adquiere la señal de control de telecomunicación ingresada desde el exterior y la utiliza para comandar internamente los bloques de transmisión.
-	\item \textbf{Transmitir estado telemétrico:} Comandado por el bloque anterior, emite la señal del estado de transmisión telemétrica hacia el entorno, lo que permite el monitoreo remoto de la salud de la conexión inalámbrica.
-	\item \textbf{Transmitir datos meteorológicos:} Recibe los datos meteorológicos ya procesados y, bajo el mando del bloque de recepción, los emite al exterior estructurados como paquetes de datos.
+	\item \textbf{Procesar señal GPS recibida:} Capta e interpreta la señal de radiofrecuencia satelital proveniente del entorno para transformarla y entregar los datos de posición del sistema brutos, los cuales son requeridos por la lógica de navegación interna.
+	
+	\item \textbf{Procesar señal de mando recibida:} Gestiona el enlace interactivo de entrada proveniente de la señal de control de telecomunicación. Principalmente, esta función decodifica la trama de los comandos de telemetría, asegurando una respuesta inmediata del robot frente a instrucciones del usuario.
+	
+	\item \textbf{Transmitir estado telemétrico:} Emite la señal de estado de transmisión telemétrica hacia el exterior, lo que permite a la estación base monitorear de forma continua la calidad, latencia e integridad del enlace de red con el vehículo.
+	
+	\item \textbf{Transmitir datos meteorológicos:} Constituye la etapa final del reporte climático y operativo. Esta función recibe los datos meteorológicos procesados desde el dominio de control, y seguidamente codifica y empaqueta la información en un payload para enviarla hacia la estación base en forma de paquetes de datos meteorológicos consolidados.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -414,19 +425,38 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{7. Captar señal GPS} & 
 		Antena de circuito flexible \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaFlexible.png} & 
 		Antena de parche cerámico \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaGNSS.jpg} & 
-		Antena helicoidal cuadrifilar \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaCuadrifilar.png} \\ \hline
+		Antena GPS RTK \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaGPSRTK.jpg} \\ \hline
 		
 		\textbf{8. Sensar orientación del sistema} & 
-		Sensor de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorDistanciaToF.jpg} & 
-		Unidad IMU de 9 ejes \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
-		Encoder rotativo absoluto \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/EncoderRotativoAbsoluto.jpg} \\ \hline
+		\par\smallskip Unidad IMU de 9 ejes \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
+		\par\smallskip Unidad IMU de 9 ejes  \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
+		Matriz de sensores de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorDistanciaToF.jpg} \\ \hline
 		
 	\end{xltabular}
 \end{center}
+
+
+\begin{itemize}
+	\item \textbf{Sensar temperatura del gestionador:} Se evaluó el termistor NTC; el sensor RTD PT100, justificado por la necesidad de medir con precisión frente al efecto de isla de calor fotovoltaica (PVHI) y las variaciones térmicas extremas documentadas en la caracterización de microclimas \citep{Armstrong2026, Garcia2014}; y el termopar tipo K, de alta robustez mecánica.
+	
+	\item \textbf{Sensar nivel de energía del gestionador:} Se consideró el detector de umbral de voltaje, el cual generaría lecturas erróneas debido a las severas caídas de tensión que sufren las baterías al superar pendientes del 28\,\% \citep{GarciaSalinas2025}; el sensor de impedancia; y el contador de Culombios, principio tecnológico clave integrado en los avanzados Sistemas de Gestión de Baterías (BMS) de las estaciones meteorológicas \textit{IoT} evaluadas en el estado del arte para operar en terrenos remotos \citep{SK302020A3}.
+	
+	\item \textbf{Sensar presencia de obstáculo:} Se consideró el módulo \textit{CMOS}, útil para la generación de mapas espaciales \citep{CN119665962A} pero vulnerable al deslumbramiento por el albedo de los paneles; el sensor \textit{ToF} 3D; y el sensor \textit{LiDAR} 3D, tecnología indispensable extraída de los vehículos terrestres de inspección en desiertos (UGV), ya que es el único principio capaz de evadir zanjas erosivas y relieve complejo que la visión artificial simple no detecta \citep{CN221163061U, Figgis2025}.
+	
+	\item \textbf{Sensar velocidad de traslación:} Se analizó el \textit{encoder} rotativo incremental, el cual presentará errores críticos de odometría debido al deslizamiento de las orugas en terrenos irregulares, una limitación comprobada en los actuales vehículos de inspección solar \citep{Figgis2025}; el radar de onda continua; y la unidad \textit{IMU} de 9 ejes, requerida para la estimación inercial sin contacto con el suelo.
+	
+	\item \textbf{Sensar orientación (Plataforma y Sistema):} Se evaluaron el \textit{encoder} rotativo absoluto y el sensor \textit{ToF}; así como la unidad \textit{IMU} de 9 ejes. Este último es el principio técnico fundamental utilizado por las estaciones meteorológicas fotovoltaicas móviles para proveer el vector de gravedad absoluto, activar los mecanismos de nivelación \citep{CN216956405U} y asegurar la horizontalidad de la instrumentación exigida por la norma \citep{IEC61724-1_2021}.
+	
+	\item \textbf{Sensar posición de plataforma:} Se propuso el potenciómetro lineal; el sensor de ultrasonido, cuyo principio acústico resulta ineficiente al ser desviado por las cargas de viento extremo y las turbulencias aerodinámicas documentadas en las laderas de los parques solares \citep{Xu2024}; y el sensor de fin de carrera, seleccionado por su fiabilidad física a la intemperie.
+	
+	\item \textbf{Captar señal GPS:} Se evaluó la antena de parche cerámico, propensa a perder satélites al inclinarse en el relieve; la antena de circuito flexible; y la antena \textit{GPS RTK} (Real-Time Kinematic), a menudo combinada con telemetría en vehículos de inspección \citep{CN116405876A}. Su inclusión se justifica al ser la única tecnología capaz de garantizar la exactitud centimétrica indispensable para la georreferenciación de los microclimas y la corrección de ruta en la montaña \citep{Armstrong2026, Figgis2025}.
+\end{itemize}
+
+
 \begin{itemize}
 	\item \textbf{Sensar temperatura del gestionador:} para esta función se evaluó el termistor NTC, con un bajo costo y una excelente sensibilidad para los rangos de temperatura de operación esperados en las baterías; el sensor RTD PT100, el cual brinda una alta precisión y estabilidad térmica a cambio de un mayor costo y un circuito de acondicionamiento más complejo; y el termopar tipo K, que es muy robusto y soporta rangos térmicos extremos, aunque puede presentar menor exactitud a temperatura ambiente.
 	
-	\item \textbf{Sensar nivel de energía del gestionador:} se consideró el sensor contador de Culombios, que permite una medición exacta del estado de carga al integrar la corriente en el tiempo; el detector de umbral de voltaje, una opción simple y económica pero poco precisa frente a las curvas de descarga planas de las baterías modernas; y el sensor de impedancia interna, el cual es ideal para evaluar la salud y degradación de la celda a largo plazo, pero resulta complejo de implementar para mediciones continuas en operación.
+	\item \textbf{Sensar nivel de energía del gestionador:} se consideró el sensor contador de Culombios, que permite una medición exacta del estado de carga al integrar la corriente en el tiempo; el detector de umbral de voltaje, una opción simple y económica pero cuya limitación generará lecturas falsas por las caídas de tensión al demandar alta corriente para escalar pendientes de hasta el 28\,\% \citep{GarciaSalinas2025};; y el sensor de impedancia interna, el cual es ideal para evaluar la salud y degradación de la celda a largo plazo, pero resulta complejo de implementar para mediciones continuas en operación.
 	
 	\item \textbf{Sensar presencia de obstáculo:} las alternativas contemplan el sensor LiDAR 3D, que otorga alta precisión y un amplio rango para el mapeo espacial, pero exige un alto costo y capacidad de procesamiento; el módulo CMOS, muy útil para la clasificación visual de los obstáculos mediante algoritmos, aunque susceptible a los deslumbramientos y reflejos propios de los paneles solares; y el sensor 3D de tiempo de vuelo, que ofrece una buena percepción de profundidad a distancias cortas y medias con una menor carga computacional.
 	
@@ -436,9 +466,10 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 	
 	\item \textbf{Sensar posición de plataforma:} se consideró el sensor de ultrasonido, una alternativa económica de medición de distancia sin contacto que, sin embargo, puede verse afectada por las corrientes de viento; el sensor de fin de carrera, que ofrece una detección de topes físicos muy robusta y simple, pero está restringida a estados discretos sin brindar una lectura continua; y el potenciómetro lineal, que entrega una retroalimentación analógica continua de la posición física, aunque sus partes móviles son vulnerables al desgaste por la suciedad del entorno.
 	
-	\item \textbf{Captar señal GPS:} las opciones para la recepción satelital incluyen la antena de parche cerámico, que es compacta, económica y estandarizada, pero exige una orientación estrictamente cenital y un buen plano de tierra; la antena helicoidal cuadrifilar, que destaca por su excelente recepción omnidireccional y su capacidad para rechazar interferencias rebotadas en las estructuras metálicas de los seguidores solares; y la antena de circuito flexible, que se adapta fácilmente a la geometría interna del vehículo, pero sacrifica ganancia y eficiencia general de recepción.
+	\item \textbf{Captar señal GPS:} las opciones para la recepción satelital incluyen la antena de parche cerámico, que es compacta, económica y estandarizada, pero exige una orientación estrictamente cenital y un buen plano de tierra; la antena \textit{GPS RTK} (Real-Time Kinematic), a menudo combinada con telemetría en vehículos de inspección \citep{CN116405876A}, que garantiza una exactitud indispensable para el mapeo de posición del robot en topografías complejas ; y la antena de circuito flexible, que se adapta fácilmente a la geometría interna del vehículo, pero sacrifica ganancia y eficiencia general de recepción.
+	
 \end{itemize}
-
+\pagebreak
 \subsection{Dominio de Control}
 
 % --- Tabla de Control (Hardware) ---
@@ -482,7 +513,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{14. Procesar señal de obstáculo} & 
 		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Microcontrolador.jpg} & 
 		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SBC.jpg} & 
-		Acelerador de hardware para Edge IA \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/EdgeIA.jpg} \\ \hline
+		Computadora Industrial \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/IPC.jpg} \\ \hline
 		\textbf{15. Registrar datos meteorológicos} & 
 		Memoria Flash \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/MemoriaFLASH.jpg} & 
 		MicroSD SPI \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ModuloMicroSDSPI.jpg} & 
@@ -501,7 +532,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 \begin{itemize}
 	\item \textbf{Funciones de procesamiento lógico y control de variables del sistema:} para el núcleo de estas funciones lógicas y de control, se evaluó la placa SBC, ideal para el procesamiento de datos pesados, cálculos espaciales y operaciones multitarea; el microcontrolador, que ofrece una excelente gestión de lazos cerrados en tiempo real y rutinas secuenciales con bajo consumo energético; y el PLC, que brinda máxima robustez en entornos industriales, pero cuyo tamaño y alta demanda eléctrica limitan su uso en plataformas robóticas móviles.
 	
-	\item \textbf{Procesar señal de obstáculo:} para la evasión de colisiones se consideró la placa SBC, que posee la capacidad de procesar nubes de puntos o mapas espaciales de forma local; el microcontrolador, útil únicamente si se emplean sensores de umbral simple con baja carga computacional; y el acelerador de hardware para Edge IA, el cual está optimizado para procesar algoritmos complejos de visión artificial y redes neuronales en tiempo real sin saturar el procesador principal.
+	\item \textbf{Procesar señal de obstáculo:} para la evasión de colisiones se consideró la placa SBC, que posee la capacidad de procesar nubes de puntos o mapas espaciales de forma local; el microcontrolador, útil únicamente si se emplean sensores de umbral simple con baja carga computacional; y una computadora industrial, una solución robusta con la capacidad de procesar algoritmos complejos en tiempo real y comunicarse con protocolos industriales con el PLC.
 	
 	\item \textbf{Registrar datos meteorológicos:} las opciones de almacenamiento contemplan el módulo MicroSD SPI, una alternativa accesible y de alta capacidad de memoria; la memoria Flash, que es muy rápida y va soldada al circuito impreso, impidiendo su extracción física manual; y la EEPROM I2C, una memoria no volátil de capacidad muy reducida, útil para guardar parámetros de configuración pero puede resultar ineficiente para el registro continuo de bases de datos climáticas.
 	
@@ -663,7 +694,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{6. Mostrar alerta energía} & & & \\ \hline
 		% --- FIN BLOQUE 5-6 ---
 		
-		\pagebreak
+		
 		% --- INICIO BLOQUE 7-8 ---
 		\textbf{7. Mostrar estado energía} \vspace{1cm}& 
 		\multirow{2}{=}{LEDs indicadores \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/LEDIndicador.jpeg}} & 
@@ -713,7 +744,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{2. Accionar orientación de la plataforma} & 
 		Microservo digital \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/Miniservo.jpg}& Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg}& 	Motor paso a paso NEMA \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorNEMA.jpg}\\ \hline
 		\textbf{3. Accionar posición de la plataforma} &
-		Motor paso a paso NEMA \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorNEMA.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg}& Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ActuadorLineal.jpg}\\ \hline
+		Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ActuadorLineal.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg}& Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ActuadorLineal.jpg}\\ \hline
 		
 	\end{xltabular}
 \end{center}
@@ -724,7 +755,8 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 	
 	\item \textbf{Accionar orientación de la plataforma:} para el ajuste del ángulo de los instrumentos de medición climática, se consideró el motor paso a paso NEMA, que asegura una excelente retención estática y precisión para mantener la inclinación deseada frente a las vibraciones del entorno; el servomotor Brushless DC, que proporciona un control angular de gran exactitud pero resulta técnica y económicamente sobredimensionado para sostener una carga estática; y el microservo digital, una alternativa muy compacta y de control directo, pero cuya transmisión y engranajes internos pueden ser vulnerables a daños mecánicos bajo los esfuerzos continuos de la plataforma.
 	
-	\item \textbf{Accionar posición de la plataforma:} para el ajuste espacial o de altura de los sensores, se analizó el motor paso a paso NEMA, que si bien es preciso, requiere acoplarse a mecanismos de transmisión adicionales para transformar el giro en movimiento rectilíneo; el servomotor Brushless DC, que ofrece alta capacidad de respuesta pero excesiva complejidad de control para un ajuste posicional que suele ser esporádico; y el actuador lineal, que ejecuta el movimiento rectilíneo de forma directa, soportando eficientemente las cargas estructurales y reteniendo su posición mecánicamente sin requerir consumo eléctrico continuo.
+	\item \textbf{Accionar posición de la plataforma:} Se evaluó el servomotor Brushless DC, que proporciona alta precisión pero exige un consumo eléctrico continuo para mantener la carga estática y el actuador lineal, con una capacidad de ejecutar el movimiento rectilíneo directo y retener mecánicamente la elevación sin consumo de energía constante.
+
 \end{itemize}
 \subsection{Dominio Mecánico}
 % Espacio para tabla de Mecánico
@@ -753,8 +785,6 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\multirow{2}{=}{Perfil V-Slot \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/Vslot.jpg}} & 
 		\multirow{2}{=}{Chapas de Acero \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/ChapaAcero.jpg}} \\ \cline{1-1}
 		\textbf{2. Soportar componentes} & & & \\ \hline
-		
-		\pagebreak
 		\textbf{3. Proteger componentes} \vspace{1cm}& 
 		\multirow{3}{=}{Carcasa impresa en 3D \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/Carcasa3D.jpg}} & 
 		\multirow{3}{=}{Caja de chapa de aluminio \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/CajaChapaAluminio.jpg}} & 
@@ -770,9 +800,9 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		Mecanismo tornillo sinfin-corona curva \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TornilloSinFinCorona.jpg}& 
 		Transmisión por correa dentada \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TransmisionCorreaDentada.jpg}\\ \hline
 		\textbf{8. Posicionar plataforma} & 
-		Sistema de piñón y cremallera \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/PinonCremallera.png}& 
-		Mecanismo tornillo sinfin-corona \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TornilloSinFinCorona.jpg}& 
-		Soporte vertical \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/SoporteVertical.jpg}\\ \hline
+		Soporte vertical  \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/SoporteVertical.jpg}& 
+		Plataforma elevadora de tijera \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TijeraElevacion.png}& 
+		Elevacion por articulación telescópica\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/PlataformaTelescopica.jpg}\\ \hline
 	\end{xltabular}
 \end{center}
 
@@ -785,5 +815,6 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 	
 	\item \textbf{Orientar plataforma:} para ajustar el ángulo de los instrumentos, se propuso el mecanismo de tornillo sinfín-corona curva, que destaca por su alta precisión y capacidad de retención estática (autobloqueo) para mantener la inclinación frente a las ráfagas de viento sin consumir energía continua; el eje acoplado a motor, que ofrece un diseño directo y simple pero exige torque constante del actuador para sostener la carga; y la transmisión por correa dentada, que permite movimientos rápidos pero es susceptible al desgaste, elongación y deslizamiento bajo condiciones de intemperie.
 	
-	\item \textbf{Posicionar plataforma:} para el ajuste espacial, se evaluó el mecanismo de tornillo sinfín-corona, que transforma la energía en un desplazamiento preciso, capaz de soportar cargas verticales de forma autobloqueante; el sistema de piñón y cremallera, que otorga un movimiento rápido y eficiente, pero requiere energía continua o frenos adicionales para mantener la posición frente a la gravedad; y el soporte vertical fijo, que representa la solución más robusta y económica desde el punto de vista estático, pero sacrifica por completo el grado de libertad necesario para el ajuste dinámico.
+	 \item \textbf{Posicionar plataforma:} Se propuso el soporte vertical, que complementa el movimiento del motor lineal, pero puede sacrificar los grados de libertad para ajustar la orientación de la plataforma de medición; la plataforma elevadora de tijera, cuyos ejes mecánicos expuestos pueden resultar vulnerables al desgaste y atascamiento por el ingreso físico de polvo o arena del entorno; y la elevación por articulación telescópica, un principio tecnológico extraído de las actuales micro estaciones meteorológicas móviles \citep{CN222047271U}.
+
 \end{itemize}

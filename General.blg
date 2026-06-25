@@ -14,50 +14,59 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: TFC1/biblio.bib
+I was expecting a `,' or a `}'---line 128 of file TFC1/biblio.bib
+ :  title       = {Proyecto de ejecución de una planta fotovoltaica {Burriana}de 5 {MWn} } 
+ :                                                                                          ({Castellón})},
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "GarciaSalinas2025"
+Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--`others' not consistent with 6th ed. of the APA Manual
+Warning--No address in GuiaMercosur2024
 Warning--No address in ICEX2025
 Warning--No address in IEC61724-1_2021
+Warning--No institution in Burriana5MW
 Warning--No address in Burriana5MW
 Warning--No address in ProyectoEjecutivo2024
-You've used 40 entries,
+You've used 46 entries,
             6951 wiz_defined-function locations,
-            1475 strings with 17660 characters,
-and the built_in function-call counts, 76911 in all, are:
-= -- 9376
-> -- 636
-< -- 3967
-+ -- 3878
-- -- 107
-* -- 4894
-:= -- 14668
-add.period$ -- 169
-call.type$ -- 40
-change.case$ -- 697
+            1505 strings with 19042 characters,
+and the built_in function-call counts, 91257 in all, are:
+= -- 11031
+> -- 790
+< -- 4749
++ -- 4720
+- -- 121
+* -- 5866
+:= -- 17390
+add.period$ -- 192
+call.type$ -- 46
+change.case$ -- 786
 chr.to.int$ -- 0
-cite$ -- 84
-duplicate$ -- 1904
-empty$ -- 2951
-format.name$ -- 1060
-if$ -- 14441
+cite$ -- 98
+duplicate$ -- 2370
+empty$ -- 3456
+format.name$ -- 1366
+if$ -- 17006
 int.to.chr$ -- 0
-int.to.str$ -- 124
+int.to.str$ -- 142
 missing$ -- 0
-newline$ -- 973
-num.names$ -- 320
-pop$ -- 2092
+newline$ -- 1135
+num.names$ -- 368
+pop$ -- 2398
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 196
 quote$ -- 0
-skip$ -- 4177
+skip$ -- 4908
 stack$ -- 0
-substring$ -- 4188
-swap$ -- 950
-text.length$ -- 123
+substring$ -- 5082
+swap$ -- 1174
+text.length$ -- 135
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3328
-warning$ -- 4
-while$ -- 384
+type$ -- 3808
+warning$ -- 7
+while$ -- 486
 width$ -- 0
-write$ -- 1201
-(There were 4 warnings)
+write$ -- 1429
+(There was 1 error message)
