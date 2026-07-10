@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  23 JUN 2026 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  4 JUL 2026 10:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3817,10 +3817,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [87]
-<Imagenes/evtecec.png, id=1448, 587.796pt x 365.56575pt>
+<Imagenes/evtecec.png, id=1449, 587.796pt x 365.56575pt>
 File: Imagenes/evtecec.png Graphic file (type png)
 <use Imagenes/evtecec.png>
-Package pdftex.def Info: Imagenes/evtecec.png  used on input line 227.
+Package pdftex.def Info: Imagenes/evtecec.png  used on input line 233.
 (pdftex.def)             Requested size: 341.43437pt x 212.34622pt.
 
 
@@ -3831,10 +3831,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [88]
-<Imagenes/CAD-GENERAL_V1.png, id=1454, 542.77782pt x 588.69937pt>
+<Imagenes/CAD-GENERAL_V1.png, id=1455, 542.77782pt x 588.69937pt>
 File: Imagenes/CAD-GENERAL_V1.png Graphic file (type png)
 <use Imagenes/CAD-GENERAL_V1.png>
-Package pdftex.def Info: Imagenes/CAD-GENERAL_V1.png  used on input line 250.
+Package pdftex.def Info: Imagenes/CAD-GENERAL_V1.png  used on input line 256.
 (pdftex.def)             Requested size: 256.07741pt x 277.7487pt.
 
 
@@ -3845,17 +3845,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [89 <./Imagenes/evtecec.png>]
-<Imagenes/SISTEMA_TRASLACION_ISO.png, id=1461, 617.30624pt x 436.63126pt>
+<Imagenes/SISTEMA_TRASLACION_ISO.png, id=1462, 617.30624pt x 436.63126pt>
 File: Imagenes/SISTEMA_TRASLACION_ISO.png Graphic file (type png)
 <use Imagenes/SISTEMA_TRASLACION_ISO.png>
 Package pdftex.def Info: Imagenes/SISTEMA_TRASLACION_ISO.png  used on input lin
-e 267.
+e 273.
 (pdftex.def)             Requested size: 213.39568pt x 150.93774pt.
-<Imagenes/SISTEMA_TRASLACION_FRONT.png, id=1462, 593.21625pt x 301.125pt>
+<Imagenes/SISTEMA_TRASLACION_FRONT.png, id=1463, 593.21625pt x 301.125pt>
 File: Imagenes/SISTEMA_TRASLACION_FRONT.png Graphic file (type png)
 <use Imagenes/SISTEMA_TRASLACION_FRONT.png>
 Package pdftex.def Info: Imagenes/SISTEMA_TRASLACION_FRONT.png  used on input l
-ine 271.
+ine 277.
 (pdftex.def)             Requested size: 213.39568pt x 108.3222pt.
 
 
@@ -3866,17 +3866,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [90 <./Imagenes/CAD-GENERAL_V1.png>]
-<Imagenes/MECANISMO_POSICION_ISO.png, id=1471, 359.09157pt x 526.21594pt>
+<Imagenes/MECANISMO_POSICION_ISO.png, id=1472, 359.09157pt x 526.21594pt>
 File: Imagenes/MECANISMO_POSICION_ISO.png Graphic file (type png)
 <use Imagenes/MECANISMO_POSICION_ISO.png>
 Package pdftex.def Info: Imagenes/MECANISMO_POSICION_ISO.png  used on input lin
-e 292.
+e 298.
 (pdftex.def)             Requested size: 213.39568pt x 312.72098pt.
-<Imagenes/MECANISMO_POSICION_DERECHA.png, id=1472, 377.15906pt x 503.63156pt>
+<Imagenes/MECANISMO_POSICION_DERECHA.png, id=1473, 377.15906pt x 503.63156pt>
 File: Imagenes/MECANISMO_POSICION_DERECHA.png Graphic file (type png)
 <use Imagenes/MECANISMO_POSICION_DERECHA.png>
 Package pdftex.def Info: Imagenes/MECANISMO_POSICION_DERECHA.png  used on input
- line 296.
+ line 302.
 (pdftex.def)             Requested size: 213.39568pt x 284.95197pt.
 
 
@@ -3888,18 +3888,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [91 <./Imagenes/SISTEMA_TRASLACION_ISO.png> <./Imagenes/SISTEMA_TRASLACION_FRON
 T.png>]
-<Imagenes/MECANISMO-ORIENTACION-ISO.png, id=1481, 626.34pt x 444.91219pt>
+<Imagenes/MECANISMO-ORIENTACION-ISO.png, id=1482, 626.34pt x 444.91219pt>
 File: Imagenes/MECANISMO-ORIENTACION-ISO.png Graphic file (type png)
 <use Imagenes/MECANISMO-ORIENTACION-ISO.png>
 Package pdftex.def Info: Imagenes/MECANISMO-ORIENTACION-ISO.png  used on input 
-line 317.
+line 323.
 (pdftex.def)             Requested size: 213.39568pt x 151.58041pt.
-<Imagenes/MECANISMO-ORIENTACION-DERECHA.png, id=1482, 553.31718pt x 377.91188pt
+<Imagenes/MECANISMO-ORIENTACION-DERECHA.png, id=1483, 553.31718pt x 377.91188pt
 >
 File: Imagenes/MECANISMO-ORIENTACION-DERECHA.png Graphic file (type png)
 <use Imagenes/MECANISMO-ORIENTACION-DERECHA.png>
 Package pdftex.def Info: Imagenes/MECANISMO-ORIENTACION-DERECHA.png  used on in
-put line 321.
+put line 327.
 (pdftex.def)             Requested size: 213.39568pt x 145.74736pt.
 
 
@@ -3911,12 +3911,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [92 <./Imagenes/MECANISMO_POSICION_ISO.png> <./Imagenes/MECANISMO_POSICION_DERE
 CHA.png>]
-<Imagenes/SOPORTE-CUBIERTA-ISO.png, id=1491, 1425.325pt x 784.9325pt>
+<Imagenes/SOPORTE-CUBIERTA-ISO.png, id=1492, 675.27281pt x 588.69937pt>
 File: Imagenes/SOPORTE-CUBIERTA-ISO.png Graphic file (type png)
 <use Imagenes/SOPORTE-CUBIERTA-ISO.png>
 Package pdftex.def Info: Imagenes/SOPORTE-CUBIERTA-ISO.png  used on input line 
-340.
-(pdftex.def)             Requested size: 426.79135pt x 235.02643pt.
+346.
+(pdftex.def)             Requested size: 341.43437pt x 297.66362pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3927,11 +3927,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [93 <./Imagenes/MECANISMO-ORIENTACION-ISO.png> <./Imagenes/MECANISMO-ORIENTACIO
 N-DERECHA.png>]
-<Imagenes/DiagramaFlujoGeneralTFC1_v2.png, id=1500, 724.20563pt x 429.85594pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[94 <./Imagenes/SOPORTE-CUBIERTA-ISO.png>]
+<Imagenes/DiagramaFlujoGeneralTFC1_v2.png, id=1507, 724.20563pt x 429.85594pt>
 File: Imagenes/DiagramaFlujoGeneralTFC1_v2.png Graphic file (type png)
 <use Imagenes/DiagramaFlujoGeneralTFC1_v2.png>
 Package pdftex.def Info: Imagenes/DiagramaFlujoGeneralTFC1_v2.png  used on inpu
-t line 363.
+t line 369.
 (pdftex.def)             Requested size: 426.79135pt x 253.3242pt.
 
 
@@ -3941,26 +3949,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[94 <./Imagenes/SOPORTE-CUBIERTA-ISO.png>]
-<Imagenes/LazoControlSolucionOptima.png, id=1508, 747.39224pt x 365.56575pt>
+[95 <./Imagenes/DiagramaFlujoGeneralTFC1_v2.png>]
+<Imagenes/LazoControlSolucionOptima.png, id=1515, 747.39224pt x 365.56575pt>
 File: Imagenes/LazoControlSolucionOptima.png Graphic file (type png)
 <use Imagenes/LazoControlSolucionOptima.png>
 Package pdftex.def Info: Imagenes/LazoControlSolucionOptima.png  used on input 
-line 384.
+line 390.
 (pdftex.def)             Requested size: 426.79135pt x 208.75394pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[95 <./Imagenes/DiagramaFlujoGeneralTFC1_v2.png>]
-<Imagenes/TopologiaRedTFC1.png, id=1516, 7185.70285pt x 5657.70857pt>
+<Imagenes/TopologiaRedTFC1.png, id=1517, 7185.70285pt x 5657.70857pt>
 File: Imagenes/TopologiaRedTFC1.png Graphic file (type png)
 <use Imagenes/TopologiaRedTFC1.png>
-Package pdftex.def Info: Imagenes/TopologiaRedTFC1.png  used on input line 405.
+Package pdftex.def Info: Imagenes/TopologiaRedTFC1.png  used on input line 411.
 
 (pdftex.def)             Requested size: 426.79135pt x 335.99469pt.
 
@@ -3980,11 +3979,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [97 <./Imagenes/TopologiaRedTFC1.png>]
-<Imagenes/DiagramaBloquesTFC1_v2.png, id=1531, 1156.32pt x 690.32906pt>
+<Imagenes/DiagramaBloquesTFC1_v2.png, id=1532, 1156.32pt x 690.32906pt>
 File: Imagenes/DiagramaBloquesTFC1_v2.png Graphic file (type png)
 <use Imagenes/DiagramaBloquesTFC1_v2.png>
 Package pdftex.def Info: Imagenes/DiagramaBloquesTFC1_v2.png  used on input lin
-e 430.
+e 436.
 (pdftex.def)             Requested size: 426.79135pt x 254.79626pt.
 ) (TFC1/conclusiones.tex
 
@@ -4050,12 +4049,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [104]
-<TFC1/DiagramaGantt.pdf, id=1582, 845.1575pt x 597.23125pt>
+<TFC1/DiagramaGantt.pdf, id=1583, 845.1575pt x 597.23125pt>
 File: TFC1/DiagramaGantt.pdf Graphic file (type pdf)
 <use TFC1/DiagramaGantt.pdf>
 Package pdftex.def Info: TFC1/DiagramaGantt.pdf  used on input line 217.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
-<TFC1/DiagramaGantt.pdf, id=1584, page=1, 845.1575pt x 597.23125pt>
+<TFC1/DiagramaGantt.pdf, id=1585, page=1, 845.1575pt x 597.23125pt>
 File: TFC1/DiagramaGantt.pdf Graphic file (type pdf)
 <use TFC1/DiagramaGantt.pdf, page 1>
 Package pdftex.def Info: TFC1/DiagramaGantt.pdf , page1 used on input line 217.
@@ -4090,7 +4089,7 @@ Package pdftex.def Info: TFC1/DiagramaGantt.pdf , page1 used on input line 217.
 
 pdfTeX warning: pdflatex.exe (file ./TFC1/Avance3_EstructuraFunciones_v11.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<TFC1/Avance3_EstructuraFunciones_v11.pdf, id=1610, 6050.605pt x 7908.54625pt>
+<TFC1/Avance3_EstructuraFunciones_v11.pdf, id=1611, 6050.605pt x 7908.54625pt>
 File: TFC1/Avance3_EstructuraFunciones_v11.pdf Graphic file (type pdf)
 <use TFC1/Avance3_EstructuraFunciones_v11.pdf>
 Package pdftex.def Info: TFC1/Avance3_EstructuraFunciones_v11.pdf  used on inpu
@@ -4104,7 +4103,7 @@ pdfTeX warning: pdflatex.exe (file ./TFC1/Avance3_EstructuraFunciones_v11.pdf):
 
 pdfTeX warning: pdflatex.exe (file ./TFC1/Avance3_EstructuraFunciones_v11.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<TFC1/Avance3_EstructuraFunciones_v11.pdf, id=1612, page=1, 6050.605pt x 7908.5
+<TFC1/Avance3_EstructuraFunciones_v11.pdf, id=1613, page=1, 6050.605pt x 7908.5
 4625pt>
 File: TFC1/Avance3_EstructuraFunciones_v11.pdf Graphic file (type pdf)
 <use TFC1/Avance3_EstructuraFunciones_v11.pdf, page 1>
@@ -4171,9 +4170,9 @@ MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Mitsuki/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mitsuki/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mitsuki/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on General.pdf (114 pages, 15700503 bytes).
+Output written on General.pdf (114 pages, 15727920 bytes).
 PDF statistics:
- 2010 PDF objects out of 2073 (max. 8388607)
+ 2011 PDF objects out of 2073 (max. 8388607)
  358 named destinations out of 1000 (max. 500000)
  1304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
