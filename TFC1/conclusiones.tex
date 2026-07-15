@@ -3,4 +3,16 @@
 \addcontentsline{toc}{chapter}{CONCLUSIONES} 
 \markboth{CONCLUSIONES}{CONCLUSIONES} % encabezado
 
+\begin{itemize}
+    \item El diseño conceptual propuesto cumple con las exigencias de monitoreo de la norma internacional IEC 61724-1. El sistema es capaz de registrar variables climatológicas críticas de forma dinámica, tales como la irradiancia, la temperatura, la velocidad del viento y la humedad relativa, mitigando la incertidumbre generada por los microclimas en topografías complejas y permitiendo una mejora significativa en el cálculo del índice de rendimiento de la planta.
+    
+    \item Se validó un diseño mecánico robusto que emplea tracción diferencial de cuatro ruedas, lo que garantiza un desplazamiento estable sobre el relieve irregular de los parques solares. Adicionalmente, el concepto óptimo integra mecanismos independientes de elevación y orientación para posicionar el sensor de irradiancia con exactitud. Cada uno de estos mecanismos cuenta con un control de actuación integrado y manejado a través de drivers de potencia aislados.
+    
+    \item Se establecieron y estructuraron los algoritmos necesarios para dotar al vehículo de autonomía, utilizando como cerebro lógico una computadora de placa única. Mediante el procesamiento de datos satelitales e inerciales a través del algoritmo geométrico Pure Pursuit y un controlador PID, el robot es capaz de realizar un seguimiento preciso de las rutas de inspección y evadir obstáculos dinámicamente.
+    
+    \item Se definió una arquitectura de red con topología punto a punto utilizando el protocolo LoRa. Esta red de telemetría bidireccional permite una transmisión eficiente y de bajo consumo de los paquetes de datos meteorológicos, asegurando un alcance efectivo superior a los 200 metros hacia la estación base para su supervisión en tiempo real.
+    
+    \item Finalmente, se concluye que, aunque la arquitectura de la placa ofrece puertos de interfaz para integrar diversos sensores meteorológicos externos, el diseño actual está limitado a niveles específicos de alimentación eléctrica y a protocolos de comunicación preestablecidos. Superar esta barrera de compatibilidad queda planteado como una de las principales oportunidades de mejora para la futura construcción del prototipo físico.
+\end{itemize}
+
 

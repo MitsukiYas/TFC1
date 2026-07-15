@@ -589,7 +589,7 @@ IEC61724-1_2021}%
 }{%
 {INARSE}%
 }{%
-{\protect \APACyear {{\protect \bibnodate {}}}}%
+{\protect \APACyear {2023}}%
 }]{%
 Burriana5MW}
 \APACinsertmetastar {%
@@ -599,11 +599,13 @@ Burriana5MW}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\APACrefYearMonthDay{2023}{}{}.
 \newblock
-\APACrefbtitle {Proyecto de ejecución de una planta fotovoltaica {Burriana}de
-  5 {MWn}} {Proyecto de ejecución de una planta fotovoltaica {Burriana}de 5
-  {MWn}}\ \APACbVolEdTR{}{\BTR{}}.
+\APACrefbtitle {Proyecto de ejecución de una planta fotovoltaica de 5 {MWn}
+  ({Castellón})} {Proyecto de ejecución de una planta fotovoltaica de 5 {MWn}
+  ({Castellón})}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Corporate Solar Holding}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -953,31 +955,6 @@ Salado, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{Seven Sensor}%
-}{%
-{Seven Sensor}%
-}{%
-{\protect \APACyear {s.f.}}%
-}]{%
-SevenSensor}
-\APACinsertmetastar {%
-SevenSensor}%
-\begin{APACrefauthors}%
-{Seven Sensor}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{s.f.}{}{}.
-\newblock
-\APACrefbtitle {Requisitos de Sensores según IEC 61724-1:2021 para el
-  Monitoreo del Desempeño de Plantas Fotovoltaicas.} {Requisitos de sensores
-  según iec 61724-1:2021 para el monitoreo del desempeño de plantas
-  fotovoltaicas.}
-\newblock
-\begin{APACrefURL} \url{https://www.sevensensor.com} \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Vick%
 }{%
 Vick%
@@ -1004,8 +981,10 @@ Vick, B\BPBI D.%
 
 \bibitem [\protect \citeauthoryear {%
 Vieira%
+\ \BBA {} Corr{\^e}a%
 }{%
 Vieira%
+\ \BBA {} Corr{\^e}a%
 }{%
 {\protect \APACyear {2024}}%
 }]{%
@@ -1013,17 +992,20 @@ Vieira2024}
 \APACinsertmetastar {%
 Vieira2024}%
 \begin{APACrefauthors}%
-Vieira, L\BPBI M.%
+Vieira, F\BPBI H\BPBI T.%
+\BCBT {}\ \BBA {} Corr{\^e}a, F.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2024}{}{}.
 \newblock
-\APACrefbtitle {¿C{\'o}mo afectan las variaciones clim{\'a}ticas a la
-  eficiencia de los sistemas solares?} {¿c{\'o}mo afectan las variaciones
-  clim{\'a}ticas a la eficiencia de los sistemas solares?}
+{\BBOQ}\APACrefatitle {Explicit modeling and parameter estimation of solar
+  cells under temperature variations} {Explicit modeling and parameter
+  estimation of solar cells under temperature variations}.{\BBCQ}
 \newblock
-\APAChowpublished {Climatempo}.
+\APACjournalVolNumPages{Renewable Energy}{220}{}{119612}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.renene.2024.119612} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

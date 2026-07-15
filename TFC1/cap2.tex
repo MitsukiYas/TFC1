@@ -40,7 +40,6 @@ donde:
     \item $T_{m}$: Temperatura del panel solar (en $^{\circ}C$).
 \end{itemize}
 
-Una vez que el sistema fotovoltaico ha sido montado, recibe luz solar y genera energía eléctrica. La combinación de valores de voltaje y corriente que puede entregar un sistema fotovoltaico se muestra en una gráfica denominada curva corriente contra voltaje (I-V). La Fig. 1-2 muestra una gráfica genérica, en la que la línea roja representa la curva I-V y la línea azul la relación de potencia total generada contra voltaje. Para generar la mayor cantidad de energía eléctrica se debe mantener el punto de operación cerca al punto de máxima potencia (MPP). Este punto corresponde a una combinación de valores entre la corriente de cortocircuito ($I_{SC}$) y el voltaje de circuito abierto ($V_{OC}$).
 
 \subsection{Impacto de las variables meteorológicas y pérdidas técnicas}
 
@@ -60,11 +59,11 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
 	
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/IEEE_V_Irr.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/IEEE_V_Irr.png}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/IEEE_T_Pwr.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/IEEE_T_Pwr.png}
 	\end{minipage}
 	\par\medskip
 	
@@ -73,9 +72,9 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
 	\label{fig:CurvasElectricasIrrTemp}
 \end{figure}
     
-\subsubsection{\textbf{Albedo:}} El albedo es la fracción de luz reflejada por el suelo, incide directamente en la cara posterior de los paneles bifaciales; un aumento en el índice de albedo eleva significativamente la corriente trasera, lo que genera una mayor ganancia bifacial y maximiza la producción total de energía del sistema \citep{Barreno2024}. En la Figura \ref{fig:CurvasElectricasAlbHum} (izquierda), se puede apreciar que, para todo el rango del coeficiente de albedo, la ganancia bifacial aumenta desde 5 a 25 \%.
+\subsubsection{\textbf{Albedo:}} En el sector fotovoltaico actual, además de los módulos convencionales monofaciales, se emplean cada vez más los paneles bifaciales, los cuales incorporan celdas activas en ambas caras del módulo y son capaces de captar tanto la radiación solar directa en su cara frontal como la radiación reflejada por el suelo en su cara posterior. En este contexto, el albedo, definido como la fracción de luz solar reflejada por la superficie del terreno, adquiere un rol determinante en el rendimiento de estos módulos: un mayor índice de albedo incrementa significativamente la corriente generada en la cara trasera, lo que se traduce en una mayor ganancia bifacial y maximiza la producción total de energía del sistema \citep{Barreno2024}. En la Figura \ref{fig:CurvasElectricasAlbHum} (izquierda), se puede apreciar que, para todo el rango del coeficiente de albedo, la ganancia bifacial aumenta desde 5 a 25\,\%.
     
-\subsubsection{\textbf{Humedad y precipitaciones:}} Los altos niveles de humedad relativa provocan la refracción, reflexión y difracción de la luz solar. Esto atenúa la cantidad de radiación directa que logra alcanzar las celdas fotovoltaicas, reduciendo la corriente generada.   En contraste, aunque las precipitaciones reducen la irradiancia momentáneamente, actúan como el mecanismo de mitigación natural más efectivo, ya que lavan la superficie del panel, removiendo las partículas acumuladas causantes del \textit{soiling} \citep{Kazem2015Humidity}. En la Figura \ref{fig:CurvasElectricasAlbHum} (derecha), se observa que, para una diferencia de humedad del 30\% (entre 95 y 65 \%), el valor de la potencia aumenta de 50 a 105~W (+110\%),
+\subsubsection{\textbf{Humedad y precipitaciones:}} Los altos niveles de humedad relativa provocan la refracción, reflexión y difracción de la luz solar. Esto atenúa la cantidad de radiación directa que logra alcanzar las celdas fotovoltaicas, reduciendo la corriente generada.   En contraste, aunque las precipitaciones reducen la irradiancia momentáneamente, actúan como un mecanismo de mitigación de suciedad al lavar la superficie del panel, removiendo las partículas acumuladas causantes del \textit{soiling} \citep{Kazem2015Humidity}. En la Figura \ref{fig:CurvasElectricasAlbHum} (derecha), se observa que, para una diferencia de humedad del 30\% (entre 95 y 65 \%), el valor de la potencia aumenta de 50 a 105~W (+110\%),
 
 \begin{figure}[H]
 	
@@ -87,11 +86,11 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
 	
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/BARRENO_Alb_Ganancia.jpeg}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/BARRENO_Alb_Ganancia.jpeg}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/KAZEM_Hum_Pwr.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/KAZEM_Hum_Pwr.png}
 	\end{minipage}
 	\par\medskip
 	
@@ -102,9 +101,9 @@ El rendimiento de los sistemas fotovoltaicos no depende únicamente de sus espec
 
 
 \subsubsection{\textbf{Impacto aerodinámico en topografías complejas:}} El viento presenta un efecto dual. Por un lado, cuando la velocidad del viento es moderada, este favorece el enfriamiento convectivo de los paneles, disipando el calor acumulado y reduciendo la temperatura de la celda, lo que incrementa la eficiencia y la potencia eléctrica de salida. 
-Por otro lado, las ráfagas actúan como el principal transporte de partículas. Esto eleva las tasas de deposición de suciedad sobre los cristales, disminuyendo la generación de energía \citep{Vick_WindEffect}. En la Figura \ref{fig:VientoMarcoTeorico} (izquierda), se observa un una comparación cualitativa de la potencia de salida de dos paneles solares, con una diferencia promedio a lo largo de día de 7~W (11\% de potencia máxima de panel con aire).
+Por otro lado, las ráfagas actúan como el principal transporte de partículas. Esto eleva las tasas de deposición de suciedad sobre los cristales, disminuyendo la generación de energía \citep{Vick_WindEffect}. En la Figura \ref{fig:VientoMarcoTeorico} (izquierda), se observa una comparación cualitativa de la potencia de salida de dos paneles solares, con una diferencia promedio a lo largo de día de 7~W (11\% de potencia máxima de panel con aire).
 
-A pesar de la importancia crítica de este enfriamiento convectivo, cuando las plantas a gran escala se instalan sobre terrenos montañosos, las laderas alteran drásticamente el flujo de aire homogéneo. Tal como se evidencia en los contornos de velocidad de la Figura \ref{fig:VientoMarcoTeorico} (derecha) del estudio de \cite{Xu2024}, el relieve actúa como una barrera que estanca el viento en la base de la pendiente (anulando casi por completo la refrigeración) y lo acelera al máximo en la cresta. Esta dinámica de fluidos provoca que la capacidad de disipación de calor varíe severamente dependiendo de la elevación exacta de cada panel en el terreno, dando origen a la formación de microclimas.
+A pesar de la importancia crítica de este enfriamiento convectivo, cuando las plantas a gran escala se instalan sobre terrenos montañosos, las laderas alteran drásticamente el flujo de aire homogéneo. Tal como se evidencia en los contornos de velocidad de la Figura \ref{fig:VientoMarcoTeorico} (derecha) del estudio de \cite{Xu2024}, el relieve actúa como una barrera que estanca el viento en la base de la pendiente, anulando el enfriamiento convectivo, y lo acelera en la cresta. Esta dinámica de fluidos provoca que la capacidad de disipación de calor varíe severamente dependiendo de la elevación exacta de cada panel en el terreno, dando origen a la formación de microclimas.
 
 \begin{figure}[H]
 	
@@ -116,11 +115,11 @@ A pesar de la importancia crítica de este enfriamiento convectivo, cuando las p
 	
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/Leow_Wind_Pwr.jpeg}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/Leow_Wind_Pwr.jpeg}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/XU_Wind_Topography.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/Graficas/XU_Wind_Topography.png}
 	\end{minipage}
 	\par\medskip
 	
@@ -141,7 +140,7 @@ Las variaciones aerodinámicas generan un enfriamiento desigual en la planta. Al
 	\textit{Frecuencia anual de las diferencias máximas de irradiancia diaria entre módulos fotovoltaicos por dispersión geográfica.} \par\medskip
 	
 	\centering
-	\includegraphics[width=0.6\textwidth]{Imagenes/GARCIA_Var_Irr.png} \par\medskip
+	\includegraphics[width=0.6\textwidth]{Recursos/Imagenes/Graficas/GARCIA_Var_Irr.png} \par\medskip
 	\raggedright
 	\footnotesize \textit{Nota.} Gráfico adaptado del artículo ``Solar irradiation and PV module temperature dispersion
 	at a large-scale PV plant'' \citep{Garcia2014}.
@@ -150,7 +149,7 @@ Las variaciones aerodinámicas generan un enfriamiento desigual en la planta. Al
 
 \subsubsection{Pérdidas Técnicas:}
 
-La eficiencia de esta conversión disminuye significativamente bajo condiciones operativas reales debido a dos fenómenos físicos principales. En primer lugar, el efecto térmico provoca que las celdas solares pierdan eficiencia a medida que su temperatura aumenta, ya que dicho incremento genera un coeficiente negativo en el voltaje de circuito abierto que reduce drásticamente la potencia máxima de salida \citep{Vieira2024}. Por otro lado, el fenómeno del \textit{soiling} consiste en la acumulación de polvo, arena y contaminantes sobre la superficie de los módulos; esta capa de suciedad interfiere con la transmisión de la luz mediante procesos de absorción, reflexión y dispersión, generando pérdidas eléctricas que, al distribuirse de forma no uniforme, pueden derivar en la formación de puntos caliente” perjudiciales para la vida útil del panel y reducir severamente la rentabilidad de la instalación \citep{TesisJGB}.
+La eficiencia de esta conversión disminuye significativamente bajo condiciones operativas reales debido a dos fenómenos físicos principales. En primer lugar, el efecto térmico provoca que las celdas solares pierdan eficiencia a medida que su temperatura aumenta, ya que dicho incremento genera un coeficiente negativo en el voltaje de circuito abierto que reduce drásticamente la potencia máxima de salida \citep{Vieira2024}. Por otro lado, el fenómeno del \textit{soiling} consiste en la acumulación de polvo, arena y contaminantes sobre la superficie de los módulos; esta capa de suciedad interfiere con la transmisión de la luz mediante procesos de absorción, reflexión y dispersión, generando pérdidas eléctricas que, al distribuirse de forma no uniforme, pueden derivar en la formación de puntos calientes” perjudiciales para la vida útil del panel y reducir severamente la rentabilidad de la instalación \citep{TesisJGB}.
 
 
 \section{Marco referencial}
@@ -218,7 +217,7 @@ Las plantas solares a gran escala se pueden instalar en terrenos irregulares y m
 	\textit{Imagen aérea de varias colinas cubiertas con paneles fotovoltaicos en Jinhua, provincia de Zhejiang, China.} \par\medskip
 	
 	\centering
-	\includegraphics[width=0.6\textwidth]{Imagenes/PlantaPendiente.png} \par\medskip
+	\includegraphics[width=0.6\textwidth]{Recursos/Imagenes/Otros/PlantaPendiente.png} \par\medskip
 	
 	\raggedright
 	\footnotesize \textit{Nota.} Fotografía adaptada sobre la noticia ``China, the energy transition superpower''  \citep{Pouille2025China}.
@@ -247,11 +246,11 @@ En esta sección se analizan los sistemas mecatrónicos completos que intentan r
 		
 		\begin{minipage}{0.4\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN216956405U-1.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN216956405U-1.png}
 		\end{minipage}\hfill
 		\begin{minipage}{0.4\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN216956405U-2.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN216956405U-2.png}
 		\end{minipage}
 		\par\medskip
 		
@@ -261,7 +260,7 @@ En esta sección se analizan los sistemas mecatrónicos completos que intentan r
 	\end{figure}
 	
 	
-\subsubsection{\textbf{Vehículo de inspección para plantas de energía fotovoltaicas (CN 218409341 U):}} Es un vehículo terrestre no tripulado, mostrado en la Figura \ref{fig:CN218409341U}, montado sobre una base (1), equipado con ruedas de movimiento (21), paneles solares abatibles (12) para carga y un robusto mecanismo de amortiguación mediante resortes (20) en cajas para evitar daños en la instrumentación durante el tránsito. Esta patente representa una solución integral para la problemática, implementando el uso de paneles solares integrados para la recarga autónoma y sistemas de amortiguación para la protección de la instrumentación, lo que aseguraa la precisión de las mediciones dinámicas y prolonga la autonomía.
+\subsubsection{\textbf{Vehículo de inspección para plantas de energía fotovoltaicas (CN 218409341 U):}} Es un vehículo terrestre no tripulado, mostrado en la Figura \ref{fig:CN218409341U}, montado sobre una base (1), equipado con ruedas de movimiento (21), paneles solares abatibles (12) para carga y un robusto mecanismo de amortiguación mediante resortes (20) en cajas para evitar daños en la instrumentación durante el tránsito. Esta patente representa una solución integral para la problemática, implementando el uso de paneles solares integrados para la recarga autónoma y sistemas de amortiguación para la protección de la instrumentación, lo que asegura la precisión de las mediciones dinámicas y prolonga la autonomía.
 	
 	\begin{figure}[H]
 		\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
@@ -271,7 +270,7 @@ En esta sección se analizan los sistemas mecatrónicos completos que intentan r
 		\textit{Ilustración de vehículo de inspección terrestre con paneles solares abatibles y mecanismo de amortiguación.} \par\medskip
 		
 		\centering
-		\includegraphics[width=0.75\textwidth]{Imagenes/CN218409341U.png} \par\medskip
+		\includegraphics[width=0.75\textwidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN218409341U.png} \par\medskip
 		
 		\raggedright
 		\footnotesize \textit{Nota.} Adaptado de \cite{CN218409341U}.
@@ -288,7 +287,7 @@ Este robot, como se ilustra en la Figura \ref{fig:CN221163061U}, cuenta con trac
 		\textit{Ilustración de robot de inspección con tracción de orugas y sensores climáticos para entornos desérticos.} \par\medskip
 		
 		\centering
-		\includegraphics[width=0.7\textwidth]{Imagenes/CN221163061U.png} \par\medskip
+		\includegraphics[width=0.7\textwidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN221163061U.png} \par\medskip
 		
 		\raggedright
 		\footnotesize \textit{Nota.} Adaptado de \citep{CN221163061U}.
@@ -356,11 +355,11 @@ En esta sección se describen los componentes y subsistemas especializados que a
 		
 		\begin{minipage}{0.6\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN119665962A.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN119665962A.png}
 		\end{minipage}\hfill
 		\begin{minipage}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN120057153A.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN120057153A.png}
 		\end{minipage}
 		\par\medskip
 		
@@ -379,7 +378,7 @@ En esta sección se describen los componentes y subsistemas especializados que a
 		\textit{Ilustración de dispositivo de inspección automática con mecanismos de limpieza para sus instrumentos ópticos.} \par\medskip
 		
 		\centering
-		\includegraphics[width=0.4\textwidth]{Imagenes/CN220873036U.png} \par\medskip
+		\includegraphics[width=0.4\textwidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN220873036U.png} \par\medskip
 		
 		\raggedright
 		\footnotesize \textit{Nota.} Adaptado de \cite{CN220873036U}.
@@ -419,11 +418,11 @@ En esta sección se describen los componentes y subsistemas especializados que a
 		
 		\begin{minipage}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN215511023U.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN215511023U.png}
 		\end{minipage}\hfill
 		\begin{minipage}{0.6\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{Imagenes/CN215701759U.png}
+			\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN215701759U.png}
 		\end{minipage}
 		\par\medskip
 		
@@ -471,11 +470,11 @@ En esta sección se describen los componentes y subsistemas especializados que a
 	
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/CN216243088U.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN216243088U.png}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/CN206638837U.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN206638837U.png}
 	\end{minipage}
 	\par\medskip
 	
@@ -487,7 +486,7 @@ En esta sección se describen los componentes y subsistemas especializados que a
 \item \textbf{Estación meteorológica simple para monitoreo ambiental (CN 206362955 U):} Se describe, como se ilustra en la Figura \ref{fig:CN206362955U&CN222047271U} (izquierda), un marco compacto (1) que integra sensores de radiación solar (7), instrumentos meteorológicos de cinco elementos para viento y otras variables (8), sensores de lluvia y sensores de temperatura, humedad y presión atmosférica mediante diversos mecanismos de fijación. Este modelo arquitectónico sirve como referencia para la distribución física del sistema de sensores a bordo de plataformas móviles, minimizando los efectos de sombreado mutuo entre instrumentos.
 
 
-\item \textbf{Micro estación meteorológica automática y retractable (CN 222047271 U):} Esta patente describe, como se ilustra en la Figura \ref{fig:CN206362955U&CN222047271U} (derecha), una estación climática (2) montada sobre una base con ruedas (1) que incluye soportes roscado, compuestos por una funda roscada y una varilla roscada, y placas o almohadillas estabilizadoras (5) que se despliegan hacia abajo para anclar el equipo en superficies desniveladas. El sistema destaca por su enfoque en la estabilización mecánica del equipo de medición, utilizando estos mecanismos de anclaje desplegables que aseguran que los sensores meteorológicos mantengan un plano de referencia adecuado al evitar que la base se incline y eviten volcaduras durante la recolección de datos estáticos en terrenos con pendiente. 
+\item \textbf{Micro estación meteorológica automática y retractable (CN 222047271 U):} Esta patente describe, como se ilustra en la Figura \ref{fig:CN206362955U&CN222047271U} (derecha), una estación climática (2) montada sobre una base con ruedas (1) que incluye soportes roscados, compuestos por una funda roscada y una varilla roscada, y placas o almohadillas estabilizadoras (5) que se despliegan hacia abajo para anclar el equipo en superficies desniveladas. El sistema destaca por su enfoque en la estabilización mecánica del equipo de medición, utilizando estos mecanismos de anclaje desplegables que aseguran que los sensores meteorológicos mantengan un plano de referencia adecuado al evitar que la base se incline y eviten volcaduras durante la recolección de datos estáticos en terrenos con pendiente. 
 
 
 \begin{figure}[H]
@@ -500,11 +499,11 @@ En esta sección se describen los componentes y subsistemas especializados que a
 	
 	\begin{minipage}{0.6\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/CN206362955U.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN206362955U.png}
 	\end{minipage}\hfill
 	\begin{minipage}{0.2\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/CN222047271U-1.png}
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/CN222047271U-1.png}
 	\end{minipage}
 	\par\medskip
 	
@@ -525,7 +524,7 @@ En esta sección se describen los componentes y subsistemas especializados que a
     	\textit{Imagen de controlador MeteoPV.} \par\medskip
     	
     	\centering
-    	\includegraphics[width=0.3\textwidth]{Imagenes/MeteoPV.png} \par\medskip
+    	\includegraphics[width=0.3\textwidth]{Recursos/Imagenes/ImagenesEstadoDelArte/MeteoPV.png} \par\medskip
     	
     	\raggedright
     	\footnotesize \textit{Nota.} Adaptado de \cite{MeteoPV}.
@@ -561,8 +560,7 @@ En esta sección se describen los componentes y subsistemas especializados que a
 		Estación meteorológica simple para monitoreo ambiental (CN 206362955 U) & Estructura estática compacta que integra en un solo marco sensores de radiación, viento, lluvia y temperatura. & Referencia para la distribución física de la suite de sensores a bordo de plataformas móviles, minimizando sombreados. & Diseño estático fijo que no permite la adaptación dinámica al ángulo de incidencia solar. \\ \hline
 		Instrumentación electrónica para una estación meteorológica automática (MX 2018007917 A) & Arquitectura basada en microcontroladores para el registro de variables climáticas en módulos locales SD. & Establece la lógica de procesamiento y almacenamiento de datos para registradores de datos embebidos. & Sistema básico de registro sin capacidades de telemetría de largo alcance integradas. \\ \hline
 		Micro estación meteorológica automática y retractable (CN 222047271 U) & Mástil de medición basado en un tubo telescópico extendido verticalmente por un motor eléctrico. & Permite elevar instrumentos para evadir las turbulencias y el polvo generado por el chasis móvil. & Elevar el mástil modifica el centro de gravedad del robot, lo que podría desestabilizarlo al transitar sobre pendientes. \\ \hline
-		Plataforma MeteoPV & Datalogger comercial que concentra datos de sensores inteligentes y los transmite mediante Modbus RTU/TCP. & Prototipo comercial directo para la arquitectura de adquisición del UGV; asegura inmunidad ante el ruido de los motores. & Es un módulo pasivo diseñado para montaje estandarizado; requi
-		ere gestión de disipación térmica y no controla locomoción. \\ \hline
+		Plataforma MeteoPV & Datalogger comercial que concentra datos de sensores inteligentes y los transmite mediante Modbus RTU/TCP. & Prototipo comercial directo para la arquitectura de adquisición del UGV; asegura inmunidad ante el ruido de los motores. & Es un módulo pasivo diseñado para montaje estandarizado; requiere gestión de disipación térmica y no controla locomoción. \\ \hline
 		
 	\end{xltabular}
 \end{center}
@@ -587,11 +585,11 @@ En esta sección se describen los componentes y subsistemas especializados que a
     	
     	\begin{minipage}{0.5\textwidth}
     		\centering
-    		\includegraphics[width=\linewidth]{Imagenes/KippZonen_SunTrackers.png}
+    		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/KippZonen_SunTrackers.png}
     	\end{minipage}\hfill
     	\begin{minipage}{0.5\textwidth}
     		\centering
-    		\includegraphics[width=\linewidth]{Imagenes/KippZonen_Radiometer.jpg}
+    		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesEstadoDelArte/KippZonen_Radiometer.jpg}
     	\end{minipage}
     	\par\medskip
     	
@@ -602,7 +600,40 @@ En esta sección se describen los componentes y subsistemas especializados que a
     
     
 \end{itemize}
+%
+%
+%%
 
+\begin{table}[H]
+	\centering
+	\footnotesize
+	\caption{Análisis comparativo de Soluciones Parciales: Ajuste de orientación para sensores de irradiancia.}
+	\label{tab:estado_arte_ajuste_sensores}
+	\begin{tabularx}{\textwidth}{|p{3.5cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+		\hline
+		\rowcolor[HTML]{D9E1F2} 
+		\textbf{Referente} & \textbf{Principio de Funcionamiento} & \textbf{Aporte al Proyecto} & \textbf{Limitaciones} \\ \hline
+		Seguidor solar SOLYS2 & Seguidor solar automático con receptor GPS integrado para configuración autónoma de ubicación y tiempo. & Referencia para el seguimiento exacto de la trayectoria solar para instrumentos de medición directa. & Elevado peso y costo para ser integrado en una plataforma móvil de exploración dinámica. \\ \hline
+		Kit de montaje para piranómetro con inclinación ajustable & Soporte mecánico con escala graduada para montaje de piranómetros en ángulos de $0^{\circ}$ a $90^{\circ}$. & Permite igualar manualmente la inclinación de los sensores con la de los paneles fotovoltaicos fijos (Plano POA). & Requiere intervención humana para el ajuste del ángulo de inclinación inicial. \\ \hline
+	\end{tabularx}
+\end{table}
+%%
+%
+%
+
+
+\subsubsection{Sistemas de comunicación para datos meteorológicos}
+\begin{itemize}
+    \item \textbf{Estación meteorológica avanzada IoT (SK 302020 A3):} Esta solución detalla un sistema meteorológico dividido en bloques funcionales, donde resalta un bloque avanzado de gestión y recuperación de baterías. Este esquema permite administrar la energía de los sensores de forma independiente a otros sistemas motrices, garantizando la continuidad de la toma de datos IoT incluso en condiciones de baja carga.
+    
+    \item \textbf{Sistema de monitoreo de plantación basado en LoRa (CN 208458788 U):} Este sistema utiliza la tecnología de comunicación inalámbrica LoRa para conectar múltiples nodos sensores, tanto móviles como fijos, con un gateway central. La arquitectura permite transmitir datos ambientales de irradiancia, viento y temperatura a largas distancias con bajo consumo energético, facilitando la supervisión remota a través de plataformas en la nube.
+    
+    \item \textbf{Método de posicionamiento para robots móviles (CN 116405876 A):} El método emplea módulos LoRa instalados en robots móviles que se comunican con gateways fijos distribuidos en el área de operación. Mediante el análisis de la intensidad de señal y el tiempo de llegada, el sistema permite determinar la ubicación precisa del vehículo en tiempo real y transmitir sus datos operativos hacia un servidor de control.
+\end{itemize}
+
+%
+%
+%%
 \begin{table}[H]
 	\centering
 	\footnotesize
@@ -618,31 +649,7 @@ En esta sección se describen los componentes y subsistemas especializados que a
 	\end{tabularx}
 \end{table}
 
-
-\subsubsection{Sistemas de comunicación para datos meteorológicos}
-\begin{itemize}
-    \item \textbf{Estación meteorológica avanzada IoT (SK 302020 A3):} Esta solución detalla un sistema meteorológico dividido en bloques funcionales, donde resalta un bloque avanzado de gestión y recuperación de baterías. Este esquema permite administrar la energía de los sensores de forma independiente a otros sistemas motrices, garantizando la continuidad de la toma de datos IoT incluso en condiciones de baja carga.
-    
-    \item \textbf{Sistema de monitoreo de plantación basado en LoRa (CN 208458788 U):} Este sistema utiliza la tecnología de comunicación inalámbrica LoRa para conectar múltiples nodos sensores, tanto móviles como fijos, con un gateway central. La arquitectura permite transmitir datos ambientales de irradiancia, viento y temperatura a largas distancias con bajo consumo energético, facilitando la supervisión remota a través de plataformas en la nube.
-    
-    \item \textbf{Método de posicionamiento para robots móviles (CN 116405876 A):} El método emplea módulos LoRa instalados en robots móviles que se comunican con gateways fijos distribuidos en el área de operación. Mediante el análisis de la intensidad de señal y el tiempo de llegada, el sistema permite determinar la ubicación precisa del vehículo en tiempo real y transmitir sus datos operativos hacia un servidor de control.
-\end{itemize}
-
-%
-
-\begin{table}[H]
-	\centering
-	\footnotesize
-	\caption{Análisis comparativo de Soluciones Parciales: Ajuste de orientación para sensores de irradiancia.}
-	\label{tab:estado_arte_ajuste_sensores}
-	\begin{tabularx}{\textwidth}{|p{3.5cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
-		\hline
-		\rowcolor[HTML]{D9E1F2} 
-		\textbf{Referente} & \textbf{Principio de Funcionamiento} & \textbf{Aporte al Proyecto} & \textbf{Limitaciones} \\ \hline
-		Seguidor solar SOLYS2 & Seguidor solar automático con receptor GPS integrado para configuración autónoma de ubicación y tiempo. & Referencia para el seguimiento exacto de la trayectoria solar para instrumentos de medición directa. & Elevado peso y costo para ser integrado en una plataforma móvil de exploración dinámica. \\ \hline
-		Kit de montaje para piranómetro con inclinación ajustable & Soporte mecánico con escala graduada para montaje de piranómetros en ángulos de $0^{\circ}$ a $90^{\circ}$. & Permite igualar manualmente la inclinación de los sensores con la de los paneles fotovoltaicos fijos (Plano POA). & Requiere intervención humana para el ajuste del ángulo de inclinación inicial. \\ \hline
-	\end{tabularx}
-\end{table}
+%%
 %
 %
 El análisis de las soluciones tecnológicas actuales evidencia una brecha significativa en el sector para resolver el problema de los microclimas en topografías complejas. Por un lado, los vehículos terrestres desarrollados para la industria solar poseen sistemas de locomoción robustos capaces de superar desniveles, pero su instrumentación está limitada a inspecciones visuales o térmicas, lo cual es insuficiente para el mapeo climático dinámico exigido por la norma IEC 61724-1. Por otro lado, las estaciones meteorológicas móviles cuentan con los instrumentos correctos y sistemas de nivelación, pero carecen de la tracción y autonomía necesarias para transitar sobre pendientes extremas. En consecuencia, se justifica la necesidad de desarrollar el sistema mecatrónico propuesto en este proyecto: un robot híbrido que integre la posibilidad de locomoción con la implementación de instrumentación climática, capaz de nivelarse y operar autónomamente sobre los relieves de la instalación.
@@ -653,7 +660,7 @@ El análisis de las soluciones tecnológicas actuales evidencia una brecha signi
 
 El diseño y la implementación del robot autónomo para la medición de variables climáticas involucra a diversos actores dentro del ecosistema de una planta solar fotovoltaica a gran escala. Identificar a estos usuarios y comprender sus necesidades específicas es fundamental para establecer los requerimientos de diseño del sistema mecatrónico. Los agentes involucrados se clasifican en usuarios directos e indirectos.
 
-Para estructurar visualmente el nivel de interacción de cada actor con el equipo y sus datos, se emplea un Stakeholder Map basado en un modelo concéntrico (ver \ref{fig:StakeholderMap}). Esta herramienta clasifica a los agentes en tres niveles de proximidad: el núcleo operativo, el entorno comercial y de gestión y la periferia normativa e institucional.
+Para estructurar visualmente el nivel de interacción de cada actor con el equipo y sus datos, se emplea un Stakeholder Map basado en un modelo concéntrico (ver Figura \ref{fig:StakeholderMap}). Esta herramienta clasifica a los agentes en tres niveles de proximidad: el núcleo operativo, el entorno comercial y de gestión y la periferia normativa e institucional.
 
     	\begin{figure}[H]
 	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
@@ -663,7 +670,7 @@ Para estructurar visualmente el nivel de interacción de cada actor con el equip
 	\textit{Stakeholder Map con usuario principal, usuarios directos e indirectos} \par\medskip
 	
 	\centering
-	\includegraphics[width=\textwidth]{Imagenes/StakeholderMap.png} \par\medskip
+	\includegraphics[width=\textwidth]{Recursos/Imagenes/Otros/StakeholderMap.png} \par\medskip
 	
 	\raggedright
 	\footnotesize \textit{Nota.} Elaboración propia.
@@ -701,7 +708,7 @@ Estos actores imponen las condiciones y los estándares de calidad bajo los cual
     
     \item \textbf{Compañías Distribuidoras:} Entidades encargadas de la facturación, los contratos y atención al cliente tanto a pequeña como mediana escala. Su principal interés es conocer al detalle el costo de la energía eléctrica para poder generar contratos mutuamente beneficiosos para ambas partes. En este sentido, las fluctuaciones en la generación ocasionan fuertes cambios en el costo de la energía, a veces sin posibilidad de modificar el costo que paga el cliente.
     
-    \item \textbf{Entidades estatales (COES):} El Comité de Operación Económica del Sistema (COES) tiene la misión de planificar la generación de cada una de las plantas, y asegurarse de que no haya un desbalance entre la energía generada y consumida por la ciudad. Para cumplir con este objetivo, requiere predicciones precisas de parte de las plantas renovables en la producción, para poder ordenar con precisión a las plantas no renovables los rangos de potencia a producir.
+    \item \textbf{Entidades estatales:} El Comité de Operación Económica del Sistema (COES) tiene la misión de planificar la generación de cada una de las plantas, y asegurarse de que no haya un desbalance entre la energía generada y consumida por la ciudad. Para cumplir con este objetivo, requiere predicciones precisas de parte de las plantas renovables en la producción, para poder ordenar con precisión a las plantas no renovables los rangos de potencia a producir.
     
     \item \textbf{Entidades normativas y de auditoría técnica:} Organismos internacionales e independientes que establecen los estándares de calidad. Imponen la necesidad de que los datos recolectados posean trazabilidad, exactitud comprobable e instrumentación validada, de modo que los diagnósticos y las pruebas de evaluación de capacidad de la planta tengan total validez legal frente a terceros. Esto obliga a que el sistema se adhiera rigurosamente a estándares internacionales como la norma IEC 61724-1 para la monitorización general, y la IEC TS 61724-2 para los métodos de evaluación de capacidad.
 
@@ -754,7 +761,7 @@ A continuación, se presenta la lista de requerimientos del sistema, la cual tra
 
 9 & E & Comunicación & El módulo de telemetría debe transmitir los paquetes de datos a la estación base garantizando un alcance efectivo mínimo de 200 metros en línea de vista. & Las plantas solares a escala comercial abarcan grandes extensiones de terreno longitudinal \citep{Figgis2025}. & Ensayo de pérdida de paquetes (\textit{ping}) alejando el robot progresivamente de la estación base. \\ \hline
 
-10 & D & Mantenimiento & El robot debe incorporar un mecanismo o actuador capaz de mitigar la acumulación de suciedad en los sensores con una efectividad de limpieza que mantenga una incertidumbre menor al 2\%. & La suciedad acumulada degrada críticamente la exactitud de los instrumentos de medición de irradiancia \citep{IEC61724-1_2021}. & Medición comparativa de irradiancia antes y después de activar el mecanismo bajo suciedad simulada. \\ \hline
+10 & D & Mantenimiento & El robot debe contar con una lógica interna de recordatorio de mantenimiento para el usuario, con el fin de mitigar la acumulación de suciedad en los sensores para mantener una incertidumbre menor al 2\%. & La suciedad acumulada degrada críticamente la exactitud de los instrumentos de medición de irradiancia \citep{IEC61724-1_2021}. & Medición comparativa de irradiancia antes y después de activar el mecanismo bajo suciedad simulada. \\ \hline
 
 11 & E & Seguridad & El vehículo debe disponer de un sistema de parada de emergencia que interrumpa la tracción en un tiempo de respuesta menor a 0.1 segundos. & Prevención de accidentes industriales y protección frente a pérdida total de control en la navegación \citep{ProyectoEjecutivo2024}. & Prueba de interrupción forzada de marcha cronometrada en laboratorio. \\ \hline
 

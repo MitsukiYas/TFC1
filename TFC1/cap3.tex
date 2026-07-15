@@ -20,7 +20,7 @@ En la Figura \ref{fig:caja_negra} se presenta la abstracción funcional del sist
 	\textit{Abstracción funcional del sistema de inspección a nivel de caja negra.} \par\medskip
 	
 	\makebox[\textwidth][c]{ 
-		\includegraphics[width=1.2\textwidth]{Imagenes/A3_Blackbox_v7.png}
+		\includegraphics[width=1.2\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_Blackbox_v7.png}
 	} \par\medskip
 	
 	\raggedright
@@ -48,9 +48,9 @@ Finalmente, como residuo del trabajo físico y computacional, el sistema libera 
 A partir de la caja negra, se desarrolla la estructura de funciones (ver Anexo 2). En este esquema, la función principal del sistema se descompone en dominios, cada uno con bloques que describen las funciones elementales del robot, relacionando detalladamente los flujos internos de energía, materia y señales.
 
 \subsection{Dominio de Energía}
-El Dominio de Energía se encarga de la recepción, gestión y distribución del recurso eléctrico necesario para garantizar el funcionamiento de todos los subsistemas del robot, a través del siguiente flujo, ilustrado en la Figura \ref{Avance3_DomEnergia}:
+El Dominio de Energía se encarga de la recepción, gestión y distribución del recurso eléctrico necesario para garantizar el funcionamiento de todos los subsistemas del robot, a través del siguiente flujo, ilustrado en la Figura \ref{fig:Avance3_DomEnergia}:
 
-\begin{itemize}
+\begin{enumerate}
 	\item \textbf{Recibir energía eléctrica:} Para esta función se evaluó el conector \textit{Plug Jack} DC, que permite una conexión lineal simple para corrientes medias; el conector de alta corriente XT60, el cual asegura una conexión física firme capaz de soportar las vibraciones mecánicas de un terreno irregular; y los contactos magnéticos, que facilitan un acople automático sin requerir exactitud cinemática, aunque son vulnerables a perder continuidad \citep{Salinas2025}.
 	
 	\item \textbf{Proteger sistema eléctrico:} Se analizó el fusible electrónico \textit{eFuse} por su corte rápido y posibilidad de restablecimiento automático, ideal para proteger la navegación de vehículos terrestres autónomos \citep{CN221163061U}; el disyuntor termomagnético, que ofrece una protección robusta ante cortocircuitos pero exige rearme manual; y el fusible cerámico de cartucho, una opción de bajo costo que requiere reemplazo físico tras activarse.
@@ -64,7 +64,7 @@ El Dominio de Energía se encarga de la recepción, gestión y distribución del
 	\item \textbf{Regular energía de Actuadores:} Para esta etapa crítica de regulación de potencia motriz se analizó el regulador lineal LDO, que entrega un voltaje limpio pero genera demasiada pérdida térmica frente a la alta demanda de los motores al escalar pendientes; el regulador de bomba de carga, de circuito compacto pero con capacidad de corriente insuficiente; y el convertidor \textit{Buck} DC-DC, que posee una alta eficiencia de conmutación energética para soportar el consumo dinámico del mecanismo de locomoción.
 	
 	\item \textbf{Energizar componentes y distribución interna:} Se propusieron las barras colectoras (\textit{Busbars}) para facilitar una distribución rígida y de alta corriente; el cable trenzado estándar, que aporta flexibilidad y bajo costo para el ruteo interno en la caja de control; y los conectores circulares roscados, que garantizan uniones impermeables y resistentes a las desconexiones causadas por la irregularidad de la topografía \citep{CN120057153A}.
-\end{itemize}
+\end{enumerate}
 
 \begin{figure}[H]
 	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
@@ -74,7 +74,7 @@ El Dominio de Energía se encarga de la recepción, gestión y distribución del
 	\textit{Dominio de energía de la estructura de funciones.} \par\medskip
 	
 	\makebox[\textwidth][c]{
-		\includegraphics[width=1.2\textwidth]{Imagenes/A3_DominioEnergia.png}
+		\includegraphics[width=1.2\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioEnergia.png}
 	} \par\medskip
 	
 	\raggedright
@@ -83,7 +83,7 @@ El Dominio de Energía se encarga de la recepción, gestión y distribución del
 \end{figure}
 
 \subsection{Dominio de Sensores}
-El Dominio de Sensores actúa como el sistema de medición y detección del ambiente del robot, encargado de adquirir los estados físicos de los componentes y del entorno inmediato para su posterior procesamiento. Este dominio es alimentado de forma general por el flujo de energía del Dominio de Sensores. Está compuesto de las siguientes funciones:
+El Dominio de Sensores actúa como el sistema de medición y detección del ambiente del robot, encargado de adquirir los estados físicos de los componentes y del entorno inmediato para su posterior procesamiento. Este dominio es alimentado de forma general por el flujo de energía del Dominio de Sensores. Está compuesto de las siguientes funciones, ilustaradas en la Figura \ref{fig:Avance3_DomSensores}:
 \begin{enumerate}
 	\item \textbf{Sensar temperatura de gestionador de energía:} Capta la energía térmica del gestionador de energía proveniente de dicho módulo y la traduce para emitir los datos brutos de temperatura del gestionador.
 	\item \textbf{Sensar nivel de energía:} Lee el nivel de energía del gestionador de energía y lo convierte para entregar los datos brutos del nivel de energía del sistema.
@@ -103,7 +103,7 @@ El Dominio de Sensores actúa como el sistema de medición y detección del ambi
 	\textit{Dominio de sensores de la estructura de funciones.} \par\medskip
 	
 	\centering
-	\includegraphics[width=0.8\textwidth]{Imagenes/A3_DominioSensores.png} \par\medskip
+	\includegraphics[width=0.8\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioSensores.png} \par\medskip
 	
 	\raggedright
 	\footnotesize \textit{Nota.} Elaboración propia.
@@ -111,7 +111,7 @@ El Dominio de Sensores actúa como el sistema de medición y detección del ambi
 \end{figure}
 \subsection{Dominio de Control}
 
-El Dominio de Control opera como el núcleo lógico y computacional del sistema, encargado de procesar la información recibida, gestionar la seguridad energética, registrar los datos climáticos y comandar tanto la navegación como los actuadores. Todo el subsistema es alimentado por la energía del Dominio de Control y el Dominio de Comunicaciones. Está compuesto de las siguientes funciones:
+El Dominio de Control opera como el núcleo lógico y computacional del sistema, encargado de procesar la información recibida, gestionar la seguridad energética, registrar los datos climáticos y comandar tanto la navegación como los actuadores. Todo el subsistema es alimentado por la energía del Dominio de Control y el Dominio de Comunicaciones. Está compuesto de las siguientes funciones, vistas en la Figura \ref{fig:Avance3_DomControl}:
 
 \begin{enumerate}
 	\item \textbf{Procesar datos meteorológicos:} Recibe los datos meteorológicos brutos, enviándolos hacia el exterior como datos meteorológicos procesados y transfiriéndolos simultáneamente al bloque de registro.
@@ -136,7 +136,7 @@ El Dominio de Control opera como el núcleo lógico y computacional del sistema,
 	\textit{Dominio de control de la estructura de funciones.} \par\medskip
 	
 	\makebox[\textwidth][c]{ 
-		\includegraphics[width=0.9\textwidth]{Imagenes/A3_DominioControl.png}
+		\includegraphics[width=0.9\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioControl.png}
 	} \par\medskip
 	
 	\raggedright
@@ -146,7 +146,7 @@ El Dominio de Control opera como el núcleo lógico y computacional del sistema,
 
 \subsection{Dominio de Comunicación}
 
-El Dominio de Comunicación actúa como el puente de telemetría entre el robot y la red externa del parque fotovoltaico. Para su operatividad, todo este subsistema se encuentra alimentado por el flujo de energía del Dominio de Control y el Dominio de Comunicaciones. El dominio se compone de las siguientes funciones:
+El Dominio de Comunicación actúa como el puente de telemetría entre el robot y la red externa del parque fotovoltaico. Para su operatividad, todo este subsistema se encuentra alimentado por el flujo de energía del Dominio de Control y el Dominio de Comunicaciones. El dominio se compone de las siguientes funciones, vistas en la Figura \ref{fig:Avance3_DomComunicacion}:
 
 \begin{enumerate}
 	\item \textbf{Procesar señal GPS recibida:} Capta e interpreta la señal de radiofrecuencia satelital proveniente del entorno para transformarla y entregar los datos de posición del sistema brutos, los cuales son requeridos por la lógica de navegación interna.
@@ -166,7 +166,7 @@ El Dominio de Comunicación actúa como el puente de telemetría entre el robot 
 	\textit{Dominio de comunicaciones de la estructura de funciones.} \par\medskip
 	
 	\makebox[\textwidth][c]{ 
-		\includegraphics[width=0.8\textwidth]{Imagenes/A3_DominioComunicacion.png}
+		\includegraphics[width=0.8\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioComunicacion.png}
 	} \par\medskip
 	
 	\raggedright
@@ -176,8 +176,7 @@ El Dominio de Comunicación actúa como el puente de telemetría entre el robot 
 
 \subsection{Dominio de Interfaz}
 
-El Dominio de Interfaz, mostrado en la \ref{
-Avance3_Interfaz} desempeña un rol dual en la arquitectura del robot: por un lado, actúa como el puerto de conexión para la instrumentación climática periférica y, por otro, se encarga de exteriorizar los estados operativos y advertencias críticas hacia el personal en el parque fotovoltaico. Para su funcionamiento general, todos los componentes de este subsistema son alimentados directamente por el flujo de energía del Dominio de Interfaz. El dominio cuenta con los siguientes bloques de función:
+El Dominio de Interfaz, mostrado en la Figura \ref{fig:Avance3_DomInterfaz}  desempeña un rol dual en la arquitectura del robot: por un lado, actúa como el puerto de conexión para la instrumentación climática periférica y, por otro, se encarga de exteriorizar los estados operativos y advertencias críticas hacia el personal en el parque fotovoltaico. Para su funcionamiento general, todos los componentes de este subsistema son alimentados directamente por el flujo de energía del Dominio de Interfaz. El dominio cuenta con los siguientes bloques de función:
 
 \begin{enumerate}
 	\item \textbf{Accionar movimiento de traslación:} Recibe la señal de control del actuador de traslación y la transforma en la energía cinética necesaria para ejecutar el desplazamiento principal del robot.
@@ -193,7 +192,7 @@ Avance3_Interfaz} desempeña un rol dual en la arquitectura del robot: por un la
 	\textit{Dominio de interfaz de la estructura de funciones.} \par\medskip
 	
 	\makebox[\textwidth][c]{ 
-		\includegraphics[width=1.0\textwidth]{Imagenes/A3_DominioInterfaz.png}
+		\includegraphics[width=1.0\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioInterfaz.png}
 	} \par\medskip
 	
 	\raggedright
@@ -202,7 +201,7 @@ Avance3_Interfaz} desempeña un rol dual en la arquitectura del robot: por un la
 \end{figure}
 
 \subsection{Dominio de Actuadores}
-El Dominio de Actuadores es el encargado de transformar la energía eléctrica y las instrucciones lógicas en los esfuerzos cinéticos necesarios para la operación física del robot y el ajuste de sus instrumentos. Para su funcionamiento general, todo este subsistema es alimentado por el flujo de energía del Dominio de Actuadores. El dominio se compone de las siguientes funciones:
+El Dominio de Actuadores, mostrado en la Figura \ref{fig:Avance3_DomActuadores}, es el encargado de transformar la energía eléctrica y las instrucciones lógicas en los esfuerzos cinéticos necesarios para la operación física del robot y el ajuste de sus instrumentos. Para su funcionamiento general, todo este subsistema es alimentado por el flujo de energía del Dominio de Actuadores. El dominio se compone de las siguientes funciones:
 
 \begin{enumerate}
 	\item \textbf{Accionar movimiento de traslación:} Recibe la señal de control del actuador de traslación y la transforma en la energía cinética necesaria para ejecutar el desplazamiento principal del robot.
@@ -218,7 +217,7 @@ El Dominio de Actuadores es el encargado de transformar la energía eléctrica y
 	\textit{Dominio de actuadores de la estructura de funciones.} \par\medskip
 	
 	\centering
-	\includegraphics[width=0.99\textwidth]{Imagenes/A3_DominioActuadores.png} \par\medskip
+	\includegraphics[width=0.99\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioActuadores.png} \par\medskip
 	
 	\raggedright
 	\footnotesize \textit{Nota.} Elaboración propia.
@@ -227,7 +226,7 @@ El Dominio de Actuadores es el encargado de transformar la energía eléctrica y
 
 \subsection{Dominio Mecánico}
 
-El Dominio Mecánico conforma el soporte estructural del vehículo y materializa las interacciones dinámicas y físicas con el entorno del parque solar. Está compuesto de las siguientes funciones:
+El Dominio Mecánico, mostrado en la Figura \ref{fig:Avance3_DomMecanico}, conforma el soporte estructural del vehículo y materializa las interacciones dinámicas y físicas con el entorno del parque solar. Está compuesto de las siguientes funciones:
 
 \begin{enumerate}
 	\item \textbf{Soportar plataforma de medición de radiación:} Sostiene la carga física de la instrumentación climática frente a las vibraciones mecánicas del entorno.
@@ -247,7 +246,7 @@ El Dominio Mecánico conforma el soporte estructural del vehículo y materializa
 	\textit{Dominio mecánico de la estructura de funciones.} \par\medskip
 	
 	\makebox[\textwidth][c]{ 
-		\includegraphics[width=1.25\textwidth]{Imagenes/A3_DominioMecanico.png}
+		\includegraphics[width=1.25\textwidth]{Recursos/Imagenes/ImagenesDominios/A3_DominioMecanico.png}
 	} \par\medskip
 	
 	\raggedright
@@ -283,46 +282,46 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		
 		\textbf{1. Recibir energía eléctrica} & 
-		Conector Plug Jack DC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConectorPlugJackDC.jpg} & 
-		Conector de alta corriente XT60 \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConectorAltaCorriente.jpg} & 
-		Contactos magnéticos \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConectorContactoMagnetico.jpg} \\ \hline
+		Conector Plug Jack DC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorPlugJackDC.jpg} & 
+		Conector de alta corriente XT60 \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorAltaCorriente.jpg} & 
+		Contactos magnéticos \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorContactoMagnetico.jpg} \\ \hline
 		
 		\textbf{2. Proteger sistema eléctrico} & 
-		Fusible cerámico de cartucho \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/FusibleCeramico.jpg} & 
-		Fusible electrónico eFuse \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/eFuse.jpg} & 
-		Disyuntor termomagnético \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/DisyuntorTermomagnetico.jpg} \\ \hline
+		Fusible cerámico de cartucho \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/FusibleCeramico.jpg} & 
+		Fusible electrónico eFuse \par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/eFuse.jpg} & 
+		Disyuntor termomagnético \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/DisyuntorTermomagnetico.jpg} \\ \hline
 		
 		\textbf{3. Gestionar energía eléctrica} & 
-		Batería NiMH + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/NiMh.jpg} & 
-		Batería LiIon + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/LiIon.jpg} & 
-		Batería LiPO + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/LiPo.jpg} \\ \hline
+		Batería NiMH + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/NiMh.jpg} & 
+		Batería LiIon + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/LiIon.jpg} & 
+		Batería LiPO + Battery Management System \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/LiPo.jpg} \\ \hline
 		
 		\textbf{4. Activar energía eléctrica} & 
-		Seccionador rotativo manual \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Rotativo.jpg} & 
-		Relé de estado sólido \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ReleEstadoSolido.jpg} & 
-		Contactor mecánico \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Contactor.jpg} \\ \hline
+		Seccionador rotativo manual \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Rotativo.jpg} & 
+		Relé de estado sólido \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ReleEstadoSolido.jpg} & 
+		Contactor mecánico \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Contactor.jpg} \\ \hline
 		
 		\textbf{5. Regular energía de Interfaz} \vspace{0.2cm} & 
-		\multirow{3}{=}{\centering Regulador de bomba de carga fija\par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/PumpChargeRegulador.jpg}} & 
-		\multirow{3}{=}{\centering Regulador lineal LDO \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/ReguladorLDO.jpg}} & 
-		\multirow{3}{=}{\centering Regulador Shunt \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/ShuntRegulator.jpg}} \\ \cline{1-1}
+		\multirow{3}{=}{\centering Regulador de bomba de carga fija\par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/PumpChargeRegulador.jpg}} & 
+		\multirow{3}{=}{\centering Regulador lineal LDO \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/ReguladorLDO.jpg}} & 
+		\multirow{3}{=}{\centering Regulador Shunt \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/ShuntRegulator.jpg}} \\ \cline{1-1}
 		
 		\textbf{6. Regular energía de Control/Comunicación} \vspace{0.2cm} & & & \\ \cline{1-1}
 		
 		\textbf{7. Regular energía de Sensores} \vspace{0.6cm} & & & \\ \hline
 		%
 		\textbf{8. Regular energía de Actuadores} & 
-		Convertidor Buck DC-DC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConvertidorBuck.jpg} & 
-		Regulador de bomba de carga \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/PumpChargeRegulador.jpg} & 
-		Regulador lineal LDO \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ReguladorLDO.jpg} \\ \hline
+		Convertidor Buck DC-DC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConvertidorBuck.jpg} & 
+		Regulador de bomba de carga \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/PumpChargeRegulador.jpg} & 
+		Regulador lineal LDO \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ReguladorLDO.jpg} \\ \hline
 		%
 		\pagebreak
 		
 		% --- INICIO BLOQUE 5-8 ---
 		\textbf{9. Energizar Interfaz} \vspace{0.6cm} & 
-		\multirow{3}{=}{\centering Cable trenzado estándar \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/CableTrenzado.jpg}} & 
-		\multirow{3}{=}{\centering Conectores circular roscado \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/ConectorRoscado.jpg}} & 
-		\multirow{3}{=}{\centering Barras colectoras Busbars \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{ImagenesMatriz/Busbar.jpg}} \\ \cline{1-1}
+		\multirow{3}{=}{\centering Cable trenzado estándar \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/CableTrenzado.jpg}} & 
+		\multirow{3}{=}{\centering Conectores circular roscado \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorRoscado.jpg}} & 
+		\multirow{3}{=}{\centering Barras colectoras Busbars \par\vspace{0.2cm} \includegraphics[width=0.65\linewidth]{Recursos/Imagenes/ImagenesMatriz/Busbar.jpg}} \\ \cline{1-1}
 		
 		\textbf{10. Energizar Control/Comm.} \vspace{0.6cm} & & & \\ \cline{1-1}
 		
@@ -330,19 +329,19 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		% --- FIN BLOQUE 9-11 ---
 		
 		\textbf{12. Energizar Actuadores} & 
-		Cable de Baja Tensión \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/CableBajaTension.png} & 
-		Conector Circular Roscado \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConectorRoscado.jpg} & 
-		Barras colectoras Busbars \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Busbar.jpg} \\ \hline
+		Cable de Baja Tensión \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/CableBajaTension.png} & 
+		Conector Circular Roscado \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorRoscado.jpg} & 
+		Barras colectoras Busbars \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Busbar.jpg} \\ \hline
 		%%
 		\textbf{13. Regular energía eléctrica de sensores meteorológicos} & 
-		Regulador de bomba de carga \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/PumpChargeRegulador.jpg} & 
-		Regulador lineal LDO \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ReguladorLDO.jpg} & 
-		Regulador Shunt \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ShuntRegulator.jpg} \\ \hline
+		Regulador de bomba de carga \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/PumpChargeRegulador.jpg} & 
+		Regulador lineal LDO \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ReguladorLDO.jpg} & 
+		Regulador Shunt \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ShuntRegulator.jpg} \\ \hline
 		%%
 		\textbf{14. Energizar  sensores meteorológicos} & 
-		Cable trenzado estándar \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/CableTrenzado.jpg} & 
-		Conector circular roscado \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ConectorRoscado.jpg} & 
-		Barras colectoras Busbars \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Busbar.jpg} \\ \hline
+		Cable trenzado estándar \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/CableTrenzado.jpg} & 
+		Conector circular roscado \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorRoscado.jpg} & 
+		Barras colectoras Busbars \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Busbar.jpg} \\ \hline
 		
 	\end{xltabular}
 \end{center}
@@ -393,44 +392,44 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		
 		\textbf{1. Sensar temperatura del gestionador} & 
-		Termistor NTC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/TermistorNTC.jpg} & 
-		Termopar tipo K \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Termopar.jpg} & 
-		Sensor RTD PT100 \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorRTD.jpg} \\ \hline
+		Termistor NTC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/TermistorNTC.jpg} & 
+		Termopar tipo K \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Termopar.jpg} & 
+		Sensor RTD PT100 \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorRTD.jpg} \\ \hline
 		
 		\textbf{2. Sensar nivel de energía del gestionador} & 
-		Detector de umbral de voltaje \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorNivelVoltaje.jpg}& 
-		Sensor contador de Culombios \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorNivelCoulomb.jpg} & 
-		Sensor de impedancia interna \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/SensorNivelImpedencia.png} \\ \hline
+		Detector de umbral de voltaje \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorNivelVoltaje.jpg}& 
+		Sensor contador de Culombios \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorNivelCoulomb.jpg} & 
+		Sensor de impedancia interna \par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorNivelImpedencia.png} \\ \hline
 		
 		\textbf{3. Sensar presencia de obstáculo} & 
-		Sensor 3D de tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorToF.jpg}& 
-		Módulo CMOS \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/CMOSModule.jpg} & 
-		Sensor LiDAR 3D \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/LIDAR3D.jpg} \\ \hline
+		Sensor 3D de tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorToF.jpg}& 
+		Módulo CMOS \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/CMOSModule.jpg} & 
+		Sensor LiDAR 3D \par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/LIDAR3D.jpg} \\ \hline
 		
 		\textbf{4. Sensar velocidad de traslación} & 
-		Encoder rotativo incremental\par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/EncoderRotativoIncremental.jpg} & 
-		Unidad IMU de 9 ejes \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
-		Radar de onda continua \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/RadarOndaContinua.jpg} \\ \hline
+		Encoder rotativo incremental\par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/EncoderRotativoIncremental.jpg} & 
+		Unidad IMU de 9 ejes \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/IMU9Ejes.jpg} & 
+		Radar de onda continua \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/RadarOndaContinua.jpg} \\ \hline
 		
 		\textbf{5. Sensar orientación plataforma} & 
-		Sensor de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorDistanciaToF.jpg} & 
-		Unidad IMU de 9 ejes \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
-		Encoder rotativo absoluto \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/EncoderRotativoAbsoluto.jpg} \\ \hline
+		Sensor de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorDistanciaToF.jpg} & 
+		Unidad IMU de 9 ejes \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/IMU9Ejes.jpg} & 
+		Encoder rotativo absoluto \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/EncoderRotativoAbsoluto.jpg} \\ \hline
 		
 		\textbf{6. Sensar posición de plataforma} & 
-		Sensor de fin de carrera \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/FinDeCarrera.jpg} & 
-		Potenciómetro lineal \par\bigskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/PotenciometroLineal.jpg}& 
-		Sensor de ultrasonido \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorUltrasonido.jpg} \\ \hline
+		Sensor de fin de carrera \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/FinDeCarrera.jpg} & 
+		Potenciómetro lineal \par\bigskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/PotenciometroLineal.jpg}& 
+		Sensor de ultrasonido \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorUltrasonido.jpg} \\ \hline
 		
 		\textbf{7. Captar señal GPS} & 
-		Antena de circuito flexible \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaFlexible.png} & 
-		Antena de parche cerámico \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaGNSS.jpg} & 
-		Antena GPS RTK \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaGPSRTK.jpg} \\ \hline
+		Antena de circuito flexible \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/AntenaFlexible.png} & 
+		Antena de parche cerámico \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/AntenaGNSS.jpg} & 
+		Antena GPS RTK \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/AntenaGPSRTK.jpg} \\ \hline
 		
 		\textbf{8. Sensar orientación del sistema} & 
-		\par\smallskip Unidad IMU de 9 ejes \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
-		\par\smallskip Unidad IMU de 9 ejes  \includegraphics[width=0.7\linewidth]{ImagenesMatriz/IMU9Ejes.jpg} & 
-		Matriz de sensores de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SensorDistanciaToF.jpg} \\ \hline
+		\par\smallskip Unidad IMU de 9 ejes \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/IMU9Ejes.jpg} & 
+		\par\smallskip Unidad IMU de 9 ejes  \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/IMU9Ejes.jpg} & 
+		Matriz de sensores de distancia por tiempo de vuelo \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SensorDistanciaToF.jpg} \\ \hline
 		
 	\end{xltabular}
 \end{center}
@@ -439,7 +438,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 \begin{itemize}
 	\item \textbf{Sensar temperatura del gestionador:} Se evaluó el termistor NTC; el sensor RTD PT100, justificado por la necesidad de medir con precisión frente al efecto de isla de calor fotovoltaica (PVHI) y las variaciones térmicas extremas documentadas en la caracterización de microclimas \citep{Armstrong2026, Garcia2014}; y el termopar tipo K, de alta robustez mecánica.
 	
-	\item \textbf{Sensar nivel de energía del gestionador:} Se consideró el detector de umbral de voltaje, el cual generaría lecturas erróneas debido a las severas caídas de tensión que sufren las baterías al superar pendientes del 28\,\% \citep{GarciaSalinas2025}; el sensor de impedancia; y el contador de Culombios, principio tecnológico clave integrado en los avanzados Sistemas de Gestión de Baterías (BMS) de las estaciones meteorológicas \textit{IoT} evaluadas en el estado del arte para operar en terrenos remotos \citep{SK302020A3}.
+	\item \textbf{Sensar nivel de energía del gestionador:} Se consideró el detector de umbral de voltaje, el cual generaría lecturas erróneas debido a las severas caídas de tensión que sufren las baterías al superar pendientes del 28\,\% \citep{Salinas2025}; el sensor de impedancia; y el contador de Culombios, principio tecnológico clave integrado en los avanzados Sistemas de Gestión de Baterías (BMS) de las estaciones meteorológicas \textit{IoT} evaluadas en el estado del arte para operar en terrenos remotos \citep{SK302020A3}.
 	
 	\item \textbf{Sensar presencia de obstáculo:} Se consideró el módulo \textit{CMOS}, útil para la generación de mapas espaciales \citep{CN119665962A} pero vulnerable al deslumbramiento por el albedo de los paneles; el sensor \textit{ToF} 3D; y el sensor \textit{LiDAR} 3D, tecnología indispensable extraída de los vehículos terrestres de inspección en desiertos (UGV), ya que es el único principio capaz de evadir zanjas erosivas y relieve complejo que la visión artificial simple no detecta \citep{CN221163061U, Figgis2025}.
 	
@@ -456,7 +455,7 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 \begin{itemize}
 	\item \textbf{Sensar temperatura del gestionador:} para esta función se evaluó el termistor NTC, con un bajo costo y una excelente sensibilidad para los rangos de temperatura de operación esperados en las baterías; el sensor RTD PT100, el cual brinda una alta precisión y estabilidad térmica a cambio de un mayor costo y un circuito de acondicionamiento más complejo; y el termopar tipo K, que es muy robusto y soporta rangos térmicos extremos, aunque puede presentar menor exactitud a temperatura ambiente.
 	
-	\item \textbf{Sensar nivel de energía del gestionador:} se consideró el sensor contador de Culombios, que permite una medición exacta del estado de carga al integrar la corriente en el tiempo; el detector de umbral de voltaje, una opción simple y económica pero cuya limitación generará lecturas falsas por las caídas de tensión al demandar alta corriente para escalar pendientes de hasta el 28\,\% \citep{GarciaSalinas2025};; y el sensor de impedancia interna, el cual es ideal para evaluar la salud y degradación de la celda a largo plazo, pero resulta complejo de implementar para mediciones continuas en operación.
+	\item \textbf{Sensar nivel de energía del gestionador:} se consideró el sensor contador de Culombios, que permite una medición exacta del estado de carga al integrar la corriente en el tiempo; el detector de umbral de voltaje, una opción simple y económica pero cuya limitación generará lecturas falsas por las caídas de tensión al demandar alta corriente para escalar pendientes de hasta el 28\,\% \citep{Salinas2025};; y el sensor de impedancia interna, el cual es ideal para evaluar la salud y degradación de la celda a largo plazo, pero resulta complejo de implementar para mediciones continuas en operación.
 	
 	\item \textbf{Sensar presencia de obstáculo:} las alternativas contemplan el sensor LiDAR 3D, que otorga alta precisión y un amplio rango para el mapeo espacial, pero exige un alto costo y capacidad de procesamiento; el módulo CMOS, muy útil para la clasificación visual de los obstáculos mediante algoritmos, aunque susceptible a los deslumbramientos y reflejos propios de los paneles solares; y el sensor 3D de tiempo de vuelo, que ofrece una buena percepción de profundidad a distancias cortas y medias con una menor carga computacional.
 	
@@ -494,9 +493,9 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		% --- INICIO BLOQUE MASIVO DE 10 FILAS ---
 		\textbf{1. Procesar datos meteorológicos} & 
-		\multirow{13}{=}{\centering Microcontrolador \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/Microcontrolador.jpg}} & 
-		\multirow{13}{=}{\centering Placa SBC \par\vspace{0.2cm} \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SBC.jpg}} & 
-		\multirow{13}{=}{\centering PLC \par\vspace{0.2cm} \includegraphics[width=0.7\linewidth]{ImagenesMatriz/PLC.jpg}} \\ \cline{1-1}
+		\multirow{13}{=}{\centering Microcontrolador \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/Microcontrolador.jpg}} & 
+		\multirow{13}{=}{\centering Placa SBC \par\vspace{0.2cm} \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SBC.jpg}} & 
+		\multirow{13}{=}{\centering PLC \par\vspace{0.2cm} \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/PLC.jpg}} \\ \cline{1-1}
 		\textbf{2. Procesar temperatura del gestionador} & & & \\ \cline{1-1}
 		\textbf{3. Procesar nivel energía del gestionador} & & & \\ \cline{1-1}
 		\textbf{4. Procesar estado energía del gestionador} & & & \\ \cline{1-1}
@@ -511,21 +510,21 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{13. Procesar dirección de traslación} & & & \\ \hline
 		% --- FILAS INDIVIDUALES ---
 		\textbf{14. Procesar señal de obstáculo} & 
-		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Microcontrolador.jpg} & 
-		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SBC.jpg} & 
-		Computadora Industrial \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/IPC.jpg} \\ \hline
+		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Microcontrolador.jpg} & 
+		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SBC.jpg} & 
+		Computadora Industrial \par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/IPC.jpg} \\ \hline
 		\textbf{15. Registrar datos meteorológicos} & 
-		Memoria Flash \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/MemoriaFLASH.jpg} & 
-		MicroSD SPI \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ModuloMicroSDSPI.jpg} & 
-		EEPROM I2C \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/MemoriaEEPROMI2C.jpg} \\ \hline
+		Memoria Flash \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/MemoriaFLASH.jpg} & 
+		MicroSD SPI \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloMicroSDSPI.jpg} & 
+		EEPROM I2C \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/MemoriaEEPROMI2C.jpg} \\ \hline
 		\textbf{16. Procesar rutas de inspección} & 
-		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Microcontrolador.jpg} & 
-		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SBC.jpg} & 
-		Coprocesador GPS \par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/ModuloGPSDeadReckoning.jpg} \\ \hline
+		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Microcontrolador.jpg} & 
+		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SBC.jpg} & 
+		Coprocesador GPS \par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloGPSDeadReckoning.jpg} \\ \hline
 		\textbf{17. Procesar posición del sistema} & 
-		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/Microcontrolador.jpg} & 
-		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/SBC.jpg} & 
-		Coprocesador GPS\par\smallskip \includegraphics[width=0.9\linewidth]{ImagenesMatriz/ModuloGPSDeadReckoning.jpg} \\ \hline
+		Microcontrolador \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/Microcontrolador.jpg} & 
+		Placa SBC \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/SBC.jpg} & 
+		Coprocesador GPS\par\smallskip \includegraphics[width=0.9\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloGPSDeadReckoning.jpg} \\ \hline
 	\end{xltabular}
 \end{center}
 
@@ -560,9 +559,9 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		% --- INICIO BLOQUE DE 8 FILAS ---
 		\textbf{1. Procesar datos meteorológicos} & 
-		\multirow{8}{=}{\centering Look-up table \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/LookUpTables.png}} & 
-		\multirow{8}{=}{\centering Algoritmo por ecuación \par\vspace{0.2cm} \includegraphics[width=0.8\linewidth]{ImagenesMatriz/AlgoritmoEcuacion.png}} & 
-		\multirow{8}{=}{\centering Algoritmo de promedio \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/AlgoritmoPromedio.png}} \\ \cline{1-1}
+		\multirow{8}{=}{\centering Look-up table \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/LookUpTables.png}} & 
+		\multirow{8}{=}{\centering Algoritmo por ecuación \par\vspace{0.2cm} \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/AlgoritmoEcuacion.png}} & 
+		\multirow{8}{=}{\centering Algoritmo de promedio \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/AlgoritmoPromedio.png}} \\ \cline{1-1}
 		\textbf{2. Procesar temperatura del gestionador} & & & \\ \cline{1-1}
 		\textbf{3. Procesar nivel energía del gestionador} & & & \\ \cline{1-1}
 		\textbf{4. Procesar estado energía del gestionador} & & & \\ \cline{1-1}
@@ -571,28 +570,28 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\textbf{7. Procesar posición de plataforma} & & & \\ \cline{1-1}
 		\textbf{8. Controlar estado energía del gestionador} & & & \\ \hline
 		\textbf{9. Controlar movimiento de traslación} \vspace{1cm}& 
-		\multirow{3}{=}{\centering Control SMC \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/ControlSMC.png}} & 
-		\multirow{3}{=}{\centering Control PID \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/ControlPID.png}} & 
-		\multirow{3}{=}{\centering Lógica Difusa \par\vspace{0.2cm} \includegraphics[width=\linewidth]{ImagenesMatriz/LogicaDifusa.png}} \\ \cline{1-1}
+		\multirow{3}{=}{\centering Control SMC \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ControlSMC.png}} & 
+		\multirow{3}{=}{\centering Control PID \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ControlPID.png}} & 
+		\multirow{3}{=}{\centering Lógica Difusa \par\vspace{0.2cm} \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/LogicaDifusa.png}} \\ \cline{1-1}
 		\textbf{10. Controlar movimiento de orientación de plataforma} & & & \\ \cline{1-1}
 		\textbf{11. Controlar posicionamiento de plataforma} & & & \\ \hline
 		% --- FILAS INDIVIDUALES ---
 		\textbf{12. Procesar dirección de traslación} & 
-		Controlador Stanley paralelo \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/StanleyParalelo.png} & 
-		Algoritmo Pure Pursuit \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/PurePursuit.png} & 
-		Algoritmo Vector Pursuit\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/VectorPursuit.png} \\ \hline
+		Controlador Stanley paralelo \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/StanleyParalelo.png} & 
+		Algoritmo Pure Pursuit \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/PurePursuit.png} & 
+		Algoritmo Vector Pursuit\par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/VectorPursuit.png} \\ \hline
 		\textbf{13. Procesar señal de obstáculo} & 
-		Comparación por umbrales y ventanas de tiempo \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/Thresholding.png} & 
-		Flujo óptico \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/OpticalFlow.jpg} & 
-		Agrupamiento y segmentación \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/AgrupamientoSegmentacion.png} \\ \hline
+		Comparación por umbrales y ventanas de tiempo \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/Thresholding.png} & 
+		Flujo óptico \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/OpticalFlow.jpg} & 
+		Agrupamiento y segmentación \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/AgrupamientoSegmentacion.png} \\ \hline
 		\textbf{14. Registrar datos meteorológicos} & 
-		Buffer de almacenamiento asíncrono \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/AsyncMemoria.jpg} & 
-		Acceso directo a sistemas de archivos embebidos \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/FAT32.png} & 
-		Motores de data bases \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/SQLite.png} \\ \hline
+		Buffer de almacenamiento asíncrono \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/AsyncMemoria.jpg} & 
+		Acceso directo a sistemas de archivos embebidos \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/FAT32.png} & 
+		Motores de data bases \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/SQLite.png} \\ \hline
 		\textbf{15. Procesar rutas de inspección} \vspace{1.5cm} & 
-		\multirow{2}{=}{\centering A - Navigation por mapas de nodos \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/RoadmapNodes.jpg}} & 
-		\multirow{2}{=}{\centering B - Navegación por histograma de campo vectorial\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/VectorFieldNav.png}} & 
-		\multirow{2}{=}{\centering C - Navegación por mapas de costo\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/Costmap.png}} \\ \cline{1-1}
+		\multirow{2}{=}{\centering A - Navigation por mapas de nodos \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/RoadmapNodes.jpg}} & 
+		\multirow{2}{=}{\centering B - Navegación por histograma de campo vectorial\par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/VectorFieldNav.png}} & 
+		\multirow{2}{=}{\centering C - Navegación por mapas de costo\par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/Costmap.png}} \\ \cline{1-1}
 		\textbf{16. Procesar posición del sistema} \vspace{1.5cm} & & & \\ \hline
 	\end{xltabular}
 \end{center}
@@ -634,16 +633,16 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		% --- INICIO BLOQUE 1-2 ---
 		\textbf{1. Procesar señal GPS} \vspace{0.8cm} & 
-		\multirow{2}{=}{ Trilaterización \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/AntenaGNSS.jpg}} & 
-		\multirow{2}{=}{ Trilaterización con Dead Reckoning \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ModuloGPSDeadReckoning.jpg}} & 
-		\multirow{2}{=}{ Medición de fase de onda \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ModuloFasePortadora.jpg}} \\ \cline{1-1}
+		\multirow{2}{=}{ Trilaterización \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/AntenaGNSS.jpg}} & 
+		\multirow{2}{=}{ Trilaterización con Dead Reckoning \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloGPSDeadReckoning.jpg}} & 
+		\multirow{2}{=}{ Medición de fase de onda \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloFasePortadora.jpg}} \\ \cline{1-1}
 		\textbf{2. Procesar señal de mando} \vspace{0.8cm} & & & \\ \hline
 		% --- FIN BLOQUE 1-2 ---
 		% --- INICIO BLOQUE 3-4 ---
 		\textbf{3. Transmitir estado de telemetría} \vspace{0.8cm} & 
-		\multirow{2}{=}{Protocolo MQTT +Wi-Fi\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ProtocoloMQTT.png}} & 
-		\multirow{2}{=}{Módulo LoRa \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/ModuloLoRa.jpg}} & 
-		\multirow{2}{=}{Celular LTE-M \par\smallskip \includegraphics[width=0.7\linewidth]{ImagenesMatriz/CelularLTEM.jpg}} \\ \cline{1-1}
+		\multirow{2}{=}{Protocolo MQTT +Wi-Fi\par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ProtocoloMQTT.png}} & 
+		\multirow{2}{=}{Módulo LoRa \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/ModuloLoRa.jpg}} & 
+		\multirow{2}{=}{Celular LTE-M \par\smallskip \includegraphics[width=0.7\linewidth]{Recursos/Imagenes/ImagenesMatriz/CelularLTEM.jpg}} \\ \cline{1-1}
 		\textbf{4. Transmitir datos meteorológicos} \vspace{0.2cm}& & & \\ \hline
 		% --- FIN BLOQUE 3-4 ---
 	\end{xltabular}
@@ -679,27 +678,27 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		% --- INICIO BLOQUE 1-4 ---
 		\textbf{1. Recibir señal de radiación} & 
-		\multirow{4}{=}{Conector circular roscado \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/ConectorRoscado.jpg}} & 
-		\multirow{4}{=}{Borna con resorte interno \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/BornaResorte.jpg}} & 
-		\multirow{4}{=}{Conector Deutsch \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ConectorDeutsch.jpg}} \\ \cline{1-1}
+		\multirow{4}{=}{Conector circular roscado \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorRoscado.jpg}} & 
+		\multirow{4}{=}{Borna con resorte interno \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/BornaResorte.jpg}} & 
+		\multirow{4}{=}{Conector Deutsch \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ConectorDeutsch.jpg}} \\ \cline{1-1}
 		\textbf{2. Recibir señal de temperatura} & & & \\ \cline{1-1}
 		\textbf{3. Recibir señal de velocidad viento} & & & \\ \cline{1-1}
 		\textbf{4. Recibir señal de humedad} & & & \\ \hline
 		% --- FIN BLOQUE 1-4 ---
 		% --- INICIO BLOQUE 5-6 ---
 		\textbf{5. Mostrar alerta obstáculo} \vspace{1cm}& 
-		\multirow{2}{=}{Buzzer \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/Buzzer.jpg}} & 
-		\multirow{2}{=}{Pantalla LCD \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/PantallaLCD.jpg}} & 
-		\multirow{2}{=}{Sirena LED \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/SirenaLED.jpg}} \\ \cline{1-1}
+		\multirow{2}{=}{Buzzer \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/Buzzer.jpg}} & 
+		\multirow{2}{=}{Pantalla LCD \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/PantallaLCD.jpg}} & 
+		\multirow{2}{=}{Sirena LED \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/SirenaLED.jpg}} \\ \cline{1-1}
 		\textbf{6. Mostrar alerta energía} & & & \\ \hline
 		% --- FIN BLOQUE 5-6 ---
 		
 		
 		% --- INICIO BLOQUE 7-8 ---
 		\textbf{7. Mostrar estado energía} \vspace{1cm}& 
-		\multirow{2}{=}{LEDs indicadores \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/LEDIndicador.jpeg}} & 
-		\multirow{2}{=}{Pantalla LCD \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/PantallaLCD.jpg}} & 
-		\multirow{2}{=}{Pantalla HMI \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/PantallaHMI.jpg}} \\ \cline{1-1}
+		\multirow{2}{=}{LEDs indicadores \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/LEDIndicador.jpeg}} & 
+		\multirow{2}{=}{Pantalla LCD \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/PantallaLCD.jpg}} & 
+		\multirow{2}{=}{Pantalla HMI \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/PantallaHMI.jpg}} \\ \cline{1-1}
 		\textbf{8. Mostrar estado operativo} & & & \\ \hline
 		% --- FIN BLOQUE 7-8 ---
 	\end{xltabular}
@@ -740,11 +739,11 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		
 		\textbf{1. Accionar movimiento de traslación} 
-		& Motor de Cubo de Rueda \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorCuboDeRueda.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg} &  Motorreductor DC  \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorreductorDC.png} \\ \hline
+		& Motor de Cubo de Rueda \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/MotorCuboDeRueda.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ServomotorBrushless.jpg} &  Motorreductor DC  \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/MotorreductorDC.png} \\ \hline
 		\textbf{2. Accionar orientación de la plataforma} & 
-		Microservo digital \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/Miniservo.jpg}& Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg}& 	Motor paso a paso NEMA \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorNEMA.jpg}\\ \hline
+		Microservo digital \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/Miniservo.jpg}& Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ServomotorBrushless.jpg}& 	Motor paso a paso NEMA \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/MotorNEMA.jpg}\\ \hline
 		\textbf{3. Accionar posición de la plataforma} &
-		Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ActuadorLineal.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ServomotorBrushless.jpg}& Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/ActuadorLineal.jpg}\\ \hline
+		Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ActuadorLineal.jpg} & Servomotor Brushless DC \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ServomotorBrushless.jpg}& Actuador lineal \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/ActuadorLineal.jpg}\\ \hline
 		
 	\end{xltabular}
 \end{center}
@@ -781,28 +780,28 @@ Una vez completada la abstracción del sistema en la Estructura de Funciones, se
 		\endlastfoot
 		% --- INICIO BLOQUE 1-2 ---
 		\textbf{1. Soportar plataforma de medición} \vspace{1cm}& 
-		\multirow{2}{=}{Piezas de MDF \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/PiezasMDF.jpg}} & 
-		\multirow{2}{=}{Perfil V-Slot \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/Vslot.jpg}} & 
-		\multirow{2}{=}{Chapas de Acero \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/ChapaAcero.jpg}} \\ \cline{1-1}
+		\multirow{2}{=}{Piezas de MDF \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/PiezasMDF.jpg}} & 
+		\multirow{2}{=}{Perfil V-Slot \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/Vslot.jpg}} & 
+		\multirow{2}{=}{Chapas de Acero \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/ChapaAcero.jpg}} \\ \cline{1-1}
 		\textbf{2. Soportar componentes} & & & \\ \hline
 		\textbf{3. Proteger componentes} \vspace{1cm}& 
-		\multirow{3}{=}{Carcasa impresa en 3D \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/Carcasa3D.jpg}} & 
-		\multirow{3}{=}{Caja de chapa de aluminio \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/CajaChapaAluminio.jpg}} & 
-		\multirow{3}{=}{Caja de acero inoxidable \par\smallskip \includegraphics[width=0.8\linewidth]{ImagenesMatriz/CajaChapaAcero.jpg}} \\ \cline{1-1}
+		\multirow{3}{=}{Carcasa impresa en 3D \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/Carcasa3D.jpg}} & 
+		\multirow{3}{=}{Caja de chapa de aluminio \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/CajaChapaAluminio.jpg}} & 
+		\multirow{3}{=}{Caja de acero inoxidable \par\smallskip \includegraphics[width=0.8\linewidth]{Recursos/Imagenes/ImagenesMatriz/CajaChapaAcero.jpg}} \\ \cline{1-1}
 		\textbf{4. Alojar gestionador} & & & \\ \cline{1-1}
 		\textbf{5. Alojar memoria externa} & & & \\ \hline
 		\textbf{6. Generar movimiento de traslación} & 
-		Ruedas onmidireccionales \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/RuedaOnmidireccional.jpg} & 
-		Tracción diferencial (4 ruedas) \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/RuedasTraccionDiferencial.png} & 
-		Ruedas con tracción de oruga \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/RuedasTraccionOruga.jpg} \\ \hline
+		Ruedas onmidireccionales \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/RuedaOnmidireccional.jpg} & 
+		Tracción diferencial (4 ruedas) \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/RuedasTraccionDiferencial.png} & 
+		Ruedas con tracción de oruga \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/RuedasTraccionOruga.jpg} \\ \hline
 		\textbf{7. Orientar plataforma} & 
-		Eje acoplado a motor \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/MotorEje.jpg}& 
-		Mecanismo tornillo sinfin-corona curva \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TornilloSinFinCorona.jpg}& 
-		Transmisión por correa dentada \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TransmisionCorreaDentada.jpg}\\ \hline
+		Eje acoplado a motor \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/MotorEje.jpg}& 
+		Mecanismo tornillo sinfin-corona curva \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/TornilloSinFinCorona.jpg}& 
+		Transmisión por correa dentada \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/TransmisionCorreaDentada.jpg}\\ \hline
 		\textbf{8. Posicionar plataforma} & 
-		Soporte vertical  \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/SoporteVertical.jpg}& 
-		Plataforma elevadora de tijera \par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/TijeraElevacion.png}& 
-		Elevacion por articulación telescópica\par\smallskip \includegraphics[width=\linewidth]{ImagenesMatriz/PlataformaTelescopica.jpg}\\ \hline
+		Soporte vertical  \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/SoporteVertical.jpg}& 
+		Plataforma elevadora de tijera \par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/TijeraElevacion.png}& 
+		Elevacion por articulación telescópica\par\smallskip \includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesMatriz/PlataformaTelescopica.jpg}\\ \hline
 	\end{xltabular}
 \end{center}
 
