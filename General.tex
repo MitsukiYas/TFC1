@@ -45,8 +45,8 @@
 
 %%%%%%%% Probando referencias
 %\usepackage[a4paper]{geometry}
-\usepackage[sectionbib]{natbib}
-\usepackage{chapterbib}
+\usepackage{natbib}
+%\usepackage{chapterbib}
 
 %%%%%%%%%
 
@@ -133,7 +133,7 @@
 %----------------------------------------------------------------------------------------
 %	Resumen
 %----------------------------------------------------------------------------------------
-\input{TFC1/resumen} %Se agrega el resumen
+\input{TFC/resumen} %Se agrega el resumen
  
 
 %----------------------------------------------------------------------------------------
@@ -153,7 +153,6 @@
 %	TABLA DE CONTENIDOS
 %---------------------------------------------------------------------------------------
 \cleardoublepage
-\addcontentsline{toc}{chapter}{\contentsname}
 \tableofcontents \newpage
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures \newpage
@@ -169,33 +168,46 @@
 %	Capítulo 1 
 %----------------------------------------------------------------------------------------
 \doublespacing
-\input{TFC1/cap1}
+\input{TFC/cap1}
 
 
 %----------------------------------------------------------------------------------------
 %	Capítulo 2
 %----------------------------------------------------------------------------------------
-\input{TFC1/cap2}
+\input{TFC/cap2}
 
 %----------------------------------------------------------------------------------------
 %	Capítulo 3
 %----------------------------------------------------------------------------------------
 
-%{TFC1/cap3}
-\input{TFC1/cap3}
+\input{TFC/cap3}
 
 %-----------------
 %	Capítulo 4
 %-----------------
 
-\input{TFC1/cap4}
+\input{TFC/cap4}
+
+%-----------------
+%	Capítulo 5 (TFC2)
+%-----------------
+
+\input{TFC/cap5}
+
+%-----------------
+%	Capítulo 6 (TFC2)
+%-----------------
+
+\input{TFC/cap6}
 
 
 %-----------------
-%	Conclusiones
+%	Conclusiones (Integradas en Capítulo VI)
 %-----------------
 
-\input{TFC1/conclusiones} %Se agregan las conclusiones
+%\input{TFC/conclusiones} %Se agregan las conclusiones
+
+
 
 
 %----------------------------------------------------------------------------------------
@@ -204,7 +216,7 @@
 %------------------------------
 \newpage
 %\nocite{*}
-\bibliography{TFC1/biblio} %Se agrega la bibliografia
+\bibliography{TFC/biblio} %Se agrega la bibliografia
 %----------------------------------------------------------------------------------------
 %	Anexos
 %----------------------------------------------------------------------------------------
@@ -214,9 +226,7 @@
 \addcontentsline{toc}{chapter}{ANEXO} 
 \markboth{ANEXO}{ANEXO} % encabezado
 \thispagestyle{empty}
-\includepdf[landscape=true, pages=-]{Recursos/Anexos/DiagramaGantt.pdf}
 \includepdf[pages=-]{Recursos/Anexos/EstructuraFunciones_v20.pdf}
-
 
  \phantomsection
 \end{document} 

@@ -79,24 +79,34 @@ Para superar las limitaciones de la instrumentación estática, esta propuesta p
 \subsection{Objetivos generales}
 
 \subsubsection{Objetivo correspondiente a Trabajo de Fin de Carrera 1 (1MTR01)}
-
 Elaborar el diseño conceptual y el anteproyecto de un robot autónomo para la medición dinámica de variables climáticas en sistemas fotovoltaicos, orientado a caracterizar la formación de microclimas y variaciones climáticas en la topografía.
 
+\subsubsection{Objetivo correspondiente a Trabajo de Fin de Carrera 2 (1MTR02)}
+Desarrollar la ingeniería de detalle, elaborar el proyecto definitivo e implementar un prototipo virtual del robot autónomo para la medición de variables climáticas en sistemas fotovoltaicos, validando de forma integrada su comportamiento cinemático, control autónomo y arquitectura de telemetría.
 
 \subsubsection{Objetivo para el proyecto general}
-Desarrollar y elaborar el proyecto definitivo e implementar un prototipo virtual del robot autónomo para la medición de variables climáticas en sistemas fotovoltaicos.
+Desarrollar, dimensionar y validar integralmente un sistema mecatrónico autónomo móvil para la monitorización e inspección de variables climáticas en plantas fotovoltaicas emplazadas sobre terrenos irregulares, culminando en el proyecto definitivo y su validación mediante prototipado virtual.
 
 \subsection{Objetivos específicos}
 
 \subsubsection{Objetivos correspondientes a Trabajo de Fin de Carrera 1 (1MTR01)}
 \begin{itemize}
     \item Determinar los requerimientos funcionales, cinemáticos y de diseño del sistema mecatrónico a partir del análisis de las severas condiciones topográficas y la dispersión climática en los parques solares.
-    
     \item Desarrollar el diseño conceptual del sistema de locomoción, identificando sus funciones mecánicas y seleccionando los principios de tracción óptimos para garantizar un desplazamiento estable sobre terrenos irregulares.
     \item Desarrollar el diseño conceptual del mecanismo articulado, abstrayendo sus requerimientos cinemáticos y de actuación para asegurar la orientación independiente y precisa de los sensores climáticos.
     \item Estructurar la lógica del sistema de control autónomo, definiendo las funciones de procesamiento de señales, navegación y actuación requeridas para el seguimiento de rutas y la evasión de obstáculos.
     \item Plantear la arquitectura para el subsistema de telemetría y comunicaciones para garantizar la transmisión confiable de datos entre el robot y la central de control.
     \item Seleccionar el concepto de solución óptimo del sistema mediante una evaluación técnico-económica de las diferentes alternativas planteadas.
+\end{itemize}
+
+\subsubsection{Objetivos correspondientes a Trabajo de Fin de Carrera 2 (1MTR02)}
+\begin{itemize}
+    \item Realizar el diseño de detalle mecánico y estructural del sistema de tracción y de la base articulada para orientación de la instrumentación meteorológica, seleccionando materiales normalizados y generando la planimetría de fabricación correspondiente.
+    \item Diseñar el sistema electrónico, instrumentación de variables ambientales y la arquitectura de alimentación energética independiente, dimensionando el almacenamiento en baterías y los circuitos de acondicionamiento de señales.
+    \item Desarrollar e implementar los algoritmos de control de navegación autónoma, seguimiento de trayectorias predefinidas y evasión de obstáculos en el entorno operativo de la planta solar.
+    \item Diseñar y configurar la infraestructura de comunicación inalámbrica y la interfaz gráfica de telemetría para la supervisión remota y recepción de datos climáticos en tiempo real.
+    \item Construir y validar el prototipo virtual del sistema mecatrónico mediante simulaciones dinámicas y cinemáticas multicuerpo, pruebas en lazo cerrado de control y análisis de tráfico de red.
+    \item Elaborar el proyecto definitivo del sistema mecatrónico, incluyendo la lista exhaustiva de materiales (BOM), el presupuesto detallado de implementación, el análisis de costos y la planificación de los protocolos de mantenimiento preventivo y correctivo.
 \end{itemize}
 
 \subsubsection{Objetivos para el proyecto general}
@@ -113,40 +123,37 @@ El alcance de este proyecto y sus delimitaciones operativas se definen en conjun
 
 \begin{itemize}
     \item Abarca el diseño de detalle y la implementación de un prototipo virtual de una base móvil robusta apta para desplazarse sobre los terrenos irregulares que caracterizan a las plantas fotovoltaicas.
- 
-    
     \item Incluye el desarrollo de la lógica y el algoritmo de control que permitirá al vehículo seguir rutas de inspección predefinidas y evadir obstáculos. No obstante, el desplazamiento se encuentra restringido por la morfología del suelo, limitando su operación a zonas con pendiente máxima del terreno de 16°.
-    
     \item Comprende la incorporación de los instrumentos meteorológicos requeridos para monitorear las variables ambientales de forma dinámica. La precisión de esta instrumentación estará sujeta a factores ambientales, pudiendo verse mermada por el fenómeno del \textit{soiling} o presentar lecturas atípicas debido a sombras proyectadas y reflejos solares accidentales.
-    
     \item La integridad mecánica, electrónica y de los sensores del sistema estará diseñada para soportar las altas exigencias climáticas de los parques solares, restringiendo su funcionamiento seguro a una temperatura ambiente máxima operativa de 45°C.
-    
     \item Contempla la implementación de un sistema de telemetría para almacenar y transmitir los datos medidos, habilitando la supervisión y el control remoto. Su desempeño dependerá estrictamente de la cobertura y estabilidad de la red inalámbrica existente en la instalación. El alcance del proyecto se delimita estrictamente al diseño e implementación del robot móvil, o el nodo de la red de transmisión, a establecer el protocolo de red y definir la estructura de la interfaz de telemetría y control, garantizando que el robot sea capaz de interoperar con plataformas comerciales o estaciones base preexistentes en la planta fotovoltaica.
-    
     \item La autonomía del robot estará directamente condicionada por la capacidad de su batería y su perfil de consumo energético, proyectándose una autonomía de operación continua de alrededor de 1 hora, lo que impone la necesidad de establecer ciclos de carga periódicos para mantener la continuidad del servicio en plantas que requieran un recorrido mayor al tiempo establecido.
 \end{itemize}
 
-\section{Metodología del diseño} 
+\section{Metodología de diseño y desarrollo para TFC2} 
 
-El desarrollo del sistema mecatrónico se guiará por la directriz VDI 2221. Aunque la Ingeniería de Sistemas Basada en Modelos (MBSE) es una alternativa moderna que emplea modelos digitales formales para simular y analizar todo el ciclo de vida \citep{Isdefe2023}, su implementación requiere un ecosistema de software complejo orientado principalmente a sistemas de sistemas de alta criticidad. Por ello, se ha seleccionado la VDI 2221 para esta etapa del proyecto. En contraste con la MBSE, la norma VDI ofrece un enfoque pragmático y secuencial, perfectamente alineado con los objetivos del curso. De acuerdo con el cronograma del proyecto, el proceso se ha dividido en las siguientes fases:
+El desarrollo del sistema mecatrónico se rige rigurosamente por los estándares internacionales de diseño en ingeniería: la directriz \textbf{VDI 2221} \citep{VDI2221_2019}, la metodología de diseño sistemático de \textbf{Pahl \& Beitz} \citep{Pahl2007} y el estándar específico para sistemas mecatrónicos y ciber-físicos \textbf{VDI/VDE 2206} \citep{VDI2206_2021}. 
 
-\subsection{Definición de la tarea} 
-Abarcada en los primeros avances del cronograma, esta fase involucra la recolección y el análisis exhaustivo de las condiciones operativas, topográficas y climáticas reales de los parques fotovoltaicos. Durante esta etapa se elabora el estado del arte, analizando las limitaciones de la instrumentación fija actual y los vehículos de inspección existentes. La fase culmina con la redacción de la lista de requerimientos, donde se determinan y cuantifican los requerimientos funcionales, cinemáticos y de diseño obligatorios para el sistema mecatrónico.
+En la primera etapa (TFC1), se completaron las fases de clarificación de la tarea, análisis de requerimientos y diseño conceptual multidisciplinario, culminando en la selección del concepto de solución óptimo. Para el presente semestre (TFC2), la metodología se enfoca en la ingeniería de detalle, el prototipado virtual y la validación integral del sistema conforme al modelo en ``V'' de la VDI/VDE 2206, estructurándose en las siguientes etapas operativas:
 
-\subsection{Diseño conceptual} 
+\subsection{Planificación y requerimientos detallado}
+En esta fase inicial se consolida la retroalimentación del anteproyecto de TFC1, se definen con precisión los objetivos específicos de TFC2, la metodología sistemática de trabajo, el índice preliminar unificado del documento y el cronograma de ejecución temporal.
 
-Desarrollada a través de entregas progresivas, esta fase materializa el enfoque modular establecido en los objetivos del proyecto. Inicia con la abstracción de la problemática mediante una caja negra y la definición de la estructura de funciones general. A partir de ello, el diseño se divide en los cuatro subsistemas clave: el sistema de locomoción, el sistema de control autónomo y el subsistema de telemetría y comunicaciones. Las funciones de estos subsistemas, a su vez, se clasifican en dominios. Para cada dominio se elaboran matrices morfológicas independientes. Finalmente, al integrar estos portadores de funciones, se proponen distintas alternativas conceptuales del robot, las cuales se someten a una evaluación técnico-económica para seleccionar el concepto de solución óptimo, presentando el anteproyecto a través de un modelo 3D.
+\subsection{Diseño de detalle y dimensionamiento preliminar}
+Comprende el cálculo cuantitativo y la determinación preliminar de las dimensiones del prototipo, la selección preliminar de actuadores de tracción y de orientación, sensores primarios y controladores embebidos, así como el desarrollo de los primeros esquemas cinemáticos, flujogramas de operación y diagramas de interconexión.
 
-\subsection{Diseño de detalle} 
-Ubicada en la etapa de proyecto definitivo del cronograma, constituye la última etapa del desarrollo constructivo, en la cual se fijan con precisión las dimensiones, geometrías, presupuesto y la Lista de Materiales del sistema. Aquí se genera toda la documentación técnica requerida para la manufactura y puesta en marcha del robot autónomo, abarcando tres áreas clave: 
-
+\subsection{Proyecto definitivo}
+Constituye el núcleo del desarrollo técnico en todos los dominios de la ingeniería mecatrónica:
 \begin{itemize} 
-    \item \textbf{Dominio mecánico:} Elaboración de planos de fabricación, selección de materiales y dimensionamiento estructural definitivo tanto de la base móvil de tracción como de la base articulada de soporte para los sensores. 
-    \item \textbf{Dominio electrónico y de energía:} Diseño de esquemáticos, enrutamiento de placas de circuito impreso, integración de la instrumentación de variables climáticas y dimensionamiento del sistema de alimentación independiente. 
-    \item \textbf{Dominio de control y comunicaciones:} Desarrollo de la arquitectura de algoritmos para el seguimiento de rutas y evasión de obstáculos y diseño del enlace inalámbrico que garantizará la transmisión de datos al centro de monitoreo. 
+    \item \textbf{Dominio mecánico y estructural:} Selección final de materiales, análisis de esfuerzos estáticos y dinámicos, cálculo de transmisiones, diseño CAD 3D.
+    \item \textbf{Dominio electrónico y de energía:} Diseño y esquemáticos de circuitos de potencia y control, ruteo de placas PCB, integración y acondicionamiento de los sensores meteorológicos, y dimensionamiento del banco de baterías y gestión energética.
+    \item \textbf{Dominio de control y software embebido:} Programación y estructuración de los algoritmos de navegación, implementación de sensores, y rutinas de evasión de obstáculos y seguridad.
+    \item \textbf{Dominio de comunicaciones y telemetría:} Configuración del protocolo de red inalámbrica, arquitectura cliente-servidor para la transmisión de datos climáticos y diseño de la interfaz gráfica de usuario para monitoreo remoto.
 \end{itemize}
 
-\subsection{Implementación digital y validación}
-Correspondiente a la etapa final de implementación del cronograma, esta fase se define de manera estrictamente digital, descartando la construcción física y enfocándose en el desarrollo de un prototipo virtual del diseño propuesto. 
+\subsection{Prototipado virtual, simulación y validación integrada}
+Conforme a la directriz VDI/VDE 2206, se implementa un prototipo virtual tridimensional para la verificación del sistema completo. Se realizan simulaciones multicuerpo de la dinámica del vehículo sobre terrenos irregulares y pendientes de hasta 16°, validación en lazo cerrado de los algoritmos de navegación y control de orientación de sensores, y pruebas de concurrencia y latencia en la transmisión de paquetes de telemetría.
 
-Bajo este entorno de simulación, el proceso de validación será integral y abarcará todos los subsistemas del vehículo. En el aspecto mecánico y de control, se simulará la cinemática de la base móvil y se comprobará el correcto funcionamiento de los algoritmos de navegación autónoma y evasión de obstáculos. Paralelamente, en el aspecto de comunicaciones, a través de herramientas de integración de red, se evaluará que el enlace de telemetría y la transmisión de los datos climáticos hacia la estación de monitoreo sean estables, asegurando que la arquitectura de red no sufra interrupciones y satisfaga todos los parámetros de conectividad estipulados en la lista de requerimientos.
+\subsection{Consolidación documental y evaluación económica}
+Se culmina con la integración total de la documentación técnica: Lista de Materiales (BOM), presupuesto total y análisis de costos de implementación, manuales y plan de mantenimiento preventivo/correctivo.
+
