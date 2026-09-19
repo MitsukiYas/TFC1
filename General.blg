@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: General.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: TFC/biblio.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--`others' not consistent with 6th ed. of the APA Manual
+Warning--No address in GuiaMercosur2024
+Warning--No address in ICEX2025
+Warning--No address in IEC61724-1_2021
+Warning--No address in Burriana5MW
+Warning--No address in ProyectoEjecutivo2024
+You've used 47 entries,
+            6951 wiz_defined-function locations,
+            1514 strings with 19241 characters,
+and the built_in function-call counts, 93457 in all, are:
+= -- 11303
+> -- 808
+< -- 4845
++ -- 4823
+- -- 125
+* -- 6016
+:= -- 17769
+add.period$ -- 195
+call.type$ -- 47
+change.case$ -- 816
+chr.to.int$ -- 0
+cite$ -- 99
+duplicate$ -- 2448
+empty$ -- 3553
+format.name$ -- 1399
+if$ -- 17429
+int.to.chr$ -- 0
+int.to.str$ -- 145
+missing$ -- 0
+newline$ -- 1168
+num.names$ -- 376
+pop$ -- 2374
+preamble$ -- 1
+purify$ -- 201
+quote$ -- 0
+skip$ -- 5097
+stack$ -- 0
+substring$ -- 5195
+swap$ -- 1225
+text.length$ -- 139
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 3888
+warning$ -- 6
+while$ -- 496
+width$ -- 0
+write$ -- 1470
+(There were 6 warnings)
