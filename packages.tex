@@ -1,0 +1,66 @@
+% packages.tex - Paquetes, formato y configuración del preámbulo
+
+% --- Idioma y codificación ---
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx} % Fuente Times (texto y matemáticas)
+
+% --- Matemáticas y unidades ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+% --- Gráficos, color y tablas ---
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable} % Tablas de más de una página
+\usepackage{tabularx}  % Tablas con columnas de ancho ajustable
+\usepackage{xltabular} % Combina longtable y tabularx
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{nicematrix}
+\usepackage{bigstrut}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+
+% --- Documento, páginas y formato ---
+\usepackage{calc}
+\usepackage{anysize}
+\usepackage{appendix}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{ragged2e}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{subfiles}
+\usepackage[refpages]{gloss}
+
+% --- Bibliografía (APA con soporte natbib) ---
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,natbib=true]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+% \cite se usa en las notas de figuras ("Adaptado de ..."): forma narrativa APA 7 -> Autor (año)
+\AtBeginDocument{\let\cite\textcite}
+\addbibresource{TFC/biblio.bib}
+
+% --- Hipervínculos (cargar al final) ---
+\usepackage[hidelinks]{hyperref}
+
+% --- Ajustes ---
+\setlength{\headheight}{14.5pt} % Evita el aviso de fancyhdr
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+% --- Datos del documento ---
+\newcommand{\thesisTitle}{Diseño de Robot Autónomo para Medición de Variables Climáticas en Sistemas Fotovoltaicos}
+\newcommand{\autor}{Pedro Mitsuki Yasuda Larrea}
+\newcommand{\asesor}{MSc. Arturo Berastain}
+\newcommand{\thesisType}{Trabajo de Fin de Carrera 2}

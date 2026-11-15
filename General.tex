@@ -1,76 +1,8 @@
 \documentclass[12pt,a4paper,oneside]{report}
-\usepackage[spanish]{babel}
-\selectlanguage{spanish}
-\usepackage[T1]{fontenc}
-\usepackage{times}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-
-\usepackage{graphicx}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{longtable}
-\usepackage{tabularx} % Para tablas de mas de una página
-\usepackage{booktabs} 
-\usepackage{multirow}
-\usepackage{xltabular}
-\usepackage[table]{xcolor}
-\usepackage{pdfpages}
-\usepackage{nicematrix}
-
-\usepackage{verbatim}
-
-\usepackage{calc}
-\usepackage[refpages]{gloss}
-\usepackage{float}
-\usepackage{anysize}
-\usepackage{bigstrut}
-\usepackage{appendix}
-%\usepackage{lscape} 
-\usepackage{pdflscape}
-\usepackage{listings}
-\usepackage{color}
-\usepackage{setspace}
-\usepackage{enumerate} 
-\usepackage{ragged2e}
-\usepackage[utf8]{inputenc}
-\usepackage{comment}
-\usepackage{pslatex}
-\usepackage{apacite} 
-\usepackage{fixltx2e}
-\usepackage{caption}
-\usepackage{setspace} 
-\captionsetup[table]{skip=10pt}
-\usepackage{array}
-
-%%%%%%%% Probando referencias
-%\usepackage[a4paper]{geometry}
-\usepackage{natbib}
-%\usepackage{chapterbib}
-
-%%%%%%%%%
-
-\usepackage{lipsum}  
-
-\usepackage{fancyhdr}
-\usepackage[hidelinks]{hyperref}
-%\usepackage[backend=biber]{biblatex}
-
-\bibliographystyle{apacite}
-
-
-
-\newcommand{\thesisTitle}{Diseño de Robot Autónomo para Medición de Variables Climáticas en Sistemas Fotovoltaicos}
-\newcommand{\autor}{Pedro Mitsuki Yasuda Larrea}
-\newcommand{\asesor}{MSc. Arturo Berastain}
-\newcommand{\thesisType}{Trabajo de Fin de Carrera 1}
-
-\usepackage{tocloft}
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\input{packages} % Paquetes, formato y configuración
 
 
 \begin{document}
-\renewcommand{\BOthers}[1]{et al.\hbox{}}
 \renewcommand\bibname{Bibliografía}
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION
@@ -96,44 +28,20 @@
 %	Carátula
 %----------------------------------------------------------------------------------------
 
-\begin{titlepage}
-
-\begin{center}
-{\Large \bf PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ}\\
-\vspace{8mm} 
-{\Large \bf Facultad de Ciencias e Ingeniería}\\
-\vspace{1cm}
-\includegraphics[height=5.5cm]{Recursos/Imagenes/Logo pucp.jpg}
-\vspace{1cm}
-
-\Huge{\textbf{\thesisTitle}}
-\vspace{1cm} 
-
-\Large{ {\thesisType} }\\[0.7cm]
-\vspace{0.7cm} 
-\large{\textbf{AUTOR}}\\
-\autor \\[3pt]  
-\vspace{1.2cm}
-\large{\textbf{ASESOR}}\\
-\asesor\\
-\vspace{0.75cm}
-
-{Lima, \today}
-\end{center}
-\end{titlepage}
+\input{cover} % Página de portada
 
 \pagenumbering{roman}
 
 \fancypagestyle{plain}{
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+	\fancyhf{}
+	\fancyhead[R]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
 }
 %----------------------------------------------------------------------------------------
 %	Resumen
 %----------------------------------------------------------------------------------------
-\input{TFC/resumen} %Se agrega el resumen
+\subfile{TFC/resumen} %Se agrega el resumen
  
 
 %----------------------------------------------------------------------------------------
@@ -164,59 +72,69 @@
 
 \pagestyle{plain}
 \rhead[]{\thepage}
-%----------------------------------------------------------------------------------------
-%	Capítulo 1 
-%----------------------------------------------------------------------------------------
+
 \doublespacing
-\input{TFC/cap1}
 
-
-%----------------------------------------------------------------------------------------
-%	Capítulo 2
-%----------------------------------------------------------------------------------------
-\input{TFC/cap2}
+% CAPÍTULOS DE TFC1
 
 %----------------------------------------------------------------------------------------
-%	Capítulo 3
+%	Capítulo 1 - PLANTEAMIENTO
 %----------------------------------------------------------------------------------------
 
-\input{TFC/cap3}
+\subfile{TFC/cap1}
 
+%----------------------------------------------------------------------------------------
+%	Capítulo 2 - COMPRENSIÓN DEL PROBLEMA
+%----------------------------------------------------------------------------------------
+%\subfile{TFC/cap2}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 3 - DISEÑO CONCEPTUAL 
+%----------------------------------------------------------------------------------------
+
+%\subfile{TFC/cap3}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 4 - CONCEPTOS DE SOLUCIÓN
+%----------------------------------------------------------------------------------------
+
+%\subfile{TFC/cap4}
+
+% CAPÍTULOS DE TFC2
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 5 - DISEÑO MECÁNICO
+%----------------------------------------------------------------------------------------
+
+\subfile{TFC/cap5}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 6 - DISEÑO ELECTRÓNICO
+%----------------------------------------------------------------------------------------
+
+
+\subfile{TFC/cap6}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 7 - PROGRAMACIÓN Y CONTROL
+%----------------------------------------------------------------------------------------
+
+%\subfile{TFC/cap7}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 8 - CONCLUSIONES
 %-----------------
-%	Capítulo 4
-%-----------------
 
-\input{TFC/cap4}
-
-%-----------------
-%	Capítulo 5 (TFC2)
-%-----------------
-
-\input{TFC/cap5}
-
-%-----------------
-%	Capítulo 6 (TFC2)
-%-----------------
-
-\input{TFC/cap6}
-
-
-%-----------------
-%	Conclusiones (Integradas en Capítulo VI)
-%-----------------
-
-%\input{TFC/conclusiones} %Se agregan las conclusiones
+%\subfile{TFC/conclusiones} %Se agregan las conclusiones
 
 
 
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAFIA
-%----------------------------------------------------------
-%------------------------------
-\newpage
-%\nocite{*}
-\bibliography{TFC/biblio} %Se agrega la bibliografia
+%----------------------------------------------------------------------------------------
+\clearpage
+\printbibliography[heading=bibintoc,title=\bibname] %Se agrega la bibliografia (biblatex-apa, APA 7)
 %----------------------------------------------------------------------------------------
 %	Anexos
 %----------------------------------------------------------------------------------------
@@ -228,7 +146,6 @@
 \thispagestyle{empty}
 \includepdf[pages=-]{Recursos/Anexos/EstructuraFunciones_v20.pdf}
 
- \phantomsection
+\phantomsection
 \end{document} 
-
 

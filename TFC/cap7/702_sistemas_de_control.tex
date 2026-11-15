@@ -1,0 +1,114 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	LAZOS DE CONTROL
+%----------------------------------------------------------------------------------------
+
+\section{Lazos de control}
+
+%----------------------------------------------------------------------------------------
+%	[COMPLETAR, AÑADIR UNA INTRODUCCIÓN A ESTA SECCIÓN]
+%----------------------------------------------------------------------------------------
+
+\subsection{Lazo de control del movimiento de traslación}
+
+El desplazamiento autónomo del vehículo se rige mediante un lazo de control cerrado en cascada que integra el seguimiento espacial y la regulación de velocidad. Como se observa en la Figura \ref{fig:LazoControl}, la referencia del sistema se calcula dinámicamente comparando la ruta predefinida con las coordenadas espaciales retroalimentadas por la antena GPS de parche cerámico y la orientación provista por la unidad IMU. Esta fusión de datos alimenta al algoritmo geométrico Pure Pursuit, el cual calcula el error de desvío lateral para definir el ángulo de corrección requerido.
+
+De forma paralela, la retroalimentación de los encoders rotativos determina el error respecto a la velocidad nominal operativa de 1 m/s. El controlador central, mediante un algoritmo PID, amalgama ambos errores para generar y distribuir las señales de Modulación por Ancho de Pulsos hacia los actuadores. Al tratarse de un chasis de tracción diferencial, el PID varía la potencia entre los flancos izquierdo y derecho para corregir el rumbo y mantener al robot sobre la trayectoria ideal sin interrumpir su avance.
+
+\begin{figure}[H]
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	
+	\caption[Lazo de control del movimiento de traslación del robot.]{} 
+	
+	\textit{Lazo de control del movimiento de traslación del robot.} \par\medskip
+	
+	\centering
+	\includegraphics[width=\textwidth]{Recursos/Imagenes/ImagenesDisenoProgramacion/LazoControlNavegación.png} \par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Elaboración propia.
+	\label{fig:LazoControl}
+\end{figure}
+
+\subsection{Lazos de control de altura y orientación del sensor de irradiancia}
+
+Por otro lado, el control de los subsistemas de altura y orientación se rige mediante un lazo de control cerrado simple que integran los sensores IMU y de ultrasonido con referencias estáticas. Como se observa en la Figura \ref{fig:LazosControl}.
+
+\begin{figure}[H]
+
+	\captionsetup{justification=raggedright, singlelinecheck=false, labelsep=none}
+	
+	\caption[Lazo de control para el ajuste altura y orientación del sensor de irradiancia.]{} 
+	
+	\textit{Lazo de control para el ajuste altura (izquierda) y orientación (derecha) del sensor de irradiancia.} \par\medskip
+	
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesDisenoProgramacion/LazoControlAltura.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Recursos/Imagenes/ImagenesDisenoProgramacion/LazoControlAngulo.png}
+	\end{minipage}
+	\par\medskip
+	
+	\raggedright
+	\footnotesize \textit{Nota.} Elaboración propia..
+	\label{fig:LazosControl}
+\end{figure}
+
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+%%%%------------------------------------------------------------------------------------------------------------------
+
+\section{Variables de control}
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{4.0cm}|p{3.5cm}|>{\centering\arraybackslash}p{2.2cm}|>{\centering\arraybackslash}X|}
+        \caption{Variables por Monitorear / Controlar}
+        \label{tab:variables_monitoreo_control} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Variable} & \textbf{Tipo de Señal} & \textbf{Monitorear / Controlar} & \textbf{Acción / Descripción} \\ \hline
+        \endfirsthead
+        
+        \multicolumn{4}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Variable} & \textbf{Tipo de Señal} & \textbf{Monitorear / Controlar} & \textbf{Acción / Descripción} \\ \hline
+        \endhead
+        
+        \hline
+        \endfoot
+        
+        \hline
+        \endlastfoot
+        
+        Irradiancia global Inclinada & Analógica & Monitorear & Registro de lectura en plano de paneles fotovoltaicos. \\ \hline
+        Variables climáticas secundarias  & Analógica & Monitorear & Muestreo cada 5 s. \\ \hline
+        Velocidad diferencial & Digitales & Controlar & Regulación de la velocidad de avance a $1\text{ m/s}$ nominal. \\ \hline
+        Posición vertical de subsistema de elevación & Digital & Controlar & Despliegue de elevación a la altura $h \ge 1300\text{ mm}$ del suelo. \\ \hline
+        Ángulo de orientación de piranómetro & Digital & Controlar & Alineación angular del piranómetro en el plano de inclinación de los paneles. \\ \hline
+        Coordenadas GPS y Vectores IMU  & Digital & Monitorear & Fusión de sensores para estimación de postura y navegación. \\ \hline
+        Estado de Batería Li-Ion & Digital & Monitorear & Monitoreo de porcentaje de carga. \\ \hline
+    \end{xltabular}
+\end{center}
+
+
+\end{document}

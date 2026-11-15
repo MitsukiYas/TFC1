@@ -1,0 +1,17 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+\section{Alcance y limitaciones}
+El alcance de este proyecto y sus delimitaciones operativas se definen en conjunto a través de las siguientes características:
+
+\begin{itemize}
+    \item Abarca el diseño de detalle y la implementación de un prototipo virtual de una base móvil robusta apta para desplazarse sobre los terrenos irregulares que caracterizan a las plantas fotovoltaicas.
+    \item Incluye el desarrollo de la lógica y el algoritmo de control que permitirá al vehículo seguir rutas de inspección predefinidas y evadir obstáculos. No obstante, el desplazamiento se encuentra restringido por la morfología del suelo, limitando su operación a zonas con pendiente máxima del terreno de 16°.
+    \item Comprende la incorporación de los instrumentos meteorológicos requeridos para monitorear las variables ambientales de forma dinámica. La precisión de esta instrumentación estará sujeta a factores ambientales, pudiendo verse mermada por el fenómeno del \textit{soiling} o presentar lecturas atípicas debido a sombras proyectadas y reflejos solares accidentales.
+    \item La integridad mecánica, electrónica y de los sensores del sistema estará diseñada para soportar las altas exigencias climáticas de los parques solares, restringiendo su funcionamiento seguro a una temperatura ambiente máxima operativa de 45°C.
+    \item Contempla la implementación de un sistema de telemetría para almacenar y transmitir los datos medidos, habilitando la supervisión y el control remoto. Su desempeño dependerá estrictamente de la cobertura y estabilidad de la red inalámbrica existente en la instalación. El alcance del proyecto se delimita estrictamente al diseño e implementación del robot móvil, o el nodo de la red de transmisión, a establecer el protocolo de red y definir la estructura de la interfaz de telemetría y control, garantizando que el robot sea capaz de interoperar con plataformas comerciales o estaciones base preexistentes en la planta fotovoltaica.
+    \item La autonomía del robot estará directamente condicionada por la capacidad de su batería y su perfil de consumo energético, proyectándose una autonomía de operación continua de alrededor de 1 hora, lo que impone la necesidad de establecer ciclos de carga periódicos para mantener la continuidad del servicio en plantas que requieran un recorrido mayor al tiempo establecido.
+\end{itemize}
+
+\end{document}
+

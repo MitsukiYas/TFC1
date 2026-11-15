@@ -1,0 +1,56 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+\section{Lista de requerimientos}
+A continuación, se presenta la lista de requerimientos del sistema, la cual traduce las necesidades identificadas de los stakeholders en parámetros técnicos cuantificables. Esta tabla funciona como el contrato técnico del proyecto y clasifica las especificaciones en exigencias (E) y deseos (D), agrupándolas según las características establecidas por la metodología.
+%
+%
+%
+\begin{center}
+\footnotesize
+\begin{xltabular}{\textwidth}{|p{0.6cm}|c|p{2.2cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\caption{Lista de requerimientos del sistema mecatrónico.}
+\label{tab:lista_requerimientos} \\
+\hline
+\rowcolor[HTML]{D9E1F2} 
+\textbf{ID} & \textbf{Tipo} & \textbf{Característica} & \textbf{Descripción técnica} & \textbf{Fuente / Justificación} & \textbf{Método de verificación} \\ \hline
+\endfirsthead
+
+\multicolumn{6}{c}%
+{{\bfseries Continuación de la \tablename\ \thetable{}}} \\
+\hline
+\rowcolor[HTML]{D9E1F2} 
+\textbf{ID} & \textbf{Tipo} & \textbf{Característica} & \textbf{Descripción técnica} & \textbf{Fuente / Justificación} & \textbf{Método de verificación} \\ \hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & E & Geometría & El vehículo debe tener dimensiones máximas de 600x600x500 mm y una masa total inferior a 20kg, respetando los límites ergonómicos de carga para los operarios. & Restricciones espaciales de los pasillos entre los seguidores solar \citep{ProyectoEjecutivo2024}. & Inspección con cinta métrica y pesaje con balanza industrial calibrada. \\ \hline
+
+2 & E & Posicionamiento & El vehículo debe posicionar el plano óptico de medición del piranómetro a una altura de al menos 1300 mm desde el suelo, con altura ajustable. & Los piranómetros deben encontrarse en una altura correspondiente a los paneles solares de la planta \citep{IEC61724-1_2021} o a una altura que garantice un horizonte despejado \citep{GuiaMercosur2024} & Medición desde el nivel del suelo hasta el plano óptico de medición del piranómetro en su estado de máximo despliegue. \\ \hline
+
+3 & E & Cinemática & El robot debe desplazarse por los pasillos de la planta a una velocidad nominal de 1 m/s. & Necesidad de cubrir el área de inspección en un tiempo razonable sin comprometer la estabilidad de los sensores  \citep{ProyectoEjecutivo2024}. & Prueba de cinemática midiendo el tiempo de recorrido en un circuito de longitud conocida. \\ \hline
+
+4 & E & Fuerzas & El sistema de locomoción debe ser capaz de superar pendientes con una inclinación de hasta 16°. & Topografía irregular, zanjas erosivas y desniveles comunes en las plantas solares a gran escala \citep{Salinas2025}. & Ensayo de tracción y estabilidad en rampa de prueba con inclinación ajustable. \\ \hline
+
+5 & E & \multirow{2.5}{*}{Energía} & El sistema de almacenamiento y suministro de energía debe proporcionar una autonomía de operación ininterrumpida de al menos 1 hora sin requerir recarga externa. & El robot debe completar ciclos de inspección completos antes de verse forzado a recargar en una estación base \citep{ProyectoEjecutivo2024}. & Ensayo de descarga de energía bajo consumo nominal de motores e instrumentación. \\ \hline
+
+6 & E & Materia & Los protectores de la electrónica deben cumplir con un grado de protección IP65 e IK08, y los componentes del sistema deben operar sin degradación en un rango de temperatura ambiente de 10°C a 45°C. & Exposición severa a polvo del desierto, temperaturas altas y fluctuantes, lluvias eventuales y posibles impactos mecánicos durante el recorrido \citep{ProyectoEjecutivo2024}. & Revisión de la certificación de los protectores de la electrónica, prueba de hermeticidad, ensayo de operación a distintas temperaturas de los componentes críticos.\\ \hline
+
+7 & E & Señales  & El sistema de adquisición debe muestrear las variables meteorológicas en un intervalo de 5 segundos y registrarlas con una frecuencia máxima de 5 minutos. Asimismo, se debe empaquetar las variables climáticas en una trama de datos estructurada con un tamaño máximo de carga útil de 50 bytes y una capacidad de recepción remota para interpretar comandos externos con una latencia de 2 segundos. & Recomendaciones para el monitoreo meteorológico de precisión, optimizaciones de tiempo en el aire para redes inalámbricas seguridad operativa para frenado de emergencia.  \citep{IEC61724-1_2021}. & Inspección del tamaño de los bytes enviados y análisis de las marcas de tiempo en los archivos de almacenamiento de datos. \\ \hline
+8 & E & Control & El sistema de navegación debe detectar obstáculos imprevistos dentro del área de un semicírculo de 1 metro de radio, ubicado en cada dirección de movimiento del robot, y recalcular su trayectoria para evadirlos. & Presencia de rocas, vegetación crecida o personal de mantenimiento bloqueando temporalmente el pasillo \citep{Figgis2025}. & Prueba de campo colocando obstáculos ciegos en la ruta predefinida del robot. \\ \hline
+
+9 & E & Comunicación & El módulo de telemetría debe transmitir los paquetes de datos a la estación base garantizando un alcance efectivo mínimo de 200 metros en línea de vista. & Las plantas solares a escala comercial abarcan grandes extensiones de terreno longitudinal \citep{Figgis2025}. & Ensayo de pérdida de paquetes (\textit{ping}) alejando el robot progresivamente de la estación base. \\ \hline
+
+10 & D & Mantenimiento & El robot debe contar con una lógica interna de recordatorio de mantenimiento para el usuario, con el fin de mitigar la acumulación de suciedad en los sensores para mantener una incertidumbre menor al 2\%. & La suciedad acumulada degrada críticamente la exactitud de los instrumentos de medición de irradiancia \citep{IEC61724-1_2021}. & Medición comparativa de irradiancia antes y después de activar el mecanismo bajo suciedad simulada. \\ \hline
+
+11 & E & Seguridad & El vehículo debe disponer de un sistema de parada de emergencia que interrumpa la tracción en un tiempo de respuesta menor a 0.1 segundos. & Prevención de accidentes industriales y protección frente a pérdida total de control en la navegación \citep{ProyectoEjecutivo2024}. & Prueba de interrupción forzada de marcha cronometrada en laboratorio. \\ \hline
+
+\end{xltabular}
+\end{center}
+
+\end{document}

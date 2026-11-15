@@ -1,0 +1,74 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+\section{Diseño de estructura de soporte}
+
+\subsection{Descripción general del subsistema}
+
+Finalmente, la estructura de soporte principal, conformada por un chasis de aluminio. Esta carcasa actúa como un escudo físico estático que aísla de forma hermética los componentes electrónicos de control y las baterías contra el ingreso de suciedad y las perturbaciones propias del entorno.
+
+\subsection{Planteamiento inicial y parámetros de diseño}
+
+[COMPLETAR]
+
+\subsection{Planteamiento cinemático y estático}
+
+[COMPLETAR]
+
+\subsection{Dimensionamiento de componentes}
+
+[COMPLETAR]
+
+\subsection{Selección de componentes}
+
+\subsubsection{Selección del perfil estructural principal}
+
+\paragraph{Criterios de selección y carga estructural}
+El diseño del bastidor principal exige elementos que provean una alta rigidez flexional y torsional combinada con un bajo peso específico. Asimismo, se requiere facilidad de montaje para agilizar el ensamblaje y capacidad suficiente para soportar la masa del chasis, las baterías de 3.0 kg y los subsistemas de elevación y orientación sin deformaciones permanentes.
+
+\paragraph{Evaluación de alternativas comerciales}
+Se evalúan tres alternativas de perfilería estructural para la conformación del bastidor. La Opción A corresponde al perfil V-Slot de 20 por 20 mm fabricado en aluminio 6063-T5. La Opción B es el perfil T-Slot de 30 por 30 mm del mismo material. Finalmente, la Opción C plantea el uso de tubo cuadrado soldado de 20 por 20 por 1.5 mm en acero estructural A36.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{3.5cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \caption{Tabla comparativa de perfiles estructurales evaluados\label{tab:comp_perfiles}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        Especificación Técnica & Opción A V-Slot 20x20 mm & Opción B T-Slot 30x30 mm & Opción C Tubo 20x20x1.5 mm \\ \hline
+        \endfirsthead
+        
+        \multicolumn{4}{c}%
+        {\tablename\ \thetable{} -- Continuación de la página anterior} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        Especificación Técnica & Opción A V-Slot 20x20 mm & Opción B T-Slot 30x30 mm & Opción C Tubo 20x20x1.5 mm \\ \hline
+        \endhead
+        
+        \hline
+        \endfoot
+        
+        \hline
+        \endlastfoot
+        
+        Material & Aluminio 6063-T5 & Aluminio 6063-T5 & Acero Estructural A36 \\ \hline
+        Masa Lineal & $0.49\text{ kg/m}$ & $0.85\text{ kg/m}$ & $0.87\text{ kg/m}$ \\ \hline
+        Momento de Inercia & $0.72\text{ cm}^4$ & $2.80\text{ cm}^4$ & $0.78\text{ cm}^4$ \\ \hline
+        Módulo de Sección & $0.72\text{ cm}^3$ & No evaluado por exceso masa & No evaluado por tipo unión \\ \hline
+        Modularidad de Ensamble & Excelente con ranura continua & Alta & Nula requiere soldadura \\ \hline
+        Penalización de Masa & Nula & Incremento del 73 por ciento & Susceptible a corrosión \\ \hline
+    \end{xltabular}
+\end{center}
+
+\paragraph{Discusión y selección}
+Se selecciona la Opción A, correspondiente al perfil V-Slot de 20 por 20 mm, ya que minimiza el peso del bastidor a apenas 2.45 kg de aluminio estructural, soportando una deflexión máxima calculada inferior a 0.15 mm bajo la carga concentrada central de la batería y el sistema de elevación. Esto garantiza repetibilidad dimensional y un ensamble modular rápido. La Opción B, aunque posee mayor inercia, representa un volumen excesivo para el ancho de vía de 380 mm, mientras que la Opción C exige procesos destructivos de soldadura y presenta mayor susceptibilidad a la corrosión galvánica.
+
+\subsubsection{Elementos de unión, escuadras y pernería estructural}
+Para asegurar la ortogonalidad y rigidez de los nodos, se utilizan escuadras de 90 grados inyectadas en aleación de aluminio fundido, junto con placas de unión de 4.0 mm de espesor mecanizadas en aluminio 6061-T6. La fijación se realiza mediante pernos M5 tipo Allen bajo la norma ISO 4762 \citep{iso4762_2004} en acero inoxidable de grado A2-70 \citep{iso3506_1_2020}, acoplados a tuercas T corredizas que se insertan en la ranura continua del perfil de 6 mm.
+
+\subsubsection{Diseño de la carcasa de protección y sellado ambiental}
+El conjunto se recubre con una cubierta protectora envolvente diseñada para otorgar un grado de protección IP65 \citep{iec60529_2013}. Este encapsulamiento aísla los componentes electrónicos frente al polvo solar abrasivo de naturaleza silícea y las ráfagas de viento del entorno de operación. Para mantener la disipación térmica sin comprometer la estanqueidad, se incorporan sistemas de ventilación con filtros laberínticos y mamparas internas aislantes.
+
+\subsection{Simulación y validación}
+
+\end{document}

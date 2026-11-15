@@ -1,0 +1,108 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+
+
+\section{Sistema de procesamiento y control embebido}
+
+\subsection{Arquitectura de control distribuido en dos niveles computacionales}
+
+Con el fin de satisfacer los requerimientos de adquisición continua establecidos por el estándar internacional de monitoreo solar y garantizar la estabilidad cinemática del chasis sobre superficies irregulares, el procesamiento electrónico adopta una estructura jerárquica dividida en dos capas funcionales independientes.
+
+La capa de alto nivel asume las tareas de mayor demanda computacional y no deterministas, entre las que destacan la ejecución del sistema operativo embebido, la planificación espacial de trayectorias, la interacción con la infraestructura de telemetría y la base de datos de mediciones ambientales. Por otro lado, la capa de bajo nivel opera de manera determinista y en tiempo real, responsabilizándose de los lazos de control de velocidad para el motorreductor de tracción, la generación de perfiles temporizados de impulsos para los actuadores paso a paso, la lectura continua de interrupciones de posición angular y la detección inmediata de señales de seguridad.
+
+\subsection{Análisis y selección del procesador maestro de alto nivel}
+
+Para la capa superior, el procesador requiere capacidad para ejecutar una distribución de Linux embebido y compatibilidad nativa con herramientas de robótica avanzada. Se demanda una arquitectura de 64 bits con al menos 4 GB de memoria de acceso aleatorio para prevenir bloqueos durante la serialización de datos de navegación. Con este propósito, se evalúan tres alternativas de placa única disponibles en el entorno comercial, resumidas en la Tabla \ref{tab:comp_sbc}.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{3.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}X|}
+        \caption{Tabla comparativa de computadoras de placa reducida para el control de alto nivel\label{tab:comp_sbc}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Especificación Técnica} & \textbf{Opción A (Raspberry Pi 4B)} & \textbf{Opción B (Jetson Nano)} & \textbf{Opción C (Orange Pi 5)} \\ \hline
+        \endfirsthead
+        
+        \multicolumn{4}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Especificación Técnica} & \textbf{Opción A (Raspberry Pi 4B)} & \textbf{Opción B (Jetson Nano)} & \textbf{Opción C (Orange Pi 5)} \\ \hline
+        \endhead
+        
+        \hline
+        \endfoot
+        
+        \hline
+        \endlastfoot
+        
+        Arquitectura de CPU & ARM Cortex-A72 de 64 bits & ARM Cortex-A57 de 64 bits & ARM Cortex-A76 y A55 \\ \hline
+        Núcleos y Frecuencia & Cuatro núcleos a 1.5 GHz & Cuatro núcleos a 1.4 GHz & Ocho núcleos a 2.4 GHz \\ \hline
+        Memoria RAM & 4 GB LPDDR4 a 3200 MHz & 4 GB LPDDR4 & 4 GB LPDDR4x \\ \hline
+        Consumo de Potencia & De 3.0 W a 8.0 W & De 5.0 W a 10.0 W & De 4.0 W a 12.0 W \\ \hline
+        Conectividad Inalámbrica & Wi-Fi de doble banda y BT 5.0 & Requiere adaptador externo & Sin módulo integrado \\ \hline
+        Soporte de Software & Oficial y directo & Restringido a versiones previas & Limitado por compatibilidad de núcleo \\ \hline
+        Disponibilidad Comercial & Inmediata en plaza local & Limitada y costo elevado & Requiere importación \\ \hline
+        Evaluación de Idoneidad & Seleccionada para integración & Descartada por costo y consumo & Descartada por soporte de software \\ \hline
+    \end{xltabular}
+\end{center}
+
+A partir de la evaluación de requerimientos, se selecciona la Raspberry Pi 4 Modelo B. Esta opción ofrece el balance más favorable entre consumo eléctrico, costo accesible, estabilidad térmica y compatibilidad nativa con las librerías de control y comunicación del sistema.
+
+\subsection{Análisis y selección del microcontrolador determinista en tiempo real}
+
+Para el monitoreo en tiempo real, el circuito requiere integrar la generación de señales de conmutación rápida para los controladores de potencia, la lectura por interrupciones del transductor de posición de las ruedas, la decodificación de sensores inerciales y la recepción de señales de seguridad. Con base en estos factores, se analizan tres alternativas de microcontroladores bajo las condiciones de trabajo del robot, cuyos parámetros se sintetizan en la Tabla \ref{tab:comp_mcu}.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{3.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}X|}
+        \caption{Tabla comparativa de microcontroladores evaluados para el control determinista de bajo nivel\label{tab:comp_mcu}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Parámetro Técnico} & \textbf{Opción A (Arduino Mega 2560)} & \textbf{Opción B (STM32F411)} & \textbf{Opción C (ESP32-WROOM)} \\ \hline
+        \endfirsthead
+        
+        \multicolumn{4}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2} 
+        \textbf{Parámetro Técnico} & \textbf{Opción A (Arduino Mega 2560)} & \textbf{Opción B (STM32F411)} & \textbf{Opción C (ESP32-WROOM)} \\ \hline
+        \endhead
+        
+        \hline
+        \endfoot
+        
+        \hline
+        \endlastfoot
+        
+        Arquitectura y Núcleo & AVR RISC de 8 bits & ARM Cortex-M4F de 32 bits & Xtensa LX6 de dos núcleos \\ \hline
+        Frecuencia de Reloj & 16 MHz & 100 MHz & 240 MHz \\ \hline
+        Terminales Digitales de E/S & 54 terminales en total & 32 terminales en total & 25 terminales útiles \\ \hline
+        Canales Analógicos & 16 canales de diez bits & 16 canales de doce bits & 18 canales con no linealidad \\ \hline
+        Puertos Seriales Nativos & Cuatro puertos independientes & Tres puertos independientes & Tres puertos independientes \\ \hline
+        Tensión Lógica e Inmunidad & 5.0 V nativos con alta inmunidad & 3.3 V tolerante a 5 V & 3.3 V sin tolerancia a 5 V \\ \hline
+        Interfaz con Drivers & Conexión directa a optoacopladores & Requiere adaptación de nivel & Requiere adaptación de nivel \\ \hline
+        Disponibilidad de Reemplazo & Inmediata y económica & Existencia moderada & Alta disponibilidad \\ \hline
+        Evaluación de Idoneidad & Seleccionado para control físico & Descartado por densidad de terminales & Descartado por inmunidad y líneas \\ \hline
+    \end{xltabular}
+\end{center}
+
+Se selecciona la arquitectura Arduino Mega 2560 Pro. Su principal ventaja radica en la alta densidad de terminales de entrada y salida, lo que permite cablear de forma exclusiva cada señal de paso, dirección, habilitación, sensores de fin de carrera y demás componentes sin requerir integrados multiplexores o expansores de puerto. Asimismo, su operación con potencial lógico nativo de 5.0 V entrega la corriente suficiente para operar de manera directa los optoacopladores de los controladores de potencia.
+
+\subsection{Arquitectura de interconexión serial}
+
+El canal de comunicación bidireccional entre la computadora monoplaca y el microcontrolador determinista se implementa a través de un enlace de bus USB. Esta topología aprovecha el convertidor integrado en la placa del microcontrolador, el cual se reconoce en el sistema operativo Linux como un puerto de comunicaciones.
+
+Esta configuración ofrece ventajas sustanciales respecto a un cableado directo entre pines de propósito general (GPIO). En primer lugar, el controlador del bus resuelve internamente el acoplamiento de niveles lógicos entre el dominio de $3.3\text{ V}$ del procesador principal y el dominio de $5.0\text{ V}$ del microcontrolador, eliminando la necesidad de incorporar circuitos adaptadores con transistores discretos. En segundo lugar, el uso de cables blindados con malla metálica trenzada protege la integridad de las señales frente a las interferencias electromagnéticas generadas por la conmutación de los controladores de potencia.
+
+A nivel de enlace de datos, el flujo de información se estructura mediante tramas binarias de longitud fija transmitidas a una velocidad de $115200\text{ baudios}$. La cabecera de cada paquete incluye dos bytes de sincronismo con valores hexadecimales \texttt{0xAA} y \texttt{0x55}, seguidos por un identificador de mensaje y un campo de carga útil de $56\text{ bytes}$ que empaqueta las lecturas inerciales, los pulsos acumulados de posición angular, las variables del monitor de batería y la temperatura del chasis. La trama concluye con una suma de comprobación por redundancia cíclica de 16 bits (CRC-16) y delimitadores de fin de línea. Este formato permite una tasa de actualización continua de $50\text{ tramas/s}$, lo que demanda un ancho de banda efectivo de $32\text{ kbps}$, valor ampliamente inferior a la capacidad nominal del bus serial.
+
+\subsection{Puertos de instrumentación meteorológica}
+
+La conexión de los sensores meteorológicos ubicados en el mástil y en la plataforma de medición se resuelve mediante dos buses diferenciales industriales bajo el estándar RS-485, acoplados a conectores circulares de 8 pines. El enlace de estos buses con la computadora de a bordo se realiza a través de dos módulos conversores industriales de USB a RS-485, los cuales asignan puertos seriales independientes en el sistema operativo.
+
+El software maestro interroga periódicamente a cada instrumento mediante el protocolo industrial Modbus RTU en topología de dos hilos (RS-485 2-wire). A intervalos de $1\text{ s}$, la computadora consulta los registros de almacenamiento del piranómetro para obtener la irradiancia solar en $\text{W/m}^2$, los registros del anemómetro para medir la velocidad y el ángulo del viento, y los registros de la sonda ambiental para obtener la temperatura y humedad relativa. La alimentación de estos instrumentos se realiza mediante tres borneras de conexión conectadas a la línea de voltaje de sensores meteorológicos, garantizando un suministro desacoplado y libre de ruido.
+
+
+\end{document}

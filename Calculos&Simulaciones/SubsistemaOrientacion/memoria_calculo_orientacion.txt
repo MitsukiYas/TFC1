@@ -1,0 +1,480 @@
+MEMORIAS DE CALCULO - SUBSISTEMA DE ORIENTACION DE PIRANOMETRO
+Generado: 14-Nov-2026 17:32:21
+
+==============================================================================
+ MEMORIA DE CALCULO MC-01: DATOS DE ENTRADA
+==============================================================================
+ Objetivo: Reunir en un solo lugar todos los datos, con su fuente.
+------------------------------------------------------------------------------
+
+ Resumen de datos principales
+ ----------------------------
+   Masa de diseno del sensor                                     0.5 kg
+   Altura del CM del sensor sobre el eje (CAD)                  54.3 mm
+   Excentricidad horizontal de diseno                             25 mm
+   Masa de diseno de la plataforma                              0.25 kg
+   Barrido                                                        60 grados
+   Tiempo de barrido                                               5 s
+   Relacion de reduccion                                          30 -
+   Velocidad de viento de diseno                                  75 km/h
+   Corriente configurada (pico)                                  1.4 A
+   Separacion entre rodamientos (CAD)                            111 mm
+   * Masas de ABS impreso (soportes, chapa del IMU) no consideradas.
+   * Inercia y masa de la corona del CAD con 8 mm de ancho; el ancho definido es 10 mm.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-02: REQUISITOS DE INCLINACION Y AZIMUT
+==============================================================================
+ Objetivo: Calcular el pitch admisible del chasis y la inclinacion minima beta_min.
+ Referencias:
+   - IEC 61724-1:2021 (Clase A: 0.5 grados inclinacion, 1.0 grados azimut)
+------------------------------------------------------------------------------
+
+ Pitch admisible |p| <= az_adm * tan(beta)
+ -----------------------------------------
+   * Desviacion de azimut por pitch p: p*cot(beta) (aproximacion lineal).
+   * Toda la tolerancia de azimut se asigna al pitch (rumbo del robot paralelo a la fila).
+    beta [gr]   pitch admisible [gr] cumple >= umbral
+            5                  0.087               No
+           10                  0.176               No
+           12                  0.213               Si
+           18                  0.325               Si
+           30                  0.577               Si
+
+ Umbral de verificacion
+ ----------------------
+   Umbral de pitch medible (margen x exactitud IMU)              0.2 grados
+   beta_min = atan(umbral / az_adm)                            11.31 grados
+   * Se redondea a 12 grados (criterio de diseno del trabajo).
+
+==============================================================================
+ MEMORIA DE CALCULO MC-03: PERFIL DE MOVIMIENTO
+==============================================================================
+ Objetivo: Obtener velocidad y aceleracion angulares y la velocidad del motor.
+------------------------------------------------------------------------------
+
+ Resultados
+ ----------
+   Tiempo de aceleracion t_a = f_a t_b                          1.25 s
+   Velocidad angular maxima                                   0.2793 rad/s
+   Velocidad angular maxima                                    16.00 grados/s
+   Aceleracion angular                                        0.2234 rad/s^2
+   Velocidad maxima del motor                                   80.0 rpm
+
+==============================================================================
+ MEMORIA DE CALCULO MC-04: CARGAS SOBRE EL EJE DE GIRO
+==============================================================================
+ Objetivo: Calcular el momento gravitacional M_piv(theta), el momento de viento y la friccion.
+ Referencias:
+   - NTE E.020, Art. 12 (cargas de viento)
+   - Modelo CAD (alturas de centros de masa)
+------------------------------------------------------------------------------
+
+ Plataforma (CAD)
+ ----------------
+   Masa de la placa y su tornilleria                          0.0662 kg
+   Altura del CM de la plataforma z_p                          16.42 mm
+   * Soportes de ABS no considerados: eleva z_p (conservador para cargas).
+
+ Momento gravitacional
+ ---------------------
+   * M_piv = g[m_carga(d_cm cos(th) + z_s sin(th)) + m_plat z_p sin(th)]
+   |M_piv| maximo                                             0.2595 N m
+   Angulo del maximo                                           -30.0 grados
+   M_piv en theta = 0                                         0.1226 N m
+   Angulo en que M_piv cambia de signo                          21.8 grados
+
+ Viento (NTE E.020)
+ ------------------
+   Presion P_h = f_r 0.005 C V^2                               50.63 kgf/m^2
+   Presion                                                     496.5 Pa
+   Fuerza lateral F_v                                          5.958 N
+   Momento de viento M_v                                      0.3575 N m
+   Relacion M_v / M_piv(0)                                      2.92 -
+   * V = 75 km/h solo vale donde el mapa eolico de la NTE da 75 km/h o menos.
+
+ Friccion de rodamientos (modelo SKF simplificado)
+ -------------------------------------------------
+   Carga por rodamiento                                         4.73 N
+   T_rod con sellos de contacto (2 x 0.01 N m)                0.0201 N m
+   T_rod con escudos ZZ                                     7.10e-05 N m
+   T_rod adoptado (conservador)                               0.0201 N m
+   * Se conserva el valor con sellos: los escudos ZZ no rozan el aro interior.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-05: INERCIA RESPECTO AL EJE DE GIRO
+==============================================================================
+ Objetivo: Calcular J_total a partir del modelo CAD y las masas de diseno.
+ Referencias:
+   - Modelo CAD (integrales de r^2 dV respecto al eje)
+------------------------------------------------------------------------------
+   Sensor J = m(k_s^2 + d_cm^2)                           2.1930e-03 kg m^2
+   Plataforma (escalada a 0.25 kg)                        2.2839e-04 kg m^2
+   Corona                                                  5.886e-06 kg m^2
+   Eje                                                     1.349e-06 kg m^2
+   J_total                                                2.4286e-03 kg m^2
+   Termino inercial J_total * alfa                          5.43e-04 N m
+   * Sensor con densidad uniforme y CM en su centro geometrico.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-06: TRANSMISION TORNILLO SIN FIN - CORONA
+==============================================================================
+ Objetivo: Calcular geometria, eficiencias, autobloqueo y friccion dinamica.
+ Referencias:
+   - Shigley Ec. 13-43, 13-46, 13-47 y 15-38
+   - KHK Gear Technical Reference, Ec. 4.27 y Tabla 4.23
+------------------------------------------------------------------------------
+
+ Geometria
+ ---------
+   Diametro de paso del sin fin d_w = d_ext - 2m               12.50 mm
+   Factor diametral q = d_w/m                                  12.50 -
+   Angulo de avance lambda                                     4.574 grados
+   Diametro de paso de la corona d_2 = m Z2                    30.00 mm
+   Distancia entre centros a                                  21.250 mm
+
+ Eficiencia y autobloqueo
+ ------------------------
+   Eficiencia estatica eta_s (mu = 0.15)                      0.3296 -
+   Eficiencia inversa eta_inv                                -0.9828 -
+   mu limite de autobloqueo = cos(phi_n) tan(lambda)          0.0752 -
+   Margen de autobloqueo mu_s / mu_lim                          2.00 -
+   >> Autobloqueo en reposo                    eta_inv = -0.983   criterio eta_inv < 0      : CUMPLE
+
+ Friccion dinamica (AGMA)
+ ------------------------
+   Velocidad de deslizamiento V_s                             0.0525 m/s
+   Velocidad de deslizamiento V_s                              10.34 ft/min
+   Coeficiente de friccion dinamico                           0.0872 -
+   Eficiencia dinamica                                        0.4596 -
+   Margen de autobloqueo con mu dinamico                        1.16 -
+   * Por debajo de mu_lim el autobloqueo desaparece: se mantiene corriente de retencion y lazo cerrado.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-07: TORQUE A LO LARGO DE LA TRAYECTORIA
+==============================================================================
+ Objetivo: Calcular T_out(t) y T_motor(t) y generar la figura de torques.
+------------------------------------------------------------------------------
+   * T_out = |M_piv| + M_v + T_rod + J_total |alfa| (suma de modulos: autobloqueo).
+   * T_motor = S T_out/(i eta) + S J_m i |alfa|, J_m = rotor + sin fin + acoplamiento.
+
+ Resultados
+ ----------
+   Inercia del lado del motor J_m                          6.993e-06 kg m^2
+   T_out maximo                                               0.6376 N m
+   Instante del maximo                                          0.00 s
+   Angulo del maximo                                           -30.0 grados
+   T_motor maximo (eficiencia estatica)                       0.0839 N m
+   T_motor maximo (eficiencia dinamica)                       0.0602 N m
+   * Figura guardada: Tilt_Torques_MATLAB.png
+
+==============================================================================
+ MEMORIA DE CALCULO MC-08: FUERZAS EN EL ENGRANE Y RESISTENCIA DEL DIENTE
+==============================================================================
+ Objetivo: Calcular las fuerzas del engrane, verificar el diente (Lewis) y la holgura de fondo.
+ Referencias:
+   - Shigley Ec. 13-42, 13-43 y 15-53
+   - KHK Tabla 4.23
+   - Metals4U, SAE 660
+   - Hoja de datos 17HS16-2004S1
+------------------------------------------------------------------------------
+
+ Fuerzas (con factor S y mu estatico)
+ ------------------------------------
+   Tangencial en la corona = axial sobre el sin fin            55.26 N
+   Tangencial en el sin fin = axial sobre la corona            13.41 N
+   Radial de separacion                                        20.44 N
+   Comprobacion: W_Wt d_w/2 = T_motor                         0.0838 N m
+
+ Flexion del diente de la corona (Lewis, Shigley 15-53)
+ ------------------------------------------------------
+   Paso normal p_n                                             3.132 mm
+   Ancho de cara F_e                                            10.0 mm
+   Ancho minimo recomendado por KHK                             8.85 mm
+   Esfuerzo de flexion sigma_a                                  14.1 MPa
+   FS con Sy = 95 MPa (centrifugado)                            6.73 -
+   FS con Sy = 140 MPa (colada continua)                        9.92 -
+   >> Flexion del diente (estatica)            FS = 6.73          criterio FS >= 1          : CUMPLE
+   * Verificacion estatica: no evalua desgaste ni fatiga.
+
+ Holgura de fondo con a = 21.25 mm
+ ---------------------------------
+   Holgura normal 0.25 m                                        0.25 mm
+   Cresta del sin fin - fondo de la corona                     0.250 mm
+   Cresta de la corona - fondo del sin fin                     0.250 mm
+   >> Holgura de fondo                         0.25 mm            criterio >= 0.25 mm       : CUMPLE
+
+ Flecha del sin fin (AGMA 6022-D19, 15.5)
+ ----------------------------------------
+   Paso axial p_x                                              3.142 mm
+   Diametro de raiz del sin fin                                10.00 mm
+   Carga sobre el sin fin                                      24.45 N
+   Flecha admisible 0.025 p_x                                 0.0785 mm
+   Separacion maxima entre apoyos del sin fin                    250 mm
+   * Con la carga en el centro del vano (k = 0.5), y = F l^3/(48 E I) (AGMA Ec. 43).
+   >> Flecha del sin fin (vano maximo)         l <= 250 mm        criterio y <= 0.025 p_x   : CUMPLE si l <= l_max
+
+ Cargas que el sin fin transmitiria al eje del motor
+ ---------------------------------------------------
+   Carga axial del sin fin                                     55.26 N
+   Limite axial dinamico del motor                                10 N
+   Carga radial del sin fin (radial + tangencial)              24.45 N
+   Limite radial dinamico del motor (a 20 mm)                     21 N
+   * Superan los limites: el sin fin se apoya en sus propios rodamientos (MC-10).
+
+==============================================================================
+ MEMORIA DE CALCULO MC-09: EJE BASCULANTE
+==============================================================================
+ Objetivo: Verificar resistencia, flecha, pendientes y giro por torsion del eje de 10 mm.
+ Referencias:
+   - Shigley Tablas 3-2, 7-2, A-5, A-9 (caso 10) y A-20; Ec. de energia de distorsion
+------------------------------------------------------------------------------
+   * Viga simplemente apoyada en los rodamientos con voladizo a la derecha.
+   * Cargas en planos distintos sumadas como colineales y del mismo sentido (conservador).
+
+ Cargas
+ ------
+   Plataforma (pesos y viento), total en dos soportes           9.47 N
+   Corona: resultante tangencial-radial + peso                 59.43 N
+   Tarjeta del IMU                                             0.029 N
+   Momento concentrado de la fuerza axial                     0.2012 N m
+
+ Reacciones y momentos
+ ---------------------
+   Reaccion en el rodamiento derecho                           85.03 N
+   Reaccion en el rodamiento izquierdo                        -16.10 N
+   Momento flector maximo (rodamiento derecho)                2.3127 N m
+   Par (S T_out), corona - soporte derecho                    0.8289 N m
+
+ Esfuerzos en la seccion critica
+ -------------------------------
+   sigma = Kt 32 M / (pi d^3)                                  47.11 MPa
+   tau = 16 T / (pi d^3)                                        4.22 MPa
+   sigma von Mises                                             47.68 MPa
+   FS a la fluencia (Sy = 310 MPa)                              6.50 -
+   FS a la fluencia (Sy = 530 MPa, 1045 CD)                    11.12 -
+   Diametro minimo (n = 3)                                      7.73 mm
+   Cortante transversal maximo 4V/3A                            1.01 MPa
+   >> Resistencia del eje a la fluencia        FS = 6.50          criterio FS >= 3.0        : CUMPLE
+
+ Fatiga (vida infinita, ED-Goodman, Shigley Ec. 6-10, 6-17 a 6-19, 7-4 y 7-7)
+ ----------------------------------------------------------------------------
+   Sut (AISI 1045 HR)                                            620 MPa
+   ka (maquinado)                                              0.753 -
+   kb                                                          0.971 -
+   ke (99 %)                                                   0.814 -
+   Limite de fatiga Se                                         184.7 MPa
+   Esfuerzo alternante de von Mises                            49.33 MPa
+   FS a fatiga (vida infinita)                                  3.74 -
+   Ciclos por anio (operacion continua)                       105120 ciclos
+   * Conservador: superficie maquinada (la barra es rectificada), Sut del 1045 HR, Kf = Kt = 2 en flexion y torsion.
+   * Con FS > 1 para vida infinita, el numero de ciclos no limita la vida del eje.
+   >> Fatiga del eje (vida infinita)           FS = 3.74          criterio FS >= 1          : CUMPLE
+
+ Flecha y pendientes (E = 207 GPa)
+ ---------------------------------
+   Flecha en la corona (solo cargas del voladizo)             0.0399 mm
+   Pendiente en el rodamiento izquierdo                      0.00042 rad
+   Pendiente en el rodamiento derecho                        0.00084 rad
+   Pendiente en la corona                                    0.00128 rad
+   Diferencia entre bordes del diente (ancho F_e)             0.0128 mm
+   >> Flecha en la corona                      0.0399 mm          criterio <= 0.076 mm      : CUMPLE
+   >> Pendiente en los rodamientos             0.00084 rad        criterio <= 0.001 rad     : CUMPLE
+   Pendiente en la corona                                       4.40 min de arco
+   Angularidad admisible de la caja (AGMA 6022, 7.3)             5.0 min de arco
+   Margen para la angularidad de la caja                        0.60 min de arco
+   >> Pendiente en la corona (AGMA 6022)       4.4 min            criterio <= 5 min         : CUMPLE
+   * AGMA no da un limite de pendiente del eje: se usa su tolerancia de angularidad de la caja.
+   * La pendiente se suma a la angularidad de los alojamientos; verificar el contacto con tinta azul (AGMA 6022, 7.1).
+
+ Giro por torsion
+ ----------------
+   Giro corona - soporte derecho (T_out sin S)                0.0228 grados
+   * Figura guardada: Tilt_Eje_MATLAB.png
+
+==============================================================================
+ MEMORIA DE CALCULO MC-10: RODAMIENTOS
+==============================================================================
+ Objetivo: Verificar la capacidad estatica de los rodamientos del eje y del sin fin.
+ Referencias:
+   - Ficha MR2010A (C0 = 80.8 kgf)
+   - P0 = 0.6 Fr + 0.5 Fa, P0 >= Fr (catalogo SKF)
+------------------------------------------------------------------------------
+
+ Eje basculante: rodamiento derecho (fijo axialmente)
+ ----------------------------------------------------
+   Carga radial                                                85.03 N
+   Carga axial (axial de la corona)                            13.41 N
+   0.6 Fr + 0.5 Fa                                             57.72 N
+   P0                                                          85.03 N
+   C0                                                            792 N
+   S0                                                           9.32 -
+   >> Rodamiento mas cargado del eje           S0 = 9.32          criterio S0 >= 1          : CUMPLE
+   * La reaccion izquierda cambia de signo: el alojamiento debe retenerlo en ambos sentidos.
+
+ Sin fin: cota superior (un rodamiento toma toda la carga)
+ ---------------------------------------------------------
+   Carga radial (radial + tangencial del sin fin)              24.45 N
+   Carga axial (tangencial de la corona)                       55.26 N
+   P0                                                          42.30 N
+   S0                                                          18.73 -
+   >> Rodamientos del sin fin (cota)           S0 = 18.73         criterio S0 >= 1          : CUMPLE
+   * Cota independiente de la separacion entre rodamientos del sin fin.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-11: PRISIONEROS E INSERTOS
+==============================================================================
+ Objetivo: Verificar la fijacion por prisioneros de la corona (bronce) y de los soportes (ABS con insertos).
+ Referencias:
+   - Shigley Tabla 7-4, Ec. 8-27, Tabla 8-15
+   - PennEngineering SI, IPFC-M4 en ABS
+   - SPIROL, guia de diseno de insertos
+------------------------------------------------------------------------------
+
+ Corona de bronce (Tabla 7-4, prisionero n.o 4 como valor conservador)
+ ---------------------------------------------------------------------
+   Retencion por prisionero                                      712 N
+   Par transmisible por cubo                                    7.12 N m
+   FS frente al par                                             8.59 -
+   FS frente a la fuerza axial de la corona                    106.2 -
+   >> Prisioneros de la corona (par)           FS = 8.59          criterio FS >= 4          : CUMPLE
+
+ Soportes de ABS con insertos IPFC-M4
+ ------------------------------------
+   Fuerza del n.o 4 a su par de asiento (T = K F d)              993 N
+   Extraccion del inserto en ABS                                 324 N
+   Par de apriete M4 que alcanza la extraccion                 0.259 N m
+   Retencion estimada por prisionero                             232 N
+   Par transmisible estimado por soporte                        2.32 N m
+   FS estimado frente al par                                    2.80 -
+   * HIPOTESIS: la retencion es proporcional a la fuerza del prisionero.
+   * Datos del inserto en ABS moldeado; el ABS impreso puede ser menos resistente.
+   >> Prisioneros de los soportes (par)        FS ~ 2.80          criterio FS >= 4          : NO CUMPLE
+   * Verificar en el prototipo el par al que el soporte desliza sobre el eje.
+
+ Acople motor - sin fin con prisioneros (cota con el prisionero mas pequeno)
+ ---------------------------------------------------------------------------
+   Torque a transmitir                                        0.0839 N m
+   Retencion del prisionero n.o 0 (Tabla 7-4)                    222 N
+   Par transmisible con un prisionero n.o 0 en eje de 5 mm        0.556 N m
+   FS (cota inferior)                                           6.63 -
+   * Cualquier prisionero de acero de tamano n.o 0 o mayor cumple; Tabla 7-4: acero contra eje de acero.
+   * El empuje del sin fin (MC-08) debe tomarlo su rodamiento fijo, no el acople.
+   >> Prisioneros del acople (par)             FS >= 6.6          criterio FS >= 4          : CUMPLE
+
+==============================================================================
+ MEMORIA DE CALCULO MC-12: MOTOR A PASOS
+==============================================================================
+ Objetivo: Verificar el motor frente a retencion y pull-out a la corriente configurada.
+ Referencias:
+   - StepperOnline 17HS16-2004S1: pagina, hoja de datos y curva (DM542T, 24 V, 2.05 A pico)
+------------------------------------------------------------------------------
+   Torque requerido (eficiencia estatica)                     0.0839 N m
+   Retencion escalada a 1.40 A                                 0.315 N m
+   Pull-out minimo 0-90 rpm (60 rpm) en el ensayo               0.29 N m
+   Pull-out escalado a 1.40 A de pico                          0.198 N m
+   FS frente a retencion                                        3.75 -
+   FS frente a pull-out                                         2.36 -
+   * Escalado lineal con la corriente (valido a baja velocidad); tension >= 24 V.
+   >> Motor frente a pull-out                  FS = 2.36          criterio FS >= 1          : CUMPLE
+   >> Motor frente a retencion                 FS = 3.75          criterio FS >= 1          : CUMPLE
+
+==============================================================================
+ MEMORIA DE CALCULO MC-13: SENSIBILIDAD AL COEFICIENTE DE FRICCION
+==============================================================================
+ Objetivo: Evaluar eficiencia, autobloqueo, torque del motor y FS de pull-out para varios mu.
+------------------------------------------------------------------------------
+         mu      eta        mu/mu_lim  T_motor [N m]  FS pull-out
+      0.050    0.598             0.67         0.0463         4.28
+      0.075    0.497             1.00         0.0556         3.56
+      0.087    0.460             1.16         0.0601         3.29
+      0.100    0.425             1.33         0.0650         3.05
+      0.150    0.330             2.00         0.0839         2.36
+      0.200    0.269             2.66         0.1029         1.92
+   * Con mu < mu_lim desaparece el autobloqueo.
+
+==============================================================================
+ MEMORIA DE CALCULO MC-14: PRESUPUESTO DE ERROR ANGULAR
+==============================================================================
+ Objetivo: Comparar el error en lazo abierto y en lazo cerrado con la tolerancia de 0.5 grados.
+ Referencias:
+   - IEC 61724-1:2021
+   - InvenSense PS-MPU-6000A-00 rev. 3.4
+------------------------------------------------------------------------------
+   Fuente                               Abierto [gr]   Cerrado [gr]
+   Juego del engrane                          1.0695         0.0000
+   Resolucion del actuador                    0.0600         0.0038
+   Exactitud del sensor inercial              0.0000         0.1000
+   Montaje del sensor y soportes              0.2000         0.2000
+   Holgura de los rodamientos                 0.0500         0.0500
+   Giro por torsion del eje                   0.0000         0.0228
+   Suma lineal                                 1.380          0.377
+   Suma cuadratica (RSS)                       1.091          0.230
+
+ Efectos del sensor inercial (hoja de datos)
+ -------------------------------------------
+   Error por escala 3% con calibracion solo de offset, 30 gr         0.74 grados
+   Variacion de salida a cero g (0-70 C) en inclinacion         2.01 grados
+   * El valor de 0.1 grados exige calibracion de seis posiciones y compensacion de temperatura.
+   >> Error en lazo cerrado (suma lineal)      0.377 gr           criterio <= 0.5 gr        : CUMPLE
+
+==============================================================================
+ MEMORIA DE CALCULO MC-15: CONDICION DE OPERACION POR VIENTO
+==============================================================================
+ Objetivo: Calcular la rafaga maxima para la que el peso retiene la corona contra un flanco.
+ Referencias:
+   - NTE E.020, Ec. 12.4 (sin factor de rafaga)
+   - GTS Majes S.A.C. (2020), datos SCADA
+------------------------------------------------------------------------------
+   * Sensor equilibrado sobre el eje; placa y tornilleria del CAD (sin ABS); sin friccion.
+   * Area y brazo de la envolvente; el limite se expresa como rafaga maxima.
+   theta [gr]    M retencion [N m]        V max 0.50 kg          V max MS-80
+            5               0.0241              21.4 km/h            18.0 km/h
+           10               0.0481              30.1 km/h            25.4 km/h
+           12               0.0576              33.0 km/h            27.8 km/h
+           15               0.0717              36.8 km/h            31.0 km/h
+           20               0.0947              42.3 km/h            35.7 km/h
+           25               0.1171              47.0 km/h            39.7 km/h
+           30               0.1385              51.1 km/h            43.1 km/h
+
+ Referencia de sitio
+ -------------------
+   Media diaria maxima en Majes 20T (2016-2019)                  9.7 km/h
+   * Son medias diarias: no indican la frecuencia de rafagas.
+
+ Velocidad de diseno a la que cada verificacion llega a FS = 1
+ -------------------------------------------------------------
+   * Misma cadena de calculo que MC-04 a MC-12, con M_v proporcional a V^2.
+   Verificacion                        FS a 130 km/h       V con FS = 1
+   Motor, pull-out                              1.11           139 km/h
+   Motor, retencion                             1.77           182 km/h
+   Prisioneros de soportes ABS                  1.32           154 km/h
+   Prisioneros de la corona                     4.04           286 km/h
+   Eje, fluencia                                3.08           248 km/h
+   Diente de la corona (Lewis)                  3.17           251 km/h
+   >> Viento maximo del mapa (130 km/h)        FS min = 1.11      criterio FS >= 1          : CUMPLE
+
+==============================================================================
+ MEMORIA DE CALCULO MC-16: RESUMEN DE VERIFICACIONES
+==============================================================================
+ Objetivo: Listar todas las verificaciones.
+------------------------------------------------------------------------------
+   Verificacion                             Resultado          Criterio         Estado
+   Autobloqueo en reposo                    eta_inv = -0.983   eta_inv < 0      CUMPLE
+   Flexion del diente (estatica)            FS = 6.73          FS >= 1          CUMPLE
+   Holgura de fondo                         0.25 mm            >= 0.25 mm       CUMPLE
+   Flecha del sin fin (vano maximo)         l <= 250 mm        y <= 0.025 p_x   CUMPLE si l <= l_max
+   Resistencia del eje a la fluencia        FS = 6.50          FS >= 3.0        CUMPLE
+   Fatiga del eje (vida infinita)           FS = 3.74          FS >= 1          CUMPLE
+   Flecha en la corona                      0.0399 mm          <= 0.076 mm      CUMPLE
+   Pendiente en los rodamientos             0.00084 rad        <= 0.001 rad     CUMPLE
+   Pendiente en la corona (AGMA 6022)       4.4 min            <= 5 min         CUMPLE
+   Rodamiento mas cargado del eje           S0 = 9.32          S0 >= 1          CUMPLE
+   Rodamientos del sin fin (cota)           S0 = 18.73         S0 >= 1          CUMPLE
+   Prisioneros de la corona (par)           FS = 8.59          FS >= 4          CUMPLE
+   Prisioneros de los soportes (par)        FS ~ 2.80          FS >= 4          NO CUMPLE
+   Prisioneros del acople (par)             FS >= 6.6          FS >= 4          CUMPLE
+   Motor frente a pull-out                  FS = 2.36          FS >= 1          CUMPLE
+   Motor frente a retencion                 FS = 3.75          FS >= 1          CUMPLE
+   Error en lazo cerrado (suma lineal)      0.377 gr           <= 0.5 gr        CUMPLE
+   Viento maximo del mapa (130 km/h)        FS min = 1.11      FS >= 1          CUMPLE

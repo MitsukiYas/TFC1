@@ -1,0 +1,32 @@
+\documentclass[../../General.tex]{subfiles}
+\begin{document}
+
+\section{Metodología de diseño y desarrollo para TFC2} 
+
+El desarrollo del sistema mecatrónico se rige rigurosamente por los estándares internacionales de diseño en ingeniería: la directriz \textbf{VDI 2221} \citep{VDI2221_2019}, la metodología de diseño sistemático de \textbf{Pahl \& Beitz} \citep{Pahl2007} y el estándar específico para sistemas mecatrónicos y ciber-físicos \textbf{VDI/VDE 2206} \citep{VDI2206_2021}. 
+
+En la primera etapa (TFC1), se completaron las fases de clarificación de la tarea, análisis de requerimientos y diseño conceptual multidisciplinario, culminando en la selección del concepto de solución óptimo. Para el presente semestre (TFC2), la metodología se enfoca en la ingeniería de detalle, el prototipado virtual y la validación integral del sistema conforme al modelo en ``V'' de la VDI/VDE 2206, estructurándose en las siguientes etapas operativas:
+
+\subsection{Planificación y requerimientos detallado}
+En esta fase inicial se consolida la retroalimentación del anteproyecto de TFC1, se definen con precisión los objetivos específicos de TFC2, la metodología sistemática de trabajo, el índice preliminar unificado del documento y el cronograma de ejecución temporal.
+
+\subsection{Diseño de detalle y dimensionamiento preliminar}
+Comprende el cálculo cuantitativo y la determinación preliminar de las dimensiones del prototipo, la selección preliminar de actuadores de tracción y de orientación, sensores primarios y controladores embebidos, así como el desarrollo de los primeros esquemas cinemáticos, flujogramas de operación y diagramas de interconexión.
+
+\subsection{Proyecto definitivo}
+Constituye el núcleo del desarrollo técnico en todos los dominios de la ingeniería mecatrónica:
+\begin{itemize} 
+    \item \textbf{Dominio mecánico y estructural:} Selección final de materiales, análisis de esfuerzos estáticos y dinámicos, cálculo de transmisiones, diseño CAD 3D.
+    \item \textbf{Dominio electrónico y de energía:} Diseño y esquemáticos de circuitos de potencia y control, ruteo de placas PCB, integración y acondicionamiento de los sensores meteorológicos, y dimensionamiento del banco de baterías y gestión energética.
+    \item \textbf{Dominio de control y software embebido:} Programación y estructuración de los algoritmos de navegación, implementación de sensores, y rutinas de evasión de obstáculos y seguridad.
+    \item \textbf{Dominio de comunicaciones y telemetría:} Configuración del protocolo de red inalámbrica, arquitectura cliente-servidor para la transmisión de datos climáticos y diseño de la interfaz gráfica de usuario para monitoreo remoto.
+\end{itemize}
+
+\subsection{Prototipado virtual, simulación y validación integrada}
+Conforme a la directriz VDI/VDE 2206, se implementa un prototipo virtual tridimensional para la verificación del sistema completo. Se realizan simulaciones multicuerpo de la dinámica del vehículo sobre terrenos irregulares y pendientes de hasta 16°, validación en lazo cerrado de los algoritmos de navegación y control de orientación de sensores, y pruebas de concurrencia y latencia en la transmisión de paquetes de telemetría.
+
+\subsection{Consolidación documental y evaluación económica}
+Se culmina con la integración total de la documentación técnica: Lista de Materiales (BOM), presupuesto total y análisis de costos de implementación, manuales y plan de mantenimiento preventivo/correctivo.
+
+\end{document}
+

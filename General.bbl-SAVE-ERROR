@@ -1,0 +1,2331 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{Anatrac}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=09ec694d3edcc7b641ce5fb8540b4f43}{%
+           family={{Anatrac}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{fullhash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{fullhashraw}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{bibnamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorbibnamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authornamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorfullhash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorfullhashraw}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Estaciones meteorológicas para parques fotovoltaicos}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.anatrac.com/productos/torres-meteorologicas/
+      \endverb
+      \verb{url}
+      \verb https://www.anatrac.com/productos/torres-meteorologicas/
+      \endverb
+    \endentry
+    \entry{Armstrong2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d94d7ba5a37d39e545a12f60bd999af7}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f8f98c40125be9b3fd0ae5108087512}{%
+           family={Loughran},
+           familyi={L\bibinitperiod},
+           given={Caleb\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f56334c6931319725be35d902dac5417}{%
+           family={Ennen},
+           familyi={E\bibinitperiod},
+           given={Joshua\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed36287fad6696788366df7bd1d50b98}{%
+           family={Wild},
+           familyi={W\bibinitperiod},
+           given={Kristoffer\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc8c1d00ada54c7cff401631f9a1cd53}{%
+           family={Nordberg},
+           familyi={N\bibinitperiod},
+           given={Eric\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f09f5142df781b37a3f67751a0a93cd8}
+      \strng{fullhash}{154435848e7dd5312070a7f323964021}
+      \strng{fullhashraw}{154435848e7dd5312070a7f323964021}
+      \strng{bibnamehash}{154435848e7dd5312070a7f323964021}
+      \strng{authorbibnamehash}{154435848e7dd5312070a7f323964021}
+      \strng{authornamehash}{f09f5142df781b37a3f67751a0a93cd8}
+      \strng{authorfullhash}{154435848e7dd5312070a7f323964021}
+      \strng{authorfullhashraw}{154435848e7dd5312070a7f323964021}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biological Reviews}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{A mosaic of microclimates: Biodiversity outcomes and wildlife habitat potential in large-scale solar facilities}
+      \field{volume}{101}
+      \field{year}{2026}
+      \field{pages}{145\bibrangedash 162}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/brv.13150
+      \endverb
+    \endentry
+    \entry{asm1990nonferrous}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e355300317c0a0c98756443ba1f2859f}{%
+           family={{ASM International}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \strng{bibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorbibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authornamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{maintitle}{{ASM} handbook}
+      \field{title}{Properties and selection: Nonferrous alloys and special-purpose materials}
+      \field{volume}{2}
+      \field{year}{1990}
+    \endentry
+    \entry{asm2002steels}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e355300317c0a0c98756443ba1f2859f}{%
+           family={{ASM International}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \strng{bibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorbibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authornamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{maintitle}{{ASM} handbook}
+      \field{title}{Properties and selection: Irons, steels, and high-performance alloys}
+      \field{volume}{1}
+      \field{year}{2002}
+    \endentry
+    \entry{YuraPeru}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1fd78d39791a29deba7fe91bc40a36fb}{%
+           family={Cóndor},
+           familyi={C\bibinitperiod},
+           given={Josimar},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{fullhash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{fullhashraw}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{bibnamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorbibnamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authornamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorfullhash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorfullhashraw}{1fd78d39791a29deba7fe91bc40a36fb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{Gestión}
+      \field{langid}{spanish}
+      \field{month}{5}
+      \field{title}{Yura y el poder del sol: inicia operación de central solar en {Arequipa} con 51,000 paneles}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://gestion.pe/economia/empresas/yura-y-su-incursion-en-la-energia-inicia-operacion-de-central-solar-en-arequipa-noticia/
+      \endverb
+      \verb{url}
+      \verb https://gestion.pe/economia/empresas/yura-y-su-incursion-en-la-energia-inicia-operacion-de-central-solar-en-arequipa-noticia/
+      \endverb
+    \endentry
+    \entry{eko_ms80_2023}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b066c15b720b6eb2bdb9d84c2478713f}{%
+           family={{EKO Instruments Co., Ltd.}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{fullhash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{fullhashraw}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{bibnamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorbibnamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authornamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorfullhash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorfullhashraw}{b066c15b720b6eb2bdb9d84c2478713f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{MS-80}, {MS-80S} and {MS-80U} pyranometer: Instruction manual}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://eko-instruments.com/product/ms-80-pyranometer
+      \endverb
+      \verb{url}
+      \verb https://eko-instruments.com/product/ms-80-pyranometer
+      \endverb
+    \endentry
+    \entry{Garcia2014}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fa7263add56a0b13f44cd85ad8dd0de5}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83b0f82024d17a64434a060b4b6c88fb}{%
+           family={Marroyo},
+           familyi={M\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd8eb37d283b531541c9b5541ab6d930}{%
+           family={Lorenzo},
+           familyi={L\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84feab58687c09af1dc6d680305c0678}{%
+           family={Marcos},
+           familyi={M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6c5928985712c0fc88b2ed6c94a0e9a}{%
+           family={Pérez},
+           familyi={P\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c13bf327f6c2b175dca1e008b292446e}
+      \strng{fullhash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{fullhashraw}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{bibnamehash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authorbibnamehash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authornamehash}{c13bf327f6c2b175dca1e008b292446e}
+      \strng{authorfullhash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authorfullhashraw}{c37593d336c0e07b64caf0b458d36d74}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Photovoltaics: Research and Applications}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Solar irradiation and {PV} module temperature dispersion at a large-scale {PV} plant}
+      \field{volume}{22}
+      \field{year}{2014}
+      \field{pages}{385\bibrangedash 396}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/pip.2274
+      \endverb
+    \endentry
+    \entry{Salinas2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bac7ed284e3c70d7bb7f3d4b5ed9ad67}{%
+           family={García\bibnamedelima Salinas},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Conrado},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6532334fda27d6f1b2dfa962a5b38884}{%
+           family={Martín\bibnamedelima Furones},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=449bedc1b4756b6edc605742cb4ea003}{%
+           family={Anquela\bibnamedelima Julián},
+           familyi={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Ana\bibnamedelima Belén},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=beab41fd4e10efdfb9db2b7ea1b8afa4}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Jorge\bibnamedelima Aleix},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d4be041b3271679afb709ac4dd76bf0}
+      \strng{fullhash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{fullhashraw}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{bibnamehash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authorbibnamehash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authornamehash}{2d4be041b3271679afb709ac4dd76bf0}
+      \strng{authorfullhash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authorfullhashraw}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{113110}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{Optimal pyranometer placement in bifacial {PV} plants on complex terrain}
+      \field{volume}{286}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.solener.2024.113110
+      \endverb
+    \endentry
+    \entry{ICEX2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d436c38aa47826494b4f7b4951b0375}{%
+           family={{ICEX España Exportación e Inversiones}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=039cf5a11d8beaa3cf64c3568c77a5ff}{%
+           family={ICEX},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Oficina Económica y Comercial de la Embajada de España en Lima}%
+      }
+      \strng{namehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{fullhash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{fullhashraw}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{bibnamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{authorbibnamehash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authornamehash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authorfullhash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authorfullhashraw}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{shortauthorbibnamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthornamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthorfullhash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthorfullhashraw}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Estudio de mercado: El mercado de las energías renovables en {Perú} 2025}
+      \field{year}{2025}
+    \endentry
+    \entry{Burriana5MW}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79405ce1f72a9eb076a81d629a1be482}{%
+           family={{INARSE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Corporate Solar Holding}%
+      }
+      \strng{namehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{fullhash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{fullhashraw}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{bibnamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorbibnamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authornamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorfullhash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorfullhashraw}{79405ce1f72a9eb076a81d629a1be482}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Proyecto de ejecución de una planta fotovoltaica de 5 {MWn} ({Castellón})}
+      \field{year}{2023}
+    \endentry
+    \entry{IEC61724-1_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bfbc8812fd493bd4a6c196b196d1291}{%
+           family={{International Electrotechnical Commission}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=c221291e3a0d7879b5dabb8a6b10903f}{%
+           family={IEC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{fullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{fullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{bibnamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{authorbibnamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authornamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{shortauthorbibnamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthornamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthorfullhash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthorfullhashraw}{c221291e3a0d7879b5dabb8a6b10903f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{IEC 61724-1:2021}
+      \field{title}{Photovoltaic system performance -- {Part 1}: Monitoring}
+      \field{type}{Norma}
+      \field{year}{2021}
+    \endentry
+    \entry{IEA_NZE_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b33b47b3008c8c47f90a77e0c2dd3060}{%
+           family={{International Energy Agency}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           family={IEA},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{fullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authornamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{shortauthorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Net zero by 2050: A roadmap for the global energy sector}
+      \field{type}{Reporte global}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.iea.org/reports/net-zero-by-2050
+      \endverb
+      \verb{url}
+      \verb https://www.iea.org/reports/net-zero-by-2050
+      \endverb
+    \endentry
+    \entry{IEA_WEO_2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b33b47b3008c8c47f90a77e0c2dd3060}{%
+           family={{International Energy Agency}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           family={IEA},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{fullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authornamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{shortauthorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{World energy outlook 2025}
+      \field{type}{Reporte global}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.iea.org/reports/world-energy-outlook-2025
+      \endverb
+      \verb{url}
+      \verb https://www.iea.org/reports/world-energy-outlook-2025
+      \endverb
+    \endentry
+    \entry{iso9060_2018}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b512ee8a59deb284ad0a6a035ba10b1}{%
+           family={ISO},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{shortauthorbibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthornamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthorfullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthorfullhashraw}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{ISO 9060:2018}
+      \field{title}{Solar energy -- {Specification} and classification of instruments for measuring hemispherical solar and direct solar radiation}
+      \field{type}{Norma}
+      \field{year}{2018}
+    \endentry
+    \entry{invensense_mpu6050}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35953177f983c5c55ad76715ebf43b1f}{%
+           family={{InvenSense Inc.}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{fullhash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{fullhashraw}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{bibnamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorbibnamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authornamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorfullhash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorfullhashraw}{35953177f983c5c55ad76715ebf43b1f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{PS-MPU-6000A-00, revision 3.4}
+      \field{title}{{MPU-6000} and {MPU-6050} product specification}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
+      \endverb
+      \verb{url}
+      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
+      \endverb
+    \endentry
+    \entry{jacobson2018tilt}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab9ea5648ef9accb143dbfc05c98267b}{%
+           family={Jacobson},
+           familyi={J\bibinitperiod},
+           given={Mark\bibnamedelima Z.},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=401cbd95dbbf400a4c95deb4bfe7d3e5}{%
+           family={Jadhav},
+           familyi={J\bibinitperiod},
+           given={Vijaysinh},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{fullhash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{fullhashraw}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{bibnamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorbibnamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authornamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorfullhash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorfullhashraw}{50b2548be016c5f2698e43a93ac16d75}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{World estimates of {PV} optimal tilt angles and ratios of sunlight incident upon tilted and tracked {PV} panels relative to horizontal panels}
+      \field{volume}{169}
+      \field{year}{2018}
+      \field{pages}{55\bibrangedash 66}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.solener.2018.04.030
+      \endverb
+    \endentry
+    \entry{ProyectoEjecutivo2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e9cc917428be3d2c28d5a0a9d0ff3ca8}{%
+           family={{Kenemora Solar}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ib vogt / Kenergy}%
+      }
+      \strng{namehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{fullhash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{fullhashraw}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{bibnamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorbibnamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authornamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorfullhash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorfullhashraw}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{month}{4}
+      \field{title}{Proyecto ejecutivo memoria descriptiva: Planta fotovoltaica para conexión a red {Torrentenergy 4}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{khk_pg1_30r1j8}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7cb2894c067e4b58a9fe9d35704b3112}{%
+           family={{Kohara Gear Industry Co., Ltd.}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=f51e619d79893e2a1f10a6ecc89867ed}{%
+           family={KHK},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{fullhash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{fullhashraw}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{bibnamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{authorbibnamehash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authornamehash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authorfullhash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authorfullhashraw}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{shortauthorbibnamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthornamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthorfullhash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthorfullhashraw}{f51e619d79893e2a1f10a6ecc89867ed}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{PG1-30R1J8} plastic worm wheel}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://catalog.khkgears.us/item/worm-gears/plastic-worm-wheels-pg/pg1-30r1j8
+      \endverb
+      \verb{url}
+      \verb https://catalog.khkgears.us/item/worm-gears/plastic-worm-wheels-pg/pg1-30r1j8
+      \endverb
+    \endentry
+    \entry{Mao2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=ee9189a214cfcf1288757cb03986f09a}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Hongzhi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2477075be463d8ea0b9b0cb3cfdf54d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Weili},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40324c5235c456ad5ecea8effce19bd0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xie},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c270010a2c6b574f500ae5ca97ece8f}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Zhiyong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e0c431171b528a37e5d6a4022df6729}{%
+           family={Zarrella},
+           familyi={Z\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f650ff6fe7b7756086001353adecf46f}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yongqiang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54e17fadd3ab709ad5a2f0bb65a10211}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Jianhua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78b1e26e42f1c66abbe501cc9ea1b676}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wentao},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a81803cf0e39846b5f088b7e4f670f0}
+      \strng{fullhash}{005d3050294a901185c04238f31c4203}
+      \strng{fullhashraw}{005d3050294a901185c04238f31c4203}
+      \strng{bibnamehash}{005d3050294a901185c04238f31c4203}
+      \strng{authorbibnamehash}{005d3050294a901185c04238f31c4203}
+      \strng{authornamehash}{0a81803cf0e39846b5f088b7e4f670f0}
+      \strng{authorfullhash}{005d3050294a901185c04238f31c4203}
+      \strng{authorfullhashraw}{005d3050294a901185c04238f31c4203}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{122210}
+      \field{journaltitle}{Renewable Energy}
+      \field{langid}{english}
+      \field{title}{A method on mapping the distribution of photovoltaic power stations in complex terrain regions}
+      \field{volume}{240}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.renene.2024.122210
+      \endverb
+    \endentry
+    \entry{nte_e020}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa37ee2252f3aa47d77e551656de7f02}{%
+           family={{Ministerio de Vivienda, Construcción y Saneamiento}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Reglamento Nacional de Edificaciones}%
+      }
+      \strng{namehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{fullhash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{fullhashraw}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{bibnamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorbibnamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authornamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorfullhash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorfullhashraw}{fa37ee2252f3aa47d77e551656de7f02}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{number}{NTE E.020}
+      \field{title}{Norma técnica {E}.020: Cargas}
+      \field{type}{Norma técnica}
+      \field{year}{2006}
+    \endentry
+    \entry{Pahl2007}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ebfef24ebb8e436dc150ff7760ed8d76}{%
+           family={Pahl},
+           familyi={P\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ef03332e0b0fca2547a93058102d8a1}{%
+           family={Beitz},
+           familyi={B\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=502d001917782be467412a33cb557f57}{%
+           family={Feldhusen},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=013ec710ca8a4acbf6b2cfc9ef514325}{%
+           family={Grote},
+           familyi={G\bibinitperiod},
+           given={Karl-Heinrich},
+           giveni={K\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{56a2d4cb584abea19ecced826e5f6a8e}
+      \strng{fullhash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{fullhashraw}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{bibnamehash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authorbibnamehash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authornamehash}{56a2d4cb584abea19ecced826e5f6a8e}
+      \strng{authorfullhash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authorfullhashraw}{a4d6bc6a63af810baa307cce673cc7d5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{langid}{english}
+      \field{title}{Engineering design: A systematic approach}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1007/978-1-84628-319-2
+      \endverb
+    \endentry
+    \entry{ProActivo2025}{article}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ProActivo}
+      \field{langid}{spanish}
+      \field{title}{Producción eléctrica de energías renovables crece 27\% a octubre de 2025}
+      \field{year}{2025}
+    \endentry
+    \entry{shigley2012mecanico}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8e5b3743b856af1e9a5f5927000b9ff9}{%
+           family={Shigley},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima Edward},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6b6dba4b3eb93f36f681e53fc8f0273}{%
+           family={Budynas},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25e557d0bf6de334ecbdd7d6f3597406}{%
+           family={Nisbett},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi Keith},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill / Interamericana de España}%
+      }
+      \strng{namehash}{f000c53ace5a40f031b16e68e7c0b763}
+      \strng{fullhash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{fullhashraw}{74d7635024ea2b217ee71acb024efb66}
+      \strng{bibnamehash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authorbibnamehash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authornamehash}{f000c53ace5a40f031b16e68e7c0b763}
+      \strng{authorfullhash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authorfullhashraw}{74d7635024ea2b217ee71acb024efb66}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{isbn}{978-607-15-0771-6}
+      \field{langid}{spanish}
+      \field{title}{Diseño en ingeniería mecánica de {Shigley}}
+      \field{year}{2012}
+    \endentry
+    \entry{skf2020bearings}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4d49a6b1578f3edd78a8cc1b97ea9c9}{%
+           family={{SKF Group}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{fullhash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{fullhashraw}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{bibnamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorbibnamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authornamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorfullhash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorfullhashraw}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{17000/1 EN}
+      \field{title}{Rolling bearings catalogue}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cdn.skfmediahub.skf.com/api/public/0901d196807026e8/pdf_preview_medium/0901d196807026e8_pdf_preview_medium.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.skfmediahub.skf.com/api/public/0901d196807026e8/pdf_preview_medium/0901d196807026e8_pdf_preview_medium.pdf
+      \endverb
+    \endentry
+    \entry{stepperonline_17hs16}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=757d6be57915d799f8ef0e7c1b941f31}{%
+           family={{StepperOnline}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{fullhash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{fullhashraw}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{bibnamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorbibnamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authornamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorfullhash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorfullhashraw}{757d6be57915d799f8ef0e7c1b941f31}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Nema 17 bipolar stepper motor 17HS16-2004S1: Datasheet and torque-speed curve}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.omc-stepperonline.com/nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-17hs19-2004s1
+      \endverb
+      \verb{url}
+      \verb https://www.omc-stepperonline.com/nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-17hs19-2004s1
+      \endverb
+    \endentry
+    \entry{VDI2221_2019}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6544351055e99d60ae43a571204dd50}{%
+           family={VDI},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Beuth Verlag}%
+      }
+      \strng{namehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{shortauthorbibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthornamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhashraw}{d6544351055e99d60ae43a571204dd50}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{VDI 2221 Part 1}
+      \field{title}{Development of technical products and systems -- {Model} of system engineering}
+      \field{type}{Directriz}
+      \field{year}{2019}
+    \endentry
+    \entry{VDI2206_2021}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6544351055e99d60ae43a571204dd50}{%
+           family={VDI},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{shortauthorbibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthornamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhashraw}{d6544351055e99d60ae43a571204dd50}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{german}
+      \field{series}{VDI-Handbuch Produktentwicklung und Konstruktion}
+      \field{title}{{VDI/VDE} 2206: Entwicklung mechatronischer und cyber-physischer Systeme}
+      \field{year}{2021}
+    \endentry
+    \entry{XPower2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=60155fefd85f4d90cb6f46b891d98388}{%
+           family={{XPOWER Solar Energy Co.}},
+           familyi={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{fullhash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{fullhashraw}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{bibnamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorbibnamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authornamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorfullhash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorfullhashraw}{60155fefd85f4d90cb6f46b891d98388}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{El impacto de los factores ambientales en el rendimiento del sistema fotovoltaico}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.xpowersolar.com/es/the-impact-of-environmental-factors-on-photovoltaic-system-performance
+      \endverb
+      \verb{url}
+      \verb https://www.xpowersolar.com/es/the-impact-of-environmental-factors-on-photovoltaic-system-performance
+      \endverb
+    \endentry
+    \entry{Xu2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=823718f19b02c3e57d2a35733cb54220}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ang},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f74e0c63841d0a55b7e5f32a34c6a526}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Wenyong},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ec0acfa25f50156f4f611b459ce7f25}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Wenshuo},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751332d782b5f0b437f390775c71e591}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mingyang},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=916f87614bcd1c67e29809b568a84a29}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Yongjie},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dccda2e89cb2ad1e9290bbeff477c99}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d94f1e22e9318a9e1004a8818ebf6d}{%
+           family={Qiang},
+           familyi={Q\bibinitperiod},
+           given={Shengguan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{973244dc70920ff43bb848fef2d6902a}
+      \strng{fullhash}{89359bb699036782aad7404138700c70}
+      \strng{fullhashraw}{89359bb699036782aad7404138700c70}
+      \strng{bibnamehash}{89359bb699036782aad7404138700c70}
+      \strng{authorbibnamehash}{89359bb699036782aad7404138700c70}
+      \strng{authornamehash}{973244dc70920ff43bb848fef2d6902a}
+      \strng{authorfullhash}{89359bb699036782aad7404138700c70}
+      \strng{authorfullhashraw}{89359bb699036782aad7404138700c70}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{112415}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{Study on the wind load and wind-induced interference effect of photovoltaic ({PV}) arrays on two-dimensional hillsides}
+      \field{volume}{271}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.solener.2024.112415
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{Anatrac}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=09ec694d3edcc7b641ce5fb8540b4f43}{%
+           family={{Anatrac}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{fullhash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{fullhashraw}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{bibnamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorbibnamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authornamehash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorfullhash}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \strng{authorfullhashraw}{09ec694d3edcc7b641ce5fb8540b4f43}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Estaciones meteorológicas para parques fotovoltaicos}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.anatrac.com/productos/torres-meteorologicas/
+      \endverb
+      \verb{url}
+      \verb https://www.anatrac.com/productos/torres-meteorologicas/
+      \endverb
+    \endentry
+    \entry{Armstrong2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d94d7ba5a37d39e545a12f60bd999af7}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f8f98c40125be9b3fd0ae5108087512}{%
+           family={Loughran},
+           familyi={L\bibinitperiod},
+           given={Caleb\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f56334c6931319725be35d902dac5417}{%
+           family={Ennen},
+           familyi={E\bibinitperiod},
+           given={Joshua\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed36287fad6696788366df7bd1d50b98}{%
+           family={Wild},
+           familyi={W\bibinitperiod},
+           given={Kristoffer\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc8c1d00ada54c7cff401631f9a1cd53}{%
+           family={Nordberg},
+           familyi={N\bibinitperiod},
+           given={Eric\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f09f5142df781b37a3f67751a0a93cd8}
+      \strng{fullhash}{154435848e7dd5312070a7f323964021}
+      \strng{fullhashraw}{154435848e7dd5312070a7f323964021}
+      \strng{bibnamehash}{154435848e7dd5312070a7f323964021}
+      \strng{authorbibnamehash}{154435848e7dd5312070a7f323964021}
+      \strng{authornamehash}{f09f5142df781b37a3f67751a0a93cd8}
+      \strng{authorfullhash}{154435848e7dd5312070a7f323964021}
+      \strng{authorfullhashraw}{154435848e7dd5312070a7f323964021}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biological Reviews}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{A mosaic of microclimates: Biodiversity outcomes and wildlife habitat potential in large-scale solar facilities}
+      \field{volume}{101}
+      \field{year}{2026}
+      \field{pages}{145\bibrangedash 162}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/brv.13150
+      \endverb
+    \endentry
+    \entry{asm1990nonferrous}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e355300317c0a0c98756443ba1f2859f}{%
+           family={{ASM International}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \strng{bibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorbibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authornamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{maintitle}{{ASM} handbook}
+      \field{title}{Properties and selection: Nonferrous alloys and special-purpose materials}
+      \field{volume}{2}
+      \field{year}{1990}
+    \endentry
+    \entry{asm2002steels}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e355300317c0a0c98756443ba1f2859f}{%
+           family={{ASM International}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{fullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \strng{bibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorbibnamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authornamehash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhash}{e355300317c0a0c98756443ba1f2859f}
+      \strng{authorfullhashraw}{e355300317c0a0c98756443ba1f2859f}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{maintitle}{{ASM} handbook}
+      \field{title}{Properties and selection: Irons, steels, and high-performance alloys}
+      \field{volume}{1}
+      \field{year}{2002}
+    \endentry
+    \entry{YuraPeru}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1fd78d39791a29deba7fe91bc40a36fb}{%
+           family={Cóndor},
+           familyi={C\bibinitperiod},
+           given={Josimar},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{fullhash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{fullhashraw}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{bibnamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorbibnamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authornamehash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorfullhash}{1fd78d39791a29deba7fe91bc40a36fb}
+      \strng{authorfullhashraw}{1fd78d39791a29deba7fe91bc40a36fb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{Gestión}
+      \field{langid}{spanish}
+      \field{month}{5}
+      \field{title}{Yura y el poder del sol: inicia operación de central solar en {Arequipa} con 51,000 paneles}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://gestion.pe/economia/empresas/yura-y-su-incursion-en-la-energia-inicia-operacion-de-central-solar-en-arequipa-noticia/
+      \endverb
+      \verb{url}
+      \verb https://gestion.pe/economia/empresas/yura-y-su-incursion-en-la-energia-inicia-operacion-de-central-solar-en-arequipa-noticia/
+      \endverb
+    \endentry
+    \entry{eko_ms80_2023}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b066c15b720b6eb2bdb9d84c2478713f}{%
+           family={{EKO Instruments Co., Ltd.}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{fullhash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{fullhashraw}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{bibnamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorbibnamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authornamehash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorfullhash}{b066c15b720b6eb2bdb9d84c2478713f}
+      \strng{authorfullhashraw}{b066c15b720b6eb2bdb9d84c2478713f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{MS-80}, {MS-80S} and {MS-80U} pyranometer: Instruction manual}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://eko-instruments.com/product/ms-80-pyranometer
+      \endverb
+      \verb{url}
+      \verb https://eko-instruments.com/product/ms-80-pyranometer
+      \endverb
+    \endentry
+    \entry{Garcia2014}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fa7263add56a0b13f44cd85ad8dd0de5}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83b0f82024d17a64434a060b4b6c88fb}{%
+           family={Marroyo},
+           familyi={M\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd8eb37d283b531541c9b5541ab6d930}{%
+           family={Lorenzo},
+           familyi={L\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84feab58687c09af1dc6d680305c0678}{%
+           family={Marcos},
+           familyi={M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6c5928985712c0fc88b2ed6c94a0e9a}{%
+           family={Pérez},
+           familyi={P\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c13bf327f6c2b175dca1e008b292446e}
+      \strng{fullhash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{fullhashraw}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{bibnamehash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authorbibnamehash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authornamehash}{c13bf327f6c2b175dca1e008b292446e}
+      \strng{authorfullhash}{c37593d336c0e07b64caf0b458d36d74}
+      \strng{authorfullhashraw}{c37593d336c0e07b64caf0b458d36d74}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Photovoltaics: Research and Applications}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Solar irradiation and {PV} module temperature dispersion at a large-scale {PV} plant}
+      \field{volume}{22}
+      \field{year}{2014}
+      \field{pages}{385\bibrangedash 396}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/pip.2274
+      \endverb
+    \endentry
+    \entry{Salinas2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bac7ed284e3c70d7bb7f3d4b5ed9ad67}{%
+           family={García\bibnamedelima Salinas},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Conrado},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6532334fda27d6f1b2dfa962a5b38884}{%
+           family={Martín\bibnamedelima Furones},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=449bedc1b4756b6edc605742cb4ea003}{%
+           family={Anquela\bibnamedelima Julián},
+           familyi={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Ana\bibnamedelima Belén},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=beab41fd4e10efdfb9db2b7ea1b8afa4}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Jorge\bibnamedelima Aleix},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d4be041b3271679afb709ac4dd76bf0}
+      \strng{fullhash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{fullhashraw}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{bibnamehash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authorbibnamehash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authornamehash}{2d4be041b3271679afb709ac4dd76bf0}
+      \strng{authorfullhash}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \strng{authorfullhashraw}{6a91cc55a26c0c11a7ee0a194616ba26}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{113110}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{Optimal pyranometer placement in bifacial {PV} plants on complex terrain}
+      \field{volume}{286}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.solener.2024.113110
+      \endverb
+    \endentry
+    \entry{ICEX2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d436c38aa47826494b4f7b4951b0375}{%
+           family={{ICEX España Exportación e Inversiones}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=039cf5a11d8beaa3cf64c3568c77a5ff}{%
+           family={ICEX},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Oficina Económica y Comercial de la Embajada de España en Lima}%
+      }
+      \strng{namehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{fullhash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{fullhashraw}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{bibnamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{authorbibnamehash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authornamehash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authorfullhash}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{authorfullhashraw}{7d436c38aa47826494b4f7b4951b0375}
+      \strng{shortauthorbibnamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthornamehash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthorfullhash}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \strng{shortauthorfullhashraw}{039cf5a11d8beaa3cf64c3568c77a5ff}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Estudio de mercado: El mercado de las energías renovables en {Perú} 2025}
+      \field{year}{2025}
+    \endentry
+    \entry{Burriana5MW}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79405ce1f72a9eb076a81d629a1be482}{%
+           family={{INARSE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Corporate Solar Holding}%
+      }
+      \strng{namehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{fullhash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{fullhashraw}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{bibnamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorbibnamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authornamehash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorfullhash}{79405ce1f72a9eb076a81d629a1be482}
+      \strng{authorfullhashraw}{79405ce1f72a9eb076a81d629a1be482}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{Proyecto de ejecución de una planta fotovoltaica de 5 {MWn} ({Castellón})}
+      \field{year}{2023}
+    \endentry
+    \entry{IEC61724-1_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bfbc8812fd493bd4a6c196b196d1291}{%
+           family={{International Electrotechnical Commission}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=c221291e3a0d7879b5dabb8a6b10903f}{%
+           family={IEC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{fullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{fullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{bibnamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{authorbibnamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authornamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{shortauthorbibnamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthornamehash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthorfullhash}{c221291e3a0d7879b5dabb8a6b10903f}
+      \strng{shortauthorfullhashraw}{c221291e3a0d7879b5dabb8a6b10903f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{IEC 61724-1:2021}
+      \field{title}{Photovoltaic system performance -- {Part 1}: Monitoring}
+      \field{type}{Norma}
+      \field{year}{2021}
+    \endentry
+    \entry{IEA_NZE_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b33b47b3008c8c47f90a77e0c2dd3060}{%
+           family={{International Energy Agency}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           family={IEA},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{fullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authornamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{shortauthorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Net zero by 2050: A roadmap for the global energy sector}
+      \field{type}{Reporte global}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.iea.org/reports/net-zero-by-2050
+      \endverb
+      \verb{url}
+      \verb https://www.iea.org/reports/net-zero-by-2050
+      \endverb
+    \endentry
+    \entry{IEA_WEO_2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b33b47b3008c8c47f90a77e0c2dd3060}{%
+           family={{International Energy Agency}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           family={IEA},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{fullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authornamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhashraw}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{shortauthorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{shortauthorfullhashraw}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{World energy outlook 2025}
+      \field{type}{Reporte global}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.iea.org/reports/world-energy-outlook-2025
+      \endverb
+      \verb{url}
+      \verb https://www.iea.org/reports/world-energy-outlook-2025
+      \endverb
+    \endentry
+    \entry{iso9060_2018}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b512ee8a59deb284ad0a6a035ba10b1}{%
+           family={ISO},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{shortauthorbibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthornamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthorfullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{shortauthorfullhashraw}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{ISO 9060:2018}
+      \field{title}{Solar energy -- {Specification} and classification of instruments for measuring hemispherical solar and direct solar radiation}
+      \field{type}{Norma}
+      \field{year}{2018}
+    \endentry
+    \entry{invensense_mpu6050}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35953177f983c5c55ad76715ebf43b1f}{%
+           family={{InvenSense Inc.}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{fullhash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{fullhashraw}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{bibnamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorbibnamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authornamehash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorfullhash}{35953177f983c5c55ad76715ebf43b1f}
+      \strng{authorfullhashraw}{35953177f983c5c55ad76715ebf43b1f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{PS-MPU-6000A-00, revision 3.4}
+      \field{title}{{MPU-6000} and {MPU-6050} product specification}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
+      \endverb
+      \verb{url}
+      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
+      \endverb
+    \endentry
+    \entry{jacobson2018tilt}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab9ea5648ef9accb143dbfc05c98267b}{%
+           family={Jacobson},
+           familyi={J\bibinitperiod},
+           given={Mark\bibnamedelima Z.},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=401cbd95dbbf400a4c95deb4bfe7d3e5}{%
+           family={Jadhav},
+           familyi={J\bibinitperiod},
+           given={Vijaysinh},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{fullhash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{fullhashraw}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{bibnamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorbibnamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authornamehash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorfullhash}{50b2548be016c5f2698e43a93ac16d75}
+      \strng{authorfullhashraw}{50b2548be016c5f2698e43a93ac16d75}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{World estimates of {PV} optimal tilt angles and ratios of sunlight incident upon tilted and tracked {PV} panels relative to horizontal panels}
+      \field{volume}{169}
+      \field{year}{2018}
+      \field{pages}{55\bibrangedash 66}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.solener.2018.04.030
+      \endverb
+    \endentry
+    \entry{ProyectoEjecutivo2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e9cc917428be3d2c28d5a0a9d0ff3ca8}{%
+           family={{Kenemora Solar}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ib vogt / Kenergy}%
+      }
+      \strng{namehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{fullhash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{fullhashraw}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{bibnamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorbibnamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authornamehash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorfullhash}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \strng{authorfullhashraw}{e9cc917428be3d2c28d5a0a9d0ff3ca8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{month}{4}
+      \field{title}{Proyecto ejecutivo memoria descriptiva: Planta fotovoltaica para conexión a red {Torrentenergy 4}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{khk_pg1_30r1j8}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7cb2894c067e4b58a9fe9d35704b3112}{%
+           family={{Kohara Gear Industry Co., Ltd.}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=f51e619d79893e2a1f10a6ecc89867ed}{%
+           family={KHK},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{fullhash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{fullhashraw}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{bibnamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{authorbibnamehash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authornamehash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authorfullhash}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{authorfullhashraw}{7cb2894c067e4b58a9fe9d35704b3112}
+      \strng{shortauthorbibnamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthornamehash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthorfullhash}{f51e619d79893e2a1f10a6ecc89867ed}
+      \strng{shortauthorfullhashraw}{f51e619d79893e2a1f10a6ecc89867ed}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{PG1-30R1J8} plastic worm wheel}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://catalog.khkgears.us/item/worm-gears/plastic-worm-wheels-pg/pg1-30r1j8
+      \endverb
+      \verb{url}
+      \verb https://catalog.khkgears.us/item/worm-gears/plastic-worm-wheels-pg/pg1-30r1j8
+      \endverb
+    \endentry
+    \entry{Mao2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=ee9189a214cfcf1288757cb03986f09a}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Hongzhi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2477075be463d8ea0b9b0cb3cfdf54d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Weili},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40324c5235c456ad5ecea8effce19bd0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xie},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c270010a2c6b574f500ae5ca97ece8f}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Zhiyong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e0c431171b528a37e5d6a4022df6729}{%
+           family={Zarrella},
+           familyi={Z\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f650ff6fe7b7756086001353adecf46f}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yongqiang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54e17fadd3ab709ad5a2f0bb65a10211}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Jianhua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78b1e26e42f1c66abbe501cc9ea1b676}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wentao},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a81803cf0e39846b5f088b7e4f670f0}
+      \strng{fullhash}{005d3050294a901185c04238f31c4203}
+      \strng{fullhashraw}{005d3050294a901185c04238f31c4203}
+      \strng{bibnamehash}{005d3050294a901185c04238f31c4203}
+      \strng{authorbibnamehash}{005d3050294a901185c04238f31c4203}
+      \strng{authornamehash}{0a81803cf0e39846b5f088b7e4f670f0}
+      \strng{authorfullhash}{005d3050294a901185c04238f31c4203}
+      \strng{authorfullhashraw}{005d3050294a901185c04238f31c4203}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{122210}
+      \field{journaltitle}{Renewable Energy}
+      \field{langid}{english}
+      \field{title}{A method on mapping the distribution of photovoltaic power stations in complex terrain regions}
+      \field{volume}{240}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.renene.2024.122210
+      \endverb
+    \endentry
+    \entry{nte_e020}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa37ee2252f3aa47d77e551656de7f02}{%
+           family={{Ministerio de Vivienda, Construcción y Saneamiento}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Reglamento Nacional de Edificaciones}%
+      }
+      \strng{namehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{fullhash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{fullhashraw}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{bibnamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorbibnamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authornamehash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorfullhash}{fa37ee2252f3aa47d77e551656de7f02}
+      \strng{authorfullhashraw}{fa37ee2252f3aa47d77e551656de7f02}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{number}{NTE E.020}
+      \field{title}{Norma técnica {E}.020: Cargas}
+      \field{type}{Norma técnica}
+      \field{year}{2006}
+    \endentry
+    \entry{Pahl2007}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ebfef24ebb8e436dc150ff7760ed8d76}{%
+           family={Pahl},
+           familyi={P\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ef03332e0b0fca2547a93058102d8a1}{%
+           family={Beitz},
+           familyi={B\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=502d001917782be467412a33cb557f57}{%
+           family={Feldhusen},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=013ec710ca8a4acbf6b2cfc9ef514325}{%
+           family={Grote},
+           familyi={G\bibinitperiod},
+           given={Karl-Heinrich},
+           giveni={K\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{56a2d4cb584abea19ecced826e5f6a8e}
+      \strng{fullhash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{fullhashraw}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{bibnamehash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authorbibnamehash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authornamehash}{56a2d4cb584abea19ecced826e5f6a8e}
+      \strng{authorfullhash}{a4d6bc6a63af810baa307cce673cc7d5}
+      \strng{authorfullhashraw}{a4d6bc6a63af810baa307cce673cc7d5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{langid}{english}
+      \field{title}{Engineering design: A systematic approach}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1007/978-1-84628-319-2
+      \endverb
+    \endentry
+    \entry{ProActivo2025}{article}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ProActivo}
+      \field{langid}{spanish}
+      \field{title}{Producción eléctrica de energías renovables crece 27\% a octubre de 2025}
+      \field{year}{2025}
+    \endentry
+    \entry{shigley2012mecanico}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8e5b3743b856af1e9a5f5927000b9ff9}{%
+           family={Shigley},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima Edward},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6b6dba4b3eb93f36f681e53fc8f0273}{%
+           family={Budynas},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25e557d0bf6de334ecbdd7d6f3597406}{%
+           family={Nisbett},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi Keith},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill / Interamericana de España}%
+      }
+      \strng{namehash}{f000c53ace5a40f031b16e68e7c0b763}
+      \strng{fullhash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{fullhashraw}{74d7635024ea2b217ee71acb024efb66}
+      \strng{bibnamehash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authorbibnamehash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authornamehash}{f000c53ace5a40f031b16e68e7c0b763}
+      \strng{authorfullhash}{74d7635024ea2b217ee71acb024efb66}
+      \strng{authorfullhashraw}{74d7635024ea2b217ee71acb024efb66}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{isbn}{978-607-15-0771-6}
+      \field{langid}{spanish}
+      \field{title}{Diseño en ingeniería mecánica de {Shigley}}
+      \field{year}{2012}
+    \endentry
+    \entry{skf2020bearings}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4d49a6b1578f3edd78a8cc1b97ea9c9}{%
+           family={{SKF Group}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{fullhash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{fullhashraw}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{bibnamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorbibnamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authornamehash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorfullhash}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \strng{authorfullhashraw}{e4d49a6b1578f3edd78a8cc1b97ea9c9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{17000/1 EN}
+      \field{title}{Rolling bearings catalogue}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cdn.skfmediahub.skf.com/api/public/0901d196807026e8/pdf_preview_medium/0901d196807026e8_pdf_preview_medium.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.skfmediahub.skf.com/api/public/0901d196807026e8/pdf_preview_medium/0901d196807026e8_pdf_preview_medium.pdf
+      \endverb
+    \endentry
+    \entry{stepperonline_17hs16}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=757d6be57915d799f8ef0e7c1b941f31}{%
+           family={{StepperOnline}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{fullhash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{fullhashraw}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{bibnamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorbibnamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authornamehash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorfullhash}{757d6be57915d799f8ef0e7c1b941f31}
+      \strng{authorfullhashraw}{757d6be57915d799f8ef0e7c1b941f31}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Nema 17 bipolar stepper motor 17HS16-2004S1: Datasheet and torque-speed curve}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.omc-stepperonline.com/nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-17hs19-2004s1
+      \endverb
+      \verb{url}
+      \verb https://www.omc-stepperonline.com/nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-17hs19-2004s1
+      \endverb
+    \endentry
+    \entry{VDI2221_2019}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6544351055e99d60ae43a571204dd50}{%
+           family={VDI},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Beuth Verlag}%
+      }
+      \strng{namehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{shortauthorbibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthornamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhashraw}{d6544351055e99d60ae43a571204dd50}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{VDI 2221 Part 1}
+      \field{title}{Development of technical products and systems -- {Model} of system engineering}
+      \field{type}{Directriz}
+      \field{year}{2019}
+    \endentry
+    \entry{VDI2206_2021}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6544351055e99d60ae43a571204dd50}{%
+           family={VDI},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{shortauthorbibnamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthornamehash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhash}{d6544351055e99d60ae43a571204dd50}
+      \strng{shortauthorfullhashraw}{d6544351055e99d60ae43a571204dd50}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{german}
+      \field{series}{VDI-Handbuch Produktentwicklung und Konstruktion}
+      \field{title}{{VDI/VDE} 2206: Entwicklung mechatronischer und cyber-physischer Systeme}
+      \field{year}{2021}
+    \endentry
+    \entry{XPower2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=60155fefd85f4d90cb6f46b891d98388}{%
+           family={{XPOWER Solar Energy Co.}},
+           familyi={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{fullhash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{fullhashraw}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{bibnamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorbibnamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authornamehash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorfullhash}{60155fefd85f4d90cb6f46b891d98388}
+      \strng{authorfullhashraw}{60155fefd85f4d90cb6f46b891d98388}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{El impacto de los factores ambientales en el rendimiento del sistema fotovoltaico}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.xpowersolar.com/es/the-impact-of-environmental-factors-on-photovoltaic-system-performance
+      \endverb
+      \verb{url}
+      \verb https://www.xpowersolar.com/es/the-impact-of-environmental-factors-on-photovoltaic-system-performance
+      \endverb
+    \endentry
+    \entry{Xu2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=823718f19b02c3e57d2a35733cb54220}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ang},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f74e0c63841d0a55b7e5f32a34c6a526}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Wenyong},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ec0acfa25f50156f4f611b459ce7f25}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Wenshuo},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751332d782b5f0b437f390775c71e591}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mingyang},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=916f87614bcd1c67e29809b568a84a29}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Yongjie},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dccda2e89cb2ad1e9290bbeff477c99}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d94f1e22e9318a9e1004a8818ebf6d}{%
+           family={Qiang},
+           familyi={Q\bibinitperiod},
+           given={Shengguan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{973244dc70920ff43bb848fef2d6902a}
+      \strng{fullhash}{89359bb699036782aad7404138700c70}
+      \strng{fullhashraw}{89359bb699036782aad7404138700c70}
+      \strng{bibnamehash}{89359bb699036782aad7404138700c70}
+      \strng{authorbibnamehash}{89359bb699036782aad7404138700c70}
+      \strng{authornamehash}{973244dc70920ff43bb848fef2d6902a}
+      \strng{authorfullhash}{89359bb699036782aad7404138700c70}
+      \strng{authorfullhashraw}{89359bb699036782aad7404138700c70}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{112415}
+      \field{journaltitle}{Solar Energy}
+      \field{langid}{english}
+      \field{title}{Study on the wind load and wind-induced interference effect of photovoltaic ({PV}) arrays on two-dimensional hillsides}
+      \field{volume}{271}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.solener.2024.112415
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
