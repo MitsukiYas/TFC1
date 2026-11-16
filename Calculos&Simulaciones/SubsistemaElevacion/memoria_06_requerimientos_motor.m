@@ -49,7 +49,7 @@ thH = asind((H_med - H_base_)/P.L);
 jb  = rad2deg(tol_h./(P.L*cosd(thH)));
 fprintf('   Juego angular para +/- %d mm sin lazo cerrado: <= %.2f° (a %d mm) y <= %.2f° (a %d mm)\n', ...
         tol_h, jb(1), H_med(1), jb(2), H_med(2));
-fprintf('   (Con el lazo cerrado del sensor inercial, el juego solo exige una banda muerta >= juego.)\n');
+fprintf('   (Con el lazo cerrado del sensor inercial, el juego no se acumula si el ajuste final se hace siempre en el mismo sentido.)\n');
 fprintf('   Carga radial en la salida: hasta %.0f N si el eje del reductor soporta el pivote (reacción de la base)\n', R_base);
 fprintf('   Distancia mínima del eje de salida al plano de apoyo del motor: %.1f mm (resorte)\n\n', d_res);
 

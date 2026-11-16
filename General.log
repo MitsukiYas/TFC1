@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  14 NOV 2026 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  15 NOV 2026 12:06
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./General.tex
-(General.tex
+**c:/Users/Mitsuki/Documents/TESIS/General.tex
+(c:/Users/Mitsuki/Documents/TESIS/General.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -23,49 +24,34 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen150
-)
-(packages.tex
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaT
-eX and XeLaTeX
+) (packages.tex (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2111.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
 \U@D=\dimen151
 \l@unhyphenated=\language79
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
 Package babel Info: Configuration files are deprecated, as
 (babel)             they can break document portability.
 (babel)             Reported on input line 4206.
+
 *************************************
 * Local config file bblopts.cfg used
 *
 (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\bab
-el-spanish.tex)
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 4330.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish
-.ldf
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks17
 \es@quotdepth=\count286
@@ -74,24 +60,19 @@ Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ))
-LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) 
-on input line 5.
-LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
- on input line 5.
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 5.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 5.
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 5.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -126,25 +107,21 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen152
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen153
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count287
@@ -194,18 +171,15 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2026-05-15 v3.5.5 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count299
 \l__siunitx_number_exponent_fixed_int=\count300
@@ -219,29 +193,18 @@ Package: siunitx 2026-05-15 v3.5.5 A comprehensive (SI) units package
 \l__siunitx_number_group_min_int=\count308
 \l__siunitx_number_group_minimum_int=\count309
 \l__siunitx_compound_count_int=\count310
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/translations\translat
-ions.sty
-Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
- (CN)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count311
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcm
-ds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr
-.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -273,42 +236,31 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip54
 \backup@length=\skip55
 \ar@cellbox=\box64
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics
-.cfg
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.d
-ef
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cf
-g
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
-x)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -318,8 +270,7 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 \everycr=\toks27
 \minrowclearance=\skip56
@@ -394,8 +345,7 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box110
 \mc@col@check@num=\count325
 \g__mc_curr_col_int=\count326
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip59
 \multirow@cntb=\count327
@@ -428,15 +378,11 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen185
 \TX@cols=\count333
 \TX@ftn=\toks29
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/xltabular\xltabular.s
-ty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/xltabular\xltabular.sty
 Package: xltabular 2025/02/28 v0.2i `xltabular' package (hv,RN)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/ltablex\ltablex.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/ltablex\ltablex.sty
 Package: ltablex 2014/08/13 v1.1 Modified tabularx
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen186
 \lightrulewidth=\dimen187
@@ -455,42 +401,20 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count336
 \@lastruleclass=\count337
 \@thisrulewidth=\dimen198
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/nicematrix\nicematrix
-.sty
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcor
-e.sty
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsy
-s.sty
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.
-sty
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfut
-il-common.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/nicematrix\nicematrix.sty (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen199
 \pgfutil@tempdimb=\dimen256
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfut
-il-latex.def
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box116
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrc
-s.code.tex
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.te
-x)
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sys.code.tex
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfke
-ys.code.tex
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks31
 \pgfkeys@temptoks=\toks32
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfke
-yslibraryfiltered.code.tex
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen257
@@ -513,76 +437,32 @@ yslibraryfiltered.code.tex
 \t@pgf@tokb=\toks35
 \t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count342
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-.cfg
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sys-pdftex.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sys-common-pdf.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-syssoftpath.code.tex
+))) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count343
 \pgfsyssoftpath@bigbuffer@items=\count344
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sysprotocol.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-ore.code.tex
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.co
-de.tex
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathuti
-l.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpar
-ser.code.tex
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen267
 \pgfmath@count=\count345
 \pgfmath@box=\box117
 \pgfmath@toks=\toks37
 \pgfmath@stack@operand=\toks38
 \pgfmath@stack@operation=\toks39
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.basic.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.trigonometric.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.random.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.comparison.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.base.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.round.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.misc.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
-ctions.integerarithmetics.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcal
-c.code.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathflo
-at.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count346
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.cod
-e.tex)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orepoints.code.tex
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen268
 \pgf@picmaxx=\dimen269
@@ -598,90 +478,56 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen279
 \pgf@zx=\dimen280
 \pgf@zy=\dimen281
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orepathconstruct.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen282
 \pgf@path@lasty=\dimen283
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orepathusage.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen284
 \pgf@shorten@start@additional=\dimen285
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orescopes.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box118
 \pgf@hbox=\box119
 \pgf@layerbox@main=\box120
 \pgf@picture@serial@count=\count347
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oregraphicstate.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen286
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oretransformations.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen287
 \pgf@pt@y=\dimen288
 \pgf@pt@temp=\dimen289
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orequick.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oreobjects.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orepathprocessing.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orearrows.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen290
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oreshade.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen291
 \pgf@sys@shading@range@num=\count348
 \pgf@shadingcount=\count349
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oreimage.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oreexternal.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box121
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orelayers.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-oretransparency.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orepatterns.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
-orerdf.code.tex
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodu
-leshapes.code.tex
+))) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box122
 )
@@ -772,8 +618,7 @@ Package: nicematrix 2026/04/23 v7.8b Enhanced arrays with the help of PGF/TikZ
 \l__nicematrix_submatrix_left_xshift_dim=\dimen339
 \l__nicematrix_submatrix_right_xshift_dim=\dimen340
 \l__nicematrix_brace_yshift_dim=\dimen341
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/multirow\bigstrut.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/multirow\bigstrut.sty
 Package: bigstrut 2024/11/12 v2.9 Provide larger struts in tabulars
 ) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -782,11 +627,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box124
 \@float@everytoks=\toks41
 \@floatcapt=\box125
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen342
 \captionmargin=\dimen343
@@ -802,8 +645,7 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count387
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
@@ -817,8 +659,7 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count390
 \calc@Cskip=\skip67
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
 
 document style option `anysize' loaded
@@ -828,19 +669,16 @@ Version 1.0, Aug 13, 1994
 \@Rightmargin=\dimen353
 \@Topmargin=\dimen354
 \@Bottommargin=\dimen355
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count391
 \c@@ppsavesec=\count392
 \c@@ppsaveapp=\count393
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 \ESO@tempdima=\dimen356
 \ESO@tempdimb=\dimen357
@@ -848,8 +686,7 @@ Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 \AM@pagewidth=\dimen358
 \AM@pageheight=\dimen359
 \AM@fboxrule=\dimen360
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count394
@@ -860,22 +697,15 @@ File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks44
 \c@AM@survey=\count396
 \AM@templatesizebox=\box127
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.s
-ty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-n
-ometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
-F (HO)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count397
 \lst@gtempboxa=\box128
 \lst@token=\toks45
@@ -888,17 +718,14 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \lst@newlines=\count401
 \lst@lineno=\count402
 \lst@maxwidth=\dimen364
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count403
 \lst@skipnumbers=\count404
 \lst@framebox=\box129
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -909,14 +736,12 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-
 (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks46
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip68
 \RaggedLeftLeftskip=\skip69
@@ -934,10 +759,8 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \JustifyingParindent=\skip81
 ) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write4
-Excluding comment 'comment')
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+ Excluding comment 'comment') (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip82
 \f@nch@offset@elh=\skip83
 \f@nch@offset@erh=\skip84
@@ -992,17 +815,14 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip127
 \cfttabindent=\skip128
 \cfttabnumwidth=\skip129
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/gloss\gloss.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/gloss\gloss.sty
 Package: gloss 2002/07/26 1.5.2 Gloss package
 \glosshang=\skip130
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
 \csq@reset=\count407
 \csq@gtype=\count408
@@ -1011,35 +831,25 @@ Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
 \csq@maxlvl=\count411
 \csq@tshold=\count412
 \csq@ltx@everypar=\toks48
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.s
-ty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.s
-ty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count413
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1102,14 +912,12 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count459
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'apa.dbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.dbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.dbx
 File: apa.dbx 2025/08/27 v9.20 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -1208,15 +1016,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip152
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.d
-ef
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count538
 \c@textcitetotal=\count539
@@ -1234,45 +1039,32 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-natbib.d
-ef
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-natbib.def
 File: blx-natbib.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.bbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.bbx
 File: apa.bbx 2025/08/27 v9.20 APA biblatex references style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard
-.bbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count547
 \c@bbx:relatedtotal=\count548
 )
-Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
-ed, overwriting.
-Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already d
-efined, overwriting.
-Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already def
-ined, overwriting.
-Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already
- defined, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defined, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already defined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already defined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already defined, overwriting.
 )
 Package biblatex Info: Trying to load citation style 'apa'...
 Package biblatex Info: ... file 'apa.cbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.cbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.cbx
 File: apa.cbx 2025/08/27 v9.20 APA biblatex citation style
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
-Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
-, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined, overwriting.
 Package biblatex Info: Redefining '\fullcite'.
 Package biblatex Info: Redefining '\citeauthor'.
 Package biblatex Info: Redefining '\citeyear'.
@@ -1291,17 +1083,14 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
  (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2026-03-20 L3 programming layer (loader) 
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-p
-dftex.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count549
 ))
@@ -1309,56 +1098,37 @@ Package biblatex Info: ... and expl3
 (biblatex)             2026-03-20 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-exp
-l3.sty
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpa
-rse.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-))
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+)) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefi
-nekeys.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape
-.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gett
-itlestring.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count550
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc
-.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen365
 \Hy@linkcounter=\count551
 \Hy@pagecounter=\count552
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count553
@@ -1377,13 +1147,10 @@ Package hyperref Info: Bookmarks ON on input line 4466.
 \c@Hy@tempcnt=\count554
 LaTeX Info: Redefining \url on input line 4805.
 \XeTeXLinkMargin=\dimen366
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintca
-lc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count555
 \Field@Width=\dimen367
@@ -1400,22 +1167,16 @@ Package hyperref Info: PDF/A mode OFF on input line 6121.
 \c@Hfootnote=\count558
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
 \Fld@listcount=\count559
 \c@bookmark@seq@number=\count560
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunf
-ilecheck.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqu
-ecounter.sty
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip153
 ))
@@ -1424,12 +1185,9 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 5.
-
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(General.aux
+) (General.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 LaTeX Info: Redefining \. on input line 14.
@@ -1457,17 +1215,11 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tr
-anslations-basic-dictionary-spanish.trsl
-File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
-nslations-basic-dictionary')
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-spanish.trsl
+File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 5.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
-mkii
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 5.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count561
 \scratchdimen=\dimen369
@@ -1480,15 +1232,10 @@ mkii
 \MPnumerator=\count565
 \makeMPintoPDFobject=\count566
 \everyMPtoPDFconversion=\toks50
-)
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
--base.sty
+) (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys
-.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c__nicematrix_shift_Ldots_last_row_dim=\dimen371
@@ -1500,22 +1247,16 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count567
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\spanish-
-apa.lbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\spanish-apa.lbx
 File: spanish-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.
-lbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
 File: spanish.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.
-lbx
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
 File: spanish.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1537,14 +1278,11 @@ Package hyperref Info: Link coloring OFF on input line 5.
 <Recursos/Imagenes/Logo pucp.jpg, id=144, 478.78876pt x 210.03468pt>
 File: Recursos/Imagenes/Logo pucp.jpg Graphic file (type jpg)
 <use Recursos/Imagenes/Logo pucp.jpg>
-Package pdftex.def Info: Recursos/Imagenes/Logo pucp.jpg  used on input line 10
-.
+Package pdftex.def Info: Recursos/Imagenes/Logo pucp.jpg  used on input line 10.
 (pdftex.def)             Requested size: 356.73093pt x 156.49014pt.
  [1
 
-{C:/Users/Mitsuki/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mi
-tsuki/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Recursos/Im
-agenes/Logo pucp.jpg>]) (TFC/resumen.tex) [1
+{C:/Users/Mitsuki/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Recursos/Imagenes/Logo pucp.jpg>]) (TFC/resumen.tex) [1
 
 ] (General.toc
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1553,34 +1291,24 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 3.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 3.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 3.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 3.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 3.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 3.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 3.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -1589,8 +1317,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-
-[2
+ [2
 
 ])
 \tf@toc=\write7
@@ -1629,332 +1356,241 @@ CapÃ­tulo I.
 <Recursos/Imagenes/Graficas/NZE2050.png, id=275, 362.5545pt x 172.84575pt>
 File: Recursos/Imagenes/Graficas/NZE2050.png Graphic file (type png)
 <use Recursos/Imagenes/Graficas/NZE2050.png>
-Package pdftex.def Info: Recursos/Imagenes/Graficas/NZE2050.png  used on input 
-line 20.
+Package pdftex.def Info: Recursos/Imagenes/Graficas/NZE2050.png  used on input line 20.
 (pdftex.def)             Requested size: 341.43437pt x 162.78622pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26 
       [1
 
-] [2 <./Recursos/Imagenes/Graficas/NZE2050.png>])
-(TFC/cap1/102_problematica.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-.
-
-(C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+] [2 <./Recursos/Imagenes/Graficas/NZE2050.png>]) (TFC/cap1/102_problematica.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6.
+ (C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 <Recursos/Imagenes/Otros/PlantaPeru.png, id=305, 596.2275pt x 396.7322pt>
 File: Recursos/Imagenes/Otros/PlantaPeru.png Graphic file (type png)
 <use Recursos/Imagenes/Otros/PlantaPeru.png>
-Package pdftex.def Info: Recursos/Imagenes/Otros/PlantaPeru.png  used on input 
-line 20.
+Package pdftex.def Info: Recursos/Imagenes/Otros/PlantaPeru.png  used on input line 20.
 (pdftex.def)             Requested size: 256.07741pt x 170.39174pt.
-
-[3] [4 <./Recursos/Imagenes/Otros/PlantaPeru.png>]) (TFC/cap1/103_propuesta.tex
-[5] [6] [7]) (TFC/cap1/104_alcance.tex [8]) (TFC/cap1/105_metodologia.tex
-[9] [10])) (TFC/cap5.tex [11]
+ [3] [4 <./Recursos/Imagenes/Otros/PlantaPeru.png>]) (TFC/cap1/103_propuesta.tex [5] [6] [7]) (TFC/cap1/104_alcance.tex [8]) (TFC/cap1/105_metodologia.tex [9] [10])) (TFC/cap5.tex [11]
 CapÃ­tulo II.
 (TFC/cap5/501_arquitectura_del_sistema.tex
-<Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png, id=372, 465.9
-9094pt x 588.69937pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png Graphic f
-ile (type png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png, id=372, 465.99094pt x 588.69937pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GE
-NERAL.png  used on input line 18.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png  used on input line 18.
 (pdftex.def)             Requested size: 256.07741pt x 323.51616pt.
  [12
 
-])
-(TFC/cap5/502_subsistema_orientacion.tex [13 <./Recursos/Imagenes/ImagenesDisen
-oMecanico/ENSAMBLAJE_GENERAL.png>] [14]
-<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png, id=39
-7, 666.23906pt x 588.69937pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png G
-raphic file (type png)
+]) (TFC/cap5/502_subsistema_orientacion.tex [13 <./Recursos/Imagenes/ImagenesDisenoMecanico/ENSAMBLAJE_GENERAL.png>] [14]
+<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png, id=397, 666.23906pt x 588.69937pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORI
-ENTACION_ISO1.png  used on input line 57.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png  used on input line 58.
 (pdftex.def)             Requested size: 213.39568pt x 188.55832pt.
-<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png, id=39
-8, 681.29532pt x 588.69937pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png G
-raphic file (type png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png, id=398, 681.29532pt x 588.69937pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORI
-ENTACION_ISO2.png  used on input line 61.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png  used on input line 62.
 (pdftex.def)             Requested size: 213.39568pt x 184.39029pt.
 
-Underfull \hbox (badness 7451) in paragraph at lines 126--126
+Underfull \hbox (badness 7451) in paragraph at lines 128--128
 []|\T1/ptm/m/n/10 Tolerancia de in-cli-na-
  []
 
-[15 <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png>
- <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png>]
-ignored: In
-finite glue shrinkage found in box being split
-[16] [17]
-<Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png, i
-d=425, 633.86812pt x 436.63126pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.p
-ng Graphic file (type png)
-<use Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.pn
-g>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOri
-entacionDisenhoA1.png  used on input line 140.
+[15 <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO1.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ORIENTACION_ISO2.png>]
+ignored: Infinite glue shrinkage found in box being split [16] [17]
+<Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png, id=425, 633.86812pt x 436.63126pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png Graphic file (type png)
+<use Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png>
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png  used on input line 142.
 (pdftex.def)             Requested size: 213.39568pt x 146.99358pt.
-<Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png, i
-d=426, 785.93625pt x 452.4403pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.p
-ng Graphic file (type png)
-<use Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.pn
-g>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOri
-entacionDisenhoA2.png  used on input line 144.
+<Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png, id=426, 785.93625pt x 452.4403pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png Graphic file (type png)
+<use Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png>
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png  used on input line 146.
 (pdftex.def)             Requested size: 213.39568pt x 122.84398pt.
- [18 <./Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1
-.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA
-2.png>]
-<Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png, id=436, 51.80292pt x 
-44.67471pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png Graphic file (typ
-e png)
+ [18 <./Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA1.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/SubsistemaOrientacionDisenhoA2.png>]
+<Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png, id=436, 51.80292pt x 44.67471pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.pn
-g  used on input line 172.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png  used on input line 174.
 (pdftex.def)             Requested size: 213.39568pt x 184.05228pt.
-<Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png, id=437, 49.43861pt x 
-44.67471pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png Graphic file (typ
-e png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png, id=437, 49.43861pt x 44.67471pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.pn
-g  used on input line 176.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png  used on input line 178.
 (pdftex.def)             Requested size: 213.39568pt x 192.83641pt.
- [19 <./Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png> <./Recursos/Im
-agenes/ImagenesDisenoMecanico/Tilt_DCL_2.png>] [20] [21]
-[22]
+ [19 <./Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_1.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/Tilt_DCL_2.png>] [20] [21] [22]
 <Recursos/Imagenes/Placeholder.png, id=486, 401.5pt x 401.5pt>
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-263.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 266.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
  [23] [24 <./Recursos/Imagenes/Placeholder.png>] [25] [26]
-Overfull \hbox (10.17326pt too wide) in paragraph at lines 304--306
-[]\T1/ptm/m/n/12 La mis-ma fuen-te li-mi-ta la pen-dien-te del eje. En los ro-d
-a-mien-tos, la pen-dien-te es de $\OT1/ztmcm/m/n/12 0[]00042[]$
+Overfull \hbox (10.17326pt too wide) in paragraph at lines 308--310
+[]\T1/ptm/m/n/12 La mis-ma fuen-te li-mi-ta la pen-dien-te del eje. En los ro-da-mien-tos, la pen-dien-te es de $\OT1/ztmcm/m/n/12 0[]00042[]$
  []
 
 [27]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-322.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 326.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
  [28] [29]
-Underfull \hbox (badness 7116) in paragraph at lines 371--371
+Underfull \hbox (badness 7116) in paragraph at lines 376--376
 []|\T1/ptm/m/n/10 Especificación Téc-
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 371--371
+Underfull \hbox (badness 7116) in paragraph at lines 376--376
 []|\T1/ptm/m/n/10 Especificación Téc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--371
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
 []|\T1/ptm/m/n/10 Corriente No-mi-nal
  []
 
 [30] [31] [32]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-426.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 431.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
  [33] [34]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-445.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 450.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
  [35]
 ignored: Infinite glue shrinkage found in box being split [36] [37]
-ignored: Infinite glue sh
-rinkage found in box being split [38])
-(TFC/cap5/503_subsistema_elevacion.tex
+ignored: Infinite glue shrinkage found in box being split [38]) (TFC/cap5/503_subsistema_elevacion.tex
 
-LaTeX Warning: Reference `tab:lista_requerimientos' on page 39 undefined on inp
-ut line 8.
+LaTeX Warning: Reference `tab:lista_requerimientos' on page 39 undefined on input line 9.
 
-[39]
-<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png, id=633,
- 443.40656pt x 588.69937pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png Gra
-phic file (type png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png, id=625, 443.40656pt x 588.69937pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELE
-VACION_ISO1.png  used on input line 17.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png  used on input line 18.
 (pdftex.def)             Requested size: 213.39568pt x 283.32704pt.
-<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png, id=634,
- 442.65375pt x 588.69937pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png Gra
-phic file (type png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png, id=626, 442.65375pt x 588.69937pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELE
-VACION_ISO2.png  used on input line 21.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png  used on input line 22.
 (pdftex.def)             Requested size: 213.39568pt x 283.80313pt.
- [40 <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png> 
-<./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png>]
-[41]
-Underfull \hbox (badness 2181) in paragraph at lines 93--93
+[39] [40 <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO1.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/MECANISMO_ELEVACION_ISO2.png>]
+Underfull \hbox (badness 2181) in paragraph at lines 96--96
 []|\T1/ptm/m/n/10 Distancia en-tre pi-vo-tes
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 93--93
+Underfull \hbox (badness 2261) in paragraph at lines 96--96
 []|\T1/ptm/m/n/10 Subsistema de orien-ta-
  []
 
 
-LaTeX Warning: Reference `tab:lista_requerimientos' on page 42 undefined on inp
-ut line 93.
+LaTeX Warning: Reference `tab:lista_requerimientos' on page 41 undefined on input line 96.
 
 
-ignored: Infinite glue shrinkage found in box being split [42] [43]
-<Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png, id=667, 116.30952pt x
- 168.50061pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png Graphic file (typ
-e png)
+ignored: Infinite glue shrinkage found in box being split [41]
+ignored: Infinite glue shrinkage found in box being split [42]
+<Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png, id=658, 116.30952pt x 168.50061pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.pn
-g  used on input line 114.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png  used on input line 117.
 (pdftex.def)             Requested size: 213.39568pt x 309.18353pt.
-<Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png, id=668, 116.30952pt x
- 169.24165pt>
-File: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png Graphic file (typ
-e png)
+<Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png, id=659, 116.30952pt x 169.24165pt>
+File: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png Graphic file (type png)
 <use Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png>
-Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.pn
-g  used on input line 118.
+Package pdftex.def Info: Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png  used on input line 121.
 (pdftex.def)             Requested size: 213.39568pt x 310.54329pt.
- [44 <./Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png> <./Recursos/Im
-agenes/ImagenesDisenoMecanico/4Bar_DCL_2.png>] [45] [46] [47]
-[48] [49] [50]
+ [43] [44 <./Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_1.png> <./Recursos/Imagenes/ImagenesDisenoMecanico/4Bar_DCL_2.png>] [45] [46] [47] [48] [49] [50]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-288.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 296.
 (pdftex.def)             Requested size: 318.66948pt x 318.6886pt.
  [51] [52]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-319.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 327.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
- [53] [54] [55] [56] [57]
+ [53] [54] [55]
+ignored: Infinite glue shrinkage found in box being split [56]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-408.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 417.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
- [58] [59] [60] [61] [62]
-[63] [64] [65] [66] [67] [68]
+ [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
 File: Recursos/Imagenes/Placeholder.png Graphic file (type png)
 <use Recursos/Imagenes/Placeholder.png>
-Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 
-557.
+Package pdftex.def Info: Recursos/Imagenes/Placeholder.png  used on input line 568.
 (pdftex.def)             Requested size: 386.96027pt x 386.98558pt.
- [69] [70]
-Underfull \hbox (badness 2150) in paragraph at lines 719--719
+ [68] [69] [70]
+Underfull \hbox (badness 2150) in paragraph at lines 733--733
 []|\T1/ptm/m/n/10 Pasador del pi-vo-te ac-tua-do: fle-xión con
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 719--719
+Underfull \hbox (badness 1024) in paragraph at lines 733--733
 []|\T1/ptm/m/n/10 Tornillos M4 de las chu-ma-ce-ras: cor-te /
  []
 
 
 ignored: Infinite glue shrinkage found in box being split [71]
-ignored: Infinite glue shrinkage fo
-und in box being split [72]
-ignored: Infinite glue shrinkage found in box being split [73
-])) (TFC/cap6.tex [74] [75]
+ignored: Infinite glue shrinkage found in box being split [72] [73])) (TFC/cap6.tex [74]
 CapÃ­tulo III.
-) [76
+) [75
 
-] [77
+] [76
 
 
-] [78]
-Overfull \hbox (13.96619pt too wide) in paragraph at lines 137--137
-[][]\T1/ptm/m/n/12 InvenSense Inc. (2013). \T1/ptm/m/it/12 MPU-6000 and MPU-605
-0 pro-duct spe-ci-fi-ca-tion\T1/ptm/m/n/12 . []$https : / / www . invensense .
- []
-
-[79] [80] [81]
+] [77] [78] [79] [80]
 Overfull \hbox (3.0103pt too wide) in paragraph at lines 137--137
-\T1/ptm/m/it/12 del sis-te-ma fo-to-vol-tai-co\T1/ptm/m/n/12 . []$https : / / w
-ww . xpowersolar . com / es / the -[] impact -[] of -[] environmental -[]
+\T1/ptm/m/it/12 del sis-te-ma fo-to-vol-tai-co\T1/ptm/m/n/12 . []$https : / / www . xpowersolar . com / es / the -[] impact -[] of -[] environmental -[]
  []
 
-[82]
+[81]
 
-pdfTeX warning: pdflatex.exe (file ./Recursos/Anexos/EstructuraFunciones_v20.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Recursos/Anexos/EstructuraFunciones_v20.pdf, id=1020, 6050.605pt x 7908.54625p
-t>
+pdfTeX warning: pdflatex (file ./Recursos/Anexos/EstructuraFunciones_v20.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Recursos/Anexos/EstructuraFunciones_v20.pdf, id=1009, 6050.605pt x 7908.54625pt>
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf  used on i
-nput line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf  used on input line 147.
 (pdftex.def)             Requested size: 6050.59032pt x 7908.52708pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./Recursos/Anexos/EstructuraFunciones_v20.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./Recursos/Anexos/EstructuraFunciones_v20.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex.exe (file ./Recursos/Anexos/EstructuraFunciones_v20.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Recursos/Anexos/EstructuraFunciones_v20.pdf, id=1022, page=1, 6050.605pt x 790
-8.54625pt>
+pdfTeX warning: pdflatex (file ./Recursos/Anexos/EstructuraFunciones_v20.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Recursos/Anexos/EstructuraFunciones_v20.pdf, id=1011, page=1, 6050.605pt x 7908.54625pt>
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf, page 1>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 us
-ed on input line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 used on input line 147.
 (pdftex.def)             Requested size: 6050.59032pt x 7908.52708pt.
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf, page 1>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 us
-ed on input line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 used on input line 147.
 (pdftex.def)             Requested size: 597.52533pt x 781.00566pt.
-[83
+[82
 
 ]
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf, page 1>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 us
-ed on input line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 used on input line 147.
 (pdftex.def)             Requested size: 597.52533pt x 781.00566pt.
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf, page 1>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 us
-ed on input line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 used on input line 147.
 (pdftex.def)             Requested size: 597.52533pt x 781.00566pt.
 File: Recursos/Anexos/EstructuraFunciones_v20.pdf Graphic file (type pdf)
 <use Recursos/Anexos/EstructuraFunciones_v20.pdf, page 1>
-Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 us
-ed on input line 147.
+Package pdftex.def Info: Recursos/Anexos/EstructuraFunciones_v20.pdf , page1 used on input line 147.
 (pdftex.def)             Requested size: 597.52533pt x 781.00566pt.
- [84
+ [83
 
  <./Recursos/Anexos/EstructuraFunciones_v20.pdf>] (General.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1974,37 +1610,22 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `General.out' has not changed.
 (rerunfilecheck)             Checksum: 12F85B6AE20C09B94790A827CC82A791;7266.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                General
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'General.run.xml'.
 \openout1 = `General.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40663 strings out of 467691
- 852119 string characters out of 5414020
- 1812897 words of memory out of 5000000
- 68786 multiletter control sequences out of 15000+600000
+ 40651 strings out of 467691
+ 851668 string characters out of 5414020
+ 1813791 words of memory out of 5000000
+ 68775 multiletter control sequences out of 15000+600000
  709425 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,17n,86p,2332b,3198s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mitsuki/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Mitsuki/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Mitsuki
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Mitsuk
-i/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mits
-uki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mi
-tsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on General.pdf (90 pages, 2940374 bytes).
+ 82i,17n,86p,2363b,3198s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mitsuki/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on General.pdf (89 pages, 2937614 bytes).
 PDF statistics:
- 1416 PDF objects out of 1440 (max. 8388607)
- 281 named destinations out of 1000 (max. 500000)
+ 1405 PDF objects out of 1440 (max. 8388607)
+ 278 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

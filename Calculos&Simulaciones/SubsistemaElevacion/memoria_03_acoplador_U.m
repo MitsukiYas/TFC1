@@ -77,8 +77,8 @@ Wz = pi*D8^3/32;
 % la roscada; se verifica con el diámetro equivalente al área resistente (ISO 3506-1 Anexo A, paso 1.25).
 d_s8 = D8 - 0.9382*1.25;                 % mm
 Wz_r = pi*d_s8^3/32;
-adm_pas = P.nodo.Sy_pasador/P.ny;
-fprintf('5. Flexión de los pasadores (AISI 4140, Sy = %.0f MPa, adm. Sy/ny = %.1f MPa)\n', P.nodo.Sy_pasador, adm_pas);
+adm_pas = P.nodo.Sy_pasador/1.5;   % criterio del texto para elementos de acero: FS >= 1.5
+fprintf('5. Flexión de los pasadores (AISI 4140, Sy = %.0f MPa, criterio FS >= 1.5: adm. Sy/1.5 = %.1f MPa)\n', P.nodo.Sy_pasador, adm_pas);
 fprintf('   Brazo de palanca ala-rodamiento a = %.1f mm; sección roscada d_s = %.2f mm\n', a, d_s8);
 % SUPOSICIÓN: el momento R·a (máximo en el tramo rectificado entre chumaceras) se aplica también en la sección
 % roscada junto al ala, como cota para un ala que empotra el pasador. Verificación estática, sin concentración

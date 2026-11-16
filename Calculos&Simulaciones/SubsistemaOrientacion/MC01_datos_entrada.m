@@ -89,6 +89,7 @@ P.mu_tabla = [0.050 0.075 0.087 0.100 0.150 0.200];  % valores de mu para la sen
 % ------------------------------------------------------------------
 P.V_viento = 75;           % km/h velocidad de diseno minima [NTE 12.3]
 P.C_forma  = 1.5;          % factor de forma [NTE Tabla 5.4]
+P.V_op     = 33;           % km/h rafaga maxima de operacion para |theta| >= 12 gr (condicion de operacion, MC-15)
 P.f_r      = 1.2;          % factor para estructuras Tipo 2 [NTE 12.2]
 P.A_exp    = 0.012;        % m^2 envolvente del area expuesta [Tabla]
 P.h_cp     = 0.060;        % m   envolvente del brazo del centro de presion [Tabla]

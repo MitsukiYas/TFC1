@@ -1,5 +1,5 @@
 MEMORIAS DE CALCULO - SUBSISTEMA DE ORIENTACION DE PIRANOMETRO
-Generado: 14-Nov-2026 17:32:21
+Generado: 15-Nov-2026 05:16:12
 
 ==============================================================================
  MEMORIA DE CALCULO MC-01: DATOS DE ENTRADA
@@ -282,9 +282,14 @@ Generado: 14-Nov-2026 17:32:21
    >> Pendiente en los rodamientos             0.00084 rad        criterio <= 0.001 rad     : CUMPLE
    Pendiente en la corona                                       4.40 min de arco
    Angularidad admisible de la caja (AGMA 6022, 7.3)             5.0 min de arco
-   Margen para la angularidad de la caja                        0.60 min de arco
-   >> Pendiente en la corona (AGMA 6022)       4.4 min            criterio <= 5 min         : CUMPLE
    * AGMA no da un limite de pendiente del eje: se usa su tolerancia de angularidad de la caja.
+   Rafaga maxima de operacion                                     33 km/h
+   T_out de operacion                                         0.3378 N m
+   Pendiente en la corona, carga de operacion                0.00068 rad
+   Pendiente en la corona, carga de operacion                   2.35 min de arco
+   Margen para la angularidad de montaje (operacion)            2.65 min de arco
+   Margen con la carga de diseno (referencia)                   0.60 min de arco
+   >> Pendiente en la corona, operacion (AGMA 6022) 2.4 min            criterio <= 5 min         : CUMPLE
    * La pendiente se suma a la angularidad de los alojamientos; verificar el contacto con tinta azul (AGMA 6022, 7.1).
 
  Giro por torsion
@@ -468,7 +473,7 @@ Generado: 14-Nov-2026 17:32:21
    Fatiga del eje (vida infinita)           FS = 3.74          FS >= 1          CUMPLE
    Flecha en la corona                      0.0399 mm          <= 0.076 mm      CUMPLE
    Pendiente en los rodamientos             0.00084 rad        <= 0.001 rad     CUMPLE
-   Pendiente en la corona (AGMA 6022)       4.4 min            <= 5 min         CUMPLE
+   Pendiente en la corona, operacion (AGMA 6022) 2.4 min            <= 5 min         CUMPLE
    Rodamiento mas cargado del eje           S0 = 9.32          S0 >= 1          CUMPLE
    Rodamientos del sin fin (cota)           S0 = 18.73         S0 >= 1          CUMPLE
    Prisioneros de la corona (par)           FS = 8.59          FS >= 4          CUMPLE
@@ -478,3 +483,4 @@ Generado: 14-Nov-2026 17:32:21
    Motor frente a retencion                 FS = 3.75          FS >= 1          CUMPLE
    Error en lazo cerrado (suma lineal)      0.377 gr           <= 0.5 gr        CUMPLE
    Viento maximo del mapa (130 km/h)        FS min = 1.11      FS >= 1          CUMPLE
+

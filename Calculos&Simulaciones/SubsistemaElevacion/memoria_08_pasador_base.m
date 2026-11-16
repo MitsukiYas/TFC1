@@ -75,8 +75,8 @@ k2 = 3*EI/x_KFL2^3;                               % N/mm, rigidez del extremo gu
 y_libre = yP(R1, x_KFL1, x_KFL2) + yP(F_res, x_res(1), x_KFL2) + yP(F_res, x_res(2), x_KFL2);
 M_cargas = R1*x_KFL1 + F_res*sum(x_res);          % N·mm en x = 0, sin la guía
 d_s = d - 0.9382*1.25; W_r = pi*d_s^3/32;        % sección roscada (ISO 3506-1 Anexo A)
-adm = n.Sy_pasador/P.ny;   % usado solo para la desalineación admisible (0.76 mm en el texto)
 FS_min = 1.5;              % criterio del texto para elementos de acero (FS respecto a Sy)
+adm = n.Sy_pasador/FS_min; % esfuerzo admisible con FS >= 1.5, para la desalineación admisible
 % Desalineación delta entre el eje del reductor y la posición libre del extremo del pasador.
 % Momento en el apoyo: M = |M_cargas - k2·x_KFL2·(y_libre - delta)| (delta del mismo signo que la carga = peor caso)
 M_alineado = abs(M_cargas - k2*x_KFL2*y_libre);
@@ -85,7 +85,7 @@ fprintf('3. Flexión del pasador (sección roscada junto al apoyo, d_s = %.2f mm
 fprintf('   Rigidez del extremo guiado k = %.1f N/mm; flecha libre del extremo = %.2f mm\n', k2, y_libre);
 fprintf('   Sin guía (voladizo puro): %.1f MPa\n', M_cargas/W_r);
 fprintf('   Reductor alineado con el pasador sin carga: %.1f MPa (FS = %.2f) -> %s\n', M_alineado/W_r, n.Sy_pasador/(M_alineado/W_r), ok(n.Sy_pasador/(M_alineado/W_r) >= FS_min));
-fprintf('   Desalineación admisible del eje del reductor: %.2f mm (en el sentido más desfavorable; con adm. Sy/ny = %.1f MPa)\n', delta_adm, adm);
+fprintf('   Desalineación admisible del eje del reductor: %.2f mm (en el sentido más desfavorable; con adm. Sy/1.5 = %.1f MPa)\n', delta_adm, adm);
 delta_spec = 0.7;   % mm, tolerancia de coaxialidad aceptada por el usuario (2026-11-13, revisión)
 M_spec = abs(M_cargas - k2*x_KFL2*(y_libre - delta_spec));   % misma convención que delta_adm (corregido 2026-11-13)
 fprintf('   Con la tolerancia propuesta de %.1f mm: %.1f MPa (FS = %.2f) -> %s\n', delta_spec, M_spec/W_r, n.Sy_pasador/(M_spec/W_r), ok(n.Sy_pasador/(M_spec/W_r) >= FS_min));

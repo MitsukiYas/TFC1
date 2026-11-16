@@ -85,9 +85,26 @@ R = mc_verificacion(R, 'Pendiente en los rodamientos', sprintf('%.5f rad', R.pen
 R.pend_cor_min = R.pend_cor*180/pi*60;               % minutos de arco
 mc_dato('Pendiente en la corona', R.pend_cor_min, 'min de arco', '%.2f');
 mc_dato('Angularidad admisible de la caja (AGMA 6022, 7.3)', P.ang_caja_adm*180/pi*60, 'min de arco', '%.1f');
-mc_dato('Margen para la angularidad de la caja', (P.ang_caja_adm - R.pend_cor)*180/pi*60, 'min de arco', '%.2f');
-R = mc_verificacion(R, 'Pendiente en la corona (AGMA 6022)', sprintf('%.1f min', R.pend_cor_min), '<= 5 min', R.pend_cor <= P.ang_caja_adm);
 mc_nota('AGMA no da un limite de pendiente del eje: se usa su tolerancia de angularidad de la caja.');
+% Pendiente con la carga de operacion: misma cadena (S, mu estatico, suma colineal) con la rafaga maxima de
+% operacion P.V_op, sin factor de rafaga, en lugar del viento de diseno. Fija el margen de montaje.
+kv = (P.V_op/P.V_viento)^2/P.f_r;
+To_op = max(abs(R.Mg) + R.M_v*kv + P.T_rod + R.J_total*R.acc);
+cn = cos(P.phi_n); lam = R.lambda;
+WGt_op = P.S*To_op/(R.d_2/2); W_op = WGt_op/(cn*cos(lam) - P.mu_s*sin(lam));
+Rop = R; Rop.F_g = hypot(WGt_op, W_op*sin(P.phi_n)) + m_corona*g;
+Rop.M_a = W_op*(cn*sin(lam) + P.mu_s*cos(lam))*P.r_corona;
+Rop.F_plat = hypot((P.m_carga + P.m_plat)*g, R.F_v*kv);
+[~, ~, ~, pc1] = flecha_eje(P, Rop, false, I); [~, ~, ~, pc2] = flecha_eje(P, Rop, true, I);
+R.pend_cor_op = max(pc1, pc2); R.pend_cor_op_min = R.pend_cor_op*180/pi*60;
+R.ang_montaje_adm = (P.ang_caja_adm - R.pend_cor_op)*180/pi*60;
+mc_dato('Rafaga maxima de operacion', P.V_op, 'km/h', '%.0f');
+mc_dato('T_out de operacion', To_op, 'N m', '%.4f');
+mc_dato('Pendiente en la corona, carga de operacion', R.pend_cor_op, 'rad', '%.5f');
+mc_dato('Pendiente en la corona, carga de operacion', R.pend_cor_op_min, 'min de arco', '%.2f');
+mc_dato('Margen para la angularidad de montaje (operacion)', R.ang_montaje_adm, 'min de arco', '%.2f');
+mc_dato('Margen con la carga de diseno (referencia)', (P.ang_caja_adm - R.pend_cor)*180/pi*60, 'min de arco', '%.2f');
+R = mc_verificacion(R, 'Pendiente en la corona, operacion (AGMA 6022)', sprintf('%.1f min', R.pend_cor_op_min), '<= 5 min', R.pend_cor_op <= P.ang_caja_adm);
 mc_nota('La pendiente se suma a la angularidad de los alojamientos; verificar el contacto con tinta azul (AGMA 6022, 7.1).');
 
 % Giro por torsion con T_out sin factor S; se usa en el presupuesto de error (MC-14)

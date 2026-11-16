@@ -17,9 +17,10 @@ El subsistema de radiocomunicación establece el enlace de intercambio de datos 
     \label{fig:TopologiaRed}
 \end{figure}
 
-El módulo transceptor de radiofrecuencia corresponde al modelo Ebyte E220-900T30D, sustentado en el circuito integrado Semtech LLCC68. Este dispositivo opera en la banda libre de 915 MHz bajo modulación por espectro ensanchado por chirp, entregando una potencia radiada de hasta un vatio con un consumo continuo de 620 mA y picos de un amperio durante la emisión de ráfagas. Para alcanzar la saturación del amplificador interno sin caídas de tensión, el módulo se alimenta desde la barra limpia de 5.0 V mediante condensadores de tantalio de baja resistencia serie equivalente de cien microfaradios en paralelo con condensadores cerámicos de alta frecuencia.
+El módulo transceptor de radiofrecuencia corresponde al modelo Ebyte E220-900T30D, sustentado en el circuito integrado Semtech LLCC68. Este dispositivo opera en la banda libre de 915 MHz bajo modulación por espectro ensanchado por chirp, entregando una potencia de transmisión de hasta $30\text{ dBm}$ (un vatio), con un consumo de $620\text{ mA}$ al transmitir y de $17.2\text{ mA}$ en recepción a $5\text{ V}$ \citep{ebyte_e220_900t30d}. Para alcanzar la saturación del amplificador interno sin caídas de tensión, el módulo se alimenta desde la barra limpia de 5.0 V mediante condensadores de tantalio de baja resistencia serie equivalente de cien microfaradios en paralelo con condensadores cerámicos de alta frecuencia.
 
-La interfaz lógica opera de manera directa a 3.3 V comunicándose con los terminales de transmisión y recepción de la computadora monoplaca mediante resistores serie de amortiguación de cincuenta ohmios para mitigar reflexiones de alta frecuencia. La línea de estado de procesamiento incorpora un resistor de polarización a 3.3 V de diez kiloohmios para asegurar un nivel alto durante el arranque del sistema y evitar el ingreso involuntario a la rutina de actualización de firmware, en tanto que dos líneas digitales de la computadora controlan los modos de transmisión transparente, reposo profundo o configuración interna. Los parámetros operativos de la capa física se detallan en la Tabla \ref{tab:capa_fisica_lora}.
+La interfaz lógica opera de manera directa a 3.3 V comunicándose con los terminales de transmisión y recepción de la computadora monoplaca mediante resistores serie de amortiguación de cincuenta ohmios para mitigar reflexiones de alta frecuencia. La línea de estado de procesamiento incorpora un resistor de polarización a 3.3 V de diez kiloohmios para asegurar un nivel alto durante el arranque del sistema y evitar el ingreso involuntario a la rutina de actualización de firmware, en tanto que dos líneas digitales de la computadora controlan los modos de transmisión transparente, reposo profundo o configuración interna.
+Las terminales de la computadora asignadas al transceptor se indican en la Tabla \ref{tab:pines_rpi}. Los parámetros operativos de la capa física se detallan en la Tabla \ref{tab:capa_fisica_lora}.
 
 \begin{center}
     \footnotesize
@@ -62,7 +63,7 @@ La viabilidad del enlace inalámbrico en las extensiones del parque solar se eva
 M_{\text{enlace}} = P_{\text{tx}} - S_{\text{rx}} = 30.0\text{ dBm} - (-129.0\text{ dBm}) = 159.0\text{ dB}
 \end{equation}
 
-Considerando una distancia de enlace en línea de vista de diez kilómetros a la frecuencia central de 915 MHz, las pérdidas de propagación electromagnética en espacio libre se determinan mediante la relación:
+ Considerando una distancia de enlace en línea de vista de diez kilómetros a la frecuencia central de 915 MHz, las pérdidas de propagación electromagnética en espacio libre se determinan mediante la relación:
 
 \begin{equation}
 \begin{split}
@@ -118,13 +119,17 @@ La comunicación inalámbrica transfiere periódicamente los parámetros operati
 \end{xltabular}
 \end{center}
 
-Con un factor de dispersión de $7$ ($SF7$) y un ancho de banda de $125\text{ kHz}$, el tiempo en el aire (\textit{time-on-air}) para transmitir este paquete de $21\text{ bytes}$ es inferior a $50\text{ ms}$, lo que permite actualizaciones continuas sin saturar el canal de radiofrecuencia y facilita la recepción en pasarelas concentradoras conectadas a servidores de supervisión industrial.
+Con un factor de dispersión de $7$ ($SF7$) y un ancho de banda de $125\text{ kHz}$, el tiempo en el aire (\textit{time-on-air}) para transmitir este paquete de $21\text{ bytes}$, con tasa de codificación $4/5$, preámbulo de ocho símbolos, encabezado explícito y CRC, es de $56.6\text{ ms}$, lo que permite actualizaciones continuas sin saturar el canal de radiofrecuencia y facilita la recepción en pasarelas concentradoras conectadas a servidores de supervisión industrial.
 
 \subsection{Receptor satelital multiconstelación y sincronización temporal con respaldo de energía}
 
 La georreferenciación del vehículo y la sincronización horaria de los registros meteorológicos se resuelven mediante el módulo de navegación u-blox SAM-M8Q. Este receptor procesa concurrentemente señales procedentes de las constelaciones GPS, GLONASS y Galileo junto a sistemas de aumento basados en satélites, alcanzando una sensibilidad de navegación de $-165\text{ dBm}$. El circuito incorpora en su cara superior una antena cerámica pasiva de polarización circular derecha de $15\text{ mm}$ de lado, complementada por un amplificador de bajo ruido y un filtro de ondas acústicas superficiales para rechazar emisiones fuera de banda.
 
-El dispositivo se comunica con la computadora de a bordo mediante un enlace serial asíncrono (UART) a $3.3\text{ V}$ en las terminales de transmisión y recepción, ejecutándose en el sistema operativo un servicio en segundo plano encargado de decodificar las sentencias estándar NMEA a una frecuencia de actualización de $1\text{ Hz}$. Para evitar retardos de hasta $30\text{ s}$ en la adquisición de efemérides satelitales al encender el equipo en campo, el módulo integra una microbatería recargable de litio-manganeso de $3\text{ V}$ que mantiene energizados el reloj de tiempo real y la memoria SRAM interna cuando la alimentación principal se interrumpe. Este respaldo permite realizar arranques en caliente con fijación de posición en menos de $2\text{ s}$, asegurando la disponibilidad inmediata de coordenadas espaciales para el inicio de las misiones autónomas.
+El dispositivo se comunica con la computadora de a bordo mediante un enlace serial asíncrono (UART) a $3.3\text{ V}$ en las terminales de transmisión y recepción, ejecutándose en el sistema operativo un servicio en segundo plano encargado de decodificar las sentencias estándar NMEA a una frecuencia de actualización de $1\text{ Hz}$. Se emplea el receptor montado en una placa de conexión, que se enlaza con la placa de control mediante un conector.
+Las terminales de la computadora asignadas al receptor se indican en la Tabla \ref{tab:pines_rpi}.
+Se emplea la placa SparkFun GPS-15210, de $40.6 \times 40.6\text{ mm}$, que se alimenta con $3.3\text{ V}$, en este caso desde la línea del LM1084-3.3, y saca a terminales la UART, con una velocidad predeterminada de $9600\text{ baudios}$, y las señales de pulso por segundo, reinicio, arranque seguro e interrupción \citep{sparkfun_sam_m8q}. Su interfaz I$^2$C, con conectores Qwiic y resistencias pull-up de $2.2\text{ k}\Omega$ \citep{sparkfun_sam_m8q}, no se utiliza.
+
+Para evitar los cerca de $30\text{ s}$ que toma la adquisición de efemérides en un arranque en frío al encender el equipo en campo, la placa integra una pequeña batería de litio que se recarga mientras la placa está alimentada y mantiene energizados el reloj de tiempo real y la memoria de respaldo del receptor cuando se interrumpe la alimentación principal. Con ella, el receptor puede realizar un arranque en caliente, de alrededor de $1\text{ s}$, durante unas cuatro horas después del apagado \citep{sparkfun_sam_m8q}.
 
 %%%--------------------------------------------------------------------------------------------%%%
 %%%--------------------------------------------------------------------------------------------%%%

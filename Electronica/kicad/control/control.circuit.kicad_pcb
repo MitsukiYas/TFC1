@@ -1,0 +1,1922 @@
+(kicad_pcb
+  (version 20241229)
+  (generator circuit-json-to-kicad)
+  (generator_version 0.0.1)
+  (general
+    (thickness 1.6)
+  )
+  (paper
+    A4
+  )
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user)
+    (33 "F.Adhes" user)
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user)
+    (37 "F.SilkS" user)
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user)
+    (41 "Cmts.User" user)
+    (42 "Eco1.User" user)
+    (43 "Eco2.User" user)
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user)
+    (47 "F.CrtYd" user)
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+  (setup
+    (pad_to_mask_clearance 0)
+  )
+  (net 0 "")
+  (net 1 "V5")
+  (net 2 "GND")
+  (net 3 "M5_CS")
+  (net 4 "M6_CS")
+  (net 5 "M1_PUL")
+  (net 6 "M1_DIR")
+  (net 7 "M1_ENA")
+  (net 8 "M2_PUL")
+  (net 9 "M2_DIR")
+  (net 10 "M2_ENA")
+  (net 11 "M5_PWMA")
+  (net 12 "M5_PWMB")
+  (net 13 "I2C_SDA")
+  (net 14 "M6_PWMA")
+  (net 15 "M6_PWMB")
+  (net 16 "M5_FLT")
+  (net 17 "M6_FLT")
+  (net 18 "TRAC_SLP")
+  (net 19 "SERVO_M3")
+  (net 20 "SERVO_M4")
+  (net 21 "V3_3")
+  (net 22 "V6_5")
+  (net 23 "IMU_SCL")
+  (net 24 "I2C_SCL")
+  (net 25 "IMU_SDA")
+  (net 26 "BAT_ALCC")
+  (net 27 "ENC_L_A")
+  (net 28 "ENC_L_B")
+  (net 29 "ENC_R_A")
+  (net 30 "ENC_R_B")
+  (net 31 "TEMP_NTC")
+  (footprint
+    "tscircuit:Arduino_Mega_2560_Pro"
+    (layer F.Cu)
+    (uuid 0ef793e0-4b78-aa01-5a17-181e005925c3)
+    (at 100 100 0)
+    (property "Reference" "U1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 65eabe80-6cf1-7821-3fcd-aec212a9e563)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "Arduino Mega 2560 Pro"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2ed052c0-4a17-71a1-655e-90827f5a509d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 4889acc0-75ad-761f-5d2e-c082300af723)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3f096860-4d9f-a621-25b7-4b5e66f1c323)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 494a8a5e-544d-7382-0e1a-8e9e708290be)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "Arduino Mega 2560 Pro"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 4d401f80-1cbd-407f-13c5-9e8244487d83)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:Placa_de_potencia"
+    (layer F.Cu)
+    (uuid 555ec800-5030-fa1f-0a3f-43c264af81a3)
+    (at 100 100 0)
+    (property "Reference" "J1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 76011660-48dd-4d01-1bb9-83a2116a45bd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "Placa de potencia"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 467a4a20-61c1-6901-7d08-87e267b0593d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6c9dd7e0-663e-5ec1-391a-95620bf6cc03)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 16c4bcc0-75e4-51c1-028d-604270c9913d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 004a928c-621d-6f94-3b7a-8e4c26ed73d4)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "Placa de potencia"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 69672ee0-38e4-4fdf-0861-70de28216e23)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:BNO055_modulo"
+    (layer F.Cu)
+    (uuid 464adc20-1425-61c1-6e95-9fa236fa227d)
+    (at 100 100 0)
+    (property "Reference" "BNO1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 04107c40-6f46-753f-1d62-994255f4583d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "BNO055 (modulo)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2fdab300-6a2a-663f-042f-7f7e61cb6743)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 15036480-77a5-aa01-044e-b8826f0838fd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2f2a1ea0-35c9-8d01-3c68-fb62430869c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7cf3da3e-1483-dc3e-53ec-21c243a3e03e)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "BNO055 (modulo)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0e819240-0cc5-8ca1-280c-ab824353ca63)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:Traslador_de_nivel_4_canales"
+    (layer F.Cu)
+    (uuid 1e0b7fc0-787b-bda1-2d14-047e2d5c3963)
+    (at 100 100 0)
+    (property "Reference" "LLC1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 23fd9bc0-68ab-72c1-0aab-7ebe7e02703d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "Traslador de nivel 4 canales"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 45593b00-54ab-de3f-114f-08827749ef43)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3d117c80-4f97-9201-23bf-5f7e68e9af03)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 44704960-3dd0-daff-3731-6c9e3091fe3d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 473d14be-2132-e942-765d-18be0ded1abe)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "Traslador de nivel 4 canales"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 4102ba40-25bb-9b5f-0a74-7c7e10d2a263)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:MPU-6050_modulo"
+    (layer F.Cu)
+    (uuid 7d9e2460-232d-e67f-3742-57626e4d6abd)
+    (at 100 100 0)
+    (property "Reference" "IMU1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 2e76b000-44e0-417f-47c8-cd022b8e247d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "MPU-6050 (modulo)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 21b2edc0-7852-2b7f-1257-44be53a3a203)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1562cf40-5df4-223f-2eb4-ec4244a2053d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2629c120-1f8a-52bf-18ea-e45e124b75fd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 260f56e6-7180-ab1a-0910-ad1a5f5f50e6)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "MPU-6050 (modulo)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 241e9c00-3f65-bae1-5aac-d9c275f3f8a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:MPU-6050_modulo"
+    (layer F.Cu)
+    (uuid 1947c880-4128-7561-6467-4cbe09f70edd)
+    (at 100 100 0)
+    (property "Reference" "IMU2"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 61936ae0-11c3-869f-7ae5-87e2078e9663)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "MPU-6050 (modulo)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 26b7afe0-3f43-36e1-5ac1-e25e0b390463)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 487f8a20-2ad7-675f-61d1-a72211854a5d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2229a200-1b8a-339f-14ea-c53e0e4b56dd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 09d4dbe8-7244-d9e8-254b-28184324d5e8)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "MPU-6050 (modulo)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2d580a20-489f-2901-63e6-47e27f2d66c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:E6B2-CWZ6C"
+    (layer F.Cu)
+    (uuid 4b0e9360-5a81-2ebf-0010-f0de5a5f4d03)
+    (at 100 100 0)
+    (property "Reference" "ENC1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 4caa85e0-3ffe-88a1-3358-68de5950a5a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "E6B2-CWZ6C"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 222f3ba0-43cb-ab21-5639-6e1e0fc178a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 65be66a0-26ea-a7e1-4c6c-499e403cc4e3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0290f540-040e-7921-0aad-e782114d55e3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 644555ec-042a-a814-6c9a-a6142af55bec)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "E6B2-CWZ6C"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1f527f20-040b-603f-173b-bea23282dd83)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:resistor"
+    (layer F.Cu)
+    (uuid 509b10c0-09d5-2d21-6445-6b02414a571d)
+    (at 100 100 0)
+    (property "Reference" "R1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 29f03ea0-5714-07ff-7bc8-2ea24ea46543)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "1kΩ"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 27d2c6e0-0c8b-a7ff-0ebb-76e22a0295c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0c8f2ce0-39b2-f63f-66d6-bf9e6c057703)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 340df3c0-589b-1ac1-1abb-d6be71ed37c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 35392564-685e-d87c-05f6-d65c5c712bc4)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:resistor"
+    (layer F.Cu)
+    (uuid 13bb4b20-6e2b-8901-3764-391e230c04c3)
+    (at 100 100 0)
+    (property "Reference" "R2"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 61cdc000-34a9-f6a1-0786-2d42259d9c1d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "1kΩ"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 78c39f40-6bf5-41df-50ae-22fe3567041d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7f2ed1c0-520b-0861-24e7-3f02083c8a5d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 553470e0-3774-9da1-3be2-53de50c6baa3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6f3ed6a6-2e59-273a-340e-dae6698922fa)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:capacitor"
+    (layer F.Cu)
+    (uuid 7811a700-2d7e-1b1f-2cf2-22c2789d9f5d)
+    (at 100 100 0)
+    (property "Reference" "C1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 01f440c0-2b2f-889f-5853-51fe7a88e4a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "47uF"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 26fdb900-4244-d7e1-5d8b-f6c278d315a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1f555280-0dce-76df-3af2-403e6816099d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 02db5360-707b-9e1f-1c2d-70625729811d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2f1dd37e-334a-2ea2-6a4d-cf3e07e5cd1e)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:capacitor"
+    (layer F.Cu)
+    (uuid 4be3e330-3f7b-6150-3312-df7026aa5d90)
+    (at 100 100 0)
+    (property "Reference" "C2"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 724dc0a0-608e-7601-336a-aca20646e343)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "100nF"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 386be0e0-1d24-c1ff-01dd-a31e19697bc3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 54ecaee0-7def-87c1-50cb-be6223a7f503)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1e4b29c0-6e5d-e4c1-04f9-0cbe784ffe3d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0ae7ddc4-6d4f-dfe4-3048-1dfc321fe424)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:E6B2-CWZ6C"
+    (layer F.Cu)
+    (uuid 2da1fa92-3a0a-7c72-4672-fe5252db8032)
+    (at 100 100 0)
+    (property "Reference" "ENC2"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 198dcb00-731b-4381-003b-adfe73929f7d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "E6B2-CWZ6C"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6a99d940-049e-f27f-615b-f44238a924fd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 32a1abc0-5a07-62c1-194f-8ebe73597fc3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 016f29e0-080e-9841-0eae-06a2154d7503)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7f802f16-180f-d2ea-5060-2b16472fd6ea)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "E6B2-CWZ6C"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 16191100-052e-0de1-2075-2cc23bbc4ba3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:resistor"
+    (layer F.Cu)
+    (uuid 58d827ac-4c6f-a5cc-4007-23ec339ea20c)
+    (at 100 100 0)
+    (property "Reference" "R3"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 12744160-3f98-0abf-6cbb-d41e66206283)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "1kΩ"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 195a0560-34a1-2441-4fe8-43226b2f6203)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0aecd060-2236-f8ff-4f5a-c25e7c7e8bbd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 765aee00-164e-2081-5d08-d0fe2fa03d83)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 56bb7818-0bac-8a08-6e14-8c282f8371b8)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:resistor"
+    (layer F.Cu)
+    (uuid 20adb616-2d16-37f6-397e-b9d645e73bb6)
+    (at 100 100 0)
+    (property "Reference" "R4"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 7949bd40-4c25-f3e1-1f02-2a820e219edd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "1kΩ"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 460f9480-2ac8-759f-0f81-56be0bc5c823)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 69553100-6987-05a1-3c63-3c420f3f72e3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 687e94e0-0ad8-5c9f-7e2f-4e1e0e79c063)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1cb5c6d6-45b2-3b4a-57e5-c2960a823f8a)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:capacitor"
+    (layer F.Cu)
+    (uuid 65cc6c28-5963-ea48-4cfb-68684092e688)
+    (at 100 100 0)
+    (property "Reference" "C3"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 19703e00-13b3-8b5f-40d7-54be6dfb1e1d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "47uF"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 682a8540-7c8e-5bdf-6147-3cfe46001e1d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 36d14fc0-09ad-8661-2376-42fe509a0c5d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3f71a6e0-4d37-67a1-261f-89de668984a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 44ed8f06-58aa-6eda-09bd-93466c259566)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:capacitor"
+    (layer F.Cu)
+    (uuid 13b9719a-2021-f37a-2c8a-755a38f2f73a)
+    (at 100 100 0)
+    (property "Reference" "C4"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 5ad1c360-780a-7341-4ae6-a9e21dc2e083)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "100nF"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 08c0eb60-2408-0a41-3f4f-29225a964803)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3d70b1a0-6a94-7aff-6847-bba23b23f243)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 60982400-2c10-ea81-4746-06fe45630783)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7ef34048-1ea4-bd98-43c3-448859d4b958)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:resistor"
+    (layer F.Cu)
+    (uuid 72c0b0a4-6658-2ec4-59ef-ace44d872b04)
+    (at 100 100 0)
+    (property "Reference" "R5"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 0507bbe0-281c-0d7f-553f-d6de7d9c5fc3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "10kΩ"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 5a86d1a0-75cd-f081-6eea-f09e53a3d1bd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 2268cda0-0aba-fbbf-37de-c51e65028e7d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 475817c0-2bfe-d9bf-60aa-34c212acbcbd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1d4fea6c-7fb7-ec8c-1de0-11544487f0cc)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:NTC_10k"
+    (layer F.Cu)
+    (uuid 06c52d1e-132d-aefe-1f96-30de2bfeb2be)
+    (at 100 100 0)
+    (property "Reference" "TH1"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 6d7a12ba-09db-4fe6-7ecf-4d7a0779eada)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "NTC 10k"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 06e8ba6e-5485-778e-5ddd-cb5210410e32)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 09277ce6-6e2d-e5ba-1a7c-b7a65cd8aafa)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6769a2e8-5ef0-e168-5678-1fe84dff5e68)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 0cf44e00-0873-7001-1ddb-2e023342ec03)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "NTC 10k"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 5399b8ba-3372-b9ba-134b-baba0cdb4446)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:capacitor"
+    (layer F.Cu)
+    (uuid 7fb4f520-734c-7340-66e3-f1605a7b6f80)
+    (at 100 100 0)
+    (property "Reference" "C5"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 30ec3b40-03c8-71e1-295b-577e567f20dd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "100nF"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 56a8ae80-3b61-8f9f-201a-70be04d351dd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 4e4d4d00-2129-83a1-0bfa-45be391e0f1d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7e415ee0-0aea-6d61-686c-841e243c8a63)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 47070e76-1b60-f3aa-7dc8-f5ca1fcf0816)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:DM542_senales"
+    (layer F.Cu)
+    (uuid 062f175e-0639-6a82-12a1-ec621f0a6e42)
+    (at 100 100 0)
+    (property "Reference" "U2"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 25d34020-0750-893f-3474-529e61981bfd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "DM542 (senales)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 30994720-1552-283f-05f4-f6a2213c1583)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 433451e0-1610-8881-1713-40de44370a3d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 602fe580-2c79-2901-46dd-c87e45cb4603)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7cafc460-1a47-c240-4820-3fe05577be00)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "DM542 (senales)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 586dcda0-27ea-ee9f-0897-f062391acf63)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:DM542_senales"
+    (layer F.Cu)
+    (uuid 6b51f74e-77ba-792e-7bdd-04f26f748312)
+    (at 100 100 0)
+    (property "Reference" "U3"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 4e6ec140-7b92-8a9f-5749-ac022a25e2a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "DM542 (senales)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6ffd1f00-74bb-c21f-5974-a33e3e2d845d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 310daf80-5e31-78df-74aa-bdc24786f463)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7ea99d60-0b52-abe1-6804-459e24a4c8e3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 42aa131e-1fbd-ef02-7dda-0ede1b720cbe)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "DM542 (senales)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 639b7bc0-3318-9cbf-0295-bdbe2ded2143)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:Controlador_de_traccion_senales"
+    (layer F.Cu)
+    (uuid 1b282af0-0ebf-a910-0257-27300a115ab0)
+    (at 100 100 0)
+    (property "Reference" "U4"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 3d4f3d60-102b-7401-1cf8-555e4a1c1ebd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "Controlador de traccion (senales)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 10938520-2bda-a401-4721-c2e26268e1c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 5ab04f20-2d8c-85c1-0068-bc622cbb0cfd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 5d832040-15d3-d13f-76d5-3d42037e4bc3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 08a461dc-59c3-a044-43d4-5d9c1e93a484)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "Controlador de traccion (senales)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6ec929e0-3e46-4adf-0dc3-6bde22bf7323)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:Controlador_de_traccion_senales"
+    (layer F.Cu)
+    (uuid 5e5db2d2-6ac6-34b2-772e-b6927c68c78e)
+    (at 100 100 0)
+    (property "Reference" "U5"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 36f2c400-6416-8d5f-6ec5-a94241a1dfe3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "Controlador de traccion (senales)"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 4ed614c0-338e-f5df-1847-d6fe02ff47e3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 1991b240-46b5-7b9f-73d9-44fe5f02f1a3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3c5ca320-36fa-4e5f-55ae-c0221da8315d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 31614f66-6c36-ae7a-09ce-ac5a589955c6)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "Controlador de traccion (senales)"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 79f6d800-4973-f8ff-18f1-19fe1791c503)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:RDS3225"
+    (layer F.Cu)
+    (uuid 281c6f6c-1bb3-ed8c-0f4b-6bac02e2e9cc)
+    (at 100 100 0)
+    (property "Reference" "M3"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 518293c0-245e-ca61-08c4-fefe35e8c85d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "RDS3225"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 21b5d000-066e-b11f-14d8-6dc2301f8ca3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 6ee3a580-41bf-dc21-149c-12c21887b69d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 640d2ba0-289b-e2e1-4abb-0e9e41edffe3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 782dcb0e-15c5-c8ee-4ca2-393250f5c4ae)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "RDS3225"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 70a53340-5ed7-edbf-2e55-0ebe022dd043)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint
+    "tscircuit:RDS3225"
+    (layer F.Cu)
+    (uuid 51696e56-5dd1-f036-6a3a-721676a2f3f6)
+    (at 100 100 0)
+    (property "Reference" "M4"
+      (at 0 -3 0)
+      (layer F.SilkS)
+      (hide yes)
+      (uuid 22bf6da0-4fe3-36ff-7d07-005e55d53643)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "RDS3225"
+      (at 0 3 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7ee09620-65d8-4aff-4a91-2c1e2f4a0d3d)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 055e5be0-3282-253f-5fa5-ee9e73364803)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 7acc5740-0775-65c1-6be1-8bbe20c782c3)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Supplier Part Number" ""
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 3e2819cc-243f-e854-7958-158c16f0136c)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "MPN" "RDS3225"
+      (at 0 0 0)
+      (layer F.Fab)
+      (hide yes)
+      (uuid 65778520-6a05-9bdf-3982-bcde08ffdddd)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (gr_line
+    (start 97 103.5)
+    (end 103 103.5)
+    (width 0.1)
+    (layer Edge.Cuts)
+  )
+  (gr_line
+    (start 103 103.5)
+    (end 103 96.5)
+    (width 0.1)
+    (layer Edge.Cuts)
+  )
+  (gr_line
+    (start 103 96.5)
+    (end 97 96.5)
+    (width 0.1)
+    (layer Edge.Cuts)
+  )
+  (gr_line
+    (start 97 96.5)
+    (end 97 103.5)
+    (width 0.1)
+    (layer Edge.Cuts)
+  )
+)

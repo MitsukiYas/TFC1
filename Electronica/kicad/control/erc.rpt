@@ -1,0 +1,390 @@
+ERC report (2026-11-15T13:43:57, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_issues]: Symbol 'U_Placa_de_potencia' not found in symbol library 'Device'
+    ; warning
+    @(105.41 mm, 76.20 mm): Symbol J1 [U_Placa_de_potencia]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(110.49 mm, 111.84 mm): Symbol #PWRschematic_net_label_2 [rail_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 113.03 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 115.57 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 118.11 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 121.92 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 124.46 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 128.27 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 130.81 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 133.35 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 137.16 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(130.81 mm, 139.70 mm): Horizontal Wire, length 15.24 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(125.73 mm, 63.42 mm): Symbol #PWRschematic_net_label_1 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(125.73 mm, 97.71 mm): Symbol #PWRschematic_net_label_0 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(133.35 mm, 68.50 mm): Symbol #PWRschematic_net_label_4 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(138.43 mm, 62.15 mm): Symbol #PWRschematic_net_label_5 [rail_up]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(123.19 mm, 78.74 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(123.19 mm, 82.55 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(123.19 mm, 85.09 mm): Horizontal Wire, length 15.24 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(139.70 mm, 87.71 mm): Symbol #PWRschematic_net_label_3 [rail_down]
+[lib_symbol_issues]: Symbol 'U_Arduino_Mega_2560_Pro' not found in symbol library 'Device'
+    ; warning
+    @(158.75 mm, 123.19 mm): Symbol U1 [U_Arduino_Mega_2560_Pro]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 101.60 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 105.41 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 107.95 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 111.76 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 114.30 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 116.84 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 120.65 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 123.19 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 125.73 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 129.54 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 132.08 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 134.62 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 138.43 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 140.97 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(189.23 mm, 144.78 mm): Horizontal Wire, length 15.24 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(184.15 mm, 48.18 mm): Symbol #PWRschematic_net_label_25 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(186.69 mm, 232.49 mm): Symbol #PWRschematic_net_label_22 [rail_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 46.99 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 77.47 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 191.77 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 194.31 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 196.85 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 200.66 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 203.20 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 233.68 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 236.22 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 238.76 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 242.57 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 245.11 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 106.68 mm): Horizontal Wire, length 12.70 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 113.03 mm): Horizontal Wire, length 12.70 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 119.38 mm): Horizontal Wire, length 12.70 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 146.05 mm): Horizontal Wire, length 12.70 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 152.40 mm): Horizontal Wire, length 12.70 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(207.01 mm, 158.75 mm): Horizontal Wire, length 12.70 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(201.93 mm, 162.64 mm): Symbol #PWRschematic_net_label_21 [rail_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(203.20 mm, 180.26 mm): Symbol #PWRschematic_net_label_23 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(203.20 mm, 222.17 mm): Symbol #PWRschematic_net_label_24 [rail_up]
+[lib_symbol_issues]: Symbol 'U_RDS3225' not found in symbol library 'Device'
+    ; warning
+    @(222.25 mm, 49.53 mm): Symbol M4 [U_RDS3225]
+[lib_symbol_issues]: Symbol 'U_RDS3225' not found in symbol library 'Device'
+    ; warning
+    @(222.25 mm, 80.01 mm): Symbol M3 [U_RDS3225]
+[lib_symbol_issues]: Symbol 'U_Controlador_de_traccion_senales' not found in symbol library 'Device'
+    ; warning
+    @(222.25 mm, 194.31 mm): Symbol U4 [U_Controlador_de_traccion_senales]
+[lib_symbol_issues]: Symbol 'U_Controlador_de_traccion_senales' not found in symbol library 'Device'
+    ; warning
+    @(222.25 mm, 236.22 mm): Symbol U5 [U_Controlador_de_traccion_senales]
+[lib_symbol_issues]: Symbol 'U_DM542_senales' not found in symbol library 'Device'
+    ; warning
+    @(223.52 mm, 114.30 mm): Symbol U3 [U_DM542_senales]
+[lib_symbol_issues]: Symbol 'U_DM542_senales' not found in symbol library 'Device'
+    ; warning
+    @(223.52 mm, 153.67 mm): Symbol U2 [U_DM542_senales]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(156.21 mm, 130.81 mm): Vertical Wire, length 15.24 mm
+[lib_symbol_issues]: Symbol 'U_NTC_10k' not found in symbol library 'Device'
+    ; warning
+    @(156.21 mm, 139.70 mm): Symbol TH1 [U_NTC_10k]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(156.21 mm, 149.94 mm): Symbol #PWRschematic_net_label_17 [rail_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(177.80 mm, 195.50 mm): Symbol #PWRschematic_net_label_6 [rail_up]
+[lib_symbol_issues]: Symbol 'capacitor_down' not found in symbol library 'Device'
+    ; warning
+    @(177.80 mm, 210.82 mm): Symbol C2 [capacitor_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(177.80 mm, 221.06 mm): Symbol #PWRschematic_net_label_13 [rail_down]
+[lib_symbol_issues]: Symbol 'capacitor_polarized_down' not found in symbol library 'Device'
+    ; warning
+    @(184.15 mm, 237.49 mm): Symbol C1 [capacitor_polarized_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(184.15 mm, 247.73 mm): Symbol #PWRschematic_net_label_12 [rail_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(186.69 mm, 83.82 mm): Vertical Wire, length 15.24 mm
+[lib_symbol_issues]: Symbol 'capacitor_down_2' not found in symbol library 'Device'
+    ; warning
+    @(186.69 mm, 87.63 mm): Symbol C5 [capacitor_down_2]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(186.69 mm, 94.06 mm): Symbol #PWRschematic_net_label_18 [rail_down]
+[lib_symbol_issues]: Symbol 'boxresistor_down' not found in symbol library 'Device'
+    ; warning
+    @(187.96 mm, 114.30 mm): Symbol R5 [boxresistor_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(187.96 mm, 119.38 mm): Vertical Wire, length 15.24 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(189.23 mm, 162.48 mm): Symbol #PWRschematic_net_label_8 [rail_up]
+[lib_symbol_issues]: Symbol 'capacitor_polarized_down' not found in symbol library 'Device'
+    ; warning
+    @(189.23 mm, 171.45 mm): Symbol C3 [capacitor_polarized_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(189.23 mm, 181.69 mm): Symbol #PWRschematic_net_label_15 [rail_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(203.20 mm, 199.39 mm): Horizontal Wire, length 13.97 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(203.20 mm, 203.20 mm): Horizontal Wire, length 13.97 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(193.04 mm, 129.46 mm): Symbol #PWRschematic_net_label_7 [rail_up]
+[lib_symbol_issues]: Symbol 'capacitor_down_2' not found in symbol library 'Device'
+    ; warning
+    @(193.04 mm, 140.97 mm): Symbol C4 [capacitor_down_2]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(193.04 mm, 147.40 mm): Symbol #PWRschematic_net_label_16 [rail_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(213.36 mm, 241.30 mm): Horizontal Wire, length 15.24 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(213.36 mm, 245.11 mm): Horizontal Wire, length 15.24 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(207.01 mm, 71.04 mm): Symbol #PWRschematic_net_label_9 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(217.17 mm, 152.48 mm): Symbol #PWRschematic_net_label_14 [rail_down]
+[lib_symbol_issues]: Symbol 'U_Traslador_de_nivel_4_canales' not found in symbol library 'Device'
+    ; warning
+    @(218.44 mm, 204.47 mm): Symbol LLC1 [U_Traslador_de_nivel_4_canales]
+[lib_symbol_issues]: Symbol 'U_BNO055_modulo' not found in symbol library 'Device'
+    ; warning
+    @(226.06 mm, 240.03 mm): Symbol BNO1 [U_BNO055_modulo]
+[lib_symbol_issues]: Symbol 'U_E6B2-CWZ6C_2' not found in symbol library 'Device'
+    ; warning
+    @(228.60 mm, 73.66 mm): Symbol ENC2 [U_E6B2-CWZ6C_2]
+[lib_symbol_issues]: Symbol 'U_E6B2-CWZ6C' not found in symbol library 'Device'
+    ; warning
+    @(228.60 mm, 104.14 mm): Symbol ENC1 [U_E6B2-CWZ6C]
+[lib_symbol_issues]: Symbol 'U_MPU-6050_modulo_2' not found in symbol library 'Device'
+    ; warning
+    @(232.41 mm, 168.91 mm): Symbol IMU2 [U_MPU-6050_modulo_2]
+[lib_symbol_issues]: Symbol 'U_MPU-6050_modulo' not found in symbol library 'Device'
+    ; warning
+    @(233.68 mm, 135.89 mm): Symbol IMU1 [U_MPU-6050_modulo]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(240.03 mm, 39.29 mm): Symbol #PWRschematic_net_label_11 [rail_up]
+[lib_symbol_issues]: Symbol 'boxresistor_down' not found in symbol library 'Device'
+    ; warning
+    @(240.03 mm, 45.72 mm): Symbol R4 [boxresistor_down]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(240.03 mm, 192.96 mm): Symbol #PWRschematic_net_label_19 [rail_up]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(234.95 mm, 201.93 mm): Horizontal Wire, length 13.97 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(234.95 mm, 204.47 mm): Horizontal Wire, length 13.97 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(245.11 mm, 104.14 mm): Horizontal Wire, length 13.97 mm
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(261.62 mm, 165.02 mm): Symbol #PWRschematic_net_label_20 [rail_up]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Custom'
+    ; warning
+    @(267.97 mm, 45.64 mm): Symbol #PWRschematic_net_label_10 [rail_up]
+[lib_symbol_issues]: Symbol 'boxresistor_down' not found in symbol library 'Device'
+    ; warning
+    @(267.97 mm, 54.61 mm): Symbol R3 [boxresistor_down]
+[lib_symbol_issues]: Symbol 'boxresistor_down' not found in symbol library 'Device'
+    ; warning
+    @(267.97 mm, 81.28 mm): Symbol R2 [boxresistor_down]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(267.97 mm, 86.36 mm): Vertical Wire, length 13.97 mm
+[lib_symbol_issues]: Symbol 'boxresistor_down' not found in symbol library 'Device'
+    ; warning
+    @(267.97 mm, 107.95 mm): Symbol R1 [boxresistor_down]
+
+***** Sheet /Microcontrolador/
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(110.49 mm, 110.49 mm): Symbol #PWRschematic_net_label_2 Pin 1 [1, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(125.73 mm, 99.06 mm): Symbol #PWRschematic_net_label_0 Pin 1 [1, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(133.35 mm, 69.85 mm): Symbol #PWRschematic_net_label_4 Pin 1 [1, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(138.43 mm, 63.50 mm): Symbol #PWRschematic_net_label_5 Pin 1 [1, Power input, Line]
+
+***** Sheet /Sensores/
+[pin_not_connected]: Pin not connected
+    ; error
+    @(203.20 mm, 205.74 mm): Symbol LLC1 Pin 4 [HV3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(203.20 mm, 209.55 mm): Symbol LLC1 Pin 5 [HV4, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(234.95 mm, 207.01 mm): Symbol LLC1 Pin 10 [LV3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(234.95 mm, 210.82 mm): Symbol LLC1 Pin 11 [LV4, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(245.11 mm, 76.20 mm): Symbol ENC2 Pin 3 [PHZ, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(245.11 mm, 106.68 mm): Symbol ENC1 Pin 3 [PHZ, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 130.81 mm): Symbol IMU1 Pin 8 [INT, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 137.16 mm): Symbol IMU1 Pin 6 [XCL, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 140.97 mm): Symbol IMU1 Pin 5 [XDA, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 163.83 mm): Symbol IMU2 Pin 8 [INT, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 170.18 mm): Symbol IMU2 Pin 6 [XCL, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.19 mm, 173.99 mm): Symbol IMU2 Pin 5 [XDA, Passive, Line]
+
+***** Sheet /Senales de actuadores/
+
+ ** ERC messages: 124  Errors 16  Warnings 108
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

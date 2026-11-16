@@ -6,33 +6,33 @@
 
 \subsection{Identificación y especificaciones nominales de los actuadores}
 
-El sistema mecatrónico incorpora cinco actuadores dedicados a los diferentes grados de libertad del vehículo, cuyas especificaciones de placa determinan las exigencias de potencia para los circuitos de conmutación.
+El sistema mecatrónico incorpora seis actuadores dedicados a los diferentes grados de libertad del vehículo, cuyas especificaciones de placa determinan las exigencias de potencia para los circuitos de conmutación.
 
-El actuador M1, destinado al ajuste angular de cabeceo de la plataforma de medición superior, corresponde a un motor paso a paso híbrido bipolar NEMA 17 (modelo  17HS19-2004S1) con dos fases, ángulo de paso de $1.8^\circ$, corriente nominal de $2.00\text{ A/fase}$, resistencia de devanado de $1.40\text{ }\Omega$, inductancia de $3.00\text{ mH}$ y torque de retención de $0.59\text{ N}\cdot\text{m}$.
+El actuador M1, destinado al giro de alabeo (\textit{roll}) de la plataforma del piranómetro, corresponde a un motor paso a paso híbrido bipolar NEMA 17 (modelo 17HS16-2004S1) con dos fases, ángulo de paso de $1.8^\circ$, corriente nominal de $2.0\text{ A/fase}$, resistencia de fase de $1.30\text{ }\Omega \pm 10\%$, inductancia de fase de $2.60\text{ mH} \pm 20\%$ y torque de retención de $0.45\text{ N}\cdot\text{m}$ \citep{stepperonline_17hs16}. Se configura con una corriente de $1.46\text{ A}$ de pico ($1.04\text{ A}$ eficaces). El motor acciona el eje basculante a través de un tornillo sin fin y corona de relación $30:1$; el torque máximo requerido en el motor es de $0.0658\text{ N}\cdot\text{m}$ a una velocidad máxima de $80\text{ rpm}$.
 
-El actuador M2, asignado a la elevación vertical del mecanismo de cuadrilátero articulado, consiste en un motor paso a paso híbrido bipolar NEMA 23 acoplado a una caja reductora planetaria integrada con relación de $4.29:1$ (modelo 23HS22-2804S-PG4). Este conjunto presenta una corriente nominal de $2.80\text{ A/fase}$, resistencia de $0.90\text{ }\Omega$, inductancia de $2.50\text{ mH}$, holgura angular inferior a $1.5^\circ$ y capacidad para entregar un torque continuo admisible de $20.0\text{ N}\cdot\text{m}$, con un ángulo de paso efectivo en el eje de salida de aproximadamente $0.4194^\circ$.
+El actuador M2, asignado a la elevación del mecanismo de cuadrilátero articulado (Sección \ref{sec:subsistema_elevacion}), consiste en un motor paso a paso híbrido bipolar NEMA 34 (modelo 34HS31-6004S) acoplado a un reductor de tornillo sin fin NMRVS40 de relación $50:1$. El motor presenta una corriente nominal de $6.0\text{ A/fase}$, resistencia de fase de $0.42\text{ }\Omega$, inductancia de $3.8\text{ mH}$ y torque de retención de $4.8\text{ N}\cdot\text{m}$. Se configura con una corriente de $4.20\text{ A}$ de pico ($3.00\text{ A}$ eficaces), la mitad de la nominal, con la que su torque de retención es de $2.4\text{ N}\cdot\text{m}$, frente a un torque de arranque requerido de $1.35\text{ N}\cdot\text{m}$ a una velocidad máxima de $61.5\text{ rpm}$. El ángulo de paso completo en el eje de salida del reductor es de $0.036^\circ$.
 
-Los actuadores M3 y M4, encargados del mecanismo de viraje tipo Ackermann en las manguetas del eje frontal, son servomotores digitales de alto torque (modelo Dsservo RDS3225) provistos de piñonería metálica de cobre y aluminio con doble rodamiento de bolas. Estos componentes operan en un rango de voltaje de $4.8\text{ V}$ a $6.8\text{ V}$, entregando un torque de bloqueo de $2.40\text{ N}\cdot\text{m}$ a $6.8\text{ V}$ con una corriente de estancamiento de $2.3\text{ A}$ por unidad y un tiempo de respuesta de $0.13\text{ s}/60^\circ$.
+Los actuadores M3 y M4, encargados del mecanismo de viraje tipo Ackermann en las manguetas del eje frontal, son servomotores digitales de alto torque (modelo Dsservo RDS3225) con doble rodamiento y relación de engranes de $373$. Operan en un rango de tensión de $4.8\text{ V}$ a $6.8\text{ V}$; a $6.8\text{ V}$ entregan un torque de bloqueo de $24.5\text{ kg}\cdot\text{cm}$ ($2.40\text{ N}\cdot\text{m}$) con una corriente de bloqueo de $2.3\text{ A}$ por unidad, una velocidad sin carga de $0.13\text{ s}/60^\circ$ y una corriente en reposo de $5\text{ mA}$ \citep{dsservo_rds3225}. El torque requerido por servomotor para girar la rueda detenida, con un coeficiente de adherencia de $0.6$, es de $1.31\text{ N}\cdot\text{m}$ en terreno plano y de $1.51\text{ N}\cdot\text{m}$ detenido en una pendiente descendente de $16^\circ$, frente a los $2.40\text{ N}\cdot\text{m}$ de bloqueo del RDS3225 a $6.8\text{ V}$ y a unos $2.35\text{ N}\cdot\text{m}$ a la tensión de alimentación de $6.5\text{ V}$.
 
-El actuador M5, responsable de la tracción en el eje posterior, es un motorreductor de corriente directa (DC) con escobillas e imán permanente de $24\text{ V}$. Este incorpora una etapa de engranajes reductores para proporcionar bajas revoluciones con una potencia nominal de salida de $60\text{ W}$, corriente de trabajo continuo de $2.50\text{ A}$, corriente transitoria de arranque de $7.50\text{ A}$ y un torque nominal de salida de $15\text{ N}\cdot\text{m}$.
+Los actuadores M5 y M6, responsables de la tracción en el eje posterior, son dos motorreductores de corriente directa 42PG-775-67 de $24\text{ V}$ con reductor planetario de relación $67:1$, uno por rueda y acoplados directamente a ella. El acople directo evita las pérdidas de una transmisión por correa, reduce el número de piezas y, como cada rueda tiene su propio motor, permite aplicar un diferencial electrónico en los giros. Según el fabricante, cada motorreductor gira a $120\text{ rpm}$ en vacío con menos de $0.7\text{ A}$, y en su punto nominal entrega $50\text{ kg}\cdot\text{cm}$ ($4.90\text{ N}\cdot\text{m}$) a $105\text{ rpm}$ con menos de $6\text{ A}$, es decir, $53.9\text{ W}$ en el eje; la corriente de bloqueo es de $24.5\text{ A}$ \citep{motor_42pg775}. Con una masa de $25\text{ kg}$ y un coeficiente de rodadura de $0.05$ para suelo de tierra compactada, cada rueda requiere $3.97\text{ N}\cdot\text{m}$ a $95.5\text{ rpm}$ ($39.7\text{ W}$) para subir una pendiente de $16^\circ$ a $1\text{ m/s}$, y $5.65\text{ N}\cdot\text{m}$ en el arranque en esa pendiente con una aceleración de $0.3\text{ m/s}^2$ y el factor de seguridad de $1.30$. Con una relación lineal entre corriente y torque a partir de los datos del fabricante, la corriente por motor en la pendiente de $16^\circ$ es de unos $5.0\text{ A}$ y la velocidad de $108\text{ rpm}$. El fabricante no publica el torque de bloqueo, la carga radial admisible del eje ni el grado de protección, por lo que cada rueda se apoya en sus propios rodamientos, unida al motor mediante un acople, y el motor se protege del polvo.
 
 \subsection{Controlador para el mecanismo de orientación de la plataforma}
 
-El mecanismo de cabeceo del sensor de irradiancia exige una alta suavidad de desplazamiento para impedir vibraciones que descalibren el piranómetro. Con este fin, se evalúan tres controladores de micropasos compactos para el actuador M1, cuyas características se contrastan en la Tabla \ref{tab:comp_driver_tilt}.
+El controlador del actuador M1 debe operar con la barra de actuadores, que varía entre $21.0\text{ V}$ y $29.4\text{ V}$ con la batería 7S, y entregar una corriente de $1.4\text{ A}$ de pico. Se evalúan tres controladores de micropasos, cuyas características se contrastan en la Tabla \ref{tab:comp_driver_tilt}.
 
 \begin{center}
     \footnotesize
     \begin{xltabular}{\textwidth}{|p{3.2cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
-        \caption{Tabla comparativa de drivers de micropasos para el motor de orientación Tilt\label{tab:comp_driver_tilt}} \\
+        \caption{Tabla comparativa de drivers de micropasos para el motor de orientación\label{tab:comp_driver_tilt}} \\
         \hline
-        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Trinamic TMC2209)} & \textbf{Opción B (A4988)} & \textbf{Opción C (DRV8825)} \\
+        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Leadshine DM542)} & \textbf{Opción B (Trinamic TMC2209)} & \textbf{Opción C (DRV8825)} \\
         \hline
         \endfirsthead
         
         \multicolumn{4}{c}%
         {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
         \hline
-        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Trinamic TMC2209)} & \textbf{Opción B (A4988)} & \textbf{Opción C (DRV8825)} \\
+        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Leadshine DM542)} & \textbf{Opción B (Trinamic TMC2209)} & \textbf{Opción C (DRV8825)} \\
         \hline
         \endhead
         
@@ -41,24 +41,32 @@ El mecanismo de cabeceo del sensor de irradiancia exige una alta suavidad de des
         
         \hline
         \endlastfoot
-        Corriente Eficaz y Máxima & 2.0 A eficaz y 2.8 A pico & 1.2 A eficaz y 2.0 A pico & 1.5 A eficaz y 2.2 A pico \\
+        Tensión de Operación & De 20 V a 50 V continuos & De 4.75 V a 29 V \citep{trinamic_tmc2209} & De 8.2 V a 45 V \citep{ti_drv8825} \\
         \hline
-        Interpolación de Micropasos & Disponible hasta 256 micropasos & Sin interpolación interna & Sin interpolación interna \\
+        Corriente & De 1.0 A a 4.2 A pico & 2.0 A eficaz y 2.8 A pico \citep{trinamic_tmc2209} & Hasta 2.5 A por salida con disipación adecuada, a 24 V y 25 $^\circ$C \citep{ti_drv8825} \\
         \hline
-        Modulación Silenciosa & Tecnología StealthChop2 & Chopper convencional ruidoso & Ruido audible a baja velocidad \\
+        Rango de Micropasos & Desde medio paso hasta 128 micropasos & Hasta 256 micropasos por interpolación & Desde paso completo hasta 1/32 de paso \citep{ti_drv8825} \\
+        \hline
+        Aislamiento de Señales & Optoacopladores de alta velocidad & Entradas lógicas directas & Entradas lógicas directas \\
         \hline
         Interfaz de Control & Señales de paso y dirección & Señales de paso y dirección & Señales de paso y dirección \\
         \hline
-        Protección de Sobrecarga & Detección de pérdida de paso & Sin diagnóstico avanzado & Sin diagnóstico avanzado \\
-        \hline
-        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por ruido mecánico & Descartado por vibraciones \\
+        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por tensión máxima & Cumple; descartado para usar el mismo driver que M2 \\
         \hline
     \end{xltabular}
 \end{center}
 
-Se selecciona el controlador Trinamic TMC2209. Este circuito integra la tecnología de modulación StealthChop2 basada en control de voltaje, la cual erradica las resonancias acústicas. Los terminales de selección de microstep (MS1 y MS2) se configuran a nivel lógico alto conectándolos a la línea de $5.0\text{ V}$, fijando una resolución base de $1/16$ de paso que el interpolador interno (MicroPlyer) amplía de manera automática a $256$ micropasos homogéneos.
+Se selecciona el controlador Leadshine DM542, el mismo modelo que acciona el actuador M2 (Sección siguiente), de modo que los dos motores paso a paso comparten controlador, configuración y repuesto. El TMC2209 queda descartado porque su rango de operación no cubre los $29.4\text{ V}$ de la batería con carga completa.
 
-Para proteger la etapa de potencia ante voltajes inducidos por desaceleración rápida o frenado regenerativo, se dispone un diodo supresor de transitorios (TVS) unidireccional de $30\text{ V}$ en paralelo con un condensador electrolítico de $100\text{ }\mu\text{F}$ montado inmediatamente en las terminales de entrada de $24\text{ V}$. La corriente eficaz de trabajo ($I_{\text{RMS}}$) se calibra al $70\%$ del valor nominal del motor para mantener una temperatura de operación moderada, fijándose en $1.40\text{ A}_{\text{RMS}}$ ($1.98\text{ A}$ de pico). Empleando la resistencia de medición de corriente ($R_{\text{sense}}$) de $0.11\text{ }\Omega$ presente en el módulo, el voltaje de referencia analógico ($V_{\text{REF}}$) del potenciómetro de ajuste se gradúa exactamente en $1.98\text{ V}$.
+La corriente de fase se calibra con los interruptores DIP SW1 a SW3 en $1.46\text{ A}$ de pico ($1.04\text{ A}$ eficaces) \citep{leadshine_dm542}. La resolución se ajusta a $1/16$ de paso ($3200\text{ pulsos/rev}$ en el eje del motor), lo que con la reducción de tornillo sin fin de $30:1$ entrega una resolución de $0.00375^\circ/\text{pulso}$ en el eje basculante; a la velocidad máxima del motor ($80\text{ rpm}$), la frecuencia de pulsos es de $4267\text{ Hz}$. La reducción automática de corriente en reposo se habilita con SW4 en OFF, de modo que el driver mantiene la corriente de retención reducida, al $50\%$ de la dinámica, que exige la Sección del subsistema de orientación \citep{leadshine_dm542}.
+
+El manual del DM542 indica una tensión de alimentación de $20$ a $50\text{ V}$, que debe incluir las fluctuaciones de la fuente y la fuerza contraelectromotriz, recomienda fuentes de $20$ a $45\text{ V}$ y describe solo dos protecciones internas: sobrecorriente y sobretensión, esta última activa por encima de $52\text{ V}$; no menciona condensadores ni supresores en la entrada \citep{leadshine_dm542}. Por ello, en los bornes de potencia de cada DM542 se disponen un condensador electrolítico y un diodo TVS unidireccional SMBJ30A, cuya tensión de trabajo de $30\text{ V}$ supera los $29.4\text{ V}$ de la batería cargada y cuya tensión de limitación máxima, $48.4\text{ V}$ a $12.4\text{ A}$, queda por debajo de los $50\text{ V}$ admisibles por el driver \citep{vishay_smbj}. En la serie SMBJ es el único modelo que cumple ambas condiciones: el SMBJ28A tiene una tensión de trabajo de $28\text{ V}$ y el SMBJ33A limita a $53.3\text{ V}$ \citep{vishay_smbj}. Siguiendo el manual, los dos drivers se alimentan con conexiones independientes desde la barra de actuadores, sin encadenar sus bornes.
+
+El condensador se dimensiona con dos criterios. El primero es la energía que devuelve el motor al desacelerar si la alimentación se interrumpe, por ejemplo por la apertura del fusible. El condensador debe absorberla sin que la tensión supere la tensión de ruptura mínima del TVS, $33.3\text{ V}$ \citep{vishay_smbj}, partiendo de los $29.4\text{ V}$ de la batería cargada:
+\begin{equation}
+C \geq \frac{2E}{V_{BR,\min}^2 - V_{\text{bat},\max}^2}
+\end{equation}
+En el subsistema de orientación, la transmisión de tornillo sin fin no admite el accionamiento inverso, de modo que solo regresa la energía del rotor: con una inercia de $54\text{ g}\cdot\text{cm}^2$ \citep{stepperonline_17hs16} a $80\text{ rpm}$, la energía es de $0.19\text{ mJ}$ y basta con $1.6\text{ }\mu\text{F}$. En el subsistema de elevación, el reductor NMRVS40 es irreversible en reposo pero no en movimiento (Sección \ref{sec:subsistema_elevacion}), de modo que también regresa la energía del mecanismo: con una inercia de $1.0778\text{ kg}\cdot\text{m}^2$ respecto al pivote a $0.129\text{ rad/s}$, la energía es de $8.9\text{ mJ}$ y se requieren $73\text{ }\mu\text{F}$, más el aporte del rotor. La hoja de datos del 34HS31-6004S no publica la inercia del rotor; se toma la del modelo hermano 34HS31-5504S, del mismo cuerpo de $80\text{ mm}$, que es de $1400\text{ g}\cdot\text{cm}^2$ \citep{oyostepper_34hs31_5504s}. A $61.5\text{ rpm}$, el rotor aporta $2.9\text{ mJ}$, y la energía total de $11.8\text{ mJ}$ requiere $97\text{ }\mu\text{F}$. Un condensador de $470\text{ }\mu\text{F}$ absorbe $57.5\text{ mJ}$, casi cinco veces esa energía. El segundo criterio es la corriente de rizado: el condensador suministra la componente alterna de la corriente de entrada del puente, cuyo valor eficaz es como máximo la mitad de la corriente de fase, $I_{\text{pico}} \sqrt{D(1-D)} \leq I_{\text{pico}}/2$, es decir, $2.1\text{ A}$ en el driver de elevación y $0.73\text{ A}$ en el de orientación. El fabricante no publica la frecuencia de troceado, por lo que no se calcula el rizado de tensión. Se adopta en ambos drivers, y en los controladores de tracción, un condensador electrolítico SAMXON de la serie GT, de $470\text{ }\mu\text{F}$ y $50\text{ V}$, especificado de $-40$ a $105^\circ\text{C}$. En esta serie, ese valor tiene una impedancia máxima de $0.043\text{ }\Omega$ a $100\text{ kHz}$ y una corriente de rizado admisible de $1.69\text{ A}$ a $105^\circ\text{C}$ y $100\text{ kHz}$ en la caja de $10 \times 30\text{ mm}$ \citep{samxon_gt}; con el factor de $2.23$ para temperaturas de hasta $55^\circ\text{C}$ \citep{samxon_gt}, la corriente admisible a la temperatura interna de diseño de $50^\circ\text{C}$ es de $3.77\text{ A}$, mayor que los $2.1\text{ A}$ requeridos.
 
 \subsection{Controlador para el mecanismo de elevación del cuadrilátero}
 
@@ -67,7 +75,7 @@ El mecanismo articulado de elevación demanda sostener y desplazar la masa de la
 \begin{center}
     \footnotesize
     \begin{xltabular}{\textwidth}{|p{3.2cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
-        \caption{Tabla comparativa de drivers bipolares para el motor NEMA 23 del cuadrilátero articulado\label{tab:comp_driver_elevacion}} \\
+        \caption{Tabla comparativa de drivers bipolares para el motor NEMA 34 del cuadrilátero articulado\label{tab:comp_driver_elevacion}} \\
         \hline
         \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Leadshine DM542)} & \textbf{Opción B (TB6600)} & \textbf{Opción C (DRV8825)} \\
         \hline
@@ -85,26 +93,26 @@ El mecanismo articulado de elevación demanda sostener y desplazar la masa de la
         
         \hline
         \endlastfoot
-        Tensión de Operación & De 20.0 V a 50.0 V continuos & De 9.0 V a 40.0 V continuos & De 8.2 V a 45.0 V continuos \\
+        Tensión de Operación & De 20 V a 50 V continuos & De 9 V a 40 V \citep{handson_tb6600} & De 8.2 V a 45 V \citep{ti_drv8825} \\
         \hline
-        Corriente Ajustable Pico & De 1.0 A a 4.2 A por fase & De 0.5 A a 3.5 A por fase & De 0.5 A a 2.2 A por fase \\
+        Corriente Ajustable Pico & De 1.0 A a 4.2 A por fase & De 0.5 A a 4.0 A de pico \citep{handson_tb6600} & Hasta 2.5 A por salida con disipación adecuada \citep{ti_drv8825} \\
         \hline
-        Algoritmo de Conducción & Procesador digital antirresonancia & Chopper analógico convencional & Chopper analógico convencional \\
+        Algoritmo de Conducción & Procesador digital antirresonancia & -- & Decaimiento lento, rápido o mixto \citep{ti_drv8825} \\
         \hline
-        Aislamiento de Señales & Optoacopladores de alta velocidad & Optoacopladores estándar & Entradas lógicas directas \\
+        Aislamiento de Señales & Optoacopladores de alta velocidad & Optoacopladores de alta velocidad \citep{handson_tb6600} & Entradas lógicas directas \\
         \hline
         Rango de Micropasos & Desde medio paso hasta 128 micropasos & Desde paso completo a 32 pasos & Desde paso completo a 32 pasos \\
         \hline
-        Chasis y Disipación & Gabinete de aluminio aletado & Carcasa con base metálica & Placa pequeña sin disipador \\
+        Temperatura de Operación & De 0 a 50 $^\circ$C \citep{leadshine_dm542} & De $-10$ a 45 $^\circ$C \citep{handson_tb6600} & -- \\
         \hline
-        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por vibraciones & Descartado por sobrecalentamiento \\
+        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por corriente: 4.0 A de pico frente a 4.20 A, y temperatura máxima de 45 $^\circ$C & Descartado por corriente: 2.5 A máximos frente a 4.20 A de pico \\
         \hline
     \end{xltabular}
 \end{center}
 
-Se selecciona el controlador industrial Leadshine DM542. El dispositivo cuenta con un procesador digital de señales (DSP) de 32 bits que implementa compensación de resonancia en lazo cerrado y entradas diferenciales optoacopladas que admiten niveles de $5.0\text{ V}$ en configuración de cátodo común, vinculando las señales de paso, dirección y habilitación a los terminales digitales correspondientes del microcontrolador.
+Se selecciona el controlador industrial Leadshine DM542. El dispositivo cuenta con un procesador digital de señales (DSP) que implementa supresión de resonancia, identificación automática de los parámetros del motor y tres entradas optoacopladas de $5$ a $24\text{ V}$, con una corriente de señal de $7$ a $16\text{ mA}$ y una frecuencia de pulsos de hasta $200\text{ kHz}$ \citep{leadshine_dm542}, que se conectan en configuración de cátodo común, vinculando las señales de paso, dirección y habilitación a los terminales digitales correspondientes del microcontrolador.
 
-La parametrización física se realiza mediante el bloque de interruptores DIP integrados. La corriente de fase se calibra en $2.84\text{ A}_{\text{pico}}$ ($2.03\text{ A}_{\text{RMS}}$), suministrando el torque nominal sin saturar el núcleo del motorreductor. El cuarto conmutador se configura en estado inactivo para habilitar la reducción automática de corriente al $50\%$ tras $1\text{ s}$ de inactividad motriz, atenuando la disipación térmica estática en un $75\%$. Los conmutadores de resolución se ajustan a $1/8$ de paso ($1600\text{ pulsos/rev}$ en el eje del motor), lo que conjugado con la reducción planetaria de $4.29:1$ entrega una resolución final de $0.0524^\circ/\text{pulso}$ en el eje de accionamiento del cuadrilátero. La alimentación se desacopla mediante un condensador electrolítico de $470\text{ }\mu\text{F}$ a $50\text{ V}$ ubicado en los bornes de potencia del módulo.
+La parametrización física se realiza mediante el bloque de interruptores DIP integrados. La corriente de fase se calibra en $4.20\text{ A}$ de pico ($3.00\text{ A}_{\text{RMS}}$), el ajuste máximo del driver. El fabricante indica que el ajuste de pico es $1.4$ veces la corriente de fase del motor \citep{leadshine_dm542}, de modo que este ajuste equivale a la mitad de la corriente nominal de $6.0\text{ A}$ adoptada en la Sección \ref{subsec:actuador_elev}. El cuarto conmutador se configura en estado inactivo para habilitar la reducción automática de corriente al $50\%$ tras $1\text{ s}$ de inactividad motriz, lo que según el fabricante reduce el calentamiento del motor al $36\%$ del valor original \citep{leadshine_dm542}. Los conmutadores de resolución se ajustan a $1/8$ de paso ($1600\text{ pulsos/rev}$ en el eje del motor), lo que conjugado con la reducción de tornillo sin fin de $50:1$ entrega una resolución de $0.0045^\circ/\text{pulso}$ en el brazo accionado del cuadrilátero. A la velocidad máxima del motor ($61.5\text{ rpm}$), la frecuencia de pulsos es de $1640\text{ Hz}$. La alimentación se desacopla mediante un condensador electrolítico de $470\text{ }\mu\text{F}$ a $50\text{ V}$ ubicado en los bornes de potencia del módulo.
 
 \begin{figure}[H]
 
@@ -129,57 +137,63 @@ La parametrización física se realiza mediante el bloque de interruptores DIP i
 	\label{fig:MotorLiftTilt}
 \end{figure}
 
-\subsection{Controlador para el motorreductor de tracción}
+\subsection{Controladores de los motorreductores de tracción}
 
-El tren de rodadura posterior requiere gobierno sobre la velocidad y sentido de giro del motorreductor de corriente continua M5, empleando modulación por ancho de pulsos a frecuencias inaudibles para evitar zumbidos y desgastes prematuros. En la Tabla \ref{tab:comp_driver_traccion} se examinan tres módulos comerciales de puente completo.
+Cada motorreductor de tracción tiene su propio controlador de puente H, que debe operar con la barra de actuadores de $21.0$ a $29.4\text{ V}$, conmutar a $20\text{ kHz}$ o más para quedar fuera del rango audible y soportar la corriente de cada motor. En la Tabla \ref{tab:comp_driver_traccion} se comparan tres controladores.
 
 \begin{center}
     \footnotesize
     \begin{xltabular}{\textwidth}{|p{3.2cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
-        \caption{Tabla comparativa de controladores Puente H para el subsistema de tracción\label{tab:comp_driver_traccion}} \\
+        \caption{Tabla comparativa de controladores de puente H para el subsistema de tracción\label{tab:comp_driver_traccion}} \\
         \hline
-        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (BTS7960)} & \textbf{Opción B (VNH5019)} & \textbf{Opción C (L298N Dual)} \\
+        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Pololu H2 36v11 CS)} & \textbf{Opción B (SOLO PICO)} & \textbf{Opción C (BTS7960)} \\
         \hline
         \endfirsthead
-        
         \multicolumn{4}{c}%
         {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
         \hline
-        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (BTS7960)} & \textbf{Opción B (VNH5019)} & \textbf{Opción C (L298N Dual)} \\
+        \rowcolor[HTML]{D9E1F2} \textbf{Especificación Técnica} & \textbf{Opción A (Pololu H2 36v11 CS)} & \textbf{Opción B (SOLO PICO)} & \textbf{Opción C (BTS7960)} \\
         \hline
         \endhead
-        
         \hline
         \endfoot
-        
         \hline
         \endlastfoot
-        Tensión de Operación & De 6.0 V a 28.0 V continuos & De 6.0 V a 24.0 V continuos & De 5.0 V a 12.0 V continuos \\
+        Tensión de Operación & De 5 V a 60 V (máximo absoluto); batería nominal hasta 36 V & De 8 V a 58 V continuos & De 5.5 V a 27.5 V \citep{infineon_bts7960} \\
         \hline
-        Capacidad de Corriente & 43.0 A continuo y 60.0 A pico & 12.0 A continuo y 30.0 A pico & 2.0 A continuo y 3.0 A pico \\
+        Corriente Continua & 11 A sin disipador a temperatura ambiente & 16 A & -- \\
         \hline
-        Frecuencia Máxima de Conmutación & Hasta 25 kHz de frecuencia & Hasta 20 kHz de frecuencia & Menor a 10 kHz de frecuencia \\
+        Limitación de Corriente & No (solo detección de cortocircuito) & Sí, lazo de corriente & Sí, conmutada, nivel típico de 43 A \citep{infineon_bts7960} \\
         \hline
-        Aislamiento Integrado & Aislamiento optoelectrónico & Sin aislamiento nativo & Sin aislamiento nativo \\
+        Protección Térmica & No & Sí & Sí, con enclavamiento \citep{infineon_bts7960} \\
         \hline
-        Resistencia en Conducción & 16 miliohmios por rama & 18 miliohmios por rama & Caída de voltaje mayor a 1.8 V \\
+        Protección de Polaridad Inversa & Sí & No & -- \\
         \hline
-        Protecciones Incorporadas & Térmica, sobrecorriente y subtensión & Térmica y sobrecorriente & Sin protecciones activas \\
+        Interfaz de Control & Dos entradas PWM (PWMA y PWMB) & PWM o analógica de 0 a 5 V y dirección & Entradas IN e INH por medio puente; PWM hasta 25 kHz \citep{infineon_bts7960} \\
         \hline
-        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por costo unitario & Descartado por capacidad eléctrica \\
+        Medición de Corriente & Salida analógica, $60\text{ mV/A}$ con $V_{CC} = 5\text{ V}$ & Realimentación analógica de torque & Salida IS proporcional a la corriente \citep{infineon_bts7960} \\
+        \hline
+        Evaluación de Idoneidad & Seleccionado para la aplicación & Descartado por costo & Descartado por tensión máxima \\
         \hline
     \end{xltabular}
 \end{center}
 
-Se selecciona el módulo BTS7960, integrado por dos semicircuitos de potencia con transistores MOSFET de canal N y resistencia en conducción ($R_{\text{DS(on)}}$) de $16\text{ m}\Omega$. Esta capacidad otorga un margen de seguridad superior a diez veces respecto al régimen nominal continuo del motorreductor ($2.50\text{ A}$), manteniendo temperaturas de operación moderadas con el disipador metálico pasivo incorporado.
+Se selecciona el Pololu H2 High-Power Motor Driver 36v11 CS, un puente H de transistores MOSFET de canal N con protección contra polaridad inversa, desconexión por subtensión, detección de cortocircuito y un sensor de corriente de efecto Hall ACS711 en la salida OUTA \citep{pololu_h2_36v11}. Su tensión máxima absoluta es de $60\text{ V}$ y el fabricante lo recomienda para baterías de hasta $36\text{ V}$ nominales, de modo que admite la batería 7S. En las pruebas del fabricante, a temperatura ambiente y sin flujo de aire forzado, entregó $11\text{ A}$ durante varios minutos sin que los MOSFET superaran $125^\circ\text{C}$ \citep{pololu_h2_36v11}; la corriente por motor es de unos $5.0\text{ A}$ en la pendiente máxima. El controlador no incluye limitación de corriente ni desconexión por sobretemperatura \citep{pololu_h2_36v11}, por lo que se adoptan las siguientes medidas:
+\begin{itemize}
+    \item \textbf{Limitación de corriente por firmware.} La salida CS entrega una tensión centrada en $V_{CC}/2$ que varía $60\text{ mV/A}$ con $V_{CC} = 5\text{ V}$ \citep{pololu_h2_36v11}. Cada salida CS se conecta a una entrada analógica del microcontrolador, y el firmware reduce el ciclo de trabajo cuando la corriente supera $8\text{ A}$. Este umbral cubre el torque de arranque de $5.65\text{ N}\cdot\text{m}$ según la relación lineal entre corriente y torque, protege el reductor, cuyo torque máximo no se publica, y queda por debajo de los $11\text{ A}$ del controlador. Además, el firmware corta la tracción si la rueda no gira, según el encoder, mientras el ciclo de trabajo es mayor que cero. La lógica del controlador se alimenta desde la misma línea de $5.0\text{ V}$ que el microcontrolador, de modo que la medición, proporcional a $V_{CC}$, no depende de las variaciones de esa línea.
+    \item \textbf{Disipador.} Como el controlador no se desconecta por sobretemperatura y el fabricante indica que su capacidad se reduce en espacios confinados y a mayor temperatura ambiente \citep{pololu_h2_36v11}, sobre los MOSFET de cada controlador se adhiere un disipador Aavid 375424B00034G de aluminio, de $15 \times 15 \times 6.4\text{ mm}$, fijado con cinta adhesiva térmicamente conductora, con una resistencia térmica de $62.5^\circ\text{C/W}$ en convección natural \citep{aavid_heatsinks}. Su base de $15\text{ mm}$ cabe en el ancho de $20\text{ mm}$ de la placa \citep{pololu_h2_36v11}.
+    \item \textbf{Gestión de fallas.} Las salidas FLT, que señalan cortocircuito, subtensión y sobretemperatura y quedan enclavadas, se conectan a entradas digitales del microcontrolador. Cada salida FLT permanece en nivel alto, llevada a $V_{CC}$ por el controlador, y pasa a nivel bajo ante una falla, de modo que no requiere una resistencia pull-up externa \citep{pololu_h2_36v11}. Una salida común se conecta a las entradas SLP de ambos controladores para reiniciarlos \citep{pololu_h2_36v11}. Las entradas PWMA y PWMB están en nivel bajo por defecto, de modo que, si el microcontrolador se reinicia, ambos motores quedan frenados.
+    \item \textbf{Ciclo de trabajo.} Los pulsos en nivel bajo deben durar al menos $0.3\text{ }\mu\text{s}$ para evitar falsas detecciones de cortocircuito, lo que limita el ciclo de trabajo a $99\%$ a $20\text{ kHz}$ \citep{pololu_h2_36v11}. Además, como el motor es de $24\text{ V}$ y la batería llega a $29.4\text{ V}$, el firmware limita el ciclo de trabajo a $24\text{ V}/V_{\text{bat}}$ ($82\%$ con la batería cargada), con la tensión que mide el monitor LTC2944.
+    \item \textbf{Condensador de entrada.} El controlador incluye solo $22\text{ }\mu\text{F}$, y el fabricante recomienda añadir un condensador de algunos cientos de microfaradios con una tensión nominal muy superior a la de alimentación \citep{pololu_h2_36v11}. Se dispone en los bornes de potencia de cada controlador un condensador electrolítico de al menos $470\text{ }\mu\text{F}$ y $50\text{ V}$ junto con un diodo TVS SMBJ30A, el mismo de los drivers DM542, cuya tensión de limitación máxima de $48.4\text{ V}$ queda por debajo de los $60\text{ V}$ del controlador \citep{vishay_smbj}.
+\end{itemize}
 
-Las terminales de habilitación y modulación por ancho de pulso se conectan directamente a pines digitales y salidas de temporizador por hardware del microcontrolador, mientras que los pines de diagnóstico analógico de corriente se mantienen desconectados de acuerdo con la directiva de diseño. En paralelo con la entrada de fuerza se disponen un diodo supresor de transitorios (TVS) de $30\text{ V}$ y un condensador electrolítico de $470\mu\text{F}$ para amortiguar las corrientes regenerativas generadas durante desaceleraciones o paradas bruscas.
+El control por PWMA y PWMB requiere dos salidas PWM por motor: para avanzar se modula PWMA con PWMB en nivel bajo, y para retroceder, a la inversa \citep{pololu_h2_36v11}. Las cuatro salidas se generan a $20\text{ kHz}$ con los temporizadores 4 y 2 (Tabla \ref{tab:pines_mega}).
 
 \subsection{Accionamiento y filtrado para los servomotores de dirección}
 
 La orientación de las ruedas directrices frontales se ejecuta mediante los dos servomotores M3 y M4 acoplados al varillaje Ackermann. Al integrar cada unidad su propio microcontrolador interno, potenciómetro de retroalimentación y puente de transistores (puente H), no se requiere un controlador de potencia externo adicional.
 
-Las líneas de comando de ambos servomotores se enlazan de forma directa con dos salidas de temporizador (PWM por hardware) del microcontrolador Arduino Mega 2560, el cual suministra trenes de pulsos periódicos a una frecuencia base de $50\text{ Hz}$ ($T = 20\text{ ms}$). El ancho de los pulsos modula continuamente entre $500\mu\text{s}$ para el tope angular extremo izquierdo y $2500\mu\text{s}$ para el tope derecho, situándose la posición neutra de avance en línea recta en $1500\mu\text{s}$. La potencia eléctrica se recibe de manera exclusiva desde la barra dedicada de $6.0\text{ V}$ provista por el convertidor reductor conmutado, cuyo banco de filtrado local de $940\mu\text{F}$ absorbe las transiciones de corriente asociadas a la corrección de rumbo sobre irregularidades del terreno.
+Las líneas de comando de ambos servomotores se enlazan de forma directa con dos salidas de temporizador (PWM por hardware) del microcontrolador Arduino Mega 2560 Pro, el cual suministra trenes de pulsos periódicos a una frecuencia base de $50\text{ Hz}$ ($T = 20\text{ ms}$). El ancho de los pulsos modula continuamente entre $500\mu\text{s}$ para el tope angular extremo izquierdo y $2500\mu\text{s}$ para el tope derecho, situándose la posición neutra de avance en línea recta en $1500\mu\text{s}$. La potencia eléctrica se recibe de manera exclusiva desde la barra dedicada de $6.5\text{ V}$ provista por el convertidor reductor conmutado, cuyo banco de filtrado local de $940\mu\text{F}$ absorbe las transiciones de corriente asociadas a la corrección de rumbo sobre irregularidades del terreno.
 
 
 \begin{figure}[H]
@@ -205,15 +219,57 @@ Las líneas de comando de ambos servomotores se enlazan de forma directa con dos
 	\label{fig:DCServoMotor}
 \end{figure}
 
-\subsection{Análisis de demanda de corriente y regímenes transitorios en el bus de actuadores}
+\subsection{Parada de emergencia}\label{subsec:parada_emergencia}
 
-Debido a que los controladores de los motores paso a paso operan mediante fuentes conmutadas por modulación de corriente constante y el convertidor de los servomotores posee una alta eficiencia energética, la corriente demandada a la barra principal de $24\text{ V}$ es significativamente menor que la suma aritmética de las corrientes de fase de los devanados.
+El requerimiento 11 exige interrumpir la tracción en menos de $0.1\text{ s}$ (Tabla \ref{tab:lista_requerimientos}). La parada de emergencia corta la alimentación de todo el sistema. Se monta en el gabinete de potencia un pulsador RY-ELE RY22SA3M1-M11Z/R9-24V/PC, con un contacto normalmente abierto y otro normalmente cerrado, enclavamiento al pulsar y rearme por giro, grado de protección IP65 e IK10, luz incorporada de $24\text{ V}$, que no se conecta en este diseño, y montaje en un agujero de $22\text{ mm}$ \citep{ry_estop}. Sus contactos están especificados para $15\text{ A}$ en $250\text{ V}$ de corriente alterna, sin capacidad declarada en corriente continua \citep{ry_estop}, por lo que no interrumpen directamente la corriente del sistema, de hasta unos $19\text{ A}$ en corriente continua, sino que accionan un interruptor de estado sólido. Frente a un contactor, este no consume corriente de bobina durante toda la misión ni forma arcos al abrir con carga.
 
-En régimen estacionario o de espera, con el motorreductor de tracción desactivado, el controlador TMC2209 en retención al $50\%$ consume $0.12\text{ A}$, el controlador DM542 con reducción activa demanda $0.30\text{ A}$ y los dos servomotores en posición fija extraen $0.02\text{ A}$, resultando en una corriente en reposo de $0.44\text{ A}$ que equivale a una potencia estática de $10.6\text{ W}$.
+El interruptor es un MOSFET de canal P en el riel positivo, después del punto de conexión del cargador y con la orientación opuesta a la del MOSFET de protección de polaridad, de modo que su diodo interno bloquea la corriente desde la batería cuando está apagado. Su compuerta se conecta a la fuente con una resistencia de $10\text{ k}\Omega$ y un diodo Zener de $15\text{ V}$, y a tierra con otra resistencia de $10\text{ k}\Omega$ en serie con el contacto normalmente cerrado del pulsador:
+\begin{itemize}
+    \item En operación normal, el contacto cerrado forma un divisor que aplica a la compuerta la mitad de la tensión de la batería, de $-8.75$ a $-14.7\text{ V}$ respecto a la fuente entre $17.5$ y $29.4\text{ V}$, y el MOSFET conduce. El divisor consume como máximo $1.5\text{ mA}$.
+    \item Al pulsar la parada, o si se corta un cable del pulsador, la compuerta queda unida a la fuente a través de su resistencia, el MOSFET deja de conducir y todo el sistema queda sin alimentación, sin intervención del microcontrolador.
+\end{itemize}
 
-En condición de marcha ordinaria con inspección activa sobre pasillos solares, el motorreductor de tracción desplazando al robot demanda un promedio de $1.00\text{ A}$ a $24\text{ V}$, el actuador de elevación ejecutando correcciones suaves consume $0.85\text{ A}$, el actuador de orientación requiere $0.45\text{ A}$ y los servomotores frontales en corrección periódica consumen $0.25\text{ A}$, consolidando una corriente media de $2.55\text{ A}$ que representa una potencia activa de $61.2\text{ W}$.
+Al abrir el interruptor con el sistema en carga, la corriente del cableado no se anula de inmediato. Del lado de la batería, la inductancia del cable eleva la tensión del nodo de entrada del interruptor; del lado de las cargas, la inductancia del cableado lleva la salida por debajo de tierra. Se toma como corriente interrumpida la del fusible principal, $20\text{ A}$, la mayor que puede circular de forma continua sin que este actúe, y una longitud de $300\text{ mm}$ para el cable de la batería y para el cableado hacia las cargas, con conductores AWG 12. La inductancia de una línea de dos conductores paralelos de radio $r$, separados una distancia $D$ entre centros y de longitud $l$, es
+\begin{equation}
+L = \frac{\mu_0\, l}{\pi}\left(\ln\frac{D}{r} + \frac{1}{4}\right)
+\end{equation}
+% PENDIENTE: fuente bibliográfica de la fórmula de inductancia de una línea de dos conductores.
+que, con separaciones de $3$ a $25\text{ mm}$, da de $0.16$ a $0.41\text{ }\mu\text{H}$. Con el mayor valor, el cable almacena $83\text{ }\mu\text{J}$ a $20\text{ A}$.
 
-En el escenario transitorio más severo, caracterizado por la aceleración simultánea de los mecanismos y una detención momentánea de la rueda trasera por bloqueo mecánico, el consumo instantáneo puede alcanzar $0.80\text{ A}$ en el actuador de orientación, $1.80\text{ A}$ en el de elevación, $1.45\text{ A}$ en los servomotores y $7.50\text{ A}$ durante el pico de arranque del motorreductor, totalizando una demanda instantánea de $11.55\text{ A}$. Esta magnitud es soportada sin interrupciones por el fusible térmico principal de $10\text{ A}$ (debido a su curva de disparo lento) y los contactos de $15\text{ A}$ del relé de aislamiento.
+En el nodo de entrada se dispone un diodo TVS SMBJ30A, el mismo de los controladores de los motores, con el cátodo hacia el nodo y el ánodo a tierra. Su tensión de trabajo de $30\text{ V}$ supera los $29.4\text{ V}$ de la batería cargada, y su tensión de ruptura mínima, de $33.3\text{ V}$, impide que conduzca en operación normal \citep{vishay_smbj}. El fabricante da la tensión de ruptura máxima, $36.8\text{ V}$ a $1\text{ mA}$, y la de limitación, $48.4\text{ V}$ a $12.4\text{ A}$ \citep{vishay_smbj}; suponiendo una variación lineal entre ambos puntos, la limitación a $20\text{ A}$ es de unos $55.5\text{ V}$. Con esa tensión, el pulso dura $0.32\text{ }\mu\text{s}$ y entrega al TVS unos $176\text{ }\mu\text{J}$, la energía del cable más la que aporta la batería durante el pulso, frente a los $866\text{ mJ}$ del pulso nominal de $600\text{ W}$ con la onda de $10/1000\text{ }\mu\text{s}$ \citep{vishay_smbj}.
 
+Junto al TVS se coloca un condensador en el nodo de entrada. La energía del cable lo carga desde los $29.4\text{ V}$ de la batería, de modo que, para que la tensión no supere la ruptura mínima del TVS,
+\begin{equation}
+C \geq \frac{2E}{V_{BR,\min}^2 - V_{\text{bat},\max}^2} = 0.68\text{ }\mu\text{F}
+\end{equation}
+con lo que, en operación normal, el TVS no llega a conducir. Si el condensador falta o falla, el nodo alcanza la limitación del TVS, por lo que el MOSFET de la parada de emergencia y el diodo de bloqueo del cargador deben soportar al menos $55.5\text{ V}$. El MOSFET de protección de polaridad conduce durante este transitorio y su compuerta queda protegida por el diodo Zener, y el monitor LTC2944 admite hasta $65\text{ V}$ en su terminal de alimentación \citep{adi_ltc2944}.
+Se emplea un condensador cerámico X7R de $2.2\text{ }\mu\text{F}$ y $100\text{ V}$, cuya tensión nominal cubre también los $55.5\text{ V}$ de la limitación del TVS y que, suponiendo la pérdida de la mitad de su capacidad con la tensión continua de la batería, conserva unos $1.1\text{ }\mu\text{F}$, por encima del mínimo de $0.68\text{ }\mu\text{F}$.
+
+A la salida del interruptor se dispone un diodo de libre circulación, con el ánodo a tierra y el cátodo hacia la salida, que conduce la corriente del cableado hacia los condensadores de las cargas. Conduce los $20\text{ A}$ durante unos $0.39\text{ }\mu\text{s}$, con la barra mínima de $21.0\text{ V}$, y en operación normal bloquea la tensión de la barra, que con los TVS de los controladores puede llegar a $48.4\text{ V}$. Por ello debe soportar al menos $48.4\text{ V}$ inversos y $20\text{ A}$ de pico no repetitivo. Se emplea el diodo Schottky PDS760, el mismo de los convertidores reductores del subsistema de energía, de $60\text{ V}$ y con una corriente de pico no repetitiva de $275\text{ A}$ durante un semiciclo de $8.3\text{ ms}$ \citep{diodes_pds760}, muy por encima del pulso de $20\text{ A}$ y $0.39\text{ }\mu\text{s}$.
+
+Como interruptor se emplea el MOSFET de canal P SUP40P10-43, en encapsulado TO-220, de $-100\text{ V}$ y $\pm 20\text{ V}$ entre compuerta y fuente, con una corriente continua de $36\text{ A}$ con la caja a $25^\circ\text{C}$ y de $16\text{ A}$ a $125^\circ\text{C}$, y una resistencia de conducción máxima de $43\text{ m}\Omega$ con $-10\text{ V}$ en la compuerta y de $48\text{ m}\Omega$ con $-4.5\text{ V}$, que sube a $78\text{ m}\Omega$ a $125^\circ\text{C}$ \citep{vishay_sup40p10}. Su tensión nominal cubre los $55.5\text{ V}$ del nodo de entrada con margen, y la excitación de $-8.75\text{ V}$ queda entre las dos condiciones en que se especifica la resistencia de conducción. Con la corriente media de la batería, $4.1\text{ A}$, disipa unos $1.3\text{ W}$, y sin disipador, con $62^\circ\text{C/W}$ \citep{vishay_sup40p10}, la unión alcanza unos $131^\circ\text{C}$; con la demanda máxima de $19.6\text{ A}$ disipa unos $30\text{ W}$, que solo se alcanzan de forma transitoria, cuando cada actuador está en su pico; mantenidos, requerirían una resistencia térmica entre la caja y el ambiente menor que $2.3^\circ\text{C/W}$. Por ello, el transistor se monta sin disipador.
+
+Al abrirse el pulsador, la compuerta se descarga a través de la resistencia de $10\text{ k}\Omega$. Con la capacidad de entrada de $4600\text{ pF}$, la carga de Miller de $26\text{ nC}$ y un umbral de $1$ a $3\text{ V}$ \citep{vishay_sup40p10}, y suponiendo una meseta de Miller de $3.2\text{ V}$ con $20\text{ A}$, el apagado dura unos $180\text{ }\mu\text{s}$, muy por debajo de los $0.1\text{ s}$ del requerimiento. Durante la meseta, de unos $80\text{ }\mu\text{s}$, el transistor disipa unos $24\text{ mJ}$, con una potencia media de unos $300\text{ W}$, que con la impedancia térmica transitoria entre la unión y la caja para ese tiempo, de unos $0.07^\circ\text{C/W}$ \citep{vishay_sup40p10}, eleva la unión unos $21^\circ\text{C}$.
+
+El interruptor principal de encendido se conecta en serie con el contacto normalmente cerrado del pulsador. Al abrirlo, la compuerta queda unida a la fuente y el MOSFET deja de conducir, igual que al pulsar la parada, de modo que el interruptor solo conduce la corriente del divisor, de $1.5\text{ mA}$ como máximo, y no la del sistema.
+
+Al rearmar el pulsador, el sistema vuelve a energizarse y arranca desde cero: las entradas PWM de los controladores de tracción están en nivel bajo por defecto \citep{pololu_h2_36v11}, y el firmware no mueve los actuadores hasta recibir una nueva orden. Durante la parada, los subsistemas de orientación y de elevación quedan sin corriente de retención; ambos son irreversibles en reposo, pero el reductor de elevación no lo es en movimiento (Sección \ref{sec:subsistema_elevacion}), por lo que, si la parada ocurre durante un ajuste de altura, el brazo puede desplazarse brevemente antes de detenerse.
+La parada y el interruptor principal cortan también la alimentación de la computadora de placa única, por lo que un corte durante una escritura puede dañar el sistema de archivos de su tarjeta microSD. Se acepta este riesgo, ya que la parada de emergencia es una condición excepcional.
+
+\subsection{Análisis de demanda de corriente y regímenes transitorios en el bus de actuadores}\label{subsec:demanda_corriente}
+
+La barra de actuadores alimenta los dos drivers DM542, los dos controladores de tracción y, a través del convertidor de $6.5\text{ V}$, los servomotores. Las corrientes se estiman a la tensión nominal de $25.2\text{ V}$ de la batería. Para los motores de tracción se usa la relación lineal entre corriente y torque del 42PG-775-67 a partir de su punto en vacío y su punto nominal \citep{motor_42pg775}; para los motores paso a paso, las pérdidas en el cobre con micropasos senoidales ($I_{\text{pico}}^2 R$) más la potencia en el eje, con una eficiencia supuesta de $0.90$ en los drivers y en el convertidor de los servomotores.
+
+\begin{itemize}
+    \item \textbf{Reposo.} Con los motores de tracción detenidos y los DM542 en reducción de corriente al $50\%$, las pérdidas de retención son de $0.69\text{ W}$ en el motor de orientación y de $1.85\text{ W}$ en el de elevación, y los servomotores consumen $5\text{ mA}$ cada uno \citep{dsservo_rds3225}. La corriente de la barra es de unos $0.11\text{ A}$, sin contar el consumo propio de los drivers.
+    \item \textbf{Avance en terreno plano a $1\text{ m/s}$.} Cada motor de tracción entrega $0.61\text{ N}\cdot\text{m}$, y la potencia eléctrica de tracción es de unos $33\text{ W}$ con la eficiencia nominal del motorreductor, es decir, $1.3\text{ A}$ para ambos.
+    \item \textbf{Ascenso de la pendiente de $16^\circ$ a $1\text{ m/s}$.} Cada motor entrega $3.97\text{ N}\cdot\text{m}$ con unos $5.0\text{ A}$, es decir, $10\text{ A}$ para ambos y unos $10.3\text{ A}$ en la barra.
+    \item \textbf{Arranque en la pendiente de $16^\circ$.} Con la aceleración de $0.3\text{ m/s}^2$ y el factor de seguridad de $1.30$, cada motor entrega $5.65\text{ N}\cdot\text{m}$ con unos $6.8\text{ A}$; la barra demanda unos $13.9\text{ A}$.
+    \item \textbf{Caso más severo.} Los dos motores de tracción en su límite de corriente de $8\text{ A}$, el motor de elevación en movimiento a $4.20\text{ A}$ de pico ($0.55\text{ A}$ en la barra), el de orientación ($0.15\text{ A}$) y los dos servomotores en bloqueo ($2 \times 2.3\text{ A}$ a $6.5\text{ V}$, es decir, $1.32\text{ A}$ en la barra) suman unos $18\text{ A}$.
+\end{itemize}
+
+Este último valor fija los contactos del relé de recarga, de al menos $20\text{ A}$, que solo conducen la barra de actuadores. Al fusible principal y al monitor LTC2944 llegan además la línea de $5.0\text{ V}$, con $0.76\text{ A}$ como máximo en la batería, y la barra meteorológica, con $0.30\text{ A}$, de modo que la corriente máxima de la batería es de unos $19.1\text{ A}$ a $25.2\text{ V}$ y de $19.6\text{ A}$ con la batería en $21.0\text{ V}$, porque las cargas de potencia constante toman más corriente a menor tensión. Este valor queda por debajo del fusible de $20\text{ A}$ de tipo lento y dentro del rango de medición de $\pm 25\text{ A}$ del LTC2944.
+
+Sumar a la barra las corrientes de los motores de tracción es una cota superior: con modulación por ancho de pulso, la barra entrega la potencia eléctrica del motor, que a baja velocidad es menor que el producto de la corriente del motor por la tensión de la barra.
 
 \end{document}

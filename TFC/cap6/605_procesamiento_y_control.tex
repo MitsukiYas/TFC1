@@ -50,6 +50,36 @@ Para la capa superior, el procesador requiere capacidad para ejecutar una distri
 
 A partir de la evaluación de requerimientos, se selecciona la Raspberry Pi 4 Modelo B. Esta opción ofrece el balance más favorable entre consumo eléctrico, costo accesible, estabilidad térmica y compatibilidad nativa con las librerías de control y comunicación del sistema.
 
+La computadora recibe los $5.0\text{ V}$ por las terminales 2 y 4 de su conector de $40$ terminales, unidas a su barra de $5\text{ V}$; el fabricante pide una fuente de $5\text{ V}$ y $3\text{ A}$ y fija en $6.0\text{ V}$ la tensión de entrada máxima absoluta \citep{rpi4_datasheet}. Sus terminales de propósito general operan a $3.3\text{ V}$ y pueden asignarse a hasta seis puertos UART \citep{rpi4_datasheet}. El transceptor LoRa y el receptor GNSS usan los puertos UART3 y UART5, de modo que el puerto UART0 y el bus I$^2$C de la computadora quedan libres, y no se usan las terminales 27 y 28, reservadas para la memoria de identificación de placas de expansión \citep{rpi4_datasheet}. La Tabla \ref{tab:pines_rpi} resume la asignación.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{4.6cm}|>{\centering\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}X|}
+        \caption{Asignación de terminales del conector de 40 terminales de la Raspberry Pi 4\label{tab:pines_rpi}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Función} & \textbf{Terminal} & \textbf{Recurso de la computadora} \\ \hline
+        \endfirsthead
+        \multicolumn{3}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Función} & \textbf{Terminal} & \textbf{Recurso de la computadora} \\ \hline
+        \endhead
+        \hline
+        \endfoot
+        \hline
+        \endlastfoot
+        Alimentación de $5.0\text{ V}$ & 2, 4 & Barra de $5\text{ V}$ \\ \hline
+        Tierra & 6, 9, 14, 20, 25 & -- \\ \hline
+        Transceptor LoRa E220: TXD y RXD de la computadora & 7, 29 & GPIO4 y GPIO5 (UART3, función ALT4) \\ \hline
+        Transceptor LoRa E220: M0 y M1 & 15, 13 & GPIO22 y GPIO27, salidas digitales \\ \hline
+        Transceptor LoRa E220: AUX & 11 & GPIO17, entrada digital \\ \hline
+        Receptor GNSS SAM-M8Q: TXD y RXD de la computadora & 32, 33 & GPIO12 y GPIO13 (UART5, función ALT4) \\ \hline
+        Libres & Restantes & -- \\ \hline
+    \end{xltabular}
+\end{center}
+
 \subsection{Análisis y selección del microcontrolador determinista en tiempo real}
 
 Para el monitoreo en tiempo real, el circuito requiere integrar la generación de señales de conmutación rápida para los controladores de potencia, la lectura por interrupciones del transductor de posición de las ruedas, la decodificación de sensores inerciales y la recepción de señales de seguridad. Con base en estos factores, se analizan tres alternativas de microcontroladores bajo las condiciones de trabajo del robot, cuyos parámetros se sintetizan en la Tabla \ref{tab:comp_mcu}.
@@ -88,7 +118,49 @@ Para el monitoreo en tiempo real, el circuito requiere integrar la generación d
     \end{xltabular}
 \end{center}
 
-Se selecciona la arquitectura Arduino Mega 2560 Pro. Su principal ventaja radica en la alta densidad de terminales de entrada y salida, lo que permite cablear de forma exclusiva cada señal de paso, dirección, habilitación, sensores de fin de carrera y demás componentes sin requerir integrados multiplexores o expansores de puerto. Asimismo, su operación con potencial lógico nativo de 5.0 V entrega la corriente suficiente para operar de manera directa los optoacopladores de los controladores de potencia.
+Se selecciona la placa Arduino Mega 2560 Pro, versión compacta basada en el mismo microcontrolador ATmega2560. Su principal ventaja radica en la alta densidad de terminales de entrada y salida, lo que permite cablear de forma exclusiva cada señal de paso, dirección, habilitación y demás componentes sin requerir integrados multiplexores o expansores de puerto. Asimismo, su operación con potencial lógico nativo de 5.0 V entrega la corriente suficiente para operar de manera directa los optoacopladores de los controladores de potencia.
+
+\subsection{Asignación de terminales del microcontrolador}
+
+La Tabla \ref{tab:pines_mega} resume la asignación de terminales de la placa Arduino Mega 2560 Pro. Las salidas de pulsos de los motores paso a paso y las salidas PWM de tracción usan los comparadores de salida de temporizadores de 16 bits distintos, de modo que cada frecuencia se genera por hardware sin depender del programa principal. El temporizador 0 queda reservado para las funciones de tiempo de Arduino, la biblioteca de servomotores usa el temporizador 5, y el temporizador 2 genera la cuarta salida PWM de tracción a $20\text{ kHz}$ en modo PWM rápido con un período de $100$ cuentas. Las funciones de cada terminal se toman del diagrama de pines de la placa \citep{handsontec_mega2560pro}.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{4.6cm}|>{\centering\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}X|}
+        \caption{Asignación de terminales del Arduino Mega 2560 Pro\label{tab:pines_mega}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Función} & \textbf{Terminal} & \textbf{Recurso del microcontrolador} \\ \hline
+        \endfirsthead
+        \multicolumn{3}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Función} & \textbf{Terminal} & \textbf{Recurso del microcontrolador} \\ \hline
+        \endhead
+        \hline
+        \endfoot
+        \hline
+        \endlastfoot
+        Enlace USB con la computadora de placa única & 0, 1 & Puerto serial 0 (convertidor USB integrado) \\ \hline
+        Encoder izquierdo, canales A y B & 2, 3 & Interrupciones externas INT4 e INT5 \\ \hline
+        Encoder derecho, canales A y B & 18, 19 & Interrupciones externas INT3 e INT2 (puerto serial 1 fuera de uso) \\ \hline
+        Bus I$^2$C (BNO055, dos MPU-6050, LTC2944) & 20, 21 & SDA y SCL \\ \hline
+        Driver de orientación (M1): PUL, DIR, ENA & 11, 22, 23 & PUL en OC1A (temporizador 1) \\ \hline
+        Driver de elevación (M2): PUL, DIR, ENA & 5, 24, 25 & PUL en OC3A (temporizador 3) \\ \hline
+        Tracción izquierda (M5): PWMA, PWMB & 6, 7 & OC4A y OC4B (temporizador 4, $20\text{ kHz}$) \\ \hline
+        Tracción derecha (M6): PWMA, PWMB & 8, 9 & OC4C (temporizador 4) y OC2B (temporizador 2), ambos a $20\text{ kHz}$ \\ \hline
+        Corriente de tracción (CS izquierda y derecha) & A1, A2 & Convertidor analógico-digital \\ \hline
+        Fallas de tracción (FLT izquierda y derecha) & 28, 29 & Entradas digitales \\ \hline
+        Reinicio de los controladores de tracción (SLP común) & 30 & Salida digital \\ \hline
+        Servomotores de dirección (M3, M4) & 44, 45 & Biblioteca Servo (temporizador 5) \\ \hline
+        Termistor NTC & A0 & Convertidor analógico-digital \\ \hline
+        Alerta del monitor de batería (ALCC del LTC2944) & 31 & Entrada digital \\ \hline
+        Libres & 32 y restantes & -- \\ \hline
+    \end{xltabular}
+\end{center}
+
+La salida ALCC del monitor de batería se conecta a la línea de $5.0\text{ V}$ con una resistencia pull-up de $10\text{ k}\Omega$. Con ella, el LTC2944 absorbe $0.51\text{ mA}$ en nivel bajo, por debajo de los $3\text{ mA}$ con que se especifica su tensión de salida de $0.4\text{ V}$, y su fuga máxima de $1\text{ }\mu\text{A}$ produce una caída de $10\text{ mV}$ en nivel alto \citep{adi_ltc2944}.
 
 \subsection{Arquitectura de interconexión serial}
 
@@ -101,6 +173,7 @@ A nivel de enlace de datos, el flujo de información se estructura mediante tram
 \subsection{Puertos de instrumentación meteorológica}
 
 La conexión de los sensores meteorológicos ubicados en el mástil y en la plataforma de medición se resuelve mediante dos buses diferenciales industriales bajo el estándar RS-485, acoplados a conectores circulares de 8 pines. El enlace de estos buses con la computadora de a bordo se realiza a través de dos módulos conversores industriales de USB a RS-485, los cuales asignan puertos seriales independientes en el sistema operativo.
+El piranómetro ocupa uno de los buses, y el sensor de viento y la sonda de temperatura y humedad relativa comparten el otro. Los conversores son módulos comerciales; el cableado entre los puertos USB de la computadora y los instrumentos, la asignación de terminales de los conectores y la terminación de cada bus quedan fuera del alcance de este trabajo.
 
 El software maestro interroga periódicamente a cada instrumento mediante el protocolo industrial Modbus RTU en topología de dos hilos (RS-485 2-wire). A intervalos de $1\text{ s}$, la computadora consulta los registros de almacenamiento del piranómetro para obtener la irradiancia solar en $\text{W/m}^2$, los registros del anemómetro para medir la velocidad y el ángulo del viento, y los registros de la sonda ambiental para obtener la temperatura y humedad relativa. La alimentación de estos instrumentos se realiza mediante tres borneras de conexión conectadas a la línea de voltaje de sensores meteorológicos, garantizando un suministro desacoplado y libre de ruido.
 

@@ -47,37 +47,37 @@
 \contentsline {subsubsection}{Sensibilidad al coeficiente de fricción}{35}{section*.31}%
 \contentsline {subsubsection}{Presupuesto de error angular}{36}{section*.32}%
 \contentsline {subsubsection}{Resumen de resultados}{38}{section*.33}%
-\contentsline {section}{\numberline {2.3}Diseño de subsistema de elevación de piranómetro}{40}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Descripción general del subsistema}{40}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Diseño de subsistema de elevación de piranómetro}{39}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Descripción general del subsistema}{39}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Planteamiento inicial y parámetros de diseño}{41}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Planteamiento cinemático y estático}{44}{subsection.2.3.3}%
 \contentsline {subsubsection}{Geometría y alcance}{44}{section*.36}%
 \contentsline {subsubsection}{Perfil de movimiento}{45}{section*.37}%
-\contentsline {subsubsection}{Cargas sobre el mecanismo}{46}{section*.38}%
+\contentsline {subsubsection}{Cargas sobre el mecanismo}{45}{section*.38}%
 \contentsline {subsubsection}{Reacciones en los nodos}{47}{section*.39}%
 \contentsline {subsubsection}{Compensación con resortes de torsión}{48}{section*.40}%
-\contentsline {subsubsection}{Inercia y torque requerido}{50}{section*.41}%
+\contentsline {subsubsection}{Inercia y torque requerido}{49}{section*.41}%
 \contentsline {subsection}{\numberline {2.3.4}Dimensionamiento de componentes}{50}{subsection.2.3.4}%
 \contentsline {subsubsection}{Criterios de verificación}{50}{section*.42}%
 \contentsline {subsubsection}{Acoplador en U}{51}{section*.43}%
-\contentsline {subsubsection}{Pasadores y chumaceras de los nodos}{53}{section*.45}%
-\contentsline {subsubsection}{Pasadores de la base}{55}{section*.47}%
-\contentsline {subsubsection}{Marco inferior: travesaño y cartelas}{56}{section*.48}%
-\contentsline {subsubsection}{Brazos}{57}{section*.49}%
-\contentsline {subsubsection}{Unión entre el reductor y el brazo accionado}{58}{section*.50}%
+\contentsline {subsubsection}{Pasadores y chumaceras de los nodos}{52}{section*.45}%
+\contentsline {subsubsection}{Pasadores de la base}{54}{section*.47}%
+\contentsline {subsubsection}{Marco inferior: travesaño y cartelas}{55}{section*.48}%
+\contentsline {subsubsection}{Brazos}{56}{section*.49}%
+\contentsline {subsubsection}{Unión entre el reductor y el brazo accionado}{57}{section*.50}%
 \contentsline {subsubsection}{Estructura de la base}{61}{section*.52}%
-\contentsline {subsubsection}{Varillas de los resortes}{63}{section*.53}%
-\contentsline {subsubsection}{Montaje}{65}{section*.54}%
-\contentsline {subsection}{\numberline {2.3.5}Selección de componentes}{65}{subsection.2.3.5}%
-\contentsline {subsubsection}{Requisitos y selección del motorreductor}{65}{section*.55}%
-\contentsline {subsubsection}{Autobloqueo y corriente de retención}{66}{section*.56}%
-\contentsline {subsubsection}{Protección contra sobrecarga}{67}{section*.57}%
+\contentsline {subsubsection}{Varillas de los resortes}{62}{section*.53}%
+\contentsline {subsubsection}{Montaje}{64}{section*.54}%
+\contentsline {subsection}{\numberline {2.3.5}Selección de componentes}{64}{subsection.2.3.5}%
+\contentsline {subsubsection}{Requisitos y selección del motorreductor}{64}{section*.55}%
+\contentsline {subsubsection}{Autobloqueo y corriente de retención}{65}{section*.56}%
+\contentsline {subsubsection}{Protección contra sobrecarga}{66}{section*.57}%
 \contentsline {subsubsection}{Juego angular y control de altura}{67}{section*.58}%
-\contentsline {subsection}{\numberline {2.3.6}Simulación y validación}{68}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.6}Simulación y validación}{67}{subsection.2.3.6}%
 \contentsline {subsubsection}{Torque a lo largo de la trayectoria}{68}{section*.59}%
-\contentsline {subsubsection}{Presupuesto de error de altura}{70}{section*.61}%
-\contentsline {subsubsection}{Presupuesto de masa}{71}{section*.62}%
+\contentsline {subsubsection}{Presupuesto de error de altura}{69}{section*.61}%
+\contentsline {subsubsection}{Presupuesto de masa}{70}{section*.62}%
 \contentsline {subsubsection}{Resumen de resultados}{71}{section*.63}%
-\contentsline {chapter}{\numberline {III}DISEÑO ELECTRÓNICO}{76}{chapter.3}%
-\contentsline {chapter}{Bibliografía}{77}{chapter*.64}%
-\contentsline {chapter}{ANEXO}{83}{appendix*.65}%
+\contentsline {chapter}{\numberline {III}DISEÑO ELECTRÓNICO}{75}{chapter.3}%
+\contentsline {chapter}{Bibliografía}{76}{chapter*.64}%
+\contentsline {chapter}{ANEXO}{82}{appendix*.65}%

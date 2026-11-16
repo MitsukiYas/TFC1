@@ -3154,50 +3154,50 @@
     <bcf:citekey order="87" intorder="1">khk_pg1_30r1j8</bcf:citekey>
     <bcf:citekey order="88" intorder="1">mr2010a_bearing</bcf:citekey>
     <bcf:citekey order="89" intorder="1">gts_majes_2020</bcf:citekey>
-    <bcf:citekey order="90" intorder="1">invensense_mpu6050</bcf:citekey>
-    <bcf:citekey order="91" intorder="1">invensense_mpu6050</bcf:citekey>
-    <bcf:citekey order="96" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="97" intorder="1">nte_e020</bcf:citekey>
-    <bcf:citekey order="98" intorder="1">nte_e020</bcf:citekey>
-    <bcf:citekey order="99" intorder="1">skf2020bearings</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">nte_e020</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">nte_e020</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">skf2020bearings</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">leespring_torsion</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">leespring_torsion</bcf:citekey>
     <bcf:citekey order="100" intorder="1">leespring_torsion</bcf:citekey>
-    <bcf:citekey order="101" intorder="1">leespring_torsion</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="102" intorder="1">leespring_torsion</bcf:citekey>
-    <bcf:citekey order="103" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="104" intorder="1">leespring_torsion</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">leespring_torsion</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">leespring_torsion</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">Shigley11th</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="106" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="109" intorder="1">norton2020maquinaria</bcf:citekey>
-    <bcf:citekey order="110" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="113" intorder="1">europer_4140</bcf:citekey>
-    <bcf:citekey order="113" intorder="2">europer_1045</bcf:citekey>
-    <bcf:citekey order="113" intorder="3">ficha_aisi303</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">iso3506_1_2020</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">astm_b209m</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">iso2768_1</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">iso273</bcf:citekey>
-    <bcf:citekey order="118" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">iso3506_1_2020</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">europer_4140</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">madler_kfl08</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">stepperonline_nmrvs40</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">norton2020maquinaria</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">Shigley11th</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">Shigley11th</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">europer_4140</bcf:citekey>
+    <bcf:citekey order="111" intorder="2">europer_1045</bcf:citekey>
+    <bcf:citekey order="111" intorder="3">ficha_aisi303</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">iso3506_1_2020</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">astm_b209m</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">iso2768_1</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">iso273</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">iso3506_1_2020</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">europer_4140</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">madler_kfl08</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Shigley11th</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">ficha_aisi303</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">Shigley11th</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">stepperonline_nmrvs40</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="127" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="128" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">europer_4140</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">europer_4140</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="131" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">din6885_1</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="135" intorder="1">din471</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">din6885_1</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">aluminum2005manual</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">din471</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">iso273</bcf:citekey>
     <bcf:citekey order="136" intorder="1">naylamp_2020</bcf:citekey>
     <bcf:citekey order="137" intorder="1">aluminum2005manual</bcf:citekey>
     <bcf:citekey order="138" intorder="1">ooznest_tnut</bcf:citekey>
@@ -3206,17 +3206,16 @@
     <bcf:citekey order="141" intorder="1">aluminum2005manual</bcf:citekey>
     <bcf:citekey order="142" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="143" intorder="1">aluminum2005manual</bcf:citekey>
-    <bcf:citekey order="144" intorder="1">iso273</bcf:citekey>
-    <bcf:citekey order="145" intorder="1">stepperonline_nmrvs40</bcf:citekey>
-    <bcf:citekey order="146" intorder="1">motovario_vsf</bcf:citekey>
-    <bcf:citekey order="147" intorder="1">stepperonline_34hs31</bcf:citekey>
-    <bcf:citekey order="148" intorder="1">oyostepper_34hs31</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">stepperonline_nmrvs40</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">motovario_vsf</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">stepperonline_34hs31</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">oyostepper_34hs31</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">motovario_vsf</bcf:citekey>
     <bcf:citekey order="149" intorder="1">motovario_vsf</bcf:citekey>
-    <bcf:citekey order="150" intorder="1">motovario_vsf</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="151" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="152" intorder="1">Shigley11th</bcf:citekey>
     <bcf:citekey order="153" intorder="1">Shigley11th</bcf:citekey>
-    <bcf:citekey order="154" intorder="1">Shigley11th</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

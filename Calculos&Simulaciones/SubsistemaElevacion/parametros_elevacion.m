@@ -15,9 +15,9 @@ P.A0       = 90;       % mm, separación de la geometría medida en CAD (referen
 P.L0       = 400;      % mm, L de la geometría medida en CAD (referencia)
 P.H15_0    = 792.238;  % mm, altura de cúpula medida en CAD con L0, A0, theta = 15°
 P.H65_0    = 1051.233; % mm, altura de cúpula medida en CAD con L0, A0, theta = 65°
-P.th_choque = 77;      % grados, choque entre brazos superior e inferior medido en el CAD actual (usuario)
+P.th_choque = acosd(31.75/P.A);   % grados, primer contacto entre los tubos superior e inferior: A·cos(theta) = alto del tubo (77.78°, confirmado en el ensamble por el usuario)
 P.th_max    = 70.31;   % grados, ángulo máximo de operación (se mantiene; cumple 1300 mm con más holgura)
-P.holgura   = P.th_choque - P.th_max;   % grados, holgura antes del choque (6.69°)
+P.holgura   = P.th_choque - P.th_max;   % grados, holgura antes del choque (7.47°)
 P.th_min   = 15;       % grados, posición baja
 P.H_req    = 1300;     % mm, Tabla de requerimientos
 P.voladizo_brazo = 25; % mm, tubo más allá de cada pivote
@@ -159,8 +159,8 @@ P.m_herrajes_acoplador = sum(herr)/1000;   % kg
 P.t_b = 10;            % s, tiempo del barrido completo
 P.f_a = 0.25;          % fracción de t_b en aceleración (igual en desaceleración)
 P.H_ajuste = [1000 1300];  % mm, ajuste típico de altura del plano óptico
-% SUPOSICIÓN: la fricción de cada KFL08 se acota con la del rodamiento 6000-2RSH del eje basculante (no hay dato de la KFL08).
-P.T_rod_1 = 0.0201;    % N·m, fricción por rodamiento (cota: 6000-2RSH, sección de orientación)
+% SUPOSICIÓN: la fricción de cada KFL08 se acota con el valor adoptado en la sección de orientación para los rodamientos del eje basculante, estimado con sellos de contacto (no hay dato de la KFL08).
+P.T_rod_1 = 0.0201;    % N·m, fricción por rodamiento (cota conservadora: valor de la sección de orientación asignado a cada chumacera)
 P.n_rod = 8;           % rodamientos KFL08 en el mecanismo
 
 %% ---------------- Cargas de servicio ----------------

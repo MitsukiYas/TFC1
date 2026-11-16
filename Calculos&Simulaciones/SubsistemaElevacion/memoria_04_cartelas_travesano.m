@@ -126,8 +126,9 @@ fprintf('9. Precarga y montaje\n');
 fprintf('   Precarga Fi = %.2f·As·Rp0.2 = %.0f N, par de apriete T = K·Fi·d = %.2f N·m\n', P.M5.frac_precarga, Fi, T_ap);
 fprintf('   Presión bajo arandela DIN 125 A 5.3 = %.1f MPa (adm. %.1f) -> %s\n', s_ar, adm_ap_pl, ok(s_ar <= adm_ap_pl));
 fprintf('   Separador Ø%.0f x Ø%.1f, largo %.2f mm: sigma = %.1f MPa\n', P.sep.dext, P.sep.dint, L_sep, s_sep);
-fprintf('   Admisible Sy/ny (AISI 303) = %.1f MPa -> FS = %.2f %s\n', P.sep.Sy/P.ny, P.sep.Sy/s_sep, ok(s_sep <= P.sep.Sy/P.ny));
-Fi_max = P.sep.Sy/P.ny*A_sep;
+n_acero = 1.5;   % factor mínimo de los elementos de acero (criterio del capítulo, Shigley)
+fprintf('   Separador de AISI 303 (Sy = %.0f MPa): FS = %.2f (mínimo %.1f) %s\n', P.sep.Sy, P.sep.Sy/s_sep, n_acero, ok(P.sep.Sy/s_sep >= n_acero));
+Fi_max = P.sep.Sy/n_acero*A_sep;
 fprintf('   Precarga máxima admitida por el separador = %.0f N (%.2f·As·Rp0.2)\n', Fi_max, Fi_max/(P.M5.As*P.A270.Rp02));
 fprintf('   Holgura entre separadores en el travesaño = %.1f mm\n', 2*C.du_torn_trav - P.sep.dext);
 

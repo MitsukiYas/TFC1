@@ -29,8 +29,10 @@ A continuación, se presenta la lista de requerimientos del sistema, la cual tra
 \hline
 \endlastfoot
 
-1 & E & Geometría & El vehículo debe tener dimensiones máximas de 600x600x500 mm y una masa total inferior a 20kg, respetando los límites ergonómicos de carga para los operarios. & Restricciones espaciales de los pasillos entre los seguidores solar \citep{ProyectoEjecutivo2024}. & Inspección con cinta métrica y pesaje con balanza industrial calibrada. \\ \hline
+% PENDIENTE: las dimensiones máximas de 600x600x500 mm son un valor sujeto a cambio; el chasis y su altura sobre el suelo aún no están definidos (el subsistema de orientación va sobre el de elevación, y este sobre el chasis).
+1 & E & Geometría & El vehículo debe tener dimensiones máximas de 600x600x500 mm y una masa total inferior a 20kg, respetando los límites ergonómicos de carga para los operarios. & Restricciones espaciales de los pasillos entre las filas de módulos de plantas solares con estructuras de inclinación fija \citep{ProyectoEjecutivo2024}. & Inspección con cinta métrica y pesaje con balanza industrial calibrada. \\ \hline
 
+% PENDIENTE: añadir como requerimientos de desempeño máximo la tolerancia de ajuste de altura de ±15 mm y el tiempo de barrido de 10 s, que la sección 503 usa como datos de entrada.
 2 & E & Posicionamiento & El vehículo debe posicionar el plano óptico de medición del piranómetro a una altura de al menos 1300 mm desde el suelo, con altura ajustable. & Los piranómetros deben encontrarse en una altura correspondiente a los paneles solares de la planta \citep{IEC61724-1_2021} o a una altura que garantice un horizonte despejado \citep{GuiaMercosur2024} & Medición desde el nivel del suelo hasta el plano óptico de medición del piranómetro en su estado de máximo despliegue. \\ \hline
 
 3 & E & Cinemática & El robot debe desplazarse por los pasillos de la planta a una velocidad nominal de 1 m/s. & Necesidad de cubrir el área de inspección en un tiempo razonable sin comprometer la estabilidad de los sensores  \citep{ProyectoEjecutivo2024}. & Prueba de cinemática midiendo el tiempo de recorrido en un circuito de longitud conocida. \\ \hline

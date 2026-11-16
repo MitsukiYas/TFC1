@@ -32,8 +32,8 @@ r_fil_c  = 0.5;    % mm, radio de filete a cada lado del collarín
 % SUPOSICIÓN: cara plana de 1 mm y filetes de 0.5 mm como mínimo geométrico del collarín (valores propios).
 c_plano  = 1.0;    % mm, cara plana mínima del collarín (apoyo sobre el cubo del reductor)
 c_coll   = 2*r_fil_c + c_plano;   % mm, ancho mínimo del collarín (ver sección 7)
-% SUPOSICIÓN: juego axial de 1 mm entre collarín y brida (valor propio).
-g_ax     = 1.0;    % mm, juego axial entre collarín y cubo de la brida (la brida desliza sobre el Ø14)
+% Juego axial de 2 mm entre collarín y brida (medido en el ensamble por el usuario).
+g_ax     = 2.0;    % mm, juego axial entre collarín y cubo de la brida (la brida desliza sobre el Ø14)
 t_ala_br = 3;      % mm, espesor del ala de la brida (usuario)
 h_br_med = 3.46;   % mm, chavetero 5 mm de la brida medido desde la arista (usuario)
 t2_5     = h_br_med - (7 - sqrt(7^2 - 2.5^2));   % mm, profundidad en el cubo desde la generatriz
@@ -64,18 +64,19 @@ S      = 1.30;                       % mismo factor de par que la memoria 06
 T_op   = S*Tmax;                     % N·m, par de operación con S
 % SUPOSICIÓN: la sobrecarga de diseño es el par máximo permisible del reductor (criterio propio: la unión no es más débil que el reductor).
 T_red  = 38;                         % N·m, par máximo permisible del reductor (sobrecarga de diseño)
-% SUPOSICIÓN: toda la reacción radial de la base pasa por el eje y actúa en el plano medio del ala de la brida (conservador).
+% SUPOSICIÓN: toda la reacción radial de la base pasa por el eje y actúa en la cara de la brida apoyada en el tubo (conservador).
 R_rad  = R_base;                     % N, radial por lado en la base (caso conservador: todo pasa por el eje)
 % Par que el motor puede imponer si el brazo se traba (retención a 3 A x i x eta_d de referencia)
 % SUPOSICIÓN: par de traba con retención proporcional a la corriente y eficiencias de referencia Motovario.
 T_ret = 4.8*3.0/6.0; i_red = 50; eta_d = 0.63;
 T_tranca = T_ret*i_red*eta_d;
-% Brazos de palanca de la fuerza radial (aplicada en el plano medio del ala de la brida)
+% Brazos de palanca de la fuerza radial (aplicada en la cara de la brida apoyada en el tubo)
 L_br   = 25;                                   % mm, largo total de la brida
-a14    = L_br - t_ala_br/2 + g_ax;             % mm, del plano del ala al hombro Ø14/Ø22
-% Medición CAD (usuario): el extremo del eje hueco queda a 3.0 mm de la cara de los agujeros M6, a ras de la
-% cara del centrador Ø60h8 (altura 3.0 mm). La sección crítica Ø18 está en la entrada del eje hueco.
-a18    = a14 + c_coll;                         % mm, hasta la entrada del eje hueco
+% Medición en el ensamble (usuario): el extremo del eje hueco queda a 3.0 mm de la cara de los agujeros M6, a ras de la
+% cara del centrador Ø60h8 (altura 3.0 mm), y a 29.0 mm de la cara de la brida apoyada en el tubo.
+% La sección crítica Ø18 está en la entrada del eje hueco.
+a18    = 29.0;                                 % mm, de la cara de la brida apoyada en el tubo a la entrada del eje hueco (medido)
+a14    = a18 - c_coll;                         % mm, de esa cara al hombro Ø14/Ø22 (el collarín apoya en el eje hueco)
 M14 = R_rad*a14/1000;  M18 = R_rad*a18/1000;   % N·m
 fprintf('2. Cargas\n');
 fprintf('   T_out = %.2f N·m -> T_op = S·T_out = %.2f N·m\n', Tmax, T_op);

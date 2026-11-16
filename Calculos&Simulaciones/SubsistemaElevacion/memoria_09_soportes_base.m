@@ -186,7 +186,7 @@ fprintf('\n');
 % Fuentes: ADM 2005 sec. 5.1.1 (distancia al borde >= 1.5D; < 2D reduce el aplastamiento) y 5.2.6 (2.5D entre
 % pernos); Shigley 11.ª ed. Tabla 7-9 (H7/h6) y Tabla A-11; Lee Spring p. 298.
 % SUPOSICIÓN: se aplica la sec. 5.1.1 del ADM (escrita para pernos y remaches) a la varilla como pasador, y el
-% agujero centrador Ø60 de la placa motor se trata como un borde de la placa.
+% agujero Ø61 de la placa motor (aloja con holgura el resalte Ø60 del reductor) se trata como un borde de la placa.
 a = P.anc; c = a.c; D6 = a.d_ext;
 Mb = P.res.M_alto + P.res.k*deg2rad(P.res.barrido);        % N·m, por resorte en la posición baja
 Mb_tol = Mb + P.res.k*deg2rad(P.res.tol_libre);             % N·m, con la tolerancia de posición libre
@@ -199,9 +199,9 @@ fprintf('   Límite de Lee Spring: %.3f N·m -> %s\n', P.res.M_nom, ok(Mb_tol <=
 e_inf = c(2) - z_base;                         % borde inferior (plano del chasis)
 e_inf_F = e_inf/abs(u_F(2));                   % medida en la dirección de la fuerza
 e_del = 45 - c(1);                             % borde delantero de las placas (x = 45)
-e_60  = norm(c) - 30;                          % borde del agujero Ø60 de la placa motor
+e_60  = norm(c) - 30.5;                        % borde del agujero Ø61 de la placa motor (resalte Ø60 del reductor con holgura)
 s_66  = min(vecnorm([26.5 -26.5; -26.5 -26.5] - c, 2, 2));   % a los agujeros Ø6.6 del reductor (centro a centro)
-fprintf('   a) Bordes (D = %d): inferior %.2f (en la dirección de la fuerza %.2f), delantero %.2f, Ø60 %.2f; a Ø6.6: %.2f entre centros\n', ...
+fprintf('   a) Bordes (D = %d): inferior %.2f (en la dirección de la fuerza %.2f), delantero %.2f, Ø61 %.2f; a Ø6.6: %.2f entre centros\n', ...
         D6, e_inf, e_inf_F, e_del, e_60, s_66);
 fprintf('      Mínimo 1.5D = %.1f -> %s; 2.5D entre agujeros = %.1f -> %s; aplastamiento sin reducción (borde en la dirección de la fuerza >= 2D) -> %s\n', ...
         1.5*D6, ok(min([e_inf e_del e_60]) >= 1.5*D6), 2.5*D6, ok(s_66 >= 2.5*D6), ok(e_inf_F >= 2*D6));
@@ -211,9 +211,9 @@ aF = yF - ys(1);                               % posiciones de las cargas desde 
 RB = Ff*sum(aF)/Lr; RA = 2*Ff - RB;            % N, reacciones (A = placa libre, B = placa motor)
 Mx = @(x) RA*x - Ff*max(0, x - aF(1)) - Ff*max(0, x - aF(2));
 xs = linspace(0, Lr, 2001); Mmax = max(arrayfun(Mx, xs));
-W8 = pi*a.d^3/32; s8 = Mmax/W8; adm8 = P.nodo.Sy_pasador/P.ny;
+W8 = pi*a.d^3/32; s8 = Mmax/W8; adm8 = P.nodo.Sy_pasador/1.5;   % criterio del texto para elementos de acero: FS >= 1.5
 fprintf('   b) Viga de %.1f mm entre planos medios: R_libre = %.1f N, R_motor = %.1f N, M máx = %.0f N·mm\n', Lr, RA, RB, Mmax);
-fprintf('      sigma = %.1f MPa (adm. Sy/ny = %.0f MPa) -> FS = %.1f %s\n', s8, adm8, P.nodo.Sy_pasador/s8, ok(s8 <= adm8));
+fprintf('      sigma = %.1f MPa (adm. Sy/1.5 = %.0f MPa, criterio FS >= 1.5) -> FS = %.1f %s\n', s8, adm8, P.nodo.Sy_pasador/s8, ok(s8 <= adm8));
 % Flecha en los puntos de carga (superposición, viga simplemente apoyada)
 EI = P.E_acero*pi*a.d^4/64;
 fl = @(x, ac) (x <= ac).*(Ff*(Lr - ac).*x.*(Lr^2 - (Lr - ac)^2 - x.^2)/(6*EI*Lr)) + ...

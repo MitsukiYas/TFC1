@@ -1,19 +1,19 @@
-[1] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:328> INFO - This is Biber 2.21
 [1] Config.pm:331> INFO - Logfile is 'General.blg'
-[376] biber-MSWIN64:342> INFO - === 
-[486] Biber.pm:421> INFO - Reading 'General.bcf'
-[957] Biber.pm:1002> INFO - Found 57 citekeys in bib section 0
-[1014] Biber.pm:4487> INFO - Processing section 0
-[1044] Biber.pm:4678> INFO - Looking for bibtex file 'TFC/biblio.bib' for section 0
-[1142] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1687] bibtex.pm:1519> INFO - Found BibTeX data source 'TFC/biblio.bib'
-[2758] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2759] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2759] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'es-ES'
-[3127] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3127] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3128] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'es-ES'
-[3331] bbl.pm:676> INFO - Writing 'General.bbl' with encoding 'UTF-8'
-[3596] bbl.pm:779> INFO - Output to General.bbl
-[3597] Biber.pm:132> WARN - legacy year field 's.f.' in entry 'pem_si_inserts' is not an integer - this will probably not sort properly.
-[3597] Biber.pm:134> INFO - WARNINGS: 1
+[287] biber-MSWIN64:342> INFO - === 
+[403] Biber.pm:421> INFO - Reading 'General.bcf'
+[814] Biber.pm:1002> INFO - Found 55 citekeys in bib section 0
+[861] Biber.pm:4487> INFO - Processing section 0
+[885] Biber.pm:4678> INFO - Looking for bibtex file 'TFC/biblio.bib' for section 0
+[1009] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1318] bibtex.pm:1519> INFO - Found BibTeX data source 'TFC/biblio.bib'
+[1999] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2000] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2000] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'es-ES'
+[2232] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2233] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2233] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'es-ES'
+[2370] bbl.pm:676> INFO - Writing 'General.bbl' with encoding 'UTF-8'
+[2509] bbl.pm:779> INFO - Output to General.bbl
+[2510] Biber.pm:132> WARN - legacy year field 's.f.' in entry 'pem_si_inserts' is not an integer - this will probably not sort properly.
+[2512] Biber.pm:134> INFO - WARNINGS: 1

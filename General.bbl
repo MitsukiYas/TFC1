@@ -932,38 +932,6 @@
       \field{type}{Norma}
       \field{year}{2020}
     \endentry
-    \entry{invensense_mpu6050}{manual}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=35953177f983c5c55ad76715ebf43b1f}{%
-           family={{InvenSense Inc.}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{fullhash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{fullhashraw}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{bibnamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorbibnamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authornamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorfullhash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorfullhashraw}{35953177f983c5c55ad76715ebf43b1f}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{number}{PS-MPU-6000A-00, revision 3.4}
-      \field{title}{{MPU-6000} and {MPU-6050} product specification}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
-      \endverb
-      \verb{url}
-      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
-      \endverb
-    \endentry
     \entry{jacobson2018tilt}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ab9ea5648ef9accb143dbfc05c98267b}{%
@@ -1568,51 +1536,6 @@
       \field{langid}{spanish}
       \field{title}{Producción eléctrica de energías renovables crece 27\% a octubre de 2025}
       \field{year}{2025}
-    \endentry
-    \entry{shigley2012mecanico}{book}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=8e5b3743b856af1e9a5f5927000b9ff9}{%
-           family={Shigley},
-           familyi={S\bibinitperiod},
-           given={Joseph\bibnamedelima Edward},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a6b6dba4b3eb93f36f681e53fc8f0273}{%
-           family={Budynas},
-           familyi={B\bibinitperiod},
-           given={Richard\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=25e557d0bf6de334ecbdd7d6f3597406}{%
-           family={Nisbett},
-           familyi={N\bibinitperiod},
-           given={J.\bibnamedelimi Keith},
-           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {McGraw-Hill / Interamericana de España}%
-      }
-      \strng{namehash}{f000c53ace5a40f031b16e68e7c0b763}
-      \strng{fullhash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{fullhashraw}{74d7635024ea2b217ee71acb024efb66}
-      \strng{bibnamehash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authorbibnamehash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authornamehash}{f000c53ace5a40f031b16e68e7c0b763}
-      \strng{authorfullhash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authorfullhashraw}{74d7635024ea2b217ee71acb024efb66}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{9}
-      \field{isbn}{978-607-15-0771-6}
-      \field{langid}{spanish}
-      \field{title}{Diseño en ingeniería mecánica de {Shigley}}
-      \field{year}{2012}
     \endentry
     \entry{skf2020bearings}{manual}{}{}
       \name{author}{1}{}{%
@@ -2920,38 +2843,6 @@
       \field{type}{Norma}
       \field{year}{2020}
     \endentry
-    \entry{invensense_mpu6050}{manual}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=35953177f983c5c55ad76715ebf43b1f}{%
-           family={{InvenSense Inc.}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{fullhash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{fullhashraw}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{bibnamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorbibnamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authornamehash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorfullhash}{35953177f983c5c55ad76715ebf43b1f}
-      \strng{authorfullhashraw}{35953177f983c5c55ad76715ebf43b1f}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{number}{PS-MPU-6000A-00, revision 3.4}
-      \field{title}{{MPU-6000} and {MPU-6050} product specification}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
-      \endverb
-      \verb{url}
-      \verb https://www.invensense.tdk.com/en-us/search-result?query=PS-MPU-6000A-00%20%E2%80%93%20MPU-6000%20and%20MPU-6050%20Datasheet
-      \endverb
-    \endentry
     \entry{jacobson2018tilt}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ab9ea5648ef9accb143dbfc05c98267b}{%
@@ -3556,51 +3447,6 @@
       \field{langid}{spanish}
       \field{title}{Producción eléctrica de energías renovables crece 27\% a octubre de 2025}
       \field{year}{2025}
-    \endentry
-    \entry{shigley2012mecanico}{book}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=8e5b3743b856af1e9a5f5927000b9ff9}{%
-           family={Shigley},
-           familyi={S\bibinitperiod},
-           given={Joseph\bibnamedelima Edward},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a6b6dba4b3eb93f36f681e53fc8f0273}{%
-           family={Budynas},
-           familyi={B\bibinitperiod},
-           given={Richard\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=25e557d0bf6de334ecbdd7d6f3597406}{%
-           family={Nisbett},
-           familyi={N\bibinitperiod},
-           given={J.\bibnamedelimi Keith},
-           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {McGraw-Hill / Interamericana de España}%
-      }
-      \strng{namehash}{f000c53ace5a40f031b16e68e7c0b763}
-      \strng{fullhash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{fullhashraw}{74d7635024ea2b217ee71acb024efb66}
-      \strng{bibnamehash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authorbibnamehash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authornamehash}{f000c53ace5a40f031b16e68e7c0b763}
-      \strng{authorfullhash}{74d7635024ea2b217ee71acb024efb66}
-      \strng{authorfullhashraw}{74d7635024ea2b217ee71acb024efb66}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{9}
-      \field{isbn}{978-607-15-0771-6}
-      \field{langid}{spanish}
-      \field{title}{Diseño en ingeniería mecánica de {Shigley}}
-      \field{year}{2012}
     \endentry
     \entry{skf2020bearings}{manual}{}{}
       \name{author}{1}{}{%

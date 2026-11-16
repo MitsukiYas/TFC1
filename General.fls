@@ -1,6 +1,6 @@
-PWD C:\Users\Mitsuki\Documents\TESIS
+PWD c:\Users\Mitsuki\Documents\TESIS
 INPUT C:\Users\Mitsuki\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT General.tex
+INPUT c:\Users\Mitsuki\Documents\TESIS\General.tex
 OUTPUT General.log
 INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -643,10 +643,7 @@ INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\SubsistemaOrientacionDisenhoA2.
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\SubsistemaOrientacionDisenhoA2.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\SubsistemaOrientacionDisenhoA2.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\SubsistemaOrientacionDisenhoA2.png
-INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_1.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_1.png
 INPUT Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_1.png
@@ -661,7 +658,10 @@ INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_2.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_2.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_2.png
 INPUT .\Recursos\Imagenes\ImagenesDisenoMecanico\Tilt_DCL_2.png
-INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
@@ -732,6 +732,9 @@ INPUT .\Recursos\Imagenes\Placeholder.png
 INPUT .\Recursos\Imagenes\Placeholder.png
 INPUT Recursos\Imagenes\Placeholder.png
 INPUT .\Recursos\Imagenes\Placeholder.png
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7v.vf
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Mitsuki\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT .\Recursos\Imagenes\Placeholder.png
 INPUT .\Recursos\Imagenes\Placeholder.png
 INPUT Recursos\Imagenes\Placeholder.png

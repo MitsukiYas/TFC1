@@ -41,7 +41,7 @@ it = add(it, 3, 'Resorte LTL/LTR135T 03 S', 2, cil(P.res.d, Lw)*rIx, 'Lee p. 298
 it = add(it, 3, 'Varilla de anclaje Ø8 x 242.4', 1, (cil(8, 233.4) + 2*cil(6, 4.5))*rAc, 'memoria 09');
 % 4. Transmisión
 it = add(it, 4, 'Motorreductor NMRVS40 + 34HS31', 1, 2.14 + 2.5, 'CAD (memoria 09)');
-it = add(it, 4, 'Eje escalonado (4140)', 1, (cil(18, 81) + cil(22, 2) + cil(14, 25))*rAc, 'memoria 07');
+it = add(it, 4, 'Eje escalonado (4140)', 1, (cil(18, 81) + cil(22, 2) + cil(14, 26))*rAc, 'memoria 07');
 it = add(it, 4, 'Chavetas 5x5x20 y 6x6x40', 1, (5*5*20 + 6*6*40)*rAc, 'memoria 07');
 it = add(it, 4, 'Brida (AISI 303) + 4 M3 con tuerca', 1, (9527 + 469 + 249)*rIx, 'STEP');
 % 5. Estructura de la base
