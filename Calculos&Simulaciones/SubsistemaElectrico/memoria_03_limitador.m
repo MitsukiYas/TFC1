@@ -10,6 +10,11 @@
 % Short-Circuit Stress, Limiting Inrush Current, Output Bypassing, Design Example).
 % Hoja de datos FDMS86150, Fairchild/ON Semiconductor, Rev. 1.5 (marzo de 2015): M1 y M2.
 % Datos del circuito: los valores ya escritos en 606.
+%
+% NOTA (2026-11-16): M1 pasa a ser el PSMN4R8-100BSE (decision del usuario). Su esfuerzo se
+% comprueba con el area de operacion segura a la tension real en la memoria 11 (parte 6), que
+% lee de esta memoria los casos de falla, R_SNS, C_HG y C_TMR. Los puntos 5 a 8 de aqui, hechos
+% con la respuesta termica del FDMS86150, quedan como referencia; el FDMS86150 sigue siendo M2.
 clear; clc;
 run('parametros_electrico.m');
 load('demanda_electrico.mat', 'D');
@@ -65,8 +70,10 @@ fprintf('   UV: corte a %.2f V (%.2f a %.2f V); reconexion a %.2f V (%.2f a %.2f
 fprintf('   OV: %.2f V (%.2f a %.2f V)\n', V_ov(2), V_ov(1), V_ov(3));
 fprintf('   FB: regulacion a %.2f V (%.2f a %.2f V)\n', V_fb(2), V_fb(1), V_fb(3));
 fprintf('   Corriente del divisor UV/OV a %.1f V: %.0f uA; del divisor FB a %.2f V: %.0f uA\n', V_in_nom, V_in_nom/Rt*1e6, V_fb(2), V_fb(2)/(Rd.Rf1+Rd.Rf2)*1e6);
-c = V_uv(3) < 21.5;
-fprintf('   Alerta del LTC2944 (21.5 V) por encima del corte maximo (%.2f V): %s\n', V_uv(3), ok(c));
+% Alerta del LTC2944: 21.7 V, con error total de medicion de tension de hasta 1.3 % (2944fa)
+V_al = 21.7*[1-0.013 1 1+0.013];
+c = V_uv(3) < V_al(1);
+fprintf('   Alerta del LTC2944 (%.1f V; %.2f a %.2f V con el error de medicion) por encima del corte maximo (%.2f V): %s\n', V_al(2), V_al(1), V_al(3), V_uv(3), ok(c));
 c = V_ov(1) > V_in_nom;
 fprintf('   OV minimo (%.2f V) por encima de la bateria cargada (%.1f V): %s\n', V_ov(1), V_in_nom, ok(c));
 c = V_fb(1) > V_in_nom;
@@ -101,9 +108,10 @@ F.Vth = [2 4];                    % V
 F.TJ_max = 150;                   % C
 F.R_JA = 115;                     % C/W, con la superficie de cobre minima (base de las Fig. 11 a 13)
 % Respuesta termica transitoria de pulso unico (Fig. 13), Z(t) = r(t)*R_JA.
-% SUPOSICION: valores de r(t) leidos de la grafica, aproximados; se interpolan en escala log-log.
+% Valores de r(t) leidos de la grafica (pulso unico); se interpolan en escala log-log. Los de
+% 1 ms a 1 s fueron revisados por el usuario el 2026-11-16 (0.025 a 0.1 s y 0.12 a 1 s).
 F.t_r = [1e-3 1e-2 1e-1 1 10 100 1000];
-F.r   = [0.0017 0.008 0.035 0.13 0.4 0.85 1.0];
+F.r   = [0.0017 0.008 0.025 0.12 0.4 0.85 1.0];
 Z = @(t) F.R_JA*10.^interp1(log10(F.t_r), log10(F.r), log10(max(t, 1e-4)), 'linear', 'extrap');
 T_A = E.T_int;                    % C, temperatura interna de diseno de los gabinetes
 dT_adm = F.TJ_max - T_A;

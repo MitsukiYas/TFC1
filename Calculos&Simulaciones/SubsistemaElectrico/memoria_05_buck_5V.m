@@ -165,6 +165,21 @@ fprintf('   Arranque maximo por debajo del corte minimo del LTC4364 (%.2f V): %s
 fprintf('   EN con la entrada maxima: %.2f V <= %.1f V: %s\n', V_EN_max, EN.V_max, ok(V_EN_max <= EN.V_max));
 fprintf('   Resistencia superior >= 100 kohm: %s; corriente del divisor en el umbral %.1f uA (%.0f veces la fuga de ENOUT)\n\n', ok(R_u1n >= 100e3), I_div*1e6, I_div/I_fuga_ENOUT);
 
+%% 8c. Lazo con los condensadores locales de las cargas
+% La linea de 5.0 V tiene ademas 100 uF de tantalio en el transceptor LoRa (604) y 47 uF en cada
+% encoder (602). Se comprueba el lazo con la misma compensacion y toda esa capacidad sumada a la
+% salida, sin contar su resistencia serie ni la del cableado (que anaden fase).
+C_cargas = 100e-6 + 2*47e-6;
+f_l = logspace(2, 5.5, 4000); s_l = 1j*2*pi*f_l;
+lazo = @(Co) T.gmps*(V_out/I_dis)./(1 + s_l*Co*V_out/I_dis)*(T.Vref/V_out)*T.gmea ...
+    .*(1 + s_l*R_c_n*C_c_n)./(s_l*(C_c_n + C_p_n).*(1 + s_l*R_c_n*C_c_n*C_p_n/(C_c_n + C_p_n)));
+fprintf('8c. Lazo con los condensadores de las cargas (%.0f uF mas)\n', C_cargas*1e6);
+for Co = [C_eff, C_eff + C_cargas]
+    G = lazo(Co); k = find(abs(G) < 1, 1);
+    fprintf('   C_o = %.0f uF: cruce %.1f kHz, margen de fase %.0f grados\n', Co*1e6, f_l(k)/1e3, 180 + angle(G(k))*180/pi);
+end
+fprintf('\n');
+
 %% 9. Resumen
 fprintf('=== RESUMEN ===\n');
 fprintf('Bobina %.1f uH: rizado %.2f A, pico %.2f A; saturacion %.1f A.\n', L_o*1e6, I_rip, I_L_pk, I_sat_L);

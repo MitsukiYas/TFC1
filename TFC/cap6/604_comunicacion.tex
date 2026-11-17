@@ -2,7 +2,7 @@
 \begin{document}
 
 
-\subsection{Módulo de Comunicaciones}
+\section{Módulo de comunicaciones}
 
 El subsistema de radiocomunicación establece el enlace de intercambio de datos entre el vehículo móvil y el centro de control del parque fotovoltaico, garantizando la transmisión continua de parámetros meteorológicos e indicadores energéticos a lo largo de extensiones de terreno de gran escala mediante una topología descentralizada, mostrada en la Figura \ref{fig:TopologiaRed}.
 
@@ -20,22 +20,22 @@ El subsistema de radiocomunicación establece el enlace de intercambio de datos 
 El módulo transceptor de radiofrecuencia corresponde al modelo Ebyte E220-900T30D, sustentado en el circuito integrado Semtech LLCC68. Este dispositivo opera en la banda libre de 915 MHz bajo modulación por espectro ensanchado por chirp, entregando una potencia de transmisión de hasta $30\text{ dBm}$ (un vatio), con un consumo de $620\text{ mA}$ al transmitir y de $17.2\text{ mA}$ en recepción a $5\text{ V}$ \citep{ebyte_e220_900t30d}. Para alcanzar la saturación del amplificador interno sin caídas de tensión, el módulo se alimenta desde la barra limpia de 5.0 V mediante condensadores de tantalio de baja resistencia serie equivalente de cien microfaradios en paralelo con condensadores cerámicos de alta frecuencia.
 
 La interfaz lógica opera de manera directa a 3.3 V comunicándose con los terminales de transmisión y recepción de la computadora monoplaca mediante resistores serie de amortiguación de cincuenta ohmios para mitigar reflexiones de alta frecuencia. La línea de estado de procesamiento incorpora un resistor de polarización a 3.3 V de diez kiloohmios para asegurar un nivel alto durante el arranque del sistema y evitar el ingreso involuntario a la rutina de actualización de firmware, en tanto que dos líneas digitales de la computadora controlan los modos de transmisión transparente, reposo profundo o configuración interna.
-Las terminales de la computadora asignadas al transceptor se indican en la Tabla \ref{tab:pines_rpi}. Los parámetros operativos de la capa física se detallan en la Tabla \ref{tab:capa_fisica_lora}.
+Las terminales de la computadora asignadas al transceptor se indican en la Tabla \ref{tab:pines_rpi}. El módulo se configura por su tasa de transmisión en el aire, entre $2.4$ y $62.5\text{ kbps}$; el fabricante no indica el factor de dispersión ni el ancho de banda que corresponden a cada tasa \citep{ebyte_e220_900t30d}. La configuración adoptada se detalla en la Tabla \ref{tab:capa_fisica_lora}.
 
 \begin{center}
     \footnotesize
     \begin{xltabular}{\textwidth}{|p{3.5cm}|>{\centering\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
-        \caption{Parámetros y configuración de la capa física LoRa para el nodo móvil\label{tab:capa_fisica_lora}} \\
+        \caption{Configuración del transceptor E220-900T30D en el nodo móvil\label{tab:capa_fisica_lora}} \\
         \hline
         \rowcolor[HTML]{D9E1F2} 
-        \textbf{Parámetro de Capa Física} & \textbf{Valor Seleccionado / Ajuste} & \textbf{Justificación Técnica} \\ \hline
+        \textbf{Parámetro} & \textbf{Valor Seleccionado / Ajuste} & \textbf{Justificación Técnica} \\ \hline
         \endfirsthead
         
         \multicolumn{3}{c}%
         {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
         \hline
         \rowcolor[HTML]{D9E1F2} 
-        \textbf{Parámetro de Capa Física} & \textbf{Valor Seleccionado / Ajuste} & \textbf{Justificación Técnica} \\ \hline
+        \textbf{Parámetro} & \textbf{Valor Seleccionado / Ajuste} & \textbf{Justificación Técnica} \\ \hline
         \endhead
         
         \hline
@@ -44,23 +44,20 @@ Las terminales de la computadora asignadas al transceptor se indican en la Tabla
         \hline
         \endlastfoot
         
-        Banda de Frecuencia & 915 MHz central & Cumplimiento de la banda no licenciada regional en América Latina \\ \hline
-        Ancho de Banda & 125 kHz para subida y 500 kHz para bajada & Configuración óptima para maximizar sensibilidad de recepción \\ \hline
-        Factor de Dispersión & Factor SF7 & Minimiza el tiempo de ocupación del canal con tasa de 5470 bps \\ \hline
-        Tasa de Codificación & Tasa cuatro quintos & Incorpora bits de corrección de errores hacia adelante \\ \hline
-        Tamaño de Preámbulo & Ocho símbolos de sincronismo & Garantiza la sincronización de trama entre transceptores \\ \hline
-        Modo de Encabezado & Formato explícito & Incluye longitud de carga útil y verificación de redundancia cíclica \\ \hline
-        Integridad de Trama & Verificación CRC habilitada & Descarta paquetes corrompidos por interferencia electromagnética \\ \hline
-        Polarización de Señal & Estándar para subida e invertida para bajada & Separa lógicamente el tráfico de subida y bajada en la red \\ \hline
+        Canal & 65 ($915.125\text{ MHz}$) & La frecuencia es de $850.125\text{ MHz}$ más el número de canal, en megahercios \citep{ebyte_e220_900t30d} \\ \hline
+        Tasa en el Aire & $2.4\text{ kbps}$ & Valor predeterminado; es la tasa con la que el fabricante especifica la sensibilidad, y una tasa mayor reduce el alcance \citep{ebyte_e220_900t30d} \\ \hline
+        Potencia de Transmisión & $30\text{ dBm}$ & Valor predeterminado y máximo del módulo \citep{ebyte_e220_900t30d} \\ \hline
+        Longitud de Subpaquete & 200 bytes & Valor predeterminado; la trama de 21 bytes se envía en un solo paquete \\ \hline
+        Modo de Transmisión & Transparente & Valor predeterminado; el módulo transmite los datos de la UART sin encabezado de dirección \citep{ebyte_e220_900t30d} \\ \hline
     \end{xltabular}
 \end{center}
 
 \subsection{Análisis de enlace de radiofrecuencia y balance de pérdidas en espacio libre}
 
-La viabilidad del enlace inalámbrico en las extensiones del parque solar se evalúa mediante el presupuesto de potencia de radiofrecuencia. El transceptor entrega una potencia de transmisión de treinta decibelios milivatio, acoplado a una antena omnidireccional de media onda con ganancia de dos coma quince decibelios isotrópicos montada en el chasis del vehículo. La estación base receptora incorpora una antena con ganancia de tres decibelios isotrópicos y una sensibilidad nominal de recepción de menos ciento veintinueve decibelios milivatio para un ancho de banda de 125 kHz con factor de dispersión nueve. A partir de estos valores, el margen total de ganancia admisible por el hardware se calcula como:
+La viabilidad del enlace inalámbrico en las extensiones del parque solar se evalúa mediante el presupuesto de potencia de radiofrecuencia. El transceptor entrega una potencia de transmisión de $30\text{ dBm}$ y su sensibilidad de recepción típica es de $-147\text{ dBm}$ con la tasa en el aire de $2.4\text{ kbps}$ \citep{ebyte_e220_900t30d}. Se considera en la estación base un transceptor del mismo modelo. La antena del vehículo es omnidireccional de media onda, con una ganancia de $2.15\text{ dBi}$, y la de la estación base tiene una ganancia de $3\text{ dBi}$. A partir de estos valores, el margen total de ganancia admisible por el hardware se calcula como:
 
 \begin{equation}
-M_{\text{enlace}} = P_{\text{tx}} - S_{\text{rx}} = 30.0\text{ dBm} - (-129.0\text{ dBm}) = 159.0\text{ dB}
+M_{\text{enlace}} = P_{\text{tx}} - S_{\text{rx}} = 30.0\text{ dBm} - (-147.0\text{ dBm}) = 177.0\text{ dB}
 \end{equation}
 
  Considerando una distancia de enlace en línea de vista de diez kilómetros a la frecuencia central de 915 MHz, las pérdidas de propagación electromagnética en espacio libre se determinan mediante la relación:
@@ -75,10 +72,18 @@ M_{\text{enlace}} = P_{\text{tx}} - S_{\text{rx}} = 30.0\text{ dBm} - (-129.0\te
 Deduciendo las pérdidas por inserción de conectores coaxiales estimadas en medio decibelio e integrando las ganancias de ambas antenas, el margen de desvanecimiento resultante para la comunicación se expresa como:
 
 \begin{equation}
-M_{\text{desvanecimiento}} = 159.0\text{ dB} + 2.15\text{ dBi} + 3.00\text{ dBi} - 0.50\text{ dB} - 111.68\text{ dB} \approx 51.97\text{ dB}
+M_{\text{desvanecimiento}} = 177.0\text{ dB} + 2.15\text{ dBi} + 3.00\text{ dBi} - 0.50\text{ dB} - 111.68\text{ dB} \approx 69.97\text{ dB}
 \end{equation}
 
-La obtención de un margen superior a cincuenta decibelios garantiza una elevada robustez operativa frente a obstáculos del terreno, atenuación atmosférica por precipitación y dispersiones provocadas por estructuras metálicas de los paneles solares.
+Como referencia, el fabricante indica un alcance de $10\text{ km}$ en campo abierto, con antenas de $5\text{ dBi}$ a $2.5\text{ m}$ de altura y esta misma tasa en el aire \citep{ebyte_e220_900t30d}. La obtención de un margen de unos $70\text{ dB}$ garantiza una elevada robustez operativa frente a obstáculos del terreno, atenuación atmosférica por precipitación y dispersiones provocadas por estructuras metálicas de los paneles solares.
+
+La estación base queda fuera del alcance de este trabajo y la provee el operador de la planta. Para enlazarse con el robot debe cumplir las siguientes condiciones:
+\begin{itemize}
+    \item emplear un transceptor E220-900T30D con la configuración de la Tabla \ref{tab:capa_fisica_lora}, ya que ambos extremos deben usar el mismo canal y la misma tasa en el aire \citep{ebyte_e220_900t30d};
+    \item emplear una antena con una ganancia de al menos $3\text{ dBi}$;
+    \item ubicarse a no más de $10\text{ km}$ del robot, con línea de vista, que es la distancia considerada en el presupuesto de enlace;
+    \item interpretar la trama de la Tabla \ref{tab:payload_mapping}.
+\end{itemize}
 
 \subsection{Dimensionamiento de la trama de transmisión e integración con plataformas supervisoras}
 
@@ -119,7 +124,7 @@ La comunicación inalámbrica transfiere periódicamente los parámetros operati
 \end{xltabular}
 \end{center}
 
-Con un factor de dispersión de $7$ ($SF7$) y un ancho de banda de $125\text{ kHz}$, el tiempo en el aire (\textit{time-on-air}) para transmitir este paquete de $21\text{ bytes}$, con tasa de codificación $4/5$, preámbulo de ocho símbolos, encabezado explícito y CRC, es de $56.6\text{ ms}$, lo que permite actualizaciones continuas sin saturar el canal de radiofrecuencia y facilita la recepción en pasarelas concentradoras conectadas a servidores de supervisión industrial.
+A la tasa en el aire de $2.4\text{ kbps}$, los $168$ bits de la trama de $21\text{ bytes}$ ocupan $70\text{ ms}$, sin contar el preámbulo y el encabezado que añade el módulo, cuya duración el fabricante no indica \citep{ebyte_e220_900t30d}, lo que permite actualizaciones continuas sin saturar el canal de radiofrecuencia.
 
 \subsection{Receptor satelital multiconstelación y sincronización temporal con respaldo de energía}
 
