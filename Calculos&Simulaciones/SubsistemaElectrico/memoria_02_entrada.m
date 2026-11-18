@@ -29,11 +29,11 @@ fprintf('   D = %.0f mm: %.3f uH;  D = %.0f mm: %.3f uH\n', E.cable.D(1)*1e3, L_
 fprintf('   Se adopta el mayor valor: L = %.3f uH\n\n', L_cab*1e6);
 
 %% 2. Corriente y energia al abrir
-% SUPOSICION: se interrumpe la corriente del fusible, 20 A, la mayor que puede circular de
-% forma continua sin que el fusible actue (la demanda maxima calculada es de 18 A).
-I0 = E.I_fusible;
+% Cota de la corriente interrumpida: 20 A, por encima de la mayor corriente de la bateria,
+% 19.6 A con 21.0 V (memoria 01). El fusible es de 25 A (ATOF 0287025) y ya no es la cota.
+I0 = E.I_interr;
 E_cab = 0.5*L_cab*I0^2;
-fprintf('2. Corriente interrumpida: %.0f A (fusible); energia en el cable: %.1f uJ\n\n', I0, E_cab*1e6);
+fprintf('2. Corriente interrumpida: %.0f A (cota de la demanda); energia en el cable: %.1f uJ\n\n', I0, E_cab*1e6);
 
 %% 3. TVS de entrada SMBJ30A
 fprintf('3. TVS de entrada SMBJ30A (catodo al nodo de entrada, anodo a tierra)\n');

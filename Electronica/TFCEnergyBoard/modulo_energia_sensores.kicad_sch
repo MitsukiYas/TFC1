@@ -3614,7 +3614,7 @@
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(hide yes)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3633,7 +3633,7 @@
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(hide yes)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3677,63 +3677,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8610,7 +8553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x04_P4.2mm_D0.65mm_OD1.7mm"
 			(at 246.38 125.095 0)
 			(hide yes)
 			(show_name no)
@@ -9009,7 +8952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight"
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x06_P4.6mm_D0.9mm_OD2.1mm"
 			(at 201.295 139.065 0)
 			(hide yes)
 			(show_name no)
@@ -9181,7 +9124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 68.2752 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10355,7 +10298,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-5050"
 			(at 254 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -14539,7 +14482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 39.0652 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15204,7 +15147,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_THT:L_Toroid_Horizontal_D17.3mm_P15.24mm_Bourns_2000"
 			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15443,7 +15386,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight"
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x06_P4.6mm_D0.9mm_OD2.1mm"
 			(at 135.255 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -15616,7 +15559,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRP1245A"
 			(at 241.3 95.885 0)
 			(hide yes)
 			(show_name no)
@@ -15973,20 +15916,11 @@
 				)
 			)
 		)
-		(pin "7"
-			(uuid "1b6c6558-b9b5-42d4-9fc9-6e013dfcd0fe")
-		)
-		(pin "8"
-			(uuid "7da78156-1dca-4293-9f65-ed55f152be36")
-		)
 		(pin "5"
 			(uuid "e23f3b91-1e87-411b-8fae-7cb5c3c4dbc2")
 		)
 		(pin "1"
 			(uuid "33efde8b-9852-4462-bd62-d6599847c7d1")
-		)
-		(pin "6"
-			(uuid "630e0d98-d9f9-403b-99df-451bfc741a77")
 		)
 		(pin "2"
 			(uuid "6d4d8eb3-4d84-4a6c-a778-abc57451b6dd")

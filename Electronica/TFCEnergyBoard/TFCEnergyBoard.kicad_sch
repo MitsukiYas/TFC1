@@ -809,7 +809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 15.875 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -885,7 +885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 15.875 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -1040,7 +1040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 36.195 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -1116,7 +1116,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 36.195 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -1190,7 +1190,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
 			(at 50.165 51.435 0)
 			(hide yes)
 			(show_name no)

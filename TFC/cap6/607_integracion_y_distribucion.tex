@@ -3,7 +3,68 @@
 
 \section{Integración y Distribución del sistema electrónico}
 
-% PENDIENTE: redactar la sección cuando se terminen de definir las placas (PCB). Decisiones ya tomadas: dos placas, la de potencia (gabinete de potencia, incluye el camino de 20 A de la batería) y la de control (gabinete electrónico); el receptor GNSS es una placa de conexión; la Raspberry Pi, los drivers DM542, los controladores de tracción y los conversores USB a RS-485 son módulos con cableado propio. Falta: conectores y cableado entre placas, gabinetes y módulos.
+Los circuitos descritos en las secciones anteriores se reparten en dos placas. La placa de potencia, en el gabinete de potencia, reúne el camino de la corriente de la batería y las fuentes de alimentación; la placa de control, en el gabinete electrónico, reúne el microcontrolador y las conexiones de los sensores y de las señales de mando. La computadora de placa única, los drivers DM542, los controladores de tracción, los conversores USB a RS-485, el transceptor LoRa y el receptor GNSS son módulos comerciales con su propio montaje, que se enlazan con estas placas mediante cables.
 
+\subsection{Placa de potencia}
+
+La placa de potencia es una placa de circuito impreso que reúne tres bloques: la entrada (bornera de la batería, fusible, protección de polaridad, monitor de batería, parada de emergencia y relé de recarga), la energía de los actuadores (arranque suave de la barra, bornes de los drivers y de los controladores de tracción y convertidor de $6.5\text{ V}$ de los servomotores, con sus conectores) y la energía de los sensores (limitador de la línea protegida, filtro $\pi$, convertidor de $5.0\text{ V}$ y fuente meteorológica). Se emplea una placa de cuatro capas con cobre de $2\text{ oz}$ en las capas exteriores: la hoja de datos del LMR33630 pide un plano de tierra en una capa intermedia y cobre de $2\text{ oz}$ en las capas exteriores \citep{ti_lmr33630}, y la resistencia térmica de los diodos PDS760 de los convertidores se especifica con cobre de $2\text{ oz}$ \citep{diodes_pds760}. La primera capa interior es un plano de tierra continuo, la segunda conduce las zonas de potencia, y las capas exteriores llevan los componentes, las zonas de cobre de las corrientes altas y las superficies de disipación de los semiconductores.
+
+Hacia la placa de control salen dos conectores: una bornera de dos vías con la línea de $5.0\text{ V}$ y su retorno, que conduce hasta $3.44\text{ A}$ (Sección \ref{subsec:balance_energia}), y un conector polarizado JST XH de seis vías con las señales, en el orden tierra, mando del servomotor M4, mando del servomotor M3, SCL, SDA y alerta ALCC del LTC2944. El LTC2944 queda así en la placa de potencia, junto a su resistencia de derivación, y comparte el bus I$^2$C con los sensores inerciales a través de este conector.
+
+\subsection{Placa de control}
+
+La placa de control se arma sobre una placa perforada, sin un circuito impreso dedicado. Los elementos que conecta son en su mayoría módulos comerciales, como las unidades de medición inercial, los drivers, los controladores de tracción y las computadoras de placa única, que ya incluyen sus componentes adyacentes, como reguladores, condensadores de desacoplamiento y circuitos de interfaz, por lo que la placa solo debe proveer los nodos de conexión entre ellos y unos pocos componentes discretos. A diferencia de la placa de potencia, la placa de control no conduce corrientes altas ni contiene convertidores conmutados, de modo que no tiene requisitos de disipación ni de disposición de lazos de conmutación que exijan un circuito impreso.
+
+La placa reúne los siguientes componentes:
+\begin{itemize}
+    \item el Arduino Mega 2560 Pro, montado sobre tiras de conectores hembra para poder retirarlo, alimentado desde la línea de $5.0\text{ V}$ por su terminal de $5\text{ V}$, con la asignación de terminales de la Tabla \ref{tab:pines_mega};
+    \item el módulo traslador de nivel lógico de cuatro canales, entre el tramo de $5.0\text{ V}$ y el de $3.3\text{ V}$ del bus I$^2$C;
+    \item el regulador LM1084-3.3 en encapsulado TO-220 con su condensador de entrada de $10\text{ }\mu\text{F}$, su condensador de tantalio de $10\text{ }\mu\text{F}$ a la salida y el diodo Schottky entre la salida y la entrada;
+    \item las resistencias pull-up del bus I$^2$C, de $6.8\text{ k}\Omega$ en el tramo de $5.0\text{ V}$ y de $4.7\text{ k}\Omega$ en el de $3.3\text{ V}$, y la de $10\text{ k}\Omega$ de la salida ALCC;
+    \item las cuatro resistencias pull-up de $1\text{ k}\Omega$ de los canales de los encoders;
+    \item el divisor del termistor, con la resistencia de $10\text{ k}\Omega$ y $1\%$ y el condensador de $100\text{ nF}$;
+    \item los componentes de la interfaz del transceptor LoRa: los condensadores de tantalio de $100\text{ }\mu\text{F}$ y cerámicos de su alimentación, las resistencias serie de $50\text{ }\Omega$ de las líneas de transmisión y recepción y la resistencia de $10\text{ k}\Omega$ de la línea AUX a $3.3\text{ V}$;
+    \item los conectores hacia la placa de potencia, los módulos y los sensores, resumidos en la Tabla \ref{tab:conexiones_control}.
+\end{itemize}
+
+Los condensadores de $47\text{ }\mu\text{F}$ y $100\text{ nF}$ de cada encoder se montan en los terminales del encoder (Sección \ref{subsec:encoder}), y los condensadores de $470\text{ }\mu\text{F}$ y los diodos TVS de los drivers y de los controladores de tracción, en sus bornes de potencia, por lo que ninguno de ellos va en la placa de control.
+
+\begin{center}
+    \footnotesize
+    \begin{xltabular}{\textwidth}{|p{3.8cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}p{4.2cm}|}
+        \caption{Conexiones de la placa de control\label{tab:conexiones_control}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Conexión} & \textbf{Líneas} & \textbf{Destino} \\ \hline
+        \endfirsthead
+        \multicolumn{3}{c}%
+        {{\bfseries \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+        \hline
+        \rowcolor[HTML]{D9E1F2}
+        \textbf{Conexión} & \textbf{Líneas} & \textbf{Destino} \\ \hline
+        \endhead
+        \hline
+        \endfoot
+        \hline
+        \endlastfoot
+        Alimentación & $5.0\text{ V}$, tierra & Bornera de $5.0\text{ V}$ de la placa de potencia \\ \hline
+        Señales de la placa de potencia & Tierra, mando de M4, mando de M3, SCL, SDA, ALCC (mismo orden) & Conector JST XH de seis vías de la placa de potencia \\ \hline
+        Computadora de placa única & $5.0\text{ V}$ (terminales 2 y 4), tierra, UART3, UART5, M0, M1 y AUX del transceptor & Conector de 40 terminales de la Raspberry Pi 4 (Tabla \ref{tab:pines_rpi}) \\ \hline
+        Transceptor LoRa & $5.0\text{ V}$, tierra, TXD, RXD, AUX, M0, M1 & Módulo E220-900T30D \\ \hline
+        Receptor GNSS & $3.3\text{ V}$, tierra, TXD, RXD & Placa SparkFun GPS-15210 \\ \hline
+        Sensor BNO055 & $5.0\text{ V}$, tierra, SDA, SCL (tramo de $5.0\text{ V}$) & Placa SEN0374 (cable de $300\text{ mm}$) \\ \hline
+        Sensores MPU-6050 (dos) & $5.0\text{ V}$, tierra, SDA, SCL (tramo de $3.3\text{ V}$) y AD0, unida a tierra en uno y a $3.3\text{ V}$ en el otro & Placas GY-521 (cables de $1\text{ m}$ y $300\text{ mm}$) \\ \hline
+        Encoders (dos) & $5.0\text{ V}$, tierra, canales A y B & E6B2-CWZ6C (cables de $150$ a $200\text{ mm}$) \\ \hline
+        Termistor & Dos terminales & NTCALUG02A \\ \hline
+        Drivers DM542 (dos) & PUL, DIR, ENA y cátodo común & Entradas optoacopladas de cada driver \\ \hline
+        Controladores de tracción (dos) & PWMA, PWMB, CS, FLT, SLP, $V_{CC}$, tierra & Pololu H2 36v11 CS \\ \hline
+    \end{xltabular}
+\end{center}
+
+La placa tiene una sola tierra, que se une a la de la placa de potencia a través de la bornera de alimentación y del conector de señales. La línea de $5.0\text{ V}$ y su retorno se distribuyen con conductores de cobre soldados sobre la placa perforada, dimensionados para la corriente máxima de $3.44\text{ A}$, y no a través de las islas de la placa. Los conectores hacia los módulos y los sensores son polarizados, de modo que no pueden conectarse invertidos.
+
+\subsection{Cableado entre placas y módulos}
+
+El microcontrolador se enlaza con la computadora de placa única mediante un cable USB (Sección \ref{subsec:interconexion_serial}), y los dos conversores USB a RS-485 se conectan a los puertos USB de la computadora (Sección \ref{subsec:puertos_meteo}). Las longitudes de los cables de los sensores se fijaron con el bus I$^2$C y los encoders: $300\text{ mm}$ hasta el BNO055, $1\text{ m}$ y $300\text{ mm}$ hasta los MPU-6050, hasta $300\text{ mm}$ entre las placas para el LTC2944, y de $150$ a $200\text{ mm}$ hasta los encoders, por debajo de los $2\text{ m}$ que admite el encoder (Sección \ref{subsec:encoder}). Los drivers DM542 y los controladores de tracción reciben la alimentación desde los bornes de la barra de actuadores de la placa de potencia y las señales de mando desde la placa de control, y los servomotores, desde sus conectores en la placa de potencia, que reciben la alimentación de $6.5\text{ V}$ y la señal de mando por el conector de señales. Los instrumentos meteorológicos se alimentan desde las borneras de la fuente meteorológica de la placa de potencia.
 
 \end{document}

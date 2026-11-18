@@ -53,7 +53,7 @@ Redes locales con etiqueta: `BAT+` (borne), `BAT_F` (después del fusible), `BAT
 | Ref. | Símbolo de KiCad | Elemento | Valor / modelo | Terminal → red |
 |---|---|---|---|---|
 | J101 | `Connector:Screw_Terminal_01x02` | Conector de batería, 2 vías | 19.6 A, AWG 12 | 1 → `BAT+`; 2 → `GND` |
-| F101 | `Device:Fuse` | Fusible principal | 20 A, lento | 1 → `BAT+`; 2 → `BAT_F` |
+| F101 | `Device:Fuse` | Fusible principal | 25 A, acción rápida (Littelfuse ATOF 0287025) | 1 → `BAT+`; 2 → `BAT_F` |
 | Q101, Q102 | `Device:Q_PMOS` | MOSFET P de polaridad, en paralelo | DMP4015SPS | D → `BAT_F`; S → `BAT_P`; G → `G_POL` |
 | R101 | `Device:R` | Resistencia de compuerta | 10 kΩ | `G_POL` — `GND` |
 | D101 | `Device:D_Zener` | Zener de compuerta | 15 V | cátodo → `BAT_P`; ánodo → `G_POL` |
@@ -225,18 +225,19 @@ En la huella genérica las almohadillas 1, 2 y 3 son fuentes, la 4 la compuerta 
 | U201, U301 | LTC4364IS | `Package_SO:SOIC-16_3.9x9.9mm_P1.27mm` | D (ya asignada) |
 | U202, U302 | TPS54560 / TPS54540 | `Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias` | D (ya asignada) |
 | U303 | LMR33630ADDA | `Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias` | D (ya asignada) |
-| U102, U304 | LM1085-12, LM1085-ADJ | `Package_TO_SOT_SMD:TO-263-3_TabPin2` (1 ADJ/GND, 2 OUT en la aleta, 3 IN) | D (usuario, 2026-11-17: SMD). Pendiente en 606: el texto usa TO-220 (22.8 °C/W); en TO-263 la hoja de datos da 40.6 °C/W y U102 sube unos 53 °C con 1.3 W en lugar de 30 °C |
+| U102, U304 | LM1085-12, LM1085-ADJ | `Package_TO_SOT_SMD:TO-263-3_TabPin2` (1 ADJ/GND, 2 OUT en la aleta, 3 IN) | D (usuario, 2026-11-17: SMD). 606 actualizado: 40.6 °C/W, U102 sube unos 53 °C (103 °C de unión) y U304 unos 27 °C |
 | Q101–Q103, Q201, Q301, Q302 | MOSFET | ver 7a | — |
-| Q303 | 2N3906 → MMBT3906 (SMD, usuario, 2026-11-17) | `Package_TO_SOT_SMD:SOT-23` | Pendiente: cambiar antes el símbolo a `Transistor_BJT:MMBT3906` (terminales B, E, C); con el símbolo del 2N3906 (E, B, C) la huella SOT-23 intercambia emisor y base. Pendiente en 606: nombrar el MMBT3906 y su hoja de datos |
+| Q303 | 2N3906 | `Package_TO_SOT_THT:TO-92_Inline` | D (usuario, 2026-11-18: se mantiene THT; el símbolo E, B, C coincide con el TO-92) |
 | D101, D103, D201, D301, D302 | Zener de 15 V (sin modelo) | `Diode_SMD:D_SOD-123` | P |
 | D102 | STPS20H100C | `Package_TO_SOT_THT:TO-220-3_Vertical` con disipador | P: el texto pide un disipador de ≤ 22 °C/W; la versión D2PAK existe pero requeriría calcular el área de cobre |
 | D104 | SMBJ30A | `Diode_SMD:D_SMB` | D |
 | D105, D203, D304 | PDS760 | `Diode_SMD:D_PowerDI-5` | D |
-| D106 | 1N4001 → diodo SMD de 1 A y ≥ 50 V (usuario, 2026-11-17) | `Diode_SMD:D_SMA` | D. Pendiente: elegir el modelo y cambiar 606, que nombra el 1N4001 |
+| D106 | 1N4001 → diodo SMD de 1 A y ≥ 50 V (usuario, 2026-11-17) | `Diode_SMD:D_SMA` | D. 606 ya no nombra el 1N4001; pendiente elegir el modelo (comentario PENDIENTE en 606) |
 | D202, D303 | Diodo de señal (sin modelo) | `Diode_SMD:D_SOD-123` | P |
 | D107, D108, D204–D206, D305, D306 | LED | `LED_SMD:LED_0805_2012Metric` | P |
-| R102, R201 | Derivación de 2 mΩ | `Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm` o la huella Kelvin del modelo elegido | P: R102 debe disipar ≥ 2 W; comprobar la potencia del modelo antes de usar una 2512 |
-| R304 | Derivación de 20 mΩ | `Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm` | P |
+| R102 | Vishay WSL36372L000FEA (2 mΩ, 1 %, 3 W, cuatro terminales) | `TESIS:RES-SMD_4P_WSL36376L000FEA` (importada de EasyEDA Pro, LCSC C844493; 1 y 4 corriente, 2 y 3 sensado; almohadillas SMD) | D (usuario, 2026-11-18) |
+| R201 | Vishay WSK2512, 2 mΩ (1 W) | `Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm` | D (usuario, 2026-11-18); disipa 0.68 W con 18.4 A |
+| R304 | Vishay WSK2512, 20 mΩ (1 W) | `Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm` | D (usuario, 2026-11-18) |
 | R101, R103, R104 | 10 kΩ a 29.4 V (86 mW) | `Resistor_SMD:R_1206_3216Metric` | P |
 | Demás resistencias (incluidas las de los LED, ≤ 63 mW) | | `Resistor_SMD:R_0805_2012Metric` | P |
 | C104, C206–C209 | 2.2 µF, 100 V, X7R | `Capacitor_SMD:C_1210_3225Metric` | P |
@@ -249,20 +250,19 @@ En la huella genérica las almohadillas 1, 2 y 3 son fuentes, la 4 la compuerta 
 | C210, C211, C304, C306 | 470 µF, 50 V, SAMXON GT (radial) | `Capacitor_THT:CP_Radial_D10.0mm_P5.00mm` o `CP_Radial_D12.5mm_P5.00mm` | P: según el diámetro de la hoja de datos del SAMXON GT; el texto fija esta serie radial |
 | C201, C202, C301, C302 | C_HG y C_TMR | `Capacitor_SMD:C_0805_2012Metric` (470 nF: `C_1206_3216Metric`) | P: la hoja de datos del LTC4364 pide C_TMR con bajos coeficientes de tensión y temperatura |
 | Demás cerámicos (≤ 1 µF) | | `Capacitor_SMD:C_0805_2012Metric` | P |
-| L201, L302 | 6.8 µH, saturación 8.5 A, blindada | según el modelo (por ejemplo `Inductor_SMD:L_Coilcraft_XAL1010-XXX` o `L_Vishay_IHLP-4040`) | P: elegir la bobina primero |
-| L303 | 18 µH, saturación > 4.1 A | según el modelo | P |
-| L301 | 4.7 µH, toroidal | THT, según el modelo | P: el texto dice toroidal |
-| F101 | 20 A, lento | `Fuse:FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165` (portafusible de cuchilla, THT) | P: falta elegir el fusible |
-| K101 | T9GS2L14-12 | THT | C: crear desde el patrón de circuito impreso de la hoja de datos del T9G, con las almohadillas A1, A2, 11 y 12 como en el símbolo; `Relay_THT:Relay_SPST_PotterBrumfield_T9AP1D52_12V30A` es otra serie |
-| J101 | Batería, 19.6 A, AWG 12 | bornera de paso 7.5 mm o mayor, por ejemplo `TerminalBlock_RND:TerminalBlock_RND_205-00067_1x02_P7.50mm_Horizontal` | P: elegir una bornera de ≥ 20 A para AWG 12 |
+| L201, L302 | Vishay IHLP-5050, 6.8 µH | `Inductor_SMD:L_Vishay_IHLP-5050` | D (usuario, 2026-11-18). Comprobar en la hoja de datos: saturación ≥ 8.5 A, corriente ≥ 5 A y resistencia ≤ 20 mΩ (supuesta en las memorias 05 y 06) |
+| L303 | Bourns SRP1245A-180M | `Inductor_SMD:L_Bourns_SRP1245A` | D (usuario, 2026-11-18) |
+| L301 | Bourns 2000-4R7-H-RC (toroide) | `Inductor_THT:L_Toroid_Horizontal_D17.3mm_P15.24mm_Bourns_2000` | D (usuario, 2026-11-18) |
+| F101 | Littelfuse ATOF 0287025 (25 A, cuchilla, acción rápida; 20 A no basta con la reducción a 50 °C) | `Fuse:Fuse_Blade_ATO_directSolder` | D (usuario, 2026-11-18). Texto de 603 y 606 actualizado (2026-11-18) |
+| K101 | T9GS2L14-12 | `TESIS:T9GS2L1412` (importada; almohadillas 11 común, 12 NC, A1 y A2 bobina) | D (usuario, 2026-11-18). La hoja de datos no numera los terminales: asignación deducida del plano, comprobar con un multímetro antes de soldar |
+| J101 | Würth WR-TBL 691218410002: 30 A y 300 V (cULus), AWG 24 a 10, paso 7.62 mm | `TESIS:WE_691218410002` (importada; almohadillas 1 y 2, taladro de 1.6 mm como la hoja de datos) | D (usuario, 2026-11-18) |
 | J102, J201–J204, J301 | Cargador (9 A), barra, 5 V (3.44 A) | `TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal` | P: comprobar la corriente de cada bornera |
 | J103, J302–J304 | Lazo de parada e instrumentos (≤ 0.1 A) | `TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal` | P |
 | J205, J206 | Servomotores (2.3 A en bloqueo) | `Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical` | P: comprobar la corriente del conector elegido |
 | J01 | Señales hacia la placa de control | `Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical` | P: polarizado, no se conecta al revés |
 | SW301 | DPDT | en la placa: `Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight`; en el panel: bornera de 6 vías | P: depende del punto abierto 8 |
 | SW302 | Rotativo de tres posiciones | sin huella en las bibliotecas; en el panel: bornera de 4 vías | P/C |
-| HS101 | Disipador Aavid 529802B02500G de Q103 | sin huella en las bibliotecas | C: crear desde el plano del catálogo de Aavid |
-| HS102 | Disipador de D102 (sin modelo) | según el modelo | P |
+| HS101, HS102 | Aavid 529802B02500G (Q103 y D102) | `TESIS:529802B02500G` (dibujada por el usuario: patillas a 25.4 mm, contorno de 41.9 × 25.2 mm) | D (usuario, 2026-11-18). El catálogo recomienda taladros de 2.67 mm (la huella usa 2.56 mm); falta el contorno de patio (F.CrtYd) |
 | H1–H4 | Agujeros de montaje | `MountingHole:MountingHole_3.2mm_M3` (o `MountingHole_3.2mm_M3_Pad_Via` si se unen a GND) | P: tornillo M3 supuesto; definir con el gabinete |
 
 Quedan de montaje pasante: las borneras, Q103 y D102 con sus disipadores, K101, F101, los electrolíticos de 470 µF y L301; y Q303 y D106 si no se cambian por sus versiones SMD.

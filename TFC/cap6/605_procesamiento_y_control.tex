@@ -162,7 +162,7 @@ La Tabla \ref{tab:pines_mega} resume la asignación de terminales de la placa Ar
 
 La salida ALCC del monitor de batería se conecta a la línea de $5.0\text{ V}$ con una resistencia pull-up de $10\text{ k}\Omega$. Con ella, el LTC2944 absorbe $0.51\text{ mA}$ en nivel bajo, por debajo de los $3\text{ mA}$ con que se especifica su tensión de salida de $0.4\text{ V}$, y su fuga máxima de $1\text{ }\mu\text{A}$ produce una caída de $10\text{ mV}$ en nivel alto \citep{adi_ltc2944}.
 
-\subsection{Arquitectura de interconexión serial}
+\subsection{Arquitectura de interconexión serial}\label{subsec:interconexion_serial}
 
 El canal de comunicación bidireccional entre la computadora monoplaca y el microcontrolador determinista se implementa a través de un enlace de bus USB. Esta topología aprovecha el convertidor integrado en la placa del microcontrolador, el cual se reconoce en el sistema operativo Linux como un puerto de comunicaciones.
 
@@ -170,7 +170,7 @@ Esta configuración ofrece ventajas sustanciales respecto a un cableado directo 
 
 A nivel de enlace de datos, el flujo de información se estructura mediante tramas binarias de longitud fija transmitidas a una velocidad de $115200\text{ baudios}$. La cabecera de cada paquete incluye dos bytes de sincronismo con valores hexadecimales \texttt{0xAA} y \texttt{0x55}, seguidos por un identificador de mensaje y un campo de carga útil de $56\text{ bytes}$ que empaqueta las lecturas inerciales, los pulsos acumulados de posición angular, las variables del monitor de batería y la temperatura del chasis. La trama concluye con una suma de comprobación por redundancia cíclica de 16 bits (CRC-16) y delimitadores de fin de línea. Este formato permite una tasa de actualización continua de $50\text{ tramas/s}$, lo que demanda un ancho de banda efectivo de $32\text{ kbps}$, valor ampliamente inferior a la capacidad nominal del bus serial.
 
-\subsection{Puertos de instrumentación meteorológica}
+\subsection{Puertos de instrumentación meteorológica}\label{subsec:puertos_meteo}
 
 La conexión de los sensores meteorológicos ubicados en el mástil y en la plataforma de medición se resuelve mediante dos buses diferenciales industriales bajo el estándar RS-485, acoplados a conectores circulares de 8 pines. El enlace de estos buses con la computadora de a bordo se realiza a través de dos módulos conversores industriales de USB a RS-485, los cuales asignan puertos seriales independientes en el sistema operativo.
 El piranómetro ocupa uno de los buses, y el sensor de viento y la sonda de temperatura y humedad relativa comparten el otro. Los conversores son módulos comerciales; el cableado entre los puertos USB de la computadora y los instrumentos, la asignación de terminales de los conectores y la terminación de cada bus quedan fuera del alcance de este trabajo.

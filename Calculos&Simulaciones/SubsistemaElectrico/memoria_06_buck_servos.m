@@ -28,7 +28,7 @@ V_in_nom = E.bat.V_max;                       % V, mayor tension sostenida (606 
 V_in_pk  = E.tvs.V_C;                         % V, limitacion de los TVS de la barra (transitoria)
 I_dis = 5.0;                                  % A, corriente de diseno de 606
 I_real = D.I_6V5_max;                         % A, ambos servomotores en bloqueo (memoria 01)
-L_o = 6.8e-6; I_sat_L = 8.5;                  % H, A (606: el mismo inductor del convertidor de 5.0 V)
+L_o = 6.8e-6; I_sat_L = 16.5;                 % H, A: IHLP-5050FD-01, el mismo del convertidor de 5.0 V
 % SUPOSICION: los dos electroliticos de salida son SAMXON GT de 470 uF y 50 V, el modelo usado en el
 % resto del diseno: impedancia maxima 0.043 ohm a 100 kHz, tolerancia +-20 %, rizado admisible 1.69 A
 % a 105 C (x2.23 por debajo de 55 C).
@@ -40,9 +40,9 @@ D7.V_R = 60; D7.I_o = 7; D7.R_JA = [45 70 85];
 Vf25 = @(I) interp1([3.5 7], [0.54 0.62], I, 'linear', 'extrap');
 Vf125 = @(I) interp1([3.5 7], [0.47 0.56], I, 'linear', 'extrap');
 I_R_max = 20e-3;
-% SUPOSICION: capacidad del diodo de 200 pF (Fig. 4 del PDS760, de 20 a 30 V) y resistencia de la
-% bobina de 20 mohm.
-C_j = 200e-12; R_dc = 20e-3;
+% SUPOSICION: capacidad del diodo de 200 pF (Fig. 4 del PDS760, de 20 a 30 V).
+% Bobina Vishay IHLP-5050FD-01 de 6.8 uH: resistencia maxima de 14 mohm a 25 C (hoja de datos).
+C_j = 200e-12; R_dc = 14e-3;
 fprintf('0. Salida %.2f V (%.2f a %.2f V); entrada %.1f a %.1f V (transitoria %.1f V)\n', V_out, V_out_rng(1), V_out_rng(2), V_in_min, V_in_nom, V_in_pk);
 fprintf('   Corriente de diseno %.1f A; servomotores en bloqueo %.2f A\n\n', I_dis, I_real);
 

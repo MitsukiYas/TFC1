@@ -80,7 +80,7 @@ donde $V_{OL} = 0.4\text{ V}$ es la tensión máxima en nivel bajo con $I_{OL} =
 %%%--------------------------------------------------------------------------------------------%%%
 %%%--------------------------------------------------------------------------------------------%%%
 
-\subsection{Adquisición odométrica mediante encoder rotativo incremental}
+\subsection{Adquisición odométrica mediante encoder rotativo incremental}\label{subsec:encoder}
 
 La retroalimentación de la velocidad y la posición de cada rueda motriz se obtiene mediante dos encoders ópticos incrementales OMRON E6B2-CWZ6C, uno por rueda trasera, con una resolución de $1000\text{ pulsos/rev}$. Cada encoder entrega dos señales en cuadratura, A y B, desfasadas $90^\circ \pm 45^\circ$ \citep{omron_e6b2}; el canal de índice Z no se utiliza. Con dos encoders, el control de bajo nivel regula por separado la velocidad de cada rueda, lo que permite aplicar el diferencial electrónico en los giros de la dirección Ackermann y detectar el deslizamiento de una rueda comparando ambas lecturas.
 

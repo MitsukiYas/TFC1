@@ -15,7 +15,8 @@ E.bat.I_carga_std = 4.5;  % A, corriente de carga estandar
 
 %% ---------------- Corrientes del sistema (603, 606) ----------------
 E.I_demanda_max = 18;     % A, mayor demanda simultanea de la barra de actuadores
-E.I_fusible     = 20;     % A, fusible principal de tipo lento
+E.I_fusible     = 25;     % A, fusible principal Littelfuse ATOF 0287025 (accion rapida)
+E.I_interr      = 20;     % A, cota de la corriente que interrumpe la parada (bateria: 19.6 A como maximo, memoria 01)
 
 %% ---------------- Diodo TVS SMBJ30A (Vishay, hoja de datos 88392) ----------------
 E.tvs.V_WM      = 30.0;   % V, tension de trabajo

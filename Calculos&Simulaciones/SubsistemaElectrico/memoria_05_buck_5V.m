@@ -26,7 +26,7 @@ V_in_min = R03.V_uv(2);                       % V, corte del LTC4364
 V_in_max = R03.V_fb(3);                       % V, limitacion maxima del LTC4364
 I_dis = 5.0;                                  % A, corriente de diseno de 606 (maxima del TPS54540)
 I_real = D.I_5V_max;                          % A, demanda maxima de la linea (memoria 01)
-L_o = 6.8e-6; I_sat_L = 8.5;                  % H, A (606)
+L_o = 6.8e-6; I_sat_L = 16.5;                 % H, A: IHLP-5050FD-01, saturacion tipica (caida del 20 %)
 % Diodo PDS760 (Diodes Inc., DS30477 Rev. 14-2; decision del usuario, 2026-11-15): 60 V, 7 A medios;
 % caida a 3.5 A de 0.48 V tipica y 0.54 V maxima a 25 C (0.47 V maxima a 125 C); fuga maxima de
 % 20 mA a 60 V y 125 C; resistencia termica union-ambiente de 45, 70 u 85 C/W segun el cobre.
@@ -36,8 +36,8 @@ V_d_max = 0.54;        % V, maxima a 3.5 A y 25 C (para la disipacion)
 I_R_max = 20e-3;       % A, fuga maxima a 60 V y 125 C (cota)
 % SUPOSICION: capacidad del diodo de 200 pF, leida de la Fig. 4 entre 20 y 30 V.
 C_j = 200e-12;
-% SUPOSICION: resistencia de la bobina de 20 mohm, hasta elegirla.
-R_dc = 20e-3;
+% Bobina Vishay IHLP-5050FD-01 de 6.8 uH: resistencia maxima de 14 mohm a 25 C (hoja de datos).
+R_dc = 14e-3;
 fprintf('0. Entrada de %.2f a %.2f V; salida %.1f V; corriente de diseno %.1f A (demanda maxima %.2f A)\n\n', V_in_min, V_in_max, V_out, I_dis, I_real);
 
 %% 1. Limites de la frecuencia de conmutacion

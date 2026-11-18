@@ -33,7 +33,7 @@ Hechas: 01 demanda (redactada en 603 y 606, 2026-11-15), 02 entrada (redactada e
 
 ## 3. Decisiones de diseño
 
-- Sección 607 (integración y distribución): se redacta cuando se terminen de definir las placas (PCB). (607)
+- Sección 607 (integración y distribución): redactada el 2026-11-18. La placa de control pasa a placa perforada (decisión del usuario: los módulos comerciales ya traen sus componentes). Decisiones introducidas en el texto sin fuente, por confirmar: Mega 2560 Pro sobre conectores hembra y alimentado por su terminal de 5 V; conectores polarizados hacia módulos y sensores; línea de 5 V en conductor soldado. Sin verificar: si el Mega recibe 5 V por su terminal y por el USB de la Raspberry Pi a la vez, posible retroalimentación entre ambas fuentes (revisar el esquema de la placa).
 
 Resueltas el 2026-11-15: batería invertida con cargador (fuera del diseño, 606); condensadores y TVS en los bornes de cada controlador (603); Raspberry Pi por las terminales 2 y 4, UART3 para LoRa y UART5 para GNSS, Tabla `tab:pines_rpi` (605); RS-485: piranómetro en un bus, viento y sonda en el otro, conectores y terminación fuera de alcance (605); microSD: riesgo aceptado (603); interruptor DPDT de la barra meteorológica redactado y 20.84 V como mínimo de la línea protegida (606).
 
@@ -72,3 +72,4 @@ Resueltos el 2026-11-15: cables (batería y cargas 300 mm, AWG 12; MPU-6050 de o
 - DM542: el usuario decidió (2026-11-16) mantener el manual de 2012 que cita el texto; el manual de 2019 (Rev. 3) añadido a Referencias no se usa y sus diferencias (0.4 s, pasos de corriente, NEMA 17 a 24) no se trasladan al texto.
 - Placas: la etapa de arranque de la barra (LTC4364-2, PSMN4R8-100BSE en D2PAK, derivación de 2 mΩ) va en la placa de potencia, entre el relé y los bornes de la barra de actuadores.
 - MOSFET de polaridad: resuelto el 2026-11-16 (decisión del usuario): dos DMP4015SPS en paralelo, redactado en 606 con su comprobación térmica (74 °C en la pendiente, 86 °C con 19.6 A; memoria 10, punto 4); entrada `diodes_dmp4015sps` añadida al .bib. La resistencia del lazo de conexión pasa a 122 mΩ (unos 240 A sin limitar).
+- 2026-11-18: 606 nombra las piezas elegidas para la placa de potencia (IHLP-5050FD-01, SRP1245A-180M, 2000-4R7-H-RC, WSL3637, WSK2512, WR-TBL 691218410002, ATOF 0287025 (25 A), disipador Aavid de D102) y los LM1085 en TO-263. Pendientes: modelo del diodo de la bobina del relé (SMA); valor del fusible en el esquemático («20 A SLOW» → 25 A). Resueltos: fusible de 25 A porque el de 20 A admite unos 16 A continuos a 50 °C; en 603 y en las memorias 02 y 10 la corriente interrumpida por la parada es 20 A como cota de la demanda (19.6 A), no la del fusible.

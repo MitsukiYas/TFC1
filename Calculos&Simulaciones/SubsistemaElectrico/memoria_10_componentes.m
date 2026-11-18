@@ -27,7 +27,7 @@ R_ca_max = (150 - E.T_int)/P_max - M.Rjc;
 fprintf('   Para la demanda maxima continua, resistencia caja-ambiente <= %.2f C/W (disipador)\n', R_ca_max);
 % Apagado a traves de 10 kohm (603): descarga de la compuerta hasta la meseta de Miller, meseta y
 % caida por debajo del umbral. SUPOSICION: meseta de 3.2 V con 20 A (curva de transferencia).
-Rg = 10e3; V_pl = 3.2; I0 = E.I_fusible; V_bus = E.bat.V_max;
+Rg = 10e3; V_pl = 3.2; I0 = E.I_interr; V_bus = E.bat.V_max;
 t_d = Rg*M.Ciss*log(V_gs/V_pl);
 t_m = M.Qgd/(V_pl/Rg);
 t_f = Rg*M.Ciss*log(V_pl/M.Vth(1));

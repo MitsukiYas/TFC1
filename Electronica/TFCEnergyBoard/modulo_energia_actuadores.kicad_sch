@@ -5650,7 +5650,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-5050"
 			(at 117.475 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8032,7 +8032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 95.5802 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -8353,7 +8353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 80.9752 160.02 0)
 			(hide yes)
 			(show_name no)

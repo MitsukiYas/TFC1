@@ -2962,16 +2962,54 @@
 			)
 			(symbol "DMP4015SPS_1_1"
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "D"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2989,7 +3027,7 @@
 							)
 						)
 					)
-					(number "G"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2998,16 +3036,16 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "S"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5190,7 +5228,7 @@
 				)
 			)
 		)
-		(property "Value" "20 A SLOW"
+		(property "Value" "25 A"
 			(at 60.325 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5200,7 +5238,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165"
+		(property "Footprint" "Fuse:Fuse_Blade_ATO_directSolder"
 			(at 60.325 35.433 90)
 			(hide yes)
 			(show_name no)
@@ -5281,7 +5319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+		(property "Footprint" "TESIS:RES-SMD_4P_WSL36376L000FEA"
 			(at 168.148 34.925 90)
 			(hide yes)
 			(show_name no)
@@ -5763,7 +5801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESIS:529802B02500G"
 			(at 72.6948 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6425,7 +6463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESIS:T9GS2L1412"
 			(at 217.17 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6839,7 +6877,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_RND:TerminalBlock_RND_205-00067_1x02_P7.50mm_Horizontal"
+		(property "Footprint" "TESIS:WE_691218410002"
 			(at 28.575 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -7118,7 +7156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESIS:529802B02500G"
 			(at 136.1948 94.615 0)
 			(hide yes)
 			(show_name no)
@@ -7428,7 +7466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 71.12 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -7461,14 +7499,20 @@
 				)
 			)
 		)
-		(pin "D"
+		(pin "3"
 			(uuid "9ae5f64d-c408-46b7-8d4b-aba5ffac30a9")
 		)
-		(pin "S"
+		(pin "1"
 			(uuid "f3cb3305-424e-44bb-9579-97869a8a9d9f")
 		)
-		(pin "G"
+		(pin "2"
 			(uuid "a34ff5c4-789d-49ee-be45-e9f4a83f9237")
+		)
+		(pin "5"
+			(uuid "e104925f-8eb5-4931-afac-2ee533bd57ce")
+		)
+		(pin "4"
+			(uuid "11e96b4c-c8f9-44ac-8f60-6be226980796")
 		)
 		(instances
 			(project "TFCEnergyBoard"
@@ -8324,7 +8368,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 97.155 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -8357,14 +8401,20 @@
 				)
 			)
 		)
-		(pin "D"
+		(pin "3"
 			(uuid "617a53c7-cadc-4663-9a5e-664afe822182")
 		)
-		(pin "S"
+		(pin "1"
 			(uuid "72a8cb76-f96a-4a50-9b52-c7193478accb")
 		)
-		(pin "G"
+		(pin "2"
 			(uuid "25ced0b5-957c-4fd4-b2aa-d005ffed0135")
+		)
+		(pin "4"
+			(uuid "463aa7be-5714-441c-8054-e178a5eaccb5")
+		)
+		(pin "5"
+			(uuid "88de6442-11cb-4b25-a8cf-28108f358900")
 		)
 		(instances
 			(project "TFCEnergyBoard"
