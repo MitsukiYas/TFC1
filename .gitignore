@@ -1,8 +1,12 @@
 
 # KiCad: archivos locales y respaldos
+Referencias/
 *-backups/
 *.kicad_prl
 *.lck
 _autosave-*
 fp-info-cache
 *.bak
+
+# Referencias: solo local, fuera del repositorio
+Referencias/
