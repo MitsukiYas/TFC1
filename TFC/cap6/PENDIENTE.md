@@ -58,6 +58,7 @@ Resueltos el 2026-11-15: cables (batería y cargas 300 mm, AWG 12; MPU-6050 de o
 ## 7. Esquemático (KiCad)
 
 - El usuario borró el contenido de `Electronica/` (2026-11-16); el esquemático se rehace al definir las placas.
+- 2026-11-17: el usuario dibujó la placa de potencia en `Electronica/TFCEnergyBoard` (raíz y tres hojas). `Electronica/esquematico_potencia.md` pasó a esa numeración y al orden de J01 del esquemático; sus correcciones pendientes están en su punto 7.1. Propuestos (sin decidir): LED indicadores, agujeros de montaje y contornos de disipador.
 
 ## 8. Revisión del 2026-11-16 (abiertos)
 

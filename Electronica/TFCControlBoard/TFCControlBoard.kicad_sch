@@ -2,9 +2,103 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 5ab49c40-2832-41b9-9245-3a2cf0e07f5a)
+	(uuid "5ab49c40-2832-41b9-9245-3a2cf0e07f5a")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 77.47 42.545)
+		(size 46.99 34.925)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "841c0ad2-3901-411c-ae45-e95e8a09c174")
+		(property "Sheetname" "MÓDULO SENSORES"
+			(at 77.47 41.8334 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "modulo_sensores.kicad_sch"
+			(at 77.47 78.0546 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TFCControlBoard"
+				(path "/5ab49c40-2832-41b9-9245-3a2cf0e07f5a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 131.445 45.72)
+		(size 61.595 48.26)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e0bd04b5-6c9f-4c99-8e8d-b4fad07c7a72")
+		(property "Sheetname" "MÓDULO ACTUADORES"
+			(at 131.445 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "modulo_actuadores.kicad_sch"
+			(at 131.445 94.5646 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TFCControlBoard"
+				(path "/5ab49c40-2832-41b9-9245-3a2cf0e07f5a"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
