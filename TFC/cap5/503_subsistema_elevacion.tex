@@ -532,7 +532,7 @@ Con $3.0\text{ A}$, este torque varía entre $43.2\text{ N}\cdot\text{m}$, si el
     \item detección de atascos, que compara los pasos comandados al motor con el giro medido por el sensor del brazo y detiene el motor si la diferencia supera un umbral.
 \end{itemize}
 Las dos protecciones dependen del software y del sensor. Si fallan a la vez, nada impide que el motor sobrecargue el reductor contra un tope, lo que se registra como una limitación del diseño.
-% PENDIENTE: definir el driver de lazo abierto (24 V, >= 3 A) y el umbral de detección de atascos.
+% PENDIENTE: definir el driver de lazo abierto (24 V, >= 3 A). El umbral de detección de atascos quedó en 0.5° del brazo (Sección 702, simulación en Calculos&Simulaciones/SubsistemaControl).
 
 \subsubsection{Juego angular y control de altura}
 
@@ -746,6 +746,6 @@ El modelo de cálculo y el diseño tienen limitaciones que deben considerarse al
     \item el esfuerzo de los resortes se acepta con el criterio del fabricante, que admite un momento mayor que el que resulta del criterio de fluencia de \citet{Shigley11th}.
 \end{itemize}
 Estos valores deben confirmarse en el prototipo con una prueba del motor a $24\text{ V}$ y la medición del juego del reductor montado.
-% PENDIENTE: driver y umbral de detección de atascos, montaje del MPU-6050, fijación de la base al chasis y tope inferior en theta = 15°.
+% PENDIENTE: driver (umbral de atascos: 0.5°, ver 702), montaje del MPU-6050, fijación de la base al chasis y tope inferior en theta = 15°.
 
 \end{document}
